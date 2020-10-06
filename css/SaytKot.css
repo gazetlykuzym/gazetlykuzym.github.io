@@ -100,20 +100,12 @@
 }
 a
 {
-   color: #0000FF;
-   text-decoration: underline;
-}
-a:visited
-{
-   color: #800080;
-}
-a:active
-{
-   color: #FF0000;
+   color: #FFFFFF;
+   text-decoration: none;
 }
 a:hover
 {
-   color: #0000FF;
+   color: #FFFFFF;
    text-decoration: underline;
 }
 input:focus, textarea:focus, select:focus
