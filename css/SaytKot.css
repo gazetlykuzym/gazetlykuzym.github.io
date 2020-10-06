@@ -100,12 +100,12 @@
 }
 a
 {
-   color: #FFFFFF;
+   color: transparent;
    text-decoration: underline;
 }
 a:hover
 {
-   color: #FFFFFF;
+   color: transparent;
    text-decoration: underline;
 }
 input:focus, textarea:focus, select:focus
