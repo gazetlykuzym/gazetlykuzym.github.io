@@ -16,6 +16,15 @@ body
    margin: 0;
    text-align: center;
 }
+#wb_TextH1 div
+{
+   text-align: left;
+}
+#LayerTextH1
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
 #ImageKrest
 {
    border: 0px solid #000000;
