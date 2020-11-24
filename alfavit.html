@@ -1,0 +1,3052 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta charset="utf-8">
+<title>Удмурт алфавит</title>
+<meta name="description" content="Удмуртский алфавит. Онлайн изучение букв в картинках с возможностью прослушать произношение каждой буквы.">
+<meta name="keywords" content="Удмурт алфавит
+Удмуртский алфавит
+Удмурт алфавит онлайн
+Удмуртский алфавит онлайн
+алфавит
+Удмуртия
+язык
+Удмуртский язык
+буквы
+Удмуртские буквы
+3+
+6+
+12+">
+<link href="ico_k.ico" rel="shortcut icon" type="image/x-icon">
+<link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
+<link href="css/base/jquery-ui.min.css" rel="stylesheet">
+<link href="css/SaytKot.css" rel="stylesheet">
+<link href="css/alfavit.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/transition.min.js"></script>
+<script src="js/modal.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/GBS.rotate.min.js"></script>
+<script src="js/GBS.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#LayerBurvaZH3").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#000000;font-family:'MS Shell Dlg';font-size:21px;\">Произносится слитно «д» и «ж»</span>",
+      items: '#LayerBurvaZH3',
+      position: { my: "center top", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipZH3' }
+   });
+   $("#LayerBurvaI4").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#000000;font-family:'MS Shell Dlg';font-size:21px;\">Обозначает гласный звук [и], употребляется после твердых согласных [д], [ з], [л], [н], [с], [т]</span>",
+      items: '#LayerBurvaI4',
+      position: { my: "center top", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipI4' }
+   });
+   $("#wb_ImageZhok").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Cтол</strong></span>",
+      items: '#wb_ImageZhok',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipZH3_2' }
+   });
+   $("#wb_ImageOrzi").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Орёл</strong></span>",
+      items: '#wb_ImageOrzi',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipO3_2' }
+   });
+   $("#LayerBurvaO3").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#000000;font-family:'MS Shell Dlg';font-size:21px;\">Специфическая удмуртская гласная, не имеющая соответствия в русском языке</span>",
+      items: '#LayerBurvaO3',
+      position: { my: "center top", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipO3' }
+   });
+   $("#wb_ImageZolgeri").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Воробей</strong></span>",
+      items: '#wb_ImageZolgeri',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipZ3_2' }
+   });
+   $("#LayerBurvaZ3").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#000000;font-family:'MS Shell Dlg';font-size:21px;\">Передаёт слитное произношение мягких согласных [д'] и [з']</span>",
+      items: '#LayerBurvaZ3',
+      position: { my: "center top", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipZ3' }
+   });
+   $("#wb_ImageChozh").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Утка</strong></span>",
+      items: '#wb_ImageChozh',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipCH3_2' }
+   });
+   $("#LayerBurvaCH3").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#000000;font-family:'MS Shell Dlg';font-size:21px;\">Является твердым вариантом [ч], представляет собой слитное произношение звуков [т] и [ш]</span>",
+      items: '#LayerBurvaCH3',
+      position: { my: "center top", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipCH3' }
+   });
+   $("#wb_ImageAtas").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Петух</strong></span>",
+      items: '#wb_ImageAtas',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipA' }
+   });
+   $("#wb_ImageBochi").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Жук</strong></span>",
+      items: '#wb_ImageBochi',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipB' }
+   });
+   $("#wb_ImageVuyis").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Радуга</strong></span>",
+      items: '#wb_ImageVuyis',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipV' }
+   });
+   $("#wb_ImageGondyr").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Медведь</strong></span>",
+      items: '#wb_ImageGondyr',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipG' }
+   });
+   $("#wb_ImageDukya").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Глухарь</strong></span>",
+      items: '#wb_ImageDukya',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipD' }
+   });
+   $("#wb_ImageE").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Ремень</strong></span>",
+      items: '#wb_ImageE',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipE' }
+   });
+   $("#wb_ImageElka").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Новогодняя<br>ёлка</strong></span>",
+      items: '#wb_ImageElka',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipE3' }
+   });
+   $("#wb_ImageZhiraf").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Жираф</strong></span>",
+      items: '#wb_ImageZhiraf',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipZH' }
+   });
+   $("#wb_ImageZangari").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Василёк</strong></span>",
+      items: '#wb_ImageZangari',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipZ' }
+   });
+   $("#wb_ImageIzi").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Шапка</strong></span>",
+      items: '#wb_ImageIzi',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipI' }
+   });
+   $("#wb_ImageTir").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Топор</strong></span>",
+      items: '#wb_ImageTir',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipI3' }
+   });
+   $("#wb_ImageIol").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Молоко</strong></span>",
+      items: '#wb_ImageIol',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipI6' }
+   });
+   $("#wb_ImageKocho").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Сорока</strong></span>",
+      items: '#wb_ImageKocho',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipK' }
+   });
+   $("#wb_ImageLud").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Заяц</strong></span>",
+      items: '#wb_ImageLud',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipL' }
+   });
+   $("#wb_ImageMune").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Кукла</strong></span>",
+      items: '#wb_ImageMune',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipM' }
+   });
+   $("#wb_ImageNyan").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Хлеб</strong></span>",
+      items: '#wb_ImageNyan',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipN' }
+   });
+   $("#wb_ImageOgrech").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Огурец</strong></span>",
+      items: '#wb_ImageOgrech',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipO' }
+   });
+   $("#wb_ImagePuny").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Собака</strong></span>",
+      items: '#wb_ImagePuny',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipP' }
+   });
+   $("#wb_ImageRoza").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Роза</strong></span>",
+      items: '#wb_ImageRoza',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipR' }
+   });
+   $("#wb_ImageSugon").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Лук</strong></span>",
+      items: '#wb_ImageSugon',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipS' }
+   });
+   $("#wb_ImageTubat").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Лестница</strong></span>",
+      items: '#wb_ImageTubat',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipT' }
+   });
+   $("#wb_ImageUlmo").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Яблоко</strong></span>",
+      items: '#wb_ImageUlmo',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipU' }
+   });
+   $("#wb_ImageFlag").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Флаг</strong></span>",
+      items: '#wb_ImageFlag',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipF' }
+   });
+   $("#wb_ImageHalat").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Халат</strong></span>",
+      items: '#wb_ImageHalat',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipH' }
+   });
+   $("#wb_ImageCirk").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Цирк</strong></span>",
+      items: '#wb_ImageCirk',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipC' }
+   });
+   $("#wb_ImageChipei").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Щука</strong></span>",
+      items: '#wb_ImageChipei',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipCH' }
+   });
+   $("#wb_ImageShushy").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Снегирь</strong></span>",
+      items: '#wb_ImageShushy',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipSH' }
+   });
+   $("#wb_ImageShchetka").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Щётка</strong></span>",
+      items: '#wb_ImageShchetka',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipSHCH' }
+   });
+   $("#wb_ImageChushyial").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Ёж</strong></span>",
+      items: '#wb_ImageChushyial',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTip_0' }
+   });
+   $("#wb_ImageYzh").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Овца</strong></span>",
+      items: '#wb_ImageYzh',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTip_1' }
+   });
+   $("#wb_ImageSiz").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Дятел</strong></span>",
+      items: '#wb_ImageSiz',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTip_2' }
+   });
+   $("#wb_ImageEmez").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Малина</strong></span>",
+      items: '#wb_ImageEmez',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTip_3' }
+   });
+   $("#wb_ImageUys").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Лебедь</strong></span>",
+      items: '#wb_ImageUys',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipYU' }
+   });
+   $("#wb_ImageYagmuly").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>Брусника</strong></span>",
+      items: '#wb_ImageYagmuly',
+      position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipYA' }
+   });
+   $("#wb_ImageBurvaA").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>а</strong></span>",
+      items: '#wb_ImageBurvaA',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipA2' }
+   });
+   $("#wb_ImageBurvaB").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>бе</strong></span>",
+      items: '#wb_ImageBurvaB',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipB2' }
+   });
+   $("#wb_ImageBurvaV").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>ве</strong></span>",
+      items: '#wb_ImageBurvaV',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipV2' }
+   });
+   $("#wb_ImageBurvaG").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>ге</strong></span>",
+      items: '#wb_ImageBurvaG',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipG2' }
+   });
+   $("#wb_ImageBurvaD").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>дэ</strong></span>",
+      items: '#wb_ImageBurvaD',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipD2' }
+   });
+   $("#wb_ImageBurvaE").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>йэ</strong></span>",
+      items: '#wb_ImageBurvaE',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipE2' }
+   });
+   $("#wb_ImageBurvaE2").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>йо</strong></span>",
+      items: '#wb_ImageBurvaE2',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipE4' }
+   });
+   $("#wb_ImageBurvaZH").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>же</strong></span>",
+      items: '#wb_ImageBurvaZH',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipZH2' }
+   });
+   $("#wb_ImageBurvaZH2").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>ӝ</strong></span><span style=\"color:#9C6921;font-family:'Arial Udm';font-size:27px;\"><strong>е</strong></span>",
+      items: '#wb_ImageBurvaZH2',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipZH4' }
+   });
+   $("#wb_ImageBurvaZ").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Calibri;font-size:27px;\"><strong>зэ</strong></span>",
+      items: '#wb_ImageBurvaZ',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipZ2' }
+   });
+   $("#wb_ImageBurvaZ2").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>ӟ</strong></span><span style=\"color:#9C6921;font-family:'Arial Udm';font-size:27px;\"><strong>е</strong></span>",
+      items: '#wb_ImageBurvaZ2',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipZ4' }
+   });
+   $("#wb_ImageBurvaI").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>и</strong></span>",
+      items: '#wb_ImageBurvaI',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipI2' }
+   });
+   $("#wb_ImageBurvaI2").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>точкаосын и</strong></span>",
+      items: '#wb_ImageBurvaI2',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipI5' }
+   });
+   $("#wb_ImageBurvaI3").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>вакчи и</strong></span>",
+      items: '#wb_ImageBurvaI3',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipI7' }
+   });
+   $("#wb_ImageBurvaK").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>ка</strong></span>",
+      items: '#wb_ImageBurvaK',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipK2' }
+   });
+   $("#wb_ImageBurvaL").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>эль</strong></span>",
+      items: '#wb_ImageBurvaL',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipL2' }
+   });
+   $("#wb_ImageBurvaM").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>эм</strong></span>",
+      items: '#wb_ImageBurvaM',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipM2' }
+   });
+   $("#wb_ImageBurvaN").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>эн</strong></span>",
+      items: '#wb_ImageBurvaN',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipN2' }
+   });
+   $("#wb_ImageBurvaO").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>о</strong></span>",
+      items: '#wb_ImageBurvaO',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipO2' }
+   });
+   $("#wb_ImageBurvaO2").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>ö</strong></span>",
+      items: '#wb_ImageBurvaO2',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipO4' }
+   });
+   $("#wb_ImageBurvaP").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>пе</strong></span>",
+      items: '#wb_ImageBurvaP',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipP2' }
+   });
+   $("#wb_ImageBurvaR").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>эр</strong></span>",
+      items: '#wb_ImageBurvaR',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipR2' }
+   });
+   $("#wb_ImageBurvaS").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>эс</strong></span>",
+      items: '#wb_ImageBurvaS',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipS2' }
+   });
+   $("#wb_ImageBurvaT").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>тэ</strong></span>",
+      items: '#wb_ImageBurvaT',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipT2' }
+   });
+   $("#wb_ImageBurvaU").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>у</strong></span>",
+      items: '#wb_ImageBurvaU',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipU2' }
+   });
+   $("#wb_ImageBurvaF").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>эф</strong></span>",
+      items: '#wb_ImageBurvaF',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipF2' }
+   });
+   $("#wb_ImageBurvaH").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>ха</strong></span>",
+      items: '#wb_ImageBurvaH',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipH2' }
+   });
+   $("#wb_ImageBurvaC").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>це</strong></span>",
+      items: '#wb_ImageBurvaC',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipC2' }
+   });
+   $("#wb_ImageBurvaCH").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>че</strong></span>",
+      items: '#wb_ImageBurvaCH',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipCH2' }
+   });
+   $("#wb_ImageBurvaCH2").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>ӵе</strong></span>",
+      items: '#wb_ImageBurvaCH2',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipCH4' }
+   });
+   $("#wb_ImageBurvaSH").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>ша</strong></span>",
+      items: '#wb_ImageBurvaSH',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipSH2' }
+   });
+   $("#wb_ImageBurvaSHCH").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>ща</strong></span>",
+      items: '#wb_ImageBurvaSHCH',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipSHCH2' }
+   });
+   $("#wb_ImageBurva_0").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>чурыт пус</strong></span>",
+      items: '#wb_ImageBurva_0',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTip_02' }
+   });
+   $("#wb_ImageBurva_1").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>ы</strong></span>",
+      items: '#wb_ImageBurva_1',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTip_12' }
+   });
+   $("#wb_ImageBurva_2").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>небыт пус</strong></span>",
+      items: '#wb_ImageBurva_2',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTip_22' }
+   });
+   $("#wb_ImageBurva_3").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>э</strong></span>",
+      items: '#wb_ImageBurva_3',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTip_32' }
+   });
+   $("#wb_ImageBurvaYU").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>ю</strong></span>",
+      items: '#wb_ImageBurvaYU',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipYU2' }
+   });
+   $("#wb_ImageBurvaYA").tooltip(
+   {
+      hide: true,
+      show: true,
+      content: "<span style=\"color:#9C6921;font-family:Arial;font-size:27px;\"><strong>я</strong></span>",
+      items: '#wb_ImageBurvaYA',
+      position: { my: "center bottom+10", at: "center top", collision: "flipfit" },
+      classes: { 'ui-tooltip' : 'ToolTipYA2' }
+   });
+});
+</script>
+<!-- Yandex.Metrika counter --> <script > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(67969639, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/67969639" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<meta name="yandex-verification" content="12d238da96d1b64a" />
+</head>
+<body>
+<div id="container">
+<div id="FonovyiSloy2" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:494;">
+<div id="wb_ImageRazgovor2" style="position:absolute;left:457px;top:556px;width:364px;height:114px;z-index:0;">
+<img src="images/Razgovor2.svg" id="ImageRazgovor2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_ImageTextRus2" style="position:absolute;left:504px;top:578px;width:230px;height:66px;opacity:0.00;z-index:1;">
+<img src="images/TextRus2.svg" id="ImageTextRus2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageTextUdm2" style="position:absolute;left:488px;top:576px;width:260px;height:68px;z-index:2;">
+<img src="images/TextUdm2.svg" id="ImageTextUdm2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageRamkaFon2" style="position:absolute;left:0px;top:10px;width:970px;height:684px;z-index:3;">
+<img src="images/kontur2.png" id="ImageRamkaFon2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="Layer2Shtrih" style="position:absolute;text-align:left;left:315px;top:21px;width:99px;height:25px;z-index:4;">
+</div>
+<div id="wb_ImageudmalfRus" style="position:absolute;left:20px;top:16px;width:381px;height:29px;opacity:0.00;z-index:5;">
+<img src="images/udmalfRus.png" id="ImageudmalfRus" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_Imageudmalf" style="position:absolute;left:20px;top:22px;width:287px;height:23px;z-index:6;">
+<img src="images/udmalf.png" id="Imageudmalf" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="LayerKrest2" style="position:absolute;text-align:left;left:929px;top:25px;width:33px;height:32px;z-index:7;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
+</div>
+<div id="wb_ImagePodBukvoi" style="position:absolute;left:908px;top:503px;width:30px;height:30px;z-index:8;">
+<img src="images/Krest.svg" id="ImagePodBukvoi" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_ImageBukvy" style="position:absolute;left:59px;top:58px;width:836px;height:584px;z-index:9;">
+<img src="images/Bukvy.svg" id="ImageBukvy" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_ImageKot2" style="position:absolute;left:796px;top:535px;width:144px;height:126px;z-index:10;">
+<img src="images/Kot.png" id="ImageKot2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_ImageGlazZakryt" style="position:absolute;left:796px;top:535px;width:144px;height:126px;z-index:11;">
+<img src="images/GlazaZakryt.gif" id="ImageGlazZakryt" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerA" style="position:absolute;text-align:left;left:69px;top:70px;width:61px;height:62px;z-index:12;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiA').modal('show');MoveObject('LayerSloiA',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '49', '52', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerB" style="position:absolute;text-align:left;left:205px;top:72px;width:55px;height:61px;z-index:13;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiB').modal('show');MoveObject('LayerSloiB',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '183', '52', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerV" style="position:absolute;text-align:left;left:329px;top:72px;width:54px;height:61px;z-index:14;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiV').modal('show');MoveObject('LayerSloiV',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '306', '52', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerG" style="position:absolute;text-align:left;left:459px;top:72px;width:50px;height:61px;z-index:15;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiG').modal('show');MoveObject('LayerSloiG',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '434', '52', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerD" style="position:absolute;text-align:left;left:592px;top:72px;width:47px;height:57px;z-index:16;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiD').modal('show');MoveObject('LayerSloiD',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '563', '52', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerD2" style="position:absolute;text-align:left;left:582px;top:128px;width:57px;height:22px;z-index:17;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiD').modal('show');MoveObject('LayerSloiD',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '563', '52', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerE" style="position:absolute;text-align:left;left:712px;top:72px;width:51px;height:61px;z-index:18;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiE').modal('show');MoveObject('LayerSloiE',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '688', '52', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerE2" style="position:absolute;text-align:left;left:835px;top:72px;width:51px;height:61px;z-index:19;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiE2').modal('show');MoveObject('LayerSloiE2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '811', '52', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerE3" style="position:absolute;text-align:left;left:850px;top:58px;width:25px;height:14px;z-index:20;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiE2').modal('show');MoveObject('LayerSloiE2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '811', '52', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerZH" style="position:absolute;text-align:left;left:60px;top:178px;width:78px;height:62px;z-index:21;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZH').modal('show');MoveObject('LayerSloiZH',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '49', '159', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerZH2" style="position:absolute;text-align:left;left:194px;top:179px;width:78px;height:62px;z-index:22;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZH2').modal('show');MoveObject('LayerSloiZH2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '183', '159', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerZH3" style="position:absolute;text-align:left;left:220px;top:161px;width:26px;height:19px;z-index:23;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZH2').modal('show');MoveObject('LayerSloiZH2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '183', '159', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerZ" style="position:absolute;text-align:left;left:335px;top:179px;width:43px;height:62px;z-index:24;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZ').modal('show');MoveObject('LayerSloiZ',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '307', '159', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerZ2" style="position:absolute;text-align:left;left:463px;top:178px;width:43px;height:62px;z-index:25;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZ2').modal('show');MoveObject('LayerSloiZ2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '436', '159', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerZ3" style="position:absolute;text-align:left;left:473px;top:161px;width:26px;height:19px;z-index:26;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZ2').modal('show');MoveObject('LayerSloiZ2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '436', '159', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerI" style="position:absolute;text-align:left;left:578px;top:179px;width:65px;height:62px;z-index:27;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI').modal('show');MoveObject('LayerSloiI',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '561', '159', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerI2" style="position:absolute;text-align:left;left:715px;top:200px;width:47px;height:41px;z-index:28;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI2').modal('show');MoveObject('LayerSloiI2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '702', '182', '75', '75', '35', 500, '0');return false;">
+</div>
+<div id="LayerI3" style="position:absolute;text-align:left;left:726px;top:183px;width:26px;height:18px;z-index:29;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI2').modal('show');MoveObject('LayerSloiI2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '702', '182', '75', '75', '35', 500, '0');return false;">
+</div>
+<div id="LayerII" style="position:absolute;text-align:left;left:829px;top:180px;width:65px;height:61px;z-index:30;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI3').modal('show');MoveObject('LayerSloiI3',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '812', '159', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerII2" style="position:absolute;text-align:left;left:848px;top:161px;width:26px;height:19px;z-index:31;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI3').modal('show');MoveObject('LayerSloiI3',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '812', '159', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerK" style="position:absolute;text-align:left;left:72px;top:279px;width:55px;height:62px;z-index:32;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiK').modal('show');MoveObject('LayerSloiK',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '49', '259', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerL" style="position:absolute;text-align:left;left:196px;top:280px;width:60px;height:60px;z-index:33;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiL').modal('show');MoveObject('LayerSloiL',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '180', '259', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerM" style="position:absolute;text-align:left;left:327px;top:280px;width:60px;height:60px;z-index:34;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiM').modal('show');MoveObject('LayerSloiM',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '307', '259', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerN" style="position:absolute;text-align:left;left:454px;top:280px;width:60px;height:60px;z-index:35;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiN').modal('show');MoveObject('LayerSloiN',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '435', '259', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerO" style="position:absolute;text-align:left;left:582px;top:279px;width:58px;height:62px;z-index:36;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiO').modal('show');MoveObject('LayerSloiO',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '561', '259', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerO2" style="position:absolute;text-align:left;left:710px;top:279px;width:58px;height:62px;z-index:37;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiO2').modal('show');MoveObject('LayerSloiO2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '690', '259', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerO3" style="position:absolute;text-align:left;left:728px;top:262px;width:25px;height:17px;z-index:38;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiO2').modal('show');MoveObject('LayerSloiO2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '690', '259', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerP" style="position:absolute;text-align:left;left:830px;top:279px;width:63px;height:62px;z-index:39;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiP').modal('show');MoveObject('LayerSloiP',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '812', '259', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerR" style="position:absolute;text-align:left;left:73px;top:381px;width:52px;height:62px;z-index:40;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiR').modal('show');MoveObject('LayerSloiR',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '49', '362', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerS" style="position:absolute;text-align:left;left:201px;top:381px;width:52px;height:62px;z-index:41;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiS').modal('show');MoveObject('LayerSloiS',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '181', '362', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerT" style="position:absolute;text-align:left;left:330px;top:382px;width:52px;height:61px;z-index:42;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiT').modal('show');MoveObject('LayerSloiT',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '306', '362', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerU" style="position:absolute;text-align:left;left:458px;top:382px;width:52px;height:61px;z-index:43;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiU').modal('show');MoveObject('LayerSloiU',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '434', '362', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerF" style="position:absolute;text-align:left;left:578px;top:382px;width:65px;height:61px;z-index:44;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiF').modal('show');MoveObject('LayerSloiF',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '561', '362', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerH" style="position:absolute;text-align:left;left:710px;top:382px;width:56px;height:61px;z-index:45;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiH').modal('show');MoveObject('LayerSloiH',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '689', '362', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerС" style="position:absolute;text-align:left;left:829px;top:382px;width:64px;height:61px;z-index:46;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiC').modal('show');MoveObject('LayerSloiC',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '812', '362', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerС2" style="position:absolute;text-align:left;left:879px;top:443px;width:14px;height:17px;z-index:47;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiC').modal('show');MoveObject('LayerSloiC',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '812', '362', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerCH" style="position:absolute;text-align:left;left:71px;top:483px;width:57px;height:62px;z-index:48;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiCH').modal('show');MoveObject('LayerSloiCH',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '49', '463', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerCH2" style="position:absolute;text-align:left;left:198px;top:484px;width:57px;height:62px;z-index:49;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiCH2').modal('show');MoveObject('LayerSloiCH2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '177', '463', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerCH3" style="position:absolute;text-align:left;left:215px;top:467px;width:25px;height:18px;z-index:50;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiCH2').modal('show');MoveObject('LayerSloiCH2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '177', '463', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerSH" style="position:absolute;text-align:left;left:315px;top:484px;width:83px;height:62px;z-index:51;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiSH').modal('show');MoveObject('LayerSloiSH',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '308', '463', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerSHCH" style="position:absolute;text-align:left;left:443px;top:484px;width:83px;height:62px;z-index:52;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiSHCH').modal('show');MoveObject('LayerSloiSHCH',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '434', '463', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerSHCH2" style="position:absolute;text-align:left;left:512px;top:545px;width:14px;height:16px;z-index:53;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiSHCH').modal('show');MoveObject('LayerSloiSHCH',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '434', '463', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="Layer_0" style="position:absolute;text-align:left;left:587px;top:506px;width:47px;height:41px;z-index:54;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_0').modal('show');MoveObject('LayerSloi_0',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '573', '488', '75', '75', '35', 500, '0');return false;">
+</div>
+<div id="Layer_2" style="position:absolute;text-align:left;left:698px;top:484px;width:81px;height:62px;z-index:55;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_1').modal('show');MoveObject('LayerSloi_1',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '689', '463', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="Layer_3" style="position:absolute;text-align:left;left:851px;top:489px;width:44px;height:41px;z-index:56;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_2').modal('show');MoveObject('LayerSloi_2',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '835', '472', '75', '75', '35', 500, '-15');return false;">
+</div>
+<div id="Layer_4" style="position:absolute;text-align:left;left:76px;top:578px;width:48px;height:62px;z-index:57;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_3').modal('show');MoveObject('LayerSloi_3',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '49', '558', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerYU" style="position:absolute;text-align:left;left:193px;top:578px;width:80px;height:62px;z-index:58;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiYU').modal('show');MoveObject('LayerSloiYU',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '182', '558', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="LayerYA" style="position:absolute;text-align:left;left:333px;top:578px;width:52px;height:62px;z-index:59;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiYA').modal('show');MoveObject('LayerSloiYA',0,150);return false;" onmousemove="Animate('wb_ImagePodBukvoi', '307', '558', '100', '100', '35', 500, '0');return false;">
+</div>
+<div id="TenSledUDMstr2" style="position:absolute;text-align:left;left:120px;top:724px;width:115px;height:87px;z-index:60;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer">
+</div>
+<div id="TenSledRUSstr2" style="position:absolute;text-align:left;left:254px;top:700px;width:115px;height:87px;z-index:61;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer">
+</div>
+<div id="LayerLapaUdm2" style="position:absolute;text-align:left;left:117px;top:721px;width:115px;height:87px;z-index:62;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="Animate('wb_ImageudmalfRus', '', '', '', '', '0', 500, '');Animate('wb_Imageudmalf', '', '', '', '', '100', 500, '');Animate('Layer2Shtrih', '', '', '', '', '0', 500, '');Animate('wb_ImageTextRus2', '', '', '', '', '0', 500, '');Animate('wb_ImageTextUdm2', '', '', '', '', '100', 500, '');Animate('ImageRus2Str2_1', '', '', '', '', '0', 500, '');Animate('Image2Str_1', '', '', '', '', '100', 500, '');Animate('Image2Str_3_2', '', '', '', '', '0', 500, '');Animate('Image2Str_3', '', '', '', '', '100', 500, '');Animate('TenSledRUSstr2', '', '', '', '', '0', 500, '');Animate('TenSledUDMstr2', '', '', '', '', '100', 500, '');return false;">
+</div>
+<div id="LayerLapaRus2" style="position:absolute;text-align:left;left:258px;top:697px;width:115px;height:87px;z-index:63;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="Animate('wb_Imageudmalf', '', '', '', '', '0', 500, '');Animate('wb_ImageudmalfRus', '', '', '', '', '100', 500, '');Animate('Layer2Shtrih', '', '', '', '', '100', 500, '');Animate('wb_ImageTextUdm2', '', '', '', '', '0', 500, '');Animate('wb_ImageTextRus2', '', '', '', '', '100', 500, '');Animate('ImageRus2Str2_1', '', '', '', '', '100', 500, '');Animate('Image2Str_1', '', '', '', '', '0', 500, '');Animate('Image2Str_3', '', '', '', '', '0', 500, '');Animate('Image2Str_3_2', '', '', '', '', '100', 500, '');Animate('TenSledUDMstr2', '', '', '', '', '0', 500, '');Animate('TenSledRUSstr2', '', '', '', '', '100', 500, '');return false;">
+</div>
+<div id="LayerKnopka1Str2" style="position:absolute;text-align:left;left:443px;top:722px;width:90px;height:78px;z-index:64;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;" onmouseover="Animate('Image5g', '45', '50', '', '', '', 290, '-40');Animate('Image4g', '48', '53', '', '', '', 300, '-40');return false;" onmouseout="Animate('Image5g', '30', '11', '', '', '', 700, '0');Animate('Image4g', '35', '10', '', '', '', 700, '0');return false;">
+</div>
+<div id="LayerKnopka2Str2" style="position:absolute;text-align:left;left:551px;top:722px;width:95px;height:82px;z-index:65;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./alfavit.html';return false;" onmouseover="Animate('Image5g', '45', '50', '', '', '', 290, '-40');Animate('Image4g', '48', '53', '', '', '', 300, '-40');return false;" onmouseout="Animate('Image5g', '30', '11', '', '', '', 700, '0');Animate('Image4g', '35', '10', '', '', '', 700, '0');return false;">
+</div>
+<div id="LayerKnopka3Str2" style="position:absolute;text-align:left;left:659px;top:722px;width:90px;height:78px;z-index:66;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./madiskonyos.html';return false;" onmouseover="Animate('Image5g', '45', '50', '', '', '', 290, '-40');Animate('Image4g', '48', '53', '', '', '', 300, '-40');return false;" onmouseout="Animate('Image5g', '30', '11', '', '', '', 700, '0');Animate('Image4g', '35', '10', '', '', '', 700, '0');return false;">
+</div>
+<div id="LayerKnopka4Str2" style="position:absolute;text-align:left;left:767px;top:722px;width:90px;height:78px;z-index:67;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./zhogen.html';return false;" onmouseover="Animate('Image5g', '45', '50', '', '', '', 290, '-40');Animate('Image4g', '48', '53', '', '', '', 300, '-40');return false;" onmouseout="Animate('Image5g', '30', '11', '', '', '', 700, '0');Animate('Image4g', '35', '10', '', '', '', 700, '0');return false;">
+</div>
+</div>
+<div id="LayerSloiA" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaA" style="position:absolute;left:59px;top:24px;width:152px;height:77px;z-index:68;">
+<img src="images/BurvaA.svg" id="ImageBurvaA" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaAR" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:69;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="Animate('wb_ImagePodBukvoi', '183', '52', '100', '100', '35', 500, '0');$('#LayerSloiB').modal('show');MoveObject('LayerSloiB',0,150);$('#LayerSloiA').modal('hide');return false;">
+<div id="LayerStrelkaAR_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisA" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:71;">
+<img src="images/RisA.png" id="ImageRisA" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageAtas" style="position:absolute;left:69px;top:335px;width:133px;height:47px;z-index:72;">
+<img src="images/Atas.svg" id="ImageAtas" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerA" style="position:absolute;left:159px;top:249px;width:101px;height:95px;z-index:73;">
+<audio src="musik/A.mp3" id="MediaPlayerA" preload="auto">
+</audio>
+</div>
+
+<div id="wb_ImageDinamikA" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:75;">
+<img src="images/dinamik.jpg" id="ImageDinamikA" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerA;
+function TimerStartTimerA()
+{
+   wb_TimerA = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikA','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerA()
+{
+   clearTimeout(wb_TimerA);
+}
+</script>
+
+<div id="LayerDinA" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:77;cursor: pointer" onclick="SetImage('ImageDinamikA','images/dinamik.gif');TimerStartTimerA();PlayAudio('MediaPlayerA');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiB" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaB" style="position:absolute;left:65px;top:24px;width:140px;height:77px;z-index:78;">
+<img src="images/BurvaB.svg" id="ImageBurvaB" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaBL" style="position:absolute;text-align:center;left:1px;top:382px;width:16px;height:20px;z-index:79;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiB').modal('hide');Animate('wb_ImagePodBukvoi', '49', '52', '100', '100', '35', 500, '0');MoveObject('LayerSloiA',0,150);$('#LayerSloiA').modal('show');return false;">
+<div id="LayerStrelkaBL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaBR" style="position:absolute;text-align:center;left:254px;top:382px;width:16px;height:20px;z-index:80;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiB').modal('hide');$('#LayerSloiV').modal('show');MoveObject('LayerSloiV',0,150);Animate('wb_ImagePodBukvoi', '306', '52', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaBR_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisB" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:82;">
+<img src="images/RisB.png" id="ImageRisB" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageBochi" style="position:absolute;left:53px;top:334px;width:164px;height:48px;z-index:83;">
+<img src="images/Bochi.svg" id="ImageBochi" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<script>
+var wb_TimerB;
+function TimerStartTimerB()
+{
+   wb_TimerB = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikB','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerB()
+{
+   clearTimeout(wb_TimerB);
+}
+</script>
+
+<div id="wb_ImageDinamikB" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:86;">
+<img src="images/dinamik.jpg" id="ImageDinamikB" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerB" style="position:absolute;left:166px;top:282px;width:101px;height:95px;z-index:87;">
+<audio src="musik/B.mp3" id="MediaPlayerB" preload="auto">
+</audio>
+</div>
+<div id="LayerDinB" style="position:absolute;text-align:left;left:123px;top:119px;width:19px;height:27px;z-index:88;cursor: pointer" onclick="SetImage('ImageDinamikB','images/dinamik.gif');TimerStartTimerB();PlayAudio('MediaPlayerB');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiV" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaV" style="position:absolute;left:64px;top:24px;width:143px;height:74px;z-index:89;">
+<img src="images/BurvaV.svg" id="ImageBurvaV" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaVL" style="position:absolute;text-align:center;left:1px;top:382px;width:16px;height:20px;z-index:90;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiB').modal('show');MoveObject('LayerSloiB',0,150);Animate('wb_ImagePodBukvoi', '183', '52', '100', '100', '35', 500, '0');$('#LayerSloiV').modal('hide');return false;">
+<div id="LayerStrelkaVL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaVP" style="position:absolute;text-align:center;left:254px;top:382px;width:16px;height:20px;z-index:91;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiV').modal('hide');$('#LayerSloiG').modal('show');MoveObject('LayerSloiG',0,150);Animate('wb_ImagePodBukvoi', '434', '52', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaVP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisV" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:93;">
+<img src="images/RisV.png" id="ImageRisV" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageVuyis" style="position:absolute;left:26px;top:322px;width:219px;height:60px;z-index:94;">
+<img src="images/Vuyis.svg" id="ImageVuyis" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikV" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:96;">
+<img src="images/dinamik.jpg" id="ImageDinamikV" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerV;
+function TimerStartTimerV()
+{
+   wb_TimerV = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikV','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerV()
+{
+   clearTimeout(wb_TimerV);
+}
+</script>
+
+<div id="wb_MediaPlayerV" style="position:absolute;left:157px;top:208px;width:101px;height:95px;z-index:98;">
+<audio src="musik/V.mp3" id="MediaPlayerV" preload="auto">
+</audio>
+</div>
+<div id="LayerDinV" style="position:absolute;text-align:left;left:123px;top:119px;width:19px;height:27px;z-index:99;cursor: pointer" onclick="SetImage('ImageDinamikV','images/dinamik.gif');TimerStartTimerV();PlayAudio('MediaPlayerV');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiG" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaG" style="position:absolute;left:70px;top:24px;width:130px;height:74px;z-index:100;">
+<img src="images/BurvaG.svg" id="ImageBurvaG" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaGL" style="position:absolute;text-align:center;left:1px;top:383px;width:16px;height:20px;z-index:101;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiG').modal('hide');$('#LayerSloiV').modal('show');MoveObject('LayerSloiV',0,150);Animate('wb_ImagePodBukvoi', '306', '52', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaGL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaGP" style="position:absolute;text-align:center;left:254px;top:383px;width:16px;height:20px;z-index:102;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiG').modal('hide');$('#LayerSloiD').modal('show');MoveObject('LayerSloiD',0,150);Animate('wb_ImagePodBukvoi', '563', '52', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaGP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisG" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:104;">
+<img src="images/RisG.png" id="ImageRisG" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageGondyr" style="position:absolute;left:24px;top:323px;width:222px;height:60px;z-index:105;">
+<img src="images/Gondyr.svg" id="ImageGondyr" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<script>
+var wb_TimerG;
+function TimerStartTimerG()
+{
+   wb_TimerG = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikG','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerG()
+{
+   clearTimeout(wb_TimerG);
+}
+</script>
+
+<div id="wb_MediaPlayerG" style="position:absolute;left:163px;top:246px;width:101px;height:95px;z-index:108;">
+<audio src="musik/G.mp3" id="MediaPlayerG" preload="auto">
+</audio>
+</div>
+<div id="wb_ImageDinamikG" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:109;">
+<img src="images/dinamik.jpg" id="ImageDinamikG" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerDinG" style="position:absolute;text-align:left;left:122px;top:120px;width:19px;height:27px;z-index:110;cursor: pointer" onclick="SetImage('ImageDinamikG','images/dinamik.gif');TimerStartTimerG();PlayAudio('MediaPlayerG');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiD" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="LayerStrelkaDL" style="position:absolute;text-align:center;left:1px;top:383px;width:16px;height:20px;z-index:111;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiD').modal('hide');$('#LayerSloiG').modal('show');MoveObject('LayerSloiG',0,150);Animate('wb_ImagePodBukvoi', '434', '52', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaDL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaDP" style="position:absolute;text-align:center;left:254px;top:383px;width:16px;height:20px;z-index:112;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiD').modal('hide');$('#LayerSloiE').modal('show');MoveObject('LayerSloiE',0,150);Animate('wb_ImagePodBukvoi', '688', '52', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaDP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisD" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:114;">
+<img src="images/RisD.png" id="ImageRisD" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageDukya" style="position:absolute;left:44px;top:323px;width:183px;height:60px;z-index:115;">
+<img src="images/Dukya.svg" id="ImageDukya" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<script>
+var wb_TimerD;
+function TimerStartTimerD()
+{
+   wb_TimerD = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikD','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerD()
+{
+   clearTimeout(wb_TimerD);
+}
+</script>
+
+<div id="wb_MediaPlayerD" style="position:absolute;left:158px;top:252px;width:101px;height:95px;z-index:118;">
+<audio src="musik/D.mp3" id="MediaPlayerD" preload="auto">
+</audio>
+</div>
+<div id="wb_ImageDinamikD" style="position:absolute;left:121px;top:115px;width:51px;height:45px;z-index:119;">
+<img src="images/dinamik.jpg" id="ImageDinamikD" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageBurvaD" style="position:absolute;left:58px;top:24px;width:155px;height:93px;z-index:120;">
+<img src="images/BurvaD.svg" id="ImageBurvaD" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerDinD" style="position:absolute;text-align:left;left:123px;top:124px;width:19px;height:27px;z-index:121;cursor: pointer" onclick="SetImage('ImageDinamikD','images/dinamik.gif');TimerStartTimerD();PlayAudio('MediaPlayerD');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiE" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaE" style="position:absolute;left:65px;top:24px;width:141px;height:73px;z-index:122;">
+<img src="images/BurvaE.svg" id="ImageBurvaE" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaEL" style="position:absolute;text-align:center;left:1px;top:383px;width:16px;height:20px;z-index:123;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiE').modal('hide');$('#LayerSloiD').modal('show');MoveObject('LayerSloiD',0,150);Animate('wb_ImagePodBukvoi', '563', '52', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaEL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaEP" style="position:absolute;text-align:center;left:254px;top:383px;width:16px;height:20px;z-index:124;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiE').modal('hide');$('#LayerSloiE2').modal('show');MoveObject('LayerSloiE2',0,150);Animate('wb_ImagePodBukvoi', '811', '52', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaEP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisE" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:126;">
+<img src="images/RisE.png" id="ImageRisE" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageE" style="position:absolute;left:116px;top:323px;width:38px;height:47px;z-index:127;">
+<img src="images/E.svg" id="ImageE" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<script>
+var wb_TimerE;
+function TimerStartTimerE()
+{
+   wb_TimerE = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikE','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerE()
+{
+   clearTimeout(wb_TimerE);
+}
+</script>
+
+<div id="wb_MediaPlayerE" style="position:absolute;left:163px;top:248px;width:101px;height:95px;z-index:130;">
+<audio src="musik/E.mp3" id="MediaPlayerE" preload="auto">
+</audio>
+</div>
+<div id="wb_ImageDinamikE" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:131;">
+<img src="images/dinamik.jpg" id="ImageDinamikE" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerDinE" style="position:absolute;text-align:left;left:124px;top:120px;width:19px;height:27px;z-index:132;cursor: pointer" onclick="SetImage('ImageDinamikE','images/dinamik.gif');TimerStartTimerE();PlayAudio('MediaPlayerE');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiE2" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="LayerStrelkaE2L" style="position:absolute;text-align:center;left:1px;top:382px;width:16px;height:20px;z-index:133;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiE2').modal('hide');$('#LayerSloiE').modal('show');MoveObject('LayerSloiE',0,150);Animate('wb_ImagePodBukvoi', '688', '52', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaE2L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaE2P" style="position:absolute;text-align:center;left:254px;top:382px;width:16px;height:20px;z-index:134;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiE2').modal('hide');$('#LayerSloiZH').modal('show');MoveObject('LayerSloiZH',0,150);Animate('wb_ImagePodBukvoi', '49', '159', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaE2P_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_Image3" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:136;">
+<img src="images/RisE2.png" id="Image3" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageElka" style="position:absolute;left:63px;top:322px;width:144px;height:60px;z-index:137;">
+<img src="images/Elka.svg" id="ImageElka" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_MediaPlayerE2" style="position:absolute;left:158px;top:277px;width:101px;height:95px;z-index:139;">
+<audio src="musik/E2.mp3" id="MediaPlayerE2" preload="auto">
+</audio>
+</div>
+<div id="wb_ImageDinamikE2" style="position:absolute;left:120px;top:111px;width:51px;height:45px;z-index:140;">
+<img src="images/dinamik.jpg" id="ImageDinamikE2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerE2;
+function TimerStartTimerE2()
+{
+   wb_TimerE2 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikE2','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerE2()
+{
+   clearTimeout(wb_TimerE2);
+}
+</script>
+
+<div id="wb_ImageBurvaE2" style="position:absolute;left:65px;top:25px;width:141px;height:91px;z-index:142;">
+<img src="images/BurvaE2.svg" id="ImageBurvaE2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerDinE2" style="position:absolute;text-align:left;left:122px;top:120px;width:19px;height:27px;z-index:143;cursor: pointer" onclick="SetImage('ImageDinamikE2','images/dinamik.gif');TimerStartTimerE2();PlayAudio('MediaPlayerE2');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiZH" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaZH" style="position:absolute;left:36px;top:24px;width:198px;height:77px;z-index:144;">
+<img src="images/BurvaZH.svg" id="ImageBurvaZH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaZHL" style="position:absolute;text-align:center;left:2px;top:383px;width:16px;height:20px;z-index:145;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZH').modal('hide');$('#LayerSloiE2').modal('show');MoveObject('LayerSloiE2',0,150);Animate('wb_ImagePodBukvoi', '811', '52', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaZHL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaZHP" style="position:absolute;text-align:center;left:255px;top:383px;width:16px;height:20px;z-index:146;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZH').modal('hide');$('#LayerSloiZH2').modal('show');MoveObject('LayerSloiZH2',0,150);Animate('wb_ImagePodBukvoi', '183', '159', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaZHP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_Image1" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:148;">
+<img src="images/RisZH.png" id="Image1" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageZhiraf" style="position:absolute;left:32px;top:323px;width:207px;height:60px;z-index:149;">
+<img src="images/Zhiraf.svg" id="ImageZhiraf" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikZH" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:151;">
+<img src="images/dinamik.jpg" id="ImageDinamikZH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerZH;
+function TimerStartTimerZH()
+{
+   wb_TimerZH = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikZH','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerZH()
+{
+   clearTimeout(wb_TimerZH);
+}
+</script>
+
+<div id="wb_MediaPlayerZH" style="position:absolute;left:163px;top:271px;width:101px;height:95px;z-index:153;">
+<audio src="musik/ZH.mp3" id="MediaPlayerZH" preload="auto">
+</audio>
+</div>
+<div id="LayerDinZH" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:154;cursor: pointer" onclick="SetImage('ImageDinamikZH','images/dinamik.gif');TimerStartTimerZH();PlayAudio('MediaPlayerZH');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiZH2" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<script>
+var wb_TimerZH2;
+function TimerStartTimerZH2()
+{
+   wb_TimerZH2 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikZH2','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerZH2()
+{
+   clearTimeout(wb_TimerZH2);
+}
+</script>
+
+<div id="wb_ImageBurvaZH2" style="position:absolute;left:36px;top:9px;width:198px;height:92px;z-index:156;">
+<img src="images/BurvaZH2.svg" id="ImageBurvaZH2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+
+<div id="wb_ImageRisZH2" style="position:absolute;left:58px;top:154px;width:155px;height:155px;z-index:159;">
+<img src="images/RisZH2.png" id="ImageRisZH2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerBurvaZH3" style="position:absolute;text-align:center;left:76px;top:122px;width:48px;height:21px;z-index:160;" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;">
+<div id="LayerBurvaZH3_Container" style="width:48px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="wb_ImageZhok" style="position:absolute;left:72px;top:323px;width:126px;height:60px;z-index:161;">
+<img src="images/Zhok.svg" id="ImageZhok" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaZH2L" style="position:absolute;text-align:center;left:1px;top:383px;width:16px;height:20px;z-index:162;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="Animate('wb_ImagePodBukvoi', '49', '159', '100', '100', '35', 500, '0');$('#LayerSloiZH2').modal('hide');MoveObject('LayerSloiZH',0,150);$('#LayerSloiZH').modal('show');return false;">
+<div id="LayerStrelkaZH2L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaZH2R" style="position:absolute;text-align:center;left:254px;top:383px;width:16px;height:20px;z-index:163;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="Animate('wb_ImagePodBukvoi', '307', '159', '100', '100', '35', 500, '0');$('#LayerSloiZH2').modal('hide');MoveObject('LayerSloiZ',0,150);$('#LayerSloiZ').modal('show');return false;">
+<div id="LayerStrelkaZH2R_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageDinamikZH2" style="position:absolute;left:155px;top:110px;width:51px;height:45px;z-index:165;">
+<img src="images/dinamik.jpg" id="ImageDinamikZH2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerZH2" style="position:absolute;left:159px;top:229px;width:101px;height:95px;z-index:166;">
+<audio src="musik/ZH2.mp3" id="MediaPlayerZH2" preload="auto">
+</audio>
+</div>
+<div id="LayerDinZH2" style="position:absolute;text-align:left;left:158px;top:119px;width:19px;height:27px;z-index:167;cursor: pointer" onclick="SetImage('ImageDinamikZH2','images/dinamik.gif');TimerStartTimerZH2();PlayAudio('MediaPlayerZH2');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiZ" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaZ" style="position:absolute;left:71px;top:24px;width:129px;height:76px;z-index:168;">
+<img src="images/BurvaZ.svg" id="ImageBurvaZ" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaZL" style="position:absolute;text-align:center;left:1px;top:383px;width:16px;height:20px;z-index:169;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZ').modal('hide');$('#LayerSloiZH2').modal('show');MoveObject('LayerSloiZH2',0,150);Animate('wb_ImagePodBukvoi', '183', '159', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaZL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaZP" style="position:absolute;text-align:center;left:254px;top:383px;width:16px;height:20px;z-index:170;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZ').modal('hide');$('#LayerSloiZ2').modal('show');MoveObject('LayerSloiZ2',0,150);Animate('wb_ImagePodBukvoi', '436', '159', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaZP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisZ" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:172;">
+<img src="images/RisZ.png" id="ImageRisZ" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageZangari" style="position:absolute;left:18px;top:323px;width:234px;height:60px;z-index:173;">
+<img src="images/Zangari.svg" id="ImageZangari" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikZ" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:175;">
+<img src="images/dinamik.jpg" id="ImageDinamikZ" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerZ" style="position:absolute;left:161px;top:200px;width:101px;height:95px;z-index:176;">
+<audio src="musik/Z.mp3" id="MediaPlayerZ" preload="auto">
+</audio>
+</div>
+<script>
+var wb_TimerZ;
+function TimerStartTimerZ()
+{
+   wb_TimerZ = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikZ','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerZ()
+{
+   clearTimeout(wb_TimerZ);
+}
+</script>
+
+<div id="LayerDinZ" style="position:absolute;text-align:left;left:123px;top:119px;width:19px;height:27px;z-index:178;cursor: pointer" onclick="SetImage('ImageDinamikZ','images/dinamik.gif');TimerStartTimerZ();PlayAudio('MediaPlayerZ');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiZ2" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaZ2" style="position:absolute;left:71px;top:5px;width:129px;height:95px;z-index:179;">
+<img src="images/BurvaZ2.svg" id="ImageBurvaZ2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageZolgeri" style="position:absolute;left:23px;top:323px;width:224px;height:60px;z-index:180;">
+<img src="images/Zolgeri.svg" id="ImageZolgeri" alt=""></div>
+<div id="LayerStrelkaZ2L" style="position:absolute;text-align:center;left:1px;top:383px;width:16px;height:20px;z-index:181;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZ2').modal('hide');$('#LayerSloiZ').modal('show');MoveObject('LayerSloiZ',0,150);Animate('wb_ImagePodBukvoi', '307', '159', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaZ2L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaZ2R" style="position:absolute;text-align:center;left:254px;top:383px;width:16px;height:20px;z-index:182;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiZ2').modal('hide');$('#LayerSloiI').modal('show');MoveObject('LayerSloiI',0,150);Animate('wb_ImagePodBukvoi', '561', '159', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaZ2R_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+
+<div id="LayerBurvaZ3" style="position:absolute;text-align:center;left:87px;top:123px;width:48px;height:21px;z-index:185;" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;">
+<div id="LayerBurvaZ3_Container" style="width:48px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="wb_Image2" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:186;">
+<img src="images/RisZ2.png" id="Image2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikZ2" style="position:absolute;left:152px;top:111px;width:51px;height:45px;z-index:188;">
+<img src="images/dinamik.jpg" id="ImageDinamikZ2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerZ2;
+function TimerStartTimerZ2()
+{
+   wb_TimerZ2 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikZ2','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerZ2()
+{
+   clearTimeout(wb_TimerZ2);
+}
+</script>
+
+<div id="wb_MediaPlayerZ2" style="position:absolute;left:162px;top:195px;width:101px;height:95px;z-index:190;">
+<audio src="musik/Z2.mp3" id="MediaPlayerZ2" preload="auto">
+</audio>
+</div>
+<div id="LayerDinZ2" style="position:absolute;text-align:left;left:154px;top:121px;width:19px;height:27px;z-index:191;cursor: pointer" onclick="SetImage('ImageDinamikZ2','images/dinamik.gif');TimerStartTimerZ2();PlayAudio('MediaPlayerZ2');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiI" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaI" style="position:absolute;left:53px;top:24px;width:165px;height:74px;z-index:192;">
+<img src="images/BurvaI.svg" id="ImageBurvaI" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaIL" style="position:absolute;text-align:center;left:1px;top:383px;width:16px;height:20px;z-index:193;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI').modal('hide');$('#LayerSloiZ2').modal('show');MoveObject('LayerSloiZ2',0,150);Animate('wb_ImagePodBukvoi', '436', '159', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaIL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaIP" style="position:absolute;text-align:center;left:254px;top:383px;width:16px;height:20px;z-index:194;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI').modal('hide');$('#LayerSloiI2').modal('show');MoveObject('LayerSloiI2',0,150);Animate('wb_ImagePodBukvoi', '702', '182', '75', '75', '35', 500, '0');return false;">
+<div id="LayerStrelkaIP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisI" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:196;">
+<img src="images/RisI.png" id="ImageRisI" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageIzi" style="position:absolute;left:65px;top:336px;width:141px;height:47px;z-index:197;">
+<img src="images/Izi.svg" id="ImageIzi" alt=""></div>
+
+<div id="wb_ImageDinamikI" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:199;">
+<img src="images/dinamik.jpg" id="ImageDinamikI" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerI" style="position:absolute;left:162px;top:197px;width:101px;height:95px;z-index:200;">
+<audio src="musik/I.mp3" id="MediaPlayerI" preload="auto">
+</audio>
+</div>
+<script>
+var wb_TimerI;
+function TimerStartTimerI()
+{
+   wb_TimerI = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikI','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerI()
+{
+   clearTimeout(wb_TimerI);
+}
+</script>
+
+<div id="LayerDinI" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:202;cursor: pointer" onclick="SetImage('ImageDinamikI','images/dinamik.gif');TimerStartTimerI();PlayAudio('MediaPlayerI');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiI2" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaI2" style="position:absolute;left:108px;top:24px;width:55px;height:61px;z-index:203;">
+<img src="images/BurvaI2.svg" id="ImageBurvaI2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="LayerStrelkaI2L" style="position:absolute;text-align:center;left:1px;top:383px;width:16px;height:20px;z-index:205;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI2').modal('hide');$('#LayerSloiI').modal('show');MoveObject('LayerSloiI',0,150);Animate('wb_ImagePodBukvoi', '561', '159', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaI2L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaI2P" style="position:absolute;text-align:center;left:254px;top:383px;width:16px;height:20px;z-index:206;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI2').modal('hide');$('#LayerSloiI3').modal('show');MoveObject('LayerSloiI3',0,150);Animate('wb_ImagePodBukvoi', '812', '159', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaI2P_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerBurvaI4" style="position:absolute;text-align:center;left:103px;top:123px;width:28px;height:21px;z-index:207;" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;">
+<div id="LayerBurvaI4_Container" style="width:28px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisI2" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:209;">
+<img src="images/RisI2.png" id="ImageRisI2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageTir" style="position:absolute;left:78px;top:323px;width:114px;height:60px;z-index:210;">
+<img src="images/Tir.svg" id="ImageTir" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikI2" style="position:absolute;left:142px;top:111px;width:51px;height:45px;z-index:212;">
+<img src="images/dinamik.jpg" id="ImageDinamikI2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerI2" style="position:absolute;left:161px;top:194px;width:101px;height:95px;z-index:213;">
+<audio src="musik/I2.mp3" id="MediaPlayerI2" preload="auto">
+</audio>
+</div>
+<script>
+var wb_TimerI2;
+function TimerStartTimerI2()
+{
+   wb_TimerI2 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikI2','images/dinamik.jpg');
+   }, 3000);
+}
+function TimerStopTimerI2()
+{
+   clearTimeout(wb_TimerI2);
+}
+</script>
+
+<div id="LayerDinI2" style="position:absolute;text-align:left;left:144px;top:120px;width:19px;height:27px;z-index:215;cursor: pointer" onclick="SetImage('ImageDinamikI2','images/dinamik.gif');TimerStartTimerI2();PlayAudio('MediaPlayerI2');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiI3" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaI3" style="position:absolute;left:53px;top:5px;width:165px;height:96px;z-index:216;">
+<img src="images/BurvaI3.svg" id="ImageBurvaI3" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaI3L" style="position:absolute;text-align:center;left:1px;top:383px;width:16px;height:20px;z-index:217;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI3').modal('hide');$('#LayerSloiI2').modal('show');MoveObject('LayerSloiI2',0,150);Animate('wb_ImagePodBukvoi', '702', '182', '75', '75', '35', 500, '0');return false;">
+<div id="LayerStrelkaI3L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaI3P" style="position:absolute;text-align:center;left:254px;top:383px;width:16px;height:20px;z-index:218;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiI3').modal('hide');$('#LayerSloiK').modal('show');MoveObject('LayerSloiK',0,150);Animate('wb_ImagePodBukvoi', '49', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaI3P_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisI3" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:220;">
+<img src="images/RisI3.png" id="ImageRisI3" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageIol" style="position:absolute;left:78px;top:323px;width:114px;height:60px;z-index:221;">
+<img src="images/Iol.svg" id="ImageIol" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_MediaPlayerI3" style="position:absolute;left:166px;top:203px;width:101px;height:95px;z-index:223;">
+<audio src="musik/I3.mp3" id="MediaPlayerI3" preload="auto">
+</audio>
+</div>
+<div id="wb_ImageDinamikI3" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:224;">
+<img src="images/dinamik.jpg" id="ImageDinamikI3" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerI3;
+function TimerStartTimerI3()
+{
+   wb_TimerI3 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikI3','images/dinamik.jpg');
+   }, 3000);
+}
+function TimerStopTimerI3()
+{
+   clearTimeout(wb_TimerI3);
+}
+</script>
+
+<div id="LayerDinI3" style="position:absolute;text-align:left;left:123px;top:119px;width:19px;height:27px;z-index:226;cursor: pointer" onclick="SetImage('ImageDinamikI3','images/dinamik.gif');TimerStartTimerI3();PlayAudio('MediaPlayerI3');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiK" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaK" style="position:absolute;left:61px;top:24px;width:148px;height:77px;z-index:227;">
+<img src="images/BurvaK.svg" id="ImageBurvaK" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaKL" style="position:absolute;text-align:center;left:1px;top:383px;width:16px;height:20px;z-index:228;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiK').modal('hide');$('#LayerSloiI3').modal('show');MoveObject('LayerSloiI3',0,150);Animate('wb_ImagePodBukvoi', '812', '159', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaKL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaKP" style="position:absolute;text-align:center;left:254px;top:383px;width:16px;height:20px;z-index:229;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiK').modal('hide');$('#LayerSloiL').modal('show');MoveObject('LayerSloiL',0,150);Animate('wb_ImagePodBukvoi', '180', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaKP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisK" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:231;">
+<img src="images/RisK.png" id="ImageRisK" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageKocho" style="position:absolute;left:66px;top:334px;width:139px;height:49px;z-index:232;">
+<img src="images/Kocho.svg" id="ImageKocho" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikK" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:234;">
+<img src="images/dinamik.jpg" id="ImageDinamikK" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerK;
+function TimerStartTimerK()
+{
+   wb_TimerK = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikK','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerK()
+{
+   clearTimeout(wb_TimerK);
+}
+</script>
+
+<div id="wb_MediaPlayerK" style="position:absolute;left:158px;top:191px;width:101px;height:95px;z-index:236;">
+<audio src="musik/K.mp3" id="MediaPlayerK" preload="auto">
+</audio>
+</div>
+<div id="LayerDinK" style="position:absolute;text-align:left;left:124px;top:119px;width:19px;height:27px;z-index:237;cursor: pointer" onclick="SetImage('ImageDinamikK','images/dinamik.gif');TimerStartTimerK();PlayAudio('MediaPlayerK');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiL" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaL" style="position:absolute;left:57px;top:24px;width:156px;height:74px;z-index:238;">
+<img src="images/BurvaL.svg" id="ImageBurvaL" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaLL" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:239;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiL').modal('hide');$('#LayerSloiM').modal('show');MoveObject('LayerSloiM',0,150);Animate('wb_ImagePodBukvoi', '307', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaLL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaLP" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:240;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiL').modal('hide');$('#LayerSloiK').modal('show');MoveObject('LayerSloiK',0,150);Animate('wb_ImagePodBukvoi', '49', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaLP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisL" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:242;">
+<img src="images/RisL.png" id="ImageRisL" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageLud" style="position:absolute;left:23px;top:322px;width:225px;height:60px;z-index:243;">
+<img src="images/Lud.svg" id="ImageLud" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikL" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:245;">
+<img src="images/dinamik.jpg" id="ImageDinamikL" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerL;
+function TimerStartTimerL()
+{
+   wb_TimerL = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikL','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerL()
+{
+   clearTimeout(wb_TimerL);
+}
+</script>
+
+<div id="wb_MediaPlayerL" style="position:absolute;left:165px;top:210px;width:101px;height:95px;z-index:247;">
+<audio src="musik/L.mp3" id="MediaPlayerL" preload="auto">
+</audio>
+</div>
+<div id="LayerDinL" style="position:absolute;text-align:left;left:123px;top:119px;width:19px;height:27px;z-index:248;cursor: pointer" onclick="SetImage('ImageDinamikL','images/dinamik.gif');TimerStartTimerL();PlayAudio('MediaPlayerL');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiM" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaM" style="position:absolute;left:44px;top:24px;width:182px;height:74px;z-index:249;">
+<img src="images/BurvaM.svg" id="ImageBurvaM" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaML" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:250;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiM').modal('hide');$('#LayerSloiL').modal('show');MoveObject('LayerSloiL',0,150);Animate('wb_ImagePodBukvoi', '180', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaML_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaMP" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:251;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiM').modal('hide');$('#LayerSloiN').modal('show');MoveObject('LayerSloiN',0,150);Animate('wb_ImagePodBukvoi', '435', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaMP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisM" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:253;">
+<img src="images/RisM.png" id="ImageRisM" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageMune" style="position:absolute;left:57px;top:322px;width:156px;height:60px;z-index:254;">
+<img src="images/Mune.svg" id="ImageMune" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikM" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:256;">
+<img src="images/dinamik.jpg" id="ImageDinamikM" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerM" style="position:absolute;left:158px;top:187px;width:101px;height:95px;z-index:257;">
+<audio src="musik/M.mp3" id="MediaPlayerM" preload="auto">
+</audio>
+</div>
+<script>
+var wb_TimerM;
+function TimerStartTimerM()
+{
+   wb_TimerM = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikM','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerM()
+{
+   clearTimeout(wb_TimerM);
+}
+</script>
+
+<div id="LayerDinM" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:259;cursor: pointer" onclick="SetImage('ImageDinamikM','images/dinamik.gif');TimerStartTimerM();PlayAudio('MediaPlayerM');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiN" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaN" style="position:absolute;left:53px;top:24px;width:165px;height:74px;z-index:260;">
+<img src="images/BurvaN.svg" id="ImageBurvaN" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaNL" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:261;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiN').modal('hide');$('#LayerSloiO').modal('show');MoveObject('LayerSloiO',0,150);Animate('wb_ImagePodBukvoi', '561', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaNL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaNP" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:262;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiN').modal('hide');$('#LayerSloiM').modal('show');MoveObject('LayerSloiM',0,150);Animate('wb_ImagePodBukvoi', '307', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaNP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisN" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:264;">
+<img src="images/RisN.png" id="ImageRisN" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageNyan" style="position:absolute;left:57px;top:333px;width:156px;height:49px;z-index:265;">
+<img src="images/Nyan.svg" id="ImageNyan" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikN" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:267;">
+<img src="images/dinamik.jpg" id="ImageDinamikN" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerN" style="position:absolute;left:160px;top:187px;width:101px;height:95px;z-index:268;">
+<audio src="musik/N.mp3" id="MediaPlayerN" preload="auto">
+</audio>
+</div>
+<script>
+var wb_TimerN;
+function TimerStartTimerN()
+{
+   wb_TimerN = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikN','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerN()
+{
+   clearTimeout(wb_TimerN);
+}
+</script>
+
+<div id="LayerDinN" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:270;cursor: pointer" onclick="SetImage('ImageDinamikN','images/dinamik.gif');TimerStartTimerN();PlayAudio('MediaPlayerN');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiO" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaO" style="position:absolute;left:61px;top:24px;width:149px;height:77px;z-index:271;">
+<img src="images/BurvaO.svg" id="ImageBurvaO" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaOL" style="position:absolute;text-align:center;left:2px;top:383px;width:16px;height:20px;z-index:272;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiO').modal('hide');$('#LayerSloiN').modal('show');MoveObject('LayerSloiN',0,150);Animate('wb_ImagePodBukvoi', '435', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaOL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaOP" style="position:absolute;text-align:center;left:253px;top:383px;width:16px;height:20px;z-index:273;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiO').modal('hide');$('#LayerSloiO2').modal('show');MoveObject('LayerSloiO2',0,150);Animate('wb_ImagePodBukvoi', '690', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaOP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisO" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:275;">
+<img src="images/RisO.png" id="ImageRisO" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageOgrech" style="position:absolute;left:51px;top:323px;width:168px;height:60px;z-index:276;">
+<img src="images/Ogrech.svg" id="ImageOgrech" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikO" style="position:absolute;left:120px;top:111px;width:51px;height:45px;z-index:278;">
+<img src="images/dinamik.jpg" id="ImageDinamikO" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerO;
+function TimerStartTimerO()
+{
+   wb_TimerO = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikO','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerO()
+{
+   clearTimeout(wb_TimerO);
+}
+</script>
+
+<div id="wb_MediaPlayerO" style="position:absolute;left:162px;top:210px;width:101px;height:95px;z-index:280;">
+<audio src="musik/O.mp3" id="MediaPlayerO" preload="auto">
+</audio>
+</div>
+<div id="LayerDinO" style="position:absolute;text-align:left;left:122px;top:120px;width:19px;height:27px;z-index:281;cursor: pointer" onclick="SetImage('ImageDinamikO','images/dinamik.gif');TimerStartTimerO();PlayAudio('MediaPlayerO');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiO2" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaO2" style="position:absolute;left:58px;top:6px;width:149px;height:96px;z-index:282;">
+<img src="images/BurvaO2.svg" id="ImageBurvaO2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaO2L" style="position:absolute;text-align:center;left:2px;top:383px;width:16px;height:20px;z-index:283;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiO2').modal('hide');$('#LayerSloiO').modal('show');MoveObject('LayerSloiO',0,150);Animate('wb_ImagePodBukvoi', '561', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaO2L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaO2P" style="position:absolute;text-align:center;left:253px;top:383px;width:16px;height:20px;z-index:284;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiO2').modal('hide');$('#LayerSloiP').modal('show');MoveObject('LayerSloiP',0,150);Animate('wb_ImagePodBukvoi', '812', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaO2P_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerBurvaO3" style="position:absolute;text-align:center;left:95px;top:122px;width:37px;height:23px;z-index:285;" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;">
+<div id="LayerBurvaO3_Container" style="width:37px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+
+<div id="wb_ImageRisO2" style="position:absolute;left:55px;top:155px;width:155px;height:155px;z-index:288;">
+<img src="images/RisO2.png" id="ImageRisO2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageOrzi" style="position:absolute;left:59px;top:311px;width:147px;height:72px;z-index:289;">
+<img src="images/Orzi.svg" id="ImageOrzi" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikO2" style="position:absolute;left:145px;top:111px;width:51px;height:45px;z-index:291;">
+<img src="images/dinamik.jpg" id="ImageDinamikO2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerO2;
+function TimerStartTimerO2()
+{
+   wb_TimerO2 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikO2','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerO2()
+{
+   clearTimeout(wb_TimerO2);
+}
+</script>
+
+<div id="wb_MediaPlayerO2" style="position:absolute;left:162px;top:208px;width:101px;height:95px;z-index:293;">
+<audio src="musik/O2.mp3" id="MediaPlayerO2" preload="auto">
+</audio>
+</div>
+<div id="LayerDinO2" style="position:absolute;text-align:left;left:146px;top:120px;width:19px;height:27px;z-index:294;cursor: pointer" onclick="SetImage('ImageDinamikO2','images/dinamik.gif');TimerStartTimerO2();PlayAudio('MediaPlayerO2');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiP" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaP" style="position:absolute;left:53px;top:27px;width:165px;height:74px;z-index:295;">
+<img src="images/BurvaP.svg" id="ImageBurvaP" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaPL" style="position:absolute;text-align:center;left:2px;top:383px;width:16px;height:20px;z-index:296;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiP').modal('hide');$('#LayerSloiO2').modal('show');MoveObject('LayerSloiO2',0,150);Animate('wb_ImagePodBukvoi', '690', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaPL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaPP" style="position:absolute;text-align:center;left:253px;top:383px;width:16px;height:20px;z-index:297;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiP').modal('hide');$('#LayerSloiR').modal('show');MoveObject('LayerSloiR',0,150);Animate('wb_ImagePodBukvoi', '49', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaPP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisP" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:299;">
+<img src="images/RisP.png" id="ImageRisP" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImagePuny" style="position:absolute;left:51px;top:323px;width:168px;height:60px;z-index:300;">
+<img src="images/Puny.svg" id="ImagePuny" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikP" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:302;">
+<img src="images/dinamik.jpg" id="ImageDinamikP" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerP" style="position:absolute;left:158px;top:196px;width:101px;height:95px;z-index:303;">
+<audio src="musik/P.mp3" id="MediaPlayerP" preload="auto">
+</audio>
+</div>
+<script>
+var wb_TimerP;
+function TimerStartTimerP()
+{
+   wb_TimerP = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikP','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerP()
+{
+   clearTimeout(wb_TimerP);
+}
+</script>
+
+<div id="LayerDinP" style="position:absolute;text-align:left;left:122px;top:119px;width:19px;height:27px;z-index:305;cursor: pointer" onclick="SetImage('ImageDinamikP','images/dinamik.gif');TimerStartTimerP();PlayAudio('MediaPlayerP');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiR" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="LayerStrelkaRL" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:306;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiR').modal('hide');$('#LayerSloiP').modal('show');MoveObject('LayerSloiP',0,150);Animate('wb_ImagePodBukvoi', '812', '259', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaRL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaRP" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:307;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiR').modal('hide');$('#LayerSloiS').modal('show');MoveObject('LayerSloiS',0,150);Animate('wb_ImagePodBukvoi', '181', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaRP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRoza" style="position:absolute;left:68px;top:334px;width:135px;height:48px;z-index:309;">
+<img src="images/Roza.svg" id="ImageRoza" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<script>
+var wb_TimerR;
+function TimerStartTimerR()
+{
+   wb_TimerR = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikR','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerR()
+{
+   clearTimeout(wb_TimerR);
+}
+</script>
+
+<div id="wb_ImageDinamikR" style="position:absolute;left:121px;top:117px;width:51px;height:45px;z-index:312;">
+<img src="images/dinamik.jpg" id="ImageDinamikR" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerR" style="position:absolute;left:159px;top:200px;width:101px;height:95px;z-index:313;">
+<audio src="musik/R.mp3" id="MediaPlayerR" preload="auto">
+</audio>
+</div>
+<div id="wb_ImageBurvaR" style="position:absolute;left:63px;top:24px;width:145px;height:92px;z-index:314;">
+<img src="images/BurvaR.svg" id="ImageBurvaR" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageRisR" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:315;">
+<img src="images/RisR.png" id="ImageRisR" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerDinR" style="position:absolute;text-align:left;left:123px;top:126px;width:19px;height:27px;z-index:316;cursor: pointer" onclick="SetImage('ImageDinamikR','images/dinamik.gif');TimerStartTimerR();PlayAudio('MediaPlayerR');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiS" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaS" style="position:absolute;left:67px;top:24px;width:136px;height:77px;z-index:317;">
+<img src="images/BurvaS.svg" id="ImageBurvaS" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaSL" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:318;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiS').modal('hide');$('#LayerSloiR').modal('show');MoveObject('LayerSloiR',0,150);Animate('wb_ImagePodBukvoi', '49', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaSL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaSP" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:319;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiS').modal('hide');$('#LayerSloiT').modal('show');MoveObject('LayerSloiT',0,150);Animate('wb_ImagePodBukvoi', '306', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaSP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisS" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:321;">
+<img src="images/RisS.png" id="ImageRisS" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageSugon" style="position:absolute;left:53px;top:322px;width:165px;height:60px;z-index:322;">
+<img src="images/Sugon.svg" id="ImageSugon" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<script>
+var wb_TimerS;
+function TimerStartTimerS()
+{
+   wb_TimerS = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikS','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerS()
+{
+   clearTimeout(wb_TimerS);
+}
+</script>
+
+<div id="wb_MediaPlayerS" style="position:absolute;left:158px;top:188px;width:101px;height:95px;z-index:325;">
+<audio src="musik/S.mp3" id="MediaPlayerS" preload="auto">
+</audio>
+</div>
+<div id="wb_ImageDinamikS" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:326;">
+<img src="images/dinamik.jpg" id="ImageDinamikS" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerDinS" style="position:absolute;text-align:left;left:123px;top:119px;width:19px;height:27px;z-index:327;cursor: pointer" onclick="SetImage('ImageDinamikS','images/dinamik.gif');TimerStartTimerS();PlayAudio('MediaPlayerS');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiT" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaT" style="position:absolute;left:64px;top:24px;width:142px;height:74px;z-index:328;">
+<img src="images/BurvaT.svg" id="ImageBurvaT" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaTL" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:329;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiT').modal('hide');$('#LayerSloiU').modal('show');MoveObject('LayerSloiU',0,150);Animate('wb_ImagePodBukvoi', '434', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaTL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaTP" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:330;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiT').modal('hide');$('#LayerSloiS').modal('show');MoveObject('LayerSloiS',0,150);Animate('wb_ImagePodBukvoi', '181', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaTP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisT" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:332;">
+<img src="images/RisT.png" id="ImageRisT" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageTubat" style="position:absolute;left:53px;top:322px;width:165px;height:60px;z-index:333;">
+<img src="images/Tubat.svg" id="ImageTubat" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikT" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:335;">
+<img src="images/dinamik.jpg" id="ImageDinamikT" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerT;
+function TimerStartTimerT()
+{
+   wb_TimerT = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikT','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerT()
+{
+   clearTimeout(wb_TimerT);
+}
+</script>
+
+<div id="wb_MediaPlayerT" style="position:absolute;left:157px;top:192px;width:101px;height:95px;z-index:337;">
+<audio src="musik/T.mp3" id="MediaPlayerT" preload="auto">
+</audio>
+</div>
+<div id="LayerDinT" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:338;cursor: pointer" onclick="SetImage('ImageDinamikT','images/dinamik.gif');TimerStartTimerT();PlayAudio('MediaPlayerT');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiU" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="LayerStrelkaUL" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:339;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiU').modal('hide');$('#LayerSloiT').modal('show');MoveObject('LayerSloiT',0,150);Animate('wb_ImagePodBukvoi', '306', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaUL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaUP" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:340;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiU').modal('hide');$('#LayerSloiF').modal('show');MoveObject('LayerSloiF',0,150);Animate('wb_ImagePodBukvoi', '561', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaUP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageUlmo" style="position:absolute;left:57px;top:333px;width:156px;height:49px;z-index:342;">
+<img src="images/Ulmo.svg" id="ImageUlmo" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikU" style="position:absolute;left:121px;top:117px;width:51px;height:45px;z-index:344;">
+<img src="images/dinamik.jpg" id="ImageDinamikU" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerU;
+function TimerStartTimerU()
+{
+   wb_TimerU = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikU','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerU()
+{
+   clearTimeout(wb_TimerU);
+}
+</script>
+
+<div id="wb_MediaPlayerU" style="position:absolute;left:163px;top:201px;width:101px;height:95px;z-index:346;">
+<audio src="musik/U.mp3" id="MediaPlayerU" preload="auto">
+</audio>
+</div>
+<div id="wb_ImageBurvaU" style="position:absolute;left:62px;top:24px;width:146px;height:93px;z-index:347;">
+<img src="images/BurvaU.svg" id="ImageBurvaU" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageRisU" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:348;">
+<img src="images/RisU.png" id="ImageRisU" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerDinU" style="position:absolute;text-align:left;left:123px;top:126px;width:19px;height:27px;z-index:349;cursor: pointer" onclick="SetImage('ImageDinamikU','images/dinamik.gif');TimerStartTimerU();PlayAudio('MediaPlayerU');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiF" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaF" style="position:absolute;left:44px;top:22px;width:182px;height:95px;z-index:350;">
+<img src="images/BurvaF.svg" id="ImageBurvaF" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaFL" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:351;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiF').modal('hide');$('#LayerSloiU').modal('show');MoveObject('LayerSloiU',0,150);Animate('wb_ImagePodBukvoi', '434', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaFL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaFP" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:352;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiF').modal('hide');$('#LayerSloiH').modal('show');MoveObject('LayerSloiH',0,150);Animate('wb_ImagePodBukvoi', '689', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaFP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisF" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:354;">
+<img src="images/RisF.png" id="ImageRisF" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageFlag" style="position:absolute;left:60px;top:333px;width:151px;height:49px;z-index:355;">
+<img src="images/Flag.svg" id="ImageFlag" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikF" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:357;">
+<img src="images/dinamik.jpg" id="ImageDinamikF" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_MediaPlayerF" style="position:absolute;left:161px;top:212px;width:101px;height:95px;z-index:358;">
+<audio src="musik/F.mp3" id="MediaPlayerF" preload="auto">
+</audio>
+</div>
+<script>
+var wb_TimerF;
+function TimerStartTimerF()
+{
+   wb_TimerF = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikF','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerF()
+{
+   clearTimeout(wb_TimerF);
+}
+</script>
+
+<div id="LayerDinF" style="position:absolute;text-align:left;left:124px;top:119px;width:19px;height:27px;z-index:360;cursor: pointer" onclick="SetImage('ImageDinamikF','images/dinamik.gif');TimerStartTimerF();PlayAudio('MediaPlayerF');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiH" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaH" style="position:absolute;left:60px;top:24px;width:150px;height:75px;z-index:361;">
+<img src="images/BurvaH.svg" id="ImageBurvaH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaHL" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:362;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiH').modal('hide');$('#LayerSloiF').modal('show');MoveObject('LayerSloiF',0,150);Animate('wb_ImagePodBukvoi', '561', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaHL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaHP" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:363;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiH').modal('hide');$('#LayerSloiC').modal('show');MoveObject('LayerSloiC',0,150);Animate('wb_ImagePodBukvoi', '812', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaHP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisH" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:365;">
+<img src="images/RisH.png" id="ImageRisH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageHalat" style="position:absolute;left:45px;top:333px;width:181px;height:49px;z-index:366;">
+<img src="images/Halat.svg" id="ImageHalat" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikH" style="position:absolute;left:121px;top:111px;width:51px;height:45px;z-index:368;">
+<img src="images/dinamik.jpg" id="ImageDinamikH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerH;
+function TimerStartTimerH()
+{
+   wb_TimerH = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikH','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerH()
+{
+   clearTimeout(wb_TimerH);
+}
+</script>
+
+<div id="wb_MediaPlayerH" style="position:absolute;left:161px;top:192px;width:101px;height:95px;z-index:370;">
+<audio src="musik/H.mp3" id="MediaPlayerH" preload="auto">
+</audio>
+</div>
+<div id="LayerDinH" style="position:absolute;text-align:left;left:123px;top:119px;width:19px;height:27px;z-index:371;cursor: pointer" onclick="SetImage('ImageDinamikH','images/dinamik.gif');TimerStartTimerH();PlayAudio('MediaPlayerH');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiC" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaC" style="position:absolute;left:53px;top:24px;width:165px;height:93px;z-index:372;">
+<img src="images/BurvaC.svg" id="ImageBurvaC" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaCL" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:373;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiC').modal('hide');$('#LayerSloiCH').modal('show');MoveObject('LayerSloiCH',0,150);Animate('wb_ImagePodBukvoi', '49', '463', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaCL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaCP" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:374;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiC').modal('hide');$('#LayerSloiH').modal('show');MoveObject('LayerSloiH',0,150);Animate('wb_ImagePodBukvoi', '689', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaCP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisС" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:376;">
+<img src="images/RisC.png" id="ImageRisС" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageCirk" style="position:absolute;left:55px;top:321px;width:160px;height:61px;z-index:377;">
+<img src="images/Cirk.svg" id="ImageCirk" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikC" style="position:absolute;left:121px;top:111px;width:50px;height:45px;z-index:379;">
+<img src="images/dinamik.jpg" id="ImageDinamikC" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerC;
+function TimerStartTimerC()
+{
+   wb_TimerC = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikC','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerC()
+{
+   clearTimeout(wb_TimerC);
+}
+</script>
+
+<div id="wb_MediaPlayerC" style="position:absolute;left:161px;top:205px;width:101px;height:95px;z-index:381;">
+<audio src="musik/C.mp3" id="MediaPlayerC" preload="auto">
+</audio>
+</div>
+<div id="LayerDinC" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:382;cursor: pointer" onclick="SetImage('ImageDinamikC','images/dinamik.gif');TimerStartTimerC();PlayAudio('MediaPlayerC');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiCH" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaCH" style="position:absolute;left:59px;top:24px;width:152px;height:77px;z-index:383;">
+<img src="images/BurvaCH.svg" id="ImageBurvaCH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaCHL" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:384;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiCH').modal('hide');$('#LayerSloiC').modal('show');MoveObject('LayerSloiC',0,150);Animate('wb_ImagePodBukvoi', '812', '362', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaCHL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaCHP" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:385;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiCH').modal('hide');$('#LayerSloiCH2').modal('show');MoveObject('LayerSloiCH2',0,150);Animate('wb_ImagePodBukvoi', '177', '463', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaCHP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisСH" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:387;">
+<img src="images/RisCH.png" id="ImageRisСH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageChipei" style="position:absolute;left:41px;top:334px;width:189px;height:48px;z-index:388;">
+<img src="images/Chipei.svg" id="ImageChipei" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikCH" style="position:absolute;left:121px;top:111px;width:50px;height:45px;z-index:390;">
+<img src="images/dinamik.jpg" id="ImageDinamikCH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerCH;
+function TimerStartTimerCH()
+{
+   wb_TimerCH = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikCH','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerCH()
+{
+   clearTimeout(wb_TimerCH);
+}
+</script>
+
+<div id="wb_MediaPlayerCH" style="position:absolute;left:157px;top:194px;width:101px;height:95px;z-index:392;">
+<audio src="musik/CH.mp3" id="MediaPlayerCH" preload="auto">
+</audio>
+</div>
+<div id="LayerDinCH" style="position:absolute;text-align:left;left:123px;top:119px;width:19px;height:27px;z-index:393;cursor: pointer" onclick="SetImage('ImageDinamikCH','images/dinamik.gif');TimerStartTimerCH();PlayAudio('MediaPlayerCH');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiCH2" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaCH2" style="position:absolute;left:59px;top:8px;width:152px;height:90px;z-index:394;">
+<img src="images/BurvaCH2.svg" id="ImageBurvaCH2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaCH2L" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:395;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiCH2').modal('hide');$('#LayerSloiCH').modal('show');MoveObject('LayerSloiCH',0,150);Animate('wb_ImagePodBukvoi', '49', '463', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaCH2L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaCH2P" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:396;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiCH2').modal('hide');$('#LayerSloiSH').modal('show');MoveObject('LayerSloiSH',0,150);Animate('wb_ImagePodBukvoi', '308', '463', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaCH2P_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerBurvaCH3" style="position:absolute;text-align:center;left:81px;top:123px;width:48px;height:21px;z-index:397;" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;">
+<div id="LayerBurvaCH3_Container" style="width:48px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+
+<div id="wb_ImageRisСH2" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:400;">
+<img src="images/RisCH2.png" id="ImageRisСH2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageChozh" style="position:absolute;left:71px;top:322px;width:129px;height:60px;z-index:401;">
+<img src="images/Chozh.svg" id="ImageChozh" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikCH2" style="position:absolute;left:142px;top:111px;width:50px;height:45px;z-index:403;">
+<img src="images/dinamik.jpg" id="ImageDinamikCH2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerCH2;
+function TimerStartTimerCH2()
+{
+   wb_TimerCH2 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikCH2','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerCH2()
+{
+   clearTimeout(wb_TimerCH2);
+}
+</script>
+
+<div id="wb_MediaPlayerCH2" style="position:absolute;left:157px;top:202px;width:101px;height:95px;z-index:405;">
+<audio src="musik/CH2.mp3" id="MediaPlayerCH2" preload="auto">
+</audio>
+</div>
+<div id="LayerDinCH2" style="position:absolute;text-align:left;left:143px;top:119px;width:19px;height:27px;z-index:406;cursor: pointer" onclick="SetImage('ImageDinamikCH2','images/dinamik.gif');TimerStartTimerCH2();PlayAudio('MediaPlayerCH2');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiSH" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaSH" style="position:absolute;left:27px;top:24px;width:216px;height:74px;z-index:407;">
+<img src="images/BurvaSH.svg" id="ImageBurvaSH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaSHL" style="position:absolute;text-align:center;left:253px;top:383px;width:16px;height:20px;z-index:408;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiSH').modal('hide');$('#LayerSloiSHCH').modal('show');MoveObject('LayerSloiSHCH',0,150);Animate('wb_ImagePodBukvoi', '434', '463', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaSHL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaSHP" style="position:absolute;text-align:center;left:2px;top:383px;width:16px;height:20px;z-index:409;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiSH').modal('hide');$('#LayerSloiCH2').modal('show');MoveObject('LayerSloiCH2',0,150);Animate('wb_ImagePodBukvoi', '177', '463', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaSHP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisSH" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:411;">
+<img src="images/RisSH.png" id="ImageRisSH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageShushy" style="position:absolute;left:35px;top:323px;width:201px;height:60px;z-index:412;">
+<img src="images/Shushy.svg" id="ImageShushy" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikSH" style="position:absolute;left:121px;top:111px;width:50px;height:45px;z-index:414;">
+<img src="images/dinamik.jpg" id="ImageDinamikSH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerSH;
+function TimerStartTimerSH()
+{
+   wb_TimerSH = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikSH','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerSH()
+{
+   clearTimeout(wb_TimerSH);
+}
+</script>
+
+<div id="wb_MediaPlayerSH" style="position:absolute;left:154px;top:199px;width:101px;height:95px;z-index:416;">
+<audio src="musik/SH.mp3" id="MediaPlayerSH" preload="auto">
+</audio>
+</div>
+<div id="LayerDinSH" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:417;cursor: pointer" onclick="SetImage('ImageDinamikSH','images/dinamik.gif');TimerStartTimerSH();PlayAudio('MediaPlayerSH');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiSHCH" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaSHCH" style="position:absolute;left:27px;top:24px;width:216px;height:92px;z-index:418;">
+<img src="images/BurvaSHCH.svg" id="ImageBurvaSHCH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelkaSHCHL" style="position:absolute;text-align:center;left:253px;top:383px;width:16px;height:20px;z-index:419;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiSHCH').modal('hide');$('#LayerSloi_0').modal('show');MoveObject('LayerSloi_0',0,150);Animate('wb_ImagePodBukvoi', '573', '488', '75', '75', '35', 500, '0');return false;">
+<div id="LayerStrelkaSHCHL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelkaSHCHP" style="position:absolute;text-align:center;left:2px;top:383px;width:16px;height:20px;z-index:420;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiSHCH').modal('hide');$('#LayerSloiSH').modal('show');MoveObject('LayerSloiSH',0,150);Animate('wb_ImagePodBukvoi', '308', '463', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelkaSHCHP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisSHCH" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:422;">
+<img src="images/RisSHCH.png" id="ImageRisSHCH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageShchetka" style="position:absolute;left:35px;top:323px;width:201px;height:60px;z-index:423;">
+<img src="images/Shchetka.svg" id="ImageShchetka" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikSHCH" style="position:absolute;left:121px;top:111px;width:50px;height:45px;z-index:425;">
+<img src="images/dinamik.jpg" id="ImageDinamikSHCH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerSHCH;
+function TimerStartTimerSHCH()
+{
+   wb_TimerSHCH = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikSHCH','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerSHCH()
+{
+   clearTimeout(wb_TimerSHCH);
+}
+</script>
+
+<div id="wb_MediaPlayerSHCH" style="position:absolute;left:159px;top:196px;width:101px;height:95px;z-index:427;">
+<audio src="musik/SHCH.mp3" id="MediaPlayerSHCH" preload="auto">
+</audio>
+</div>
+<div id="LayerDinSHCH" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:428;cursor: pointer" onclick="SetImage('ImageDinamikSHCH','images/dinamik.gif');TimerStartTimerSHCH();PlayAudio('MediaPlayerSHCH');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloi_0" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurva_0" style="position:absolute;left:107px;top:24px;width:57px;height:45px;z-index:429;">
+<img src="images/Burva_0.svg" id="ImageBurva_0" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelka_0L" style="position:absolute;text-align:center;left:253px;top:383px;width:16px;height:20px;z-index:430;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_0').modal('hide');$('#LayerSloi_1').modal('show');MoveObject('LayerSloi_1',0,150);Animate('wb_ImagePodBukvoi', '689', '463', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelka_0L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelka_0P" style="position:absolute;text-align:center;left:2px;top:383px;width:16px;height:20px;z-index:431;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_0').modal('hide');$('#LayerSloiSHCH').modal('show');MoveObject('LayerSloiSHCH',0,150);Animate('wb_ImagePodBukvoi', '434', '463', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelka_0P_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRis_0" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:433;">
+<img src="images/Ris_0.png" id="ImageRis_0" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageChushyial" style="position:absolute;left:37px;top:323px;width:197px;height:60px;z-index:434;">
+<img src="images/Chushyial.svg" id="ImageChushyial" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamik_0" style="position:absolute;left:121px;top:111px;width:50px;height:45px;z-index:436;">
+<img src="images/dinamik.jpg" id="ImageDinamik_0" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_Timer0;
+function TimerStartTimer0()
+{
+   wb_Timer0 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamik_0','images/dinamik.jpg');
+   }, 3000);
+}
+function TimerStopTimer0()
+{
+   clearTimeout(wb_Timer0);
+}
+</script>
+
+<div id="wb_MediaPlayer_0" style="position:absolute;left:157px;top:196px;width:101px;height:95px;z-index:438;">
+<audio src="musik/0_0.mp3" id="MediaPlayer_0" preload="auto">
+</audio>
+</div>
+<div id="LayerDin_0" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:439;cursor: pointer" onclick="SetImage('ImageDinamik_0','images/dinamik.gif');TimerStartTimer0();PlayAudio('MediaPlayer_0');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloi_1" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurva_1" style="position:absolute;left:33px;top:24px;width:204px;height:74px;z-index:440;">
+<img src="images/Burva_1.svg" id="ImageBurva_1" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelka_1L" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:441;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_1').modal('hide');$('#LayerSloi_0').modal('show');MoveObject('LayerSloi_0',0,150);Animate('wb_ImagePodBukvoi', '573', '488', '75', '75', '35', 500, '0');return false;">
+<div id="LayerStrelka_1L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelka_1P" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:442;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_1').modal('hide');$('#LayerSloi_2').modal('show');MoveObject('LayerSloi_2',0,150);Animate('wb_ImagePodBukvoi', '835', '472', '75', '75', '35', 500, '-15');return false;">
+<div id="LayerStrelka_1P_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRis_1" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:444;">
+<img src="images/Ris_1.png" id="ImageRis_1" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageYzh" style="position:absolute;left:79px;top:334px;width:113px;height:48px;z-index:445;">
+<img src="images/Yzh.svg" id="ImageYzh" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamik_1" style="position:absolute;left:121px;top:111px;width:50px;height:45px;z-index:447;">
+<img src="images/dinamik.jpg" id="ImageDinamik_1" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_Timer1;
+function TimerStartTimer1()
+{
+   wb_Timer1 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamik_1','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimer1()
+{
+   clearTimeout(wb_Timer1);
+}
+</script>
+
+<div id="wb_MediaPlayer_1" style="position:absolute;left:157px;top:196px;width:101px;height:95px;z-index:449;">
+<audio src="musik/0_1.mp3" id="MediaPlayer_1" preload="auto">
+</audio>
+</div>
+<div id="LayerDin_1" style="position:absolute;text-align:left;left:123px;top:119px;width:19px;height:27px;z-index:450;cursor: pointer" onclick="SetImage('ImageDinamik_1','images/dinamik.gif');TimerStartTimer1();PlayAudio('MediaPlayer_1');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloi_2" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurva_2" style="position:absolute;left:112px;top:24px;width:46px;height:46px;z-index:451;">
+<img src="images/Burva_2.svg" id="ImageBurva_2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelka_2L" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:452;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_2').modal('hide');$('#LayerSloi_1').modal('show');MoveObject('LayerSloi_1',0,150);Animate('wb_ImagePodBukvoi', '689', '463', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelka_2L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelka_2P" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:453;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_2').modal('hide');$('#LayerSloi_3').modal('show');MoveObject('LayerSloi_3',0,150);Animate('wb_ImagePodBukvoi', '49', '558', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelka_2P_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageSiz" style="position:absolute;left:66px;top:333px;width:139px;height:49px;z-index:455;">
+<img src="images/Siz.svg" id="ImageSiz" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageRis_2" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:456;">
+<img src="images/Ris_2.png" id="ImageRis_2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamik_2" style="position:absolute;left:121px;top:111px;width:50px;height:45px;z-index:458;">
+<img src="images/dinamik.jpg" id="ImageDinamik_2" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_Timer2;
+function TimerStartTimer2()
+{
+   wb_Timer2 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamik_2','images/dinamik.jpg');
+   }, 3000);
+}
+function TimerStopTimer2()
+{
+   clearTimeout(wb_Timer2);
+}
+</script>
+
+<div id="wb_MediaPlayer_2" style="position:absolute;left:162px;top:196px;width:101px;height:95px;z-index:460;">
+<audio src="musik/0_2.mp3" id="MediaPlayer_2" preload="auto">
+</audio>
+</div>
+<div id="LayerDin_2" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:461;cursor: pointer" onclick="SetImage('ImageDinamik_2','images/dinamik.gif');TimerStartTimer2();PlayAudio('MediaPlayer_2');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloi_3" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurva_3" style="position:absolute;left:68px;top:24px;width:135px;height:76px;z-index:462;">
+<img src="images/Burva_3.svg" id="ImageBurva_3" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelka_3L" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:463;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_3').modal('hide');$('#LayerSloi_2').modal('show');MoveObject('LayerSloi_2',0,150);Animate('wb_ImagePodBukvoi', '835', '472', '75', '75', '35', 500, '-15');return false;">
+<div id="LayerStrelka_3L_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelka_3P" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:464;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloi_3').modal('hide');$('#LayerSloiYU').modal('show');MoveObject('LayerSloiYU',0,150);Animate('wb_ImagePodBukvoi', '182', '558', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelka_3P_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRis_3" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:466;">
+<img src="images/Ris_3.png" id="ImageRis_3" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageEmez" style="position:absolute;left:51px;top:334px;width:168px;height:48px;z-index:467;">
+<img src="images/Emez.svg" id="ImageEmez" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamik_3" style="position:absolute;left:121px;top:111px;width:50px;height:45px;z-index:469;">
+<img src="images/dinamik.jpg" id="ImageDinamik_3" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_Timer3;
+function TimerStartTimer3()
+{
+   wb_Timer3 = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamik_3','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimer3()
+{
+   clearTimeout(wb_Timer3);
+}
+</script>
+
+<div id="wb_MediaPlayer_3" style="position:absolute;left:164px;top:196px;width:101px;height:95px;z-index:471;">
+<audio src="musik/0_3.mp3" id="MediaPlayer_3" preload="auto">
+</audio>
+</div>
+<div id="LayerDin_3" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:472;cursor: pointer" onclick="SetImage('ImageDinamik_3','images/dinamik.gif');TimerStartTimer3();PlayAudio('MediaPlayer_3');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiYU" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaYU" style="position:absolute;left:34px;top:24px;width:203px;height:78px;z-index:473;">
+<img src="images/BurvaYU.svg" id="ImageBurvaYU" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelka_YUL" style="position:absolute;text-align:center;left:253px;top:382px;width:16px;height:20px;z-index:474;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiYU').modal('hide');$('#LayerSloiYA').modal('show');MoveObject('LayerSloiYA',0,150);Animate('wb_ImagePodBukvoi', '307', '558', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelka_YUL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+<div id="LayerStrelka_YUP" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:475;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiYU').modal('hide');$('#LayerSloi_3').modal('show');MoveObject('LayerSloi_3',0,150);Animate('wb_ImagePodBukvoi', '49', '558', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelka_YUP_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisYU" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:477;">
+<img src="images/RisUY.png" id="ImageRisYU" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageUys" style="position:absolute;left:73px;top:334px;width:124px;height:49px;z-index:478;">
+<img src="images/Uys.svg" id="ImageUys" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikYU" style="position:absolute;left:121px;top:111px;width:50px;height:45px;z-index:480;">
+<img src="images/dinamik.jpg" id="ImageDinamikYU" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerYU;
+function TimerStartTimerYU()
+{
+   wb_TimerYU = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikYU','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerYU()
+{
+   clearTimeout(wb_TimerYU);
+}
+</script>
+
+<div id="wb_MediaPlayerYU" style="position:absolute;left:159px;top:196px;width:101px;height:95px;z-index:482;">
+<audio src="musik/YU.mp3" id="MediaPlayerYU" preload="auto">
+</audio>
+</div>
+<div id="LayerDinYU" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:483;cursor: pointer" onclick="SetImage('ImageDinamikYU','images/dinamik.gif');TimerStartTimerYU();PlayAudio('MediaPlayerYU');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="LayerSloiYA" class="modal" role="dialog" style="text-align:left;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_ImageBurvaYA" style="position:absolute;left:61px;top:24px;width:149px;height:74px;z-index:484;">
+<img src="images/BurvaYA.svg" id="ImageBurvaYA" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="LayerStrelka_YAL" style="position:absolute;text-align:center;left:2px;top:382px;width:16px;height:20px;z-index:485;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="$('#LayerSloiYA').modal('hide');$('#LayerSloiYU').modal('show');MoveObject('LayerSloiYU',0,150);Animate('wb_ImagePodBukvoi', '182', '558', '100', '100', '35', 500, '0');return false;">
+<div id="LayerStrelka_YAL_Container" style="width:16px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+
+<div id="wb_ImageRisYA" style="position:absolute;left:58px;top:155px;width:155px;height:155px;z-index:487;">
+<img src="images/RisYA.png" id="ImageRisYA" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<div id="wb_ImageYagmuly" style="position:absolute;left:31px;top:334px;width:208px;height:48px;z-index:488;">
+<img src="images/Yagmuly.svg" id="ImageYagmuly" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+
+<div id="wb_ImageDinamikYA" style="position:absolute;left:121px;top:111px;width:50px;height:45px;z-index:490;">
+<img src="images/dinamik.jpg" id="ImageDinamikYA" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; outline: none;"></div>
+<script>
+var wb_TimerYA;
+function TimerStartTimerYA()
+{
+   wb_TimerYA = setTimeout(function()
+   {
+      var event = null;
+      SetImage('ImageDinamikYA','images/dinamik.jpg');
+   }, 2500);
+}
+function TimerStopTimerYA()
+{
+   clearTimeout(wb_TimerYA);
+}
+</script>
+
+<div id="wb_MediaPlayerYA" style="position:absolute;left:162px;top:199px;width:101px;height:95px;z-index:492;">
+<audio src="musik/YA.mp3" id="MediaPlayerYA" preload="auto">
+</audio>
+</div>
+<div id="LayerDinYA" style="position:absolute;text-align:left;left:123px;top:120px;width:19px;height:27px;z-index:493;cursor: pointer" onclick="SetImage('ImageDinamikYA','images/dinamik.gif');TimerStartTimerYA();PlayAudio('MediaPlayerYA');return false;">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
