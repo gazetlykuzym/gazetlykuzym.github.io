@@ -1,0 +1,461 @@
+div#container
+{
+   width: 997px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+#TenSledRUSstr3
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledRUS.svg);
+   background-repeat: repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.00;
+}
+#FonovyiSloy3
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerLapaUdm3
+{
+   background-color: transparent;
+   background-image: url(../images/UDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerLapaRus3
+{
+   background-color: transparent;
+   background-image: url(../images/RUS.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#ImageRamkaFon3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerKrest3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#ImageRUSzagadki
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageUDMzagadki
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Layer3Shtrih
+{
+   background-color: #FBFBFB;
+   background-image: none;
+}
+#ImagekotStr3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImagekotStr3RUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TenSledUDMstr3
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledUDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerKnopka4Str3
+{
+   background-color: transparent;
+   background-image: url(../images/4Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka3Str3
+{
+   background-color: transparent;
+   background-image: url(../images/3NKnopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka2Str3
+{
+   background-color: transparent;
+   background-image: url(../images/2Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka1Str3
+{
+   background-color: transparent;
+   background-image: url(../images/1Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerOtvetLisa
+{
+   background-color: transparent;
+   background-image: url(../images/Lisa.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerOtvetEzh
+{
+   background-color: transparent;
+   background-image: url(../images/Ezh.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerOtvetZayac
+{
+   background-color: transparent;
+   background-image: url(../images/Zayac.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerOtvetSova
+{
+   background-color: transparent;
+   background-image: url(../images/Sova.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#ImageOtvetRUS_1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetUDM_1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetRUS_2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetRUS_4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetRUS_3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetUDM_2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetUDM_4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetUDM_3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageEzhik
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageLisa
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageSova
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageZayac
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImagezagadkaUDMStr3_1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImagezagadkaUDMStr3_2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImagezagadkaUDMStr3_3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImagezagadkaUDMStr3_4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageZagadkaRUSStr3_1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageZagadkaRUSStr3_2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageZagadkaRUSStr3_3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageZagadkaRUSStr3_4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetTextEzhRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetTextEzhUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetTextLisaRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetTextLisaUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetTextSovaRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetTextSovaUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetTextZayacRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOtvetTextZayacUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}

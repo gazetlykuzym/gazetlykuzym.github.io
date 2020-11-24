@@ -1,0 +1,8084 @@
+div#container
+{
+   width: 997px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+#ImageTextRus2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageTextUdm2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Layer2Shtrih
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#ImageudmalfRus
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageGlazZakryt
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageRazgovor2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageKot2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#FonovyiSloy2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#ImageRamkaFon2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Imageudmalf
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerKrest2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#ImageBukvy
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerA
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#ImagePodBukvoi
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerB
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerV
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerG
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerD
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerD2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerE
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerE2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerE3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerZH
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerZH2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerZH3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerZ
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerZ2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerZ3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerI
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerI2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerI3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerII
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerII2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerK
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerL
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerM
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerN
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerO
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerO2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerO3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerP
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerR
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerS
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerT
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerU
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerF
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerH
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerС
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerС2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerCH
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerCH2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerCH3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerSH
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerSHCH
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerSHCH2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#Layer_0
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#Layer_2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#Layer_3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#Layer_4
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerYU
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerYA
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerLapaUdm2
+{
+   background-color: transparent;
+   background-image: url(../images/UDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerLapaRus2
+{
+   background-color: transparent;
+   background-image: url(../images/RUS.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerSloiA .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiA.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiA .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiA .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiA .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiA .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiA .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiA .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiA .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiA .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiA .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#LayerSloiB .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiB.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiB .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiB .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiB .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiB .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiB .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiB .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiB .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiB .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiB .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaB
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiV .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiV.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiV .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiV .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiV .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiV .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiV .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiV .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiV .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiV .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiV .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaV
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiG .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiG.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiG .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiG .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiG .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiG .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiG .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiG .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiG .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiG .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiG .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaG
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiD .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiD.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiD .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiD .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiD .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiD .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiD .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiD .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiD .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiD .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiD .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaD
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiE .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiE.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiE .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiE .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiE .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiE .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiE .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiE .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiE .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiE .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiE .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaE
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiE2 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiE2.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiE2 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiE2 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiE2 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiE2 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiE2 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiE2 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiE2 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiE2 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiE2 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaE2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiZH .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiZH.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiZH .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiZH .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiZH .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiZH .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiZH .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiZH .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiZH .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiZH .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiZH .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaZH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiZH2 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiZH2.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiZH2 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiZH2 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiZH2 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiZH2 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiZH2 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiZH2 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiZH2 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiZH2 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiZH2 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaZH2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiZ .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiZ.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiZ .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiZ .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiZ .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiZ .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiZ .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiZ .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiZ .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiZ .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiZ .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaZ
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiZ2 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiZ2.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiZ2 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiZ2 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiZ2 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiZ2 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiZ2 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiZ2 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiZ2 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiZ2 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiZ2 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaZ2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiI .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiI.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiI .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiI .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiI .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiI .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiI .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiI .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiI .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiI .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiI .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaI
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiI2 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiI2.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiI2 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiI2 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiI2 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiI2 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiI2 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiI2 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiI2 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiI2 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiI2 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaI2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiI3 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiI3.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiI3 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiI3 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiI3 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiI3 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiI3 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiI3 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiI3 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiI3 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiI3 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaI3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiK .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiK.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiK .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiK .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiK .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiK .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiK .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiK .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiK .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiK .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiK .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaK
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiL .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiL.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiL .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiL .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiL .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiL .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiL .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiL .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiL .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiL .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiL .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaL
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiM .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiM.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiM .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiM .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiM .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiM .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiM .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiM .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiM .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiM .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiM .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiN .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiN.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiN .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiN .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiN .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiN .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiN .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiN .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiN .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiN .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiN .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaN
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiO .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiO.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiO .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiO .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiO .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiO .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiO .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiO .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiO .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiO .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiO .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaO
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiO2 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiO2.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiO2 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiO2 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiO2 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiO2 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiO2 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiO2 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiO2 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiO2 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiO2 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaO2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiP .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiP.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiP .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiP .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiP .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiP .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiP .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiP .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiP .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiP .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiP .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaP
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiR .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiR.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiR .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiR .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiR .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiR .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiR .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiR .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiR .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiR .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiR .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaR
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiS .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiS.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiS .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiS .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiS .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiS .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiS .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiS .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiS .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiS .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiS .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiT .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiT.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiT .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiT .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiT .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiT .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiT .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiT .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiT .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiT .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiT .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaT
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiU .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiU.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiU .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiU .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiU .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiU .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiU .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiU .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiU .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiU .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiU .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaU
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiF .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiF.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiF .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiF .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiF .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiF .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiF .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiF .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiF .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiF .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiF .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaF
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiH .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiH.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiH .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiH .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiH .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiH .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiH .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiH .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiH .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiH .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiH .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiC .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiC.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiC .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiC .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiC .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiC .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiC .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiC .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiC .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiC .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiC .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaC
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiCH .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiCH.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiCH .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiCH .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiCH .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiCH .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiCH .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiCH .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiCH .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiCH .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiCH .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaCH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiCH2 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiCH2.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiCH2 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiCH2 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiCH2 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiCH2 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiCH2 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiCH2 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiCH2 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiCH2 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiCH2 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaCH2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiSH .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiSH.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiSH .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiSH .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiSH .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiSH .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiSH .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiSH .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiSH .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiSH .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiSH .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaSH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiSHCH .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiSHCH.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiSHCH .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiSHCH .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiSHCH .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiSHCH .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiSHCH .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiSHCH .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiSHCH .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiSHCH .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiSHCH .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaSHCH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloi_0 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloi_0.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloi_0 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloi_0 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloi_0 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloi_0 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloi_0 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloi_0 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloi_0 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloi_0 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloi_0 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurva_0
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloi_1 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloi_1.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloi_1 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloi_1 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloi_1 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloi_1 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloi_1 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloi_1 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloi_1 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloi_1 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloi_1 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurva_1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloi_2 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloi_2.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloi_2 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloi_2 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloi_2 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloi_2 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloi_2 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloi_2 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloi_2 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloi_2 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloi_2 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurva_2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloi_3 .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloi_3.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloi_3 .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloi_3 .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloi_3 .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloi_3 .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloi_3 .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloi_3 .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloi_3 .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloi_3 .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloi_3 .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurva_3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiYU .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiYU.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiYU .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiYU .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiYU .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiYU .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiYU .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiYU .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiYU .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiYU .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiYU .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaYU
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerSloiYA .modal-content
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid transparent;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+#LayerSloiYA.modal
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1050;
+   display: none;
+   overflow: hidden;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+#LayerSloiYA .modal-open .modal
+{
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+#LayerSloiYA .modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiYA .modal-dialog
+{
+   position: relative;
+   width: 273px;
+   margin: 30px auto;
+}
+#LayerSloiYA .modal-content
+{
+   position: relative;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   outline: 0;
+}
+#LayerSloiYA .modal-header
+{
+   min-height: 16px;
+   padding: 15px 15px 15px 15px;
+   border-bottom: 1px solid #CCCCCC;
+}
+#LayerSloiYA .modal-footer
+{
+   padding: 15px 15px 15px 15px;
+   border-top: 1px solid #CCCCCC;
+}
+#LayerSloiYA .modal-body
+{
+   position: relative;
+   width: 273px;
+   height: 406px;
+}
+#LayerSloiYA .close
+{
+   float: right;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   color: #CCCCCC;
+   text-shadow: 0px 1px 0px #fff;
+   opacity: 0.5;
+   -webkit-appearance: none;
+   padding: 15px 15px 0px 0px;
+   cursor: pointer;
+   background: 0 0;
+   border: 0;
+   margin-top: -2px;
+}
+.modal-backdrop
+{
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 1040;
+   background-color: #000;
+}
+.modal-backdrop.fade
+{
+   opacity: 0;
+   -webkit-transition: opacity .15s linear;
+   transition: opacity .15s linear;
+}
+.modal-backdrop.in
+{
+   opacity: 0.5;
+}
+.modal-open
+{
+   overflow: hidden;
+}
+#LayerSloiYA .modal-title
+{
+   color: #CCCCCC;
+   font-size: 16px;
+   font-weight: 500;
+   margin: 0;
+}
+#ImageBurvaYA
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageBurvaA
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipZH3
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipI4
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageRisZH2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerBurvaZH3
+{
+   background-color: transparent;
+   background-image: url(../images/BurvaZH3.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#ImageZhok
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageZolgeri
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerStrelkaZ2R
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaZ2L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaZH2L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaZH2R
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+.ToolTipZH3_2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#LayerStrelkaAR
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaBL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaBR
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaVP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaVL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaGP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaGL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaDP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaDL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaEP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaEL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaE2P
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaE2L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaZHP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaZHL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaZP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaZL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaIL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaIP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaI2P
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaI2L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaI3L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaI3P
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaKL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaKP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaLL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaLP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaML
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaMP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaNL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaNP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaOP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaOL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaO2P
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaO2L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaPP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaPL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaRP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaRL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaSP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaSL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaTL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaTP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaUP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaUL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaFP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaFL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaHP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaHL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaCL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaCP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaCHP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaCHL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaCH2L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaCH2P
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaSHP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaSHL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaSHCHL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelkaSHCHP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_0L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_0P
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_1P
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_1L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_2P
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_2L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_3P
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_3L
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_YUL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strR.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_YUP
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerStrelka_YAL
+{
+   background-color: transparent;
+   background-image: url(../images/Strelka2strL.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.70;
+}
+#LayerBurvaO3
+{
+   background-color: transparent;
+   background-image: url(../images/BurvaO3.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+.ToolTipO3_2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipO3
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#LayerBurvaZ3
+{
+   background-color: transparent;
+   background-image: url(../images/BurvaZ3.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+.ToolTipZ3_2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipZ3
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#LayerBurvaI4
+{
+   background-color: transparent;
+   background-image: url(../images/BurvaI4.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerBurvaCH3
+{
+   background-color: transparent;
+   background-image: url(../images/BurvaCH3.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+.ToolTipCH3_2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipCH3
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageRisA
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipA
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageAtas
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipB
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageRisB
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageBochi
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipV
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageRisV
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageVuyis
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipG
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageRisG
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageGondyr
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipD
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageRisD
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDukya
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipE
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageRisE
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageE
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipE3
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#Image3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageElka
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipZH
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageZhiraf
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipZ
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisZ
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageZangari
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipI
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageRisI
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageIzi
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipI3
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisI2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageTir
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageIol
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipI6
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisI3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipK
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisK
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageKocho
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipL
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisL
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageLud
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipM
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageMune
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipN
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisN
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageNyan
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOgrech
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageRisO
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipO
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisO2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageOrzi
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipP
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageRisP
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImagePuny
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipR
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisR
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageRoza
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipS
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageSugon
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipT
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisT
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageTubat
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageUlmo
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipU
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisU
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipF
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisF
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageFlag
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipH
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageHalat
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipC
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisС
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageCirk
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipCH
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisСH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageChipei
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageRisСH2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageChozh
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipSH
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisSH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageShushy
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipSHCH
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisSHCH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageShchetka
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTip_0
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRis_0
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageChushyial
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTip_1
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRis_1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageYzh
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTip_2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRis_2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageSiz
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTip_3
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRis_3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageEmez
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipYU
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisYU
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageUys
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipYA
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: center;
+}
+#ImageRisYA
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageYagmuly
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TenSledRUSstr2
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledRUS.svg);
+   background-repeat: repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.00;
+}
+#TenSledUDMstr2
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledUDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerKnopka1Str2
+{
+   background-color: transparent;
+   background-image: url(../images/1Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka2Str2
+{
+   background-color: transparent;
+   background-image: url(../images/2NKnopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka3Str2
+{
+   background-color: transparent;
+   background-image: url(../images/3Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka4Str2
+{
+   background-color: transparent;
+   background-image: url(../images/4Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#MediaPlayerA
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+.ToolTipA2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipB2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipV2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipG2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipD2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipE2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipE4
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipZH2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipZH4
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipZ2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipZ4
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipI2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipI5
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipI7
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipK2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipL2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipM2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipN2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipO2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipO4
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipP2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipR2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipS2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipT2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipU2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipF2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipH2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipC2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipCH2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipCH4
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipSH2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipSHCH2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTip_02
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTip_12
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTip_22
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTip_32
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipYU2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+.ToolTipYA2
+{
+   background-image: none;
+   background-color: #FFFFFF;
+   border: 1px #CCCCCC solid !important;
+   border-radius: 0px;
+   padding: 4px 4px 4px 4px;
+   box-shadow: none;
+   text-align: left;
+}
+#ImageDinamikA
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikB
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerB
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikV
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerV
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerG
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikG
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerD
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikD
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerE
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikE
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikE2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerE2
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerZH
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikZH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikZH2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerZH2
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikZ
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerZ
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerZ2
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikZ2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikI
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerI
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikI2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerI2
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerI3
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikI3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikK
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerK
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikL
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerL
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerM
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikN
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerN
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikO
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerO
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikO2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerO2
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikP
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerP
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikR
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerR
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerS
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikT
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerT
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikU
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerU
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikF
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerF
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerH
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikC
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerC
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikCH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerCH
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikCH2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerCH2
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikSH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerSH
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikSHCH
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerSHCH
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamik_0
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayer_0
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamik_1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayer_1
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamik_2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayer_2
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamik_3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayer_3
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikYU
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerYU
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageDinamikYA
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#MediaPlayerYA
+{
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerDinA
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinB
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinV
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinG
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinD
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinE
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinE2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinZH
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinZH2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinZ
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinZ2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinI
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinI2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinI3
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinK
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinL
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinM
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinN
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinO
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinO2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinP
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinR
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinS
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinT
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinU
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinF
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinH
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinC
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinCH
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinCH2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinSH
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinSHCH
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDin_0
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDin_1
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDin_2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDin_3
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinYU
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerDinYA
+{
+   background-color: transparent;
+   background-image: none;
+}

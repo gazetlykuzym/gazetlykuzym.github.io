@@ -1,3 +1,8 @@
+@font-face
+{
+   font-family: "Arial Udm";
+   src: url('../text/arial_udm.ttf') format('truetype');
+}
 @-webkit-keyframes transform-wobble-top
 {
    0% { -webkit-transform-origin: 0 100%; -webkit-transform: rotate(0deg) ;  }
