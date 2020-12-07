@@ -1,0 +1,3 @@
+User-agent: *
+Host: https://gazetlykuzym.github.io
+Sitemap: https://gazetlykuzym.github.io/sitemap.xml
