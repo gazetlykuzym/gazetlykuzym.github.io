@@ -13,37 +13,7 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>https://gazetlykuzym.github.io/igra.html</loc>
-		<lastmod>2020-12-04</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://gazetlykuzym.github.io/madiskonyos.html</loc>
-		<lastmod>2020-12-04</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://gazetlykuzym.github.io/zhogen.html</loc>
-		<lastmod>2020-12-04</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
 		<loc>https://gazetlykuzym.github.io/alfavit.html</loc>
-		<lastmod>2020-12-04</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://gazetlykuzym.github.io/politica.html</loc>
-		<lastmod>2020-12-03</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.5</priority>
-	</url>
-	<url>
-		<loc>https://gazetlykuzym.github.io/Arhiv.html</loc>
 		<lastmod>2020-12-04</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
