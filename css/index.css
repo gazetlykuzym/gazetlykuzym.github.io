@@ -47,7 +47,7 @@ body
    background-color: transparent;
    background-image: none;
 }
-#ImageRamkaFon
+#ImageRamkaFonIndex
 {
    border: 0px solid #000000;
    padding: 0;
@@ -280,7 +280,7 @@ body
    background-position: center center;
    background-size: cover;
 }
-#LayerKnopka1Str1
+#LayerKnopka1Strindex
 {
    background-color: transparent;
    background-image: url(../images/1NKnopka.svg);
@@ -321,7 +321,7 @@ body
    background-color: #FFFFFF;
    background-image: none;
 }
-#TenSledUDMstr1
+#TenSledUDMstrindex
 {
    background-color: transparent;
    background-image: url(../images/TenSledUDM.svg);
@@ -329,7 +329,7 @@ body
    background-position: center center;
    background-size: cover;
 }
-#TenSledRUSstr1
+#TenSledRUSstrindex
 {
    background-color: transparent;
    background-image: url(../images/TenSledRUS.svg);
@@ -338,7 +338,7 @@ body
    background-size: cover;
    opacity: 0.00;
 }
-#LayerKnopka2Str1
+#LayerKnopka2Strindex
 {
    background-color: transparent;
    background-image: url(../images/2Knopka.svg);
@@ -346,7 +346,7 @@ body
    background-position: center center;
    background-size: contain;
 }
-#LayerKnopka3Str1
+#LayerKnopka3Strindex
 {
    background-color: transparent;
    background-image: url(../images/3Knopka.svg);
@@ -354,7 +354,7 @@ body
    background-position: center center;
    background-size: contain;
 }
-#LayerKnopka4Str1
+#LayerKnopka4Strindex
 {
    background-color: transparent;
    background-image: url(../images/4Knopka.svg);
@@ -362,15 +362,7 @@ body
    background-position: center center;
    background-size: contain;
 }
-#LayerKnopka5Str1
-{
-   background-color: transparent;
-   background-image: url(../images/5Knopka.svg);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-size: contain;
-}
-#LayerInformaciya .modal-content
+#LayerInformaciya
 {
    background-color: transparent;
    background-image: url(../images/Infofon.png);
@@ -381,104 +373,16 @@ body
    border-radius: 6px;
    overflow: visible;
 }
-#LayerInformaciya.modal
+.ui-dialog
 {
-   position: fixed;
-   top: 0px;
-   right: 0px;
-   bottom: 0px;
-   left: 0px;
-   z-index: 1050;
-   display: none;
-   overflow: hidden;
-   -webkit-overflow-scrolling: touch;
-   outline: 0;
+   border-width: 0;
+   padding: 0;
+   overflow: visible;
 }
-#LayerInformaciya .modal-open .modal
+.ui-widget-content
 {
-   overflow-x: hidden;
-   overflow-y: auto;
-}
-#LayerInformaciya .modal-open
-{
-   overflow: hidden;
-}
-#LayerInformaciya .modal-dialog
-{
-   position: relative;
-   width: 540px;
-   margin: 30px auto;
-}
-#LayerInformaciya .modal-content
-{
-   position: relative;
-   -webkit-background-clip: padding-box;
-   background-clip: padding-box;
-   outline: 0;
-}
-#LayerInformaciya .modal-header
-{
-   min-height: 16px;
-   padding: 15px 15px 15px 15px;
-   border-bottom: 1px solid #CCCCCC;
-}
-#LayerInformaciya .modal-footer
-{
-   padding: 15px 15px 15px 15px;
-   border-top: 1px solid #CCCCCC;
-}
-#LayerInformaciya .modal-body
-{
-   position: relative;
-   width: 540px;
-   height: 500px;
-}
-#LayerInformaciya .close
-{
-   float: right;
-   font-size: 21px;
-   font-weight: 700;
-   line-height: 1;
-   color: #CCCCCC;
-   text-shadow: 0px 1px 0px #fff;
-   opacity: 0.5;
-   -webkit-appearance: none;
-   padding: 15px 15px 0px 0px;
-   cursor: pointer;
-   background: 0 0;
-   border: 0;
-   margin-top: -2px;
-}
-.modal-backdrop
-{
-   position: fixed;
-   top: 0px;
-   right: 0px;
-   bottom: 0px;
-   left: 0px;
-   z-index: 1040;
-   background-color: #000;
-}
-.modal-backdrop.fade
-{
-   opacity: 0;
-   -webkit-transition: opacity .15s linear;
-   transition: opacity .15s linear;
-}
-.modal-backdrop.in
-{
-   opacity: 0.5;
-}
-.modal-open
-{
-   overflow: hidden;
-}
-#LayerInformaciya .modal-title
-{
-   color: #CCCCCC;
-   font-size: 16px;
-   font-weight: 500;
-   margin: 0;
+   border-width: 0;
+   padding: 0;
 }
 #ShapeInfoPolitika
 {
@@ -499,6 +403,213 @@ body
 #ShapeInfoOD
 {
    border-width: 0;
+}
+#LayerZakrytInfo
+{
+   background-color: transparent;
+   background-image: url(../images/KnopkaInfoZakryt.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#Layer1KnopkaAlfavit
+{
+   background-color: transparent;
+   background-image: url(../images/KnopkaAlfavit.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopkaInfoUDM
+{
+   background-color: transparent;
+   background-image: url(../images/KnopkaInfoUDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopkaInfoRUS
+{
+   background-color: transparent;
+   background-image: url(../images/KnopkaInfoRUS.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopkaArhiv
+{
+   background-color: transparent;
+   background-image: url(../images/KnopkaArhiv.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#ThemeableButtonKarta
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+}
+#ThemeableButtonKarta .ui-button
+{
+   position: absolute;
+   padding: 0;
+}
+#ThemeableButtonKarta.ui-corner-all
+{
+   border-bottom-left-radius: 5px;
+   border-top-left-radius: 5px;
+}
+#ThemeableButtonKarta.ui-corner-all
+{
+   border-bottom-right-radius: 5px;
+   border-top-right-radius: 5px;
+}
+#ThemeableButtonKarta.ui-button
+{
+   background-color: #BAC245;
+   background-image: none;
+   border: 0px solid #C5C5C5;
+   color: #FFFFFF;
+}
+#ThemeableButtonKarta.ui-state-hover, #ThemeableButtonKarta.ui-button:hover
+{
+   border-color: #CCCCCC;
+   background-color: #FF9933;
+   background-image: none;
+   color: #FFFFFF;
+}
+#ThemeableButtonKarta.ui-state-active, #ThemeableButtonKarta.ui-button:active
+{
+   border-color: #2E6DA4;
+   background-color: #BAC245;
+   background-image: none;
+   color: #FFFFFF;
+}
+#ThemeableButtonKarta.ui-button .ui-icon
+{
+   background-image: url(images/index-ThemeableButtonKarta-default.png);
+   background-position: 0 0;
+}
+#ThemeableButtonKarta.ui-button:hover .ui-icon
+{
+   background-image: url(images/index-ThemeableButtonKarta-hover.png);
+   background-position: 0 0;
+}
+#ThemeableButtonKarta.ui-button:active .ui-icon
+{
+   background-image: url(images/index-ThemeableButtonKarta-active.png);
+   background-position: 0 0;
+}
+#ThemeableButtonKarta.ui-visual-focus
+{
+   box-shadow: none;
+}
+#LayerKarta1Str
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid #CCCCCC;
+   border-radius: 6px;
+   box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   overflow: visible;
+}
+.ui-dialog
+{
+   border-width: 0;
+   padding: 0;
+   overflow: visible;
+}
+.ui-widget-content
+{
+   border-width: 0;
+   padding: 0;
+}
+#ThemeableButtonZakrytKarta
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   font-style: normal;
+   margin: 0;
+}
+#ThemeableButtonZakrytKarta .ui-button
+{
+   position: absolute;
+   padding: 0;
+}
+#ThemeableButtonZakrytKarta.ui-corner-all
+{
+   border-bottom-left-radius: 5px;
+   border-top-left-radius: 5px;
+}
+#ThemeableButtonZakrytKarta.ui-corner-all
+{
+   border-bottom-right-radius: 5px;
+   border-top-right-radius: 5px;
+}
+#ThemeableButtonZakrytKarta.ui-button
+{
+   background-color: #BAC245;
+   background-image: none;
+   border: 0px solid #C5C5C5;
+   color: #FFFFFF;
+}
+#ThemeableButtonZakrytKarta.ui-state-hover, #ThemeableButtonZakrytKarta.ui-button:hover
+{
+   border-color: #CCCCCC;
+   background-color: #FF9933;
+   background-image: none;
+   color: #FFFFFF;
+}
+#ThemeableButtonZakrytKarta.ui-state-active, #ThemeableButtonZakrytKarta.ui-button:active
+{
+   border-color: #2E6DA4;
+   background-color: #BAC245;
+   background-image: none;
+   color: #FFFFFF;
+}
+#ThemeableButtonZakrytKarta.ui-button .ui-icon
+{
+   background-image: url(images/index-ThemeableButtonZakrytKarta-default.png);
+   background-position: 0 0;
+}
+#ThemeableButtonZakrytKarta.ui-button:hover .ui-icon
+{
+   background-image: url(images/index-ThemeableButtonZakrytKarta-hover.png);
+   background-position: 0 0;
+}
+#ThemeableButtonZakrytKarta.ui-button:active .ui-icon
+{
+   background-image: url(images/index-ThemeableButtonZakrytKarta-active.png);
+   background-position: 0 0;
+}
+#ThemeableButtonZakrytKarta.ui-visual-focus
+{
+   box-shadow: none;
+}
+#snow-start{
+background: rgba(27, 25, 25, 0.4);
+color: #fff;
+display: inline-block;
+width: 100px;
+text-align: center;
+cursor: pointer;
+line-height: 25px;
+position: fixed;
+right: 0px;
+top: 0px;
+border-radius: 0px 0px 0px 9px;
+}
+#copy{
+color: rgba(20, 16, 16, 0);
+font-size: 7px;
+position: fixed;
+text-decoration: none;
+top: 24px;
+right: 2px;
 }
 input {
 	width: 150px;
