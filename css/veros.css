@@ -1,0 +1,474 @@
+div#container
+{
+   width: 997px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+#LayerSkryt
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   opacity: 0.00;
+}
+#TenSledRUSstrmadiskonyos
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledRUS.svg);
+   background-repeat: repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.00;
+}
+#FonovyiSloy4
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerLapaUdmmadiskonyos
+{
+   background-color: transparent;
+   background-image: url(../images/UDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerLapaRusmadiskonyos
+{
+   background-color: transparent;
+   background-image: url(../images/RUS.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#ImageRamkaFonmadiskonyos
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerKrest3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#ImageRUSrasskaz
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageUDMrasskaz
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TenSledUDMstrmadiskonyos
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledUDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerKnopka4Strmadiskonyos
+{
+   background-color: transparent;
+   background-image: url(../images/4NKnopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka3Strmadiskonyos
+{
+   background-color: transparent;
+   background-image: url(../images/3Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka2Strmadiskonyos
+{
+   background-color: transparent;
+   background-image: url(../images/2Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka1Strmadiskonyos
+{
+   background-color: transparent;
+   background-image: url(../images/1Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#Layer3KnopkaAlfavit
+{
+   background-color: transparent;
+   background-image: url(../images/KnopkaAlfavit.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#ImageIkonkaZima
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageIkonkaVesna
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageIkonkaLeto
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageIkonkaOsen
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#NazvanieStihaUUdm
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TexstRasskazUdmZima
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TexstRasskazUdmOsen
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TexstRasskazRusVesna
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TexstRasskazUdmLeto
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TexstRasskazUdmVesna
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaLetoUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaOsenUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaVesnaUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaZimaUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaLetoRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaOsenRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaVesnaRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaZimaRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#NIkonkaZima
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaVesna
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaVesna2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaLeto
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaLeto2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaLeto3
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaLeto4
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaLeto5
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaZima2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaZima3
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaZima4
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaZima5
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaVesna3
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaOsen
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaOsen2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaOsen3
+{
+   background-color: transparent;
+   background-image: none;
+}
+#NIkonkaOsen4
+{
+   background-color: transparent;
+   background-image: none;
+}
+#KuzebaiGerd
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#NazvanieStihaURus
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TexstRasskazRusZima
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TexstRasskazRusLeto
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TexstRasskazRusOsen
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#snow-start{
+background: rgba(27, 25, 25, 0.4);
+color: #fff;
+display: inline-block;
+width: 100px;
+text-align: center;
+cursor: pointer;
+line-height: 25px;
+position: fixed;
+right: 0px;
+top: 0px;
+border-radius: 0px 0px 0px 9px;
+}
+#copy{
+color: rgba(20, 16, 16, 0);
+font-size: 7px;
+position: fixed;
+text-decoration: none;
+top: 24px;
+right: 2px;
+}
