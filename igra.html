@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta charset="utf-8">
+<title>Шудон</title>
+<link href="ico120.svg" rel="shortcut icon" type="image/x-icon">
+<link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
+<link href="css/SaytKot2.css" rel="stylesheet">
+<link href="css/igra.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/GBS.rotate.min.js"></script>
+<script src="js/GBS.min.js"></script>
+</head>
+<body>
+<div id="container">
+<div id="FonovyiSloy2" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:59;">
+<div id="wb_ImageRamkaFonIgra" style="position:absolute;left:0px;top:10px;width:970px;height:684px;z-index:0;">
+<img src="images/kontur4.png" id="ImageRamkaFonIgra" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_PodskazkaPRUS" style="position:absolute;left:703px;top:332px;width:228px;height:40px;visibility:hidden;text-align:center;z-index:1;">
+<span style="color:#B8860B;font-family:'MS Shell Dlg';font-size:16px;"><strong>Выбери сначала слово,<br>а затем картинку</strong></span></div>
+<div id="wb_PodskazkaMRUS" style="position:absolute;left:486px;top:332px;width:228px;height:40px;visibility:hidden;text-align:center;z-index:2;">
+<span style="color:#B8860B;font-family:'MS Shell Dlg';font-size:16px;"><strong>Выбери сначала слово,<br>а затем картинку</strong></span></div>
+<div id="wb_PodskazkaZHRUS" style="position:absolute;left:257px;top:332px;width:228px;height:40px;visibility:hidden;text-align:center;z-index:3;">
+<span style="color:#B8860B;font-family:'MS Shell Dlg';font-size:16px;"><strong>Выбери сначала слово,<br>а затем картинку</strong></span></div>
+<div id="wb_PodskazkaBRUS" style="position:absolute;left:38px;top:332px;width:228px;height:40px;visibility:hidden;text-align:center;z-index:4;">
+<span style="color:#B8860B;font-family:'MS Shell Dlg';font-size:16px;"><strong>Выбери сначала слово,<br>а затем картинку</strong></span></div>
+<div id="wb_PodskazkaPUDM" style="position:absolute;left:711px;top:332px;width:228px;height:40px;visibility:hidden;text-align:center;z-index:5;">
+<span style="color:#B8860B;font-family:'MS Shell Dlg';font-size:16px;"><strong>Азьло кылэз бырйы,<br>нош собере суредэз</strong></span></div>
+<div id="wb_PodskazkaMUDM" style="position:absolute;left:484px;top:332px;width:228px;height:40px;visibility:hidden;text-align:center;z-index:6;">
+<span style="color:#B8860B;font-family:'MS Shell Dlg';font-size:16px;"><strong>Азьло кылэз бырйы,<br>нош собере суредэз</strong></span></div>
+<div id="wb_PodskazkaZHUDM" style="position:absolute;left:259px;top:332px;width:228px;height:40px;visibility:hidden;text-align:center;z-index:7;">
+<span style="color:#B8860B;font-family:'MS Shell Dlg';font-size:16px;"><strong>Азьло кылэз бырйы,<br>нош собере суредэз</strong></span></div>
+<div id="wb_PodskazkaBUDM" style="position:absolute;left:28px;top:332px;width:228px;height:40px;visibility:hidden;text-align:center;z-index:8;">
+<span style="color:#B8860B;font-family:'MS Shell Dlg';font-size:16px;"><strong>Азьло кылэз бырйы,<br>нош собере суредэз</strong></span></div>
+<div id="wb_ImageFonTextaM" style="position:absolute;left:34px;top:257px;width:901px;height:370px;z-index:9;">
+<img src="images/FonTexta.svg" id="ImageFonTextaM" alt=""></div>
+<!-- Sneg -->
+<div id="HtmlSneg2" style="position:absolute;left:837px;top:117px;width:86px;height:114px;overflow:hidden;z-index:10">
+<div onclick="stopsnow()" id="snow-start"></div>
+<script> 
+  var snowsrc="https://gazetlykuzym.github.io/sneg.png";
+  var no = 20; 
+  var log = 0;
+  var hidesnowtime = 0;
+  var snowdistance = "windowheight";
+
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+    function iecompattest(){
+    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+    }
+
+  var dx, xp, yp;    
+  var am, stx, sty;  
+  var i, doc_width = 800, doc_height = 600; 
+
+  if (ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = iecompattest().clientWidth;
+    doc_height = iecompattest().clientHeight;
+  }
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  snowsrc=(snowsrc.indexOf("")!= 1)? "https://gazetlykuzym.github.io/sneg.png" : snowsrc
+  for (i = 0; i < no; ++ i) {  
+    dx[i] = 0;                        
+    xp[i] = Math.random()*(doc_width-50); 
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;      
+    stx[i] = 0.02 + Math.random()/10;
+    sty[i] = 0.7 + Math.random();   
+        if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      } else {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      }
+    }
+  }
+
+  function snowIE_NS6() {  
+    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
+        doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+    for (i = 0; i < no; ++ i) { 
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+      }
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+    }
+    snowtimer=setTimeout("snowIE_NS6()", 10);
+  }
+
+    function hidesnow(){
+        if (window.snowtimer) clearTimeout(snowtimer)
+        for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
+    }
+
+if (ie4up||ns6up){
+    snowIE_NS6();
+        if (hidesnowtime>0)
+        setTimeout("hidesnow()", hidesnowtime*1000);
+        }
+ function stopsnow(){
+ if (log==0){
+  for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
+  no = 0;
+  log = 1;
+  document.getElementById('snow-start').innerHTML ='Вкл. снег';
+  }
+  else { log = 0; no = 20; for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="visible";
+ document.getElementById('snow-start').innerHTML ='';
+
+  }
+
+ }
+</script>
+<a id="copy" href=""></a>
+</div>
+<div id="TenSledRUSstrigra" style="position:absolute;text-align:left;left:178px;top:699px;width:115px;height:87px;z-index:11;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer">
+</div>
+<div id="TenSledUDMstrigra" style="position:absolute;text-align:left;left:47px;top:720px;width:115px;height:87px;z-index:12;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer">
+</div>
+<div id="LayerLapaUdmigra" style="position:absolute;text-align:left;left:44px;top:717px;width:115px;height:87px;z-index:13;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="SetImage('ImagePazl1','images/Pazl1UDM.svg');SetImage('ImagePazl2','images/Pazl2UDM.svg');SetImage('ImagePazl3','images/Pazl3UDM.svg');SetImage('ImagePazl4','images/Pazl4UDM.svg');Animate('wb_PodskazkaBRUS', '', '', '', '', '0', 0, '');Animate('wb_PodskazkaBUDM', '', '', '', '', '100', 0, '');Animate('wb_PodskazkaPRUS', '', '', '', '', '0', 0, '');Animate('wb_PodskazkaPUDM', '', '', '', '', '100', 0, '');Animate('wb_PodskazkaMRUS', '', '', '', '', '0', 0, '');Animate('wb_PodskazkaMUDM', '', '', '', '', '100', 0, '');Animate('wb_PodskazkaZHRUS', '', '', '', '', '0', 0, '');Animate('wb_PodskazkaZHUDM', '', '', '', '', '100', 0, '');Animate('TenSledUDMstrigra', '', '', '', '', '100', 300, '');Animate('TenSledRUSstrigra', '', '', '', '', '0', 300, '');Animate('wb_ImageKotIgraTextUdm', '', '', '', '', '100', 500, '');Animate('wb_ImageKotIgraTextRus', '', '', '', '', '0', 500, '');Animate('wb_ImageKotIgraTextRus', '', '', '', '', '0', 300, '');Animate('wb_ImageTextOpisanieUDM', '', '', '', '', '100', 300, '');Animate('wb_ImageTextOpisanieRUS', '', '', '', '', '0', 300, '');Animate('wb_ImageTextPlohoUDM', '', '', '', '', '100', 300, '');Animate('wb_ImageTextPlohoRUS', '', '', '', '', '0', 300, '');Animate('wb_ImageTextHoroshoRUS', '', '', '', '', '0', 300, '');Animate('wb_ImageTextHoroshoUDM', '', '', '', '', '100', 300, '');return false;">
+</div>
+<div id="LayerLapaRusigra" style="position:absolute;text-align:left;left:181px;top:702px;width:115px;height:87px;z-index:14;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="SetImage('ImagePazl1','images/Pazl1.svg');SetImage('ImagePazl2','images/Pazl2.svg');SetImage('ImagePazl3','images/Pazl3.svg');SetImage('ImagePazl4','images/Pazl4.svg');Animate('wb_PodskazkaBRUS', '', '', '', '', '100', 0, '');Animate('wb_PodskazkaBUDM', '', '', '', '', '0', 0, '');Animate('wb_PodskazkaPRUS', '', '', '', '', '100', 0, '');Animate('wb_PodskazkaPUDM', '', '', '', '', '0', 0, '');Animate('wb_PodskazkaMRUS', '', '', '', '', '100', 0, '');Animate('wb_PodskazkaMUDM', '', '', '', '', '0', 0, '');Animate('wb_PodskazkaZHRUS', '', '', '', '', '100', 0, '');Animate('wb_PodskazkaZHUDM', '', '', '', '', '0', 0, '');Animate('TenSledRUSstrigra', '', '', '', '', '100', 300, '');Animate('TenSledUDMstrigra', '', '', '', '', '0', 300, '');Animate('wb_ImageKotIgraTextRus', '', '', '', '', '100', 500, '');Animate('wb_ImageKotIgraTextUdm', '', '', '', '', '0', 500, '');Animate('wb_ImageTextOpisanieUDM', '', '', '', '', '0', 300, '');Animate('wb_ImageTextOpisanieRUS', '', '', '', '', '100', 300, '');Animate('wb_ImageTextPlohoRUS', '', '', '', '', '100', 300, '');Animate('wb_ImageTextPlohoUDM', '', '', '', '', '0', 300, '');Animate('wb_ImageTextHoroshoRUS', '', '', '', '', '100', 300, '');Animate('wb_ImageTextHoroshoUDM', '', '', '', '', '0', 300, '');return false;">
+</div>
+<div id="LayerKrest4" style="position:absolute;text-align:left;left:929px;top:24px;width:33px;height:32px;z-index:15;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
+</div>
+<div id="LayerKnopka4Strigra" style="position:absolute;text-align:left;left:870px;top:720px;width:95px;height:82px;z-index:16;" onclick="window.location.href='./veros.html';return false;">
+</div>
+<div id="LayerKnopka3Strigra" style="position:absolute;text-align:left;left:762px;top:722px;width:90px;height:78px;z-index:17;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./bukva.html';return false;">
+</div>
+<div id="LayerKnopka2Strigra" style="position:absolute;text-align:left;left:654px;top:722px;width:90px;height:78px;z-index:18;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer">
+</div>
+<div id="LayerKnopka1Strigra" style="position:absolute;text-align:left;left:544px;top:722px;width:90px;height:78px;z-index:19;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
+</div>
+<div id="Layer2KnopkaAlfavit" style="position:absolute;text-align:left;left:340px;top:731px;width:167px;height:58px;z-index:20;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./alfavit.html';return false;">
+</div>
+<div id="wb_LayerB" style="position:absolute;left:325px;top:289px;width:90px;height:26px;z-index:21;">
+<a href="#" onclick="ShowObject('wb_ImageTextOpisanieUDM', 0);ShowObject('wb_ImageTextOpisanieRUS', 0);ShowObject('wb_ImageKotIgraTextUdm', 1);ShowObject('wb_ImageKotIgraTextRus', 1);Animate('wb_PodskazkaBRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaBUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaPRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaPUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaMRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaMUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaZHRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaZHUDM', '-1500', '', '', '', '0', 0, '');SetImage('LayerM','images/Mune.svg');SetImage('LayerP','images/Puny.svg');SetImage('LayerZH','images/Zhok.svg');ShowObject('LayerB2P', 0);ShowObject('LayerM2H', 0);ShowObject('LayerZH2H', 0);ShowObject('LayerP2H', 0);ShowObject('LayerB2H', 1);ShowObject('LayerZH2P', 1);ShowObject('LayerM2P', 1);ShowObject('LayerP2P', 1);SetImage('LayerB','images/BochiIgra.svg');return false;"><img src="images/Bochi.svg" id="LayerB" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
+<div id="wb_LayerM" style="position:absolute;left:97px;top:289px;width:90px;height:34px;z-index:22;">
+<a href="#" onclick="ShowObject('wb_ImageTextOpisanieUDM', 0);ShowObject('wb_ImageTextOpisanieRUS', 0);ShowObject('wb_ImageKotIgraTextUdm', 1);ShowObject('wb_ImageKotIgraTextRus', 1);Animate('wb_PodskazkaBRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaBUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaPRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaPUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaMRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaMUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaZHRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaZHUDM', '-1500', '', '', '', '0', 0, '');ShowObject('LayerM2P', 0);ShowObject('LayerB2H', 0);ShowObject('LayerZH2H', 0);ShowObject('LayerP2H', 0);ShowObject('LayerB2P', 1);ShowObject('LayerZH2P', 1);ShowObject('LayerM2H', 1);ShowObject('LayerP2P', 1);SetImage('LayerM','images/MuneIgra.svg');SetImage('LayerB','images/Bochi.svg');SetImage('LayerP','images/Puny.svg');SetImage('LayerZH','images/Zhok.svg');return false;"><img src="images/Mune.svg" id="LayerM" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
+<div id="wb_LayerP" style="position:absolute;left:553px;top:289px;width:90px;height:32px;z-index:23;">
+<a href="#" onclick="ShowObject('wb_ImageTextOpisanieUDM', 0);ShowObject('wb_ImageTextOpisanieRUS', 0);ShowObject('wb_ImageKotIgraTextUdm', 1);ShowObject('wb_ImageKotIgraTextRus', 1);Animate('wb_PodskazkaBRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaBUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaPRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaPUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaMRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaMUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaZHRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaZHUDM', '-1500', '', '', '', '0', 0, '');SetImage('LayerB','images/Bochi.svg');SetImage('LayerM','images/Mune.svg');SetImage('LayerZH','images/Zhok.svg');ShowObject('LayerP2P', 0);ShowObject('LayerB2H', 0);ShowObject('LayerZH2H', 0);ShowObject('LayerM2H', 0);ShowObject('LayerB2P', 1);ShowObject('LayerZH2P', 1);ShowObject('LayerM2P', 1);ShowObject('LayerP2H', 1);SetImage('LayerP','images/PunyIgra.svg');return false;"><img src="images/Puny.svg" id="LayerP" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
+<div id="wb_LayerZH" style="position:absolute;left:790px;top:282px;width:70px;height:33px;z-index:24;">
+<a href="#" onclick="ShowObject('wb_ImageTextOpisanieUDM', 0);ShowObject('wb_ImageTextOpisanieRUS', 0);ShowObject('wb_ImageKotIgraTextUdm', 1);ShowObject('wb_ImageKotIgraTextRus', 1);Animate('wb_PodskazkaBRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaBUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaPRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaPUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaMRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaMUDM', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaZHRUS', '-1500', '', '', '', '0', 0, '');Animate('wb_PodskazkaZHUDM', '-1500', '', '', '', '0', 0, '');SetImage('LayerB','images/Bochi.svg');SetImage('LayerP','images/Puny.svg');SetImage('LayerM','images/Mune.svg');ShowObject('LayerZH2P', 0);ShowObject('LayerB2H', 0);ShowObject('LayerM2H', 0);ShowObject('LayerP2H', 0);ShowObject('LayerB2P', 1);ShowObject('LayerZH2H', 1);ShowObject('LayerM2P', 1);ShowObject('LayerP2P', 1);SetImage('LayerZH','images/ZhokIgra.svg');return false;"><img src="images/Zhok.svg" id="LayerZH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
+<div id="wb_ImageB" style="position:absolute;left:65px;top:386px;width:155px;height:155px;z-index:25;">
+<a href="#" onclick="ShowObject('wb_PodskazkaBRUS', 1);ShowObject('wb_PodskazkaBUDM', 1);ShowObject('wb_PodskazkaMRUS', 0);ShowObject('wb_PodskazkaMUDM', 0);ShowObject('wb_PodskazkaPRUS', 0);ShowObject('wb_PodskazkaPUDM', 0);ShowObject('wb_PodskazkaZHRUS', 0);ShowObject('wb_PodskazkaZHUDM', 0);return false;"><img src="images/RisB.png" id="ImageB" alt="&#1042;&#1099;&#1073;&#1077;&#1088;&#1080; &#1089;&#1085;&#1072;&#1095;&#1072;&#1083;&#1072; &#1089;&#1083;&#1086;&#1074;&#1086;," style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
+<div id="wb_ImageM" style="position:absolute;left:521px;top:386px;width:155px;height:155px;z-index:26;">
+<a href="#" onclick="ShowObject('wb_PodskazkaMRUS', 1);ShowObject('wb_PodskazkaMUDM', 1);ShowObject('wb_PodskazkaBRUS', 0);ShowObject('wb_PodskazkaBUDM', 0);ShowObject('wb_PodskazkaPRUS', 0);ShowObject('wb_PodskazkaPUDM', 0);ShowObject('wb_PodskazkaZHRUS', 0);ShowObject('wb_PodskazkaZHUDM', 0);return false;"><img src="images/RisM.png" id="ImageM" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
+<div id="wb_ImageP" style="position:absolute;left:748px;top:386px;width:155px;height:155px;z-index:27;">
+<a href="#" onclick="ShowObject('wb_PodskazkaPRUS', 1);ShowObject('wb_PodskazkaPUDM', 1);ShowObject('wb_PodskazkaBRUS', 0);ShowObject('wb_PodskazkaBUDM', 0);ShowObject('wb_PodskazkaMRUS', 0);ShowObject('wb_PodskazkaMUDM', 0);ShowObject('wb_PodskazkaZHRUS', 0);ShowObject('wb_PodskazkaZHUDM', 0);return false;"><img src="images/RisP.png" id="ImageP" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
+<div id="wb_ImageZH" style="position:absolute;left:293px;top:386px;width:155px;height:155px;z-index:28;">
+<a href="#" onclick="ShowObject('wb_PodskazkaZHRUS', 1);ShowObject('wb_PodskazkaZHUDM', 1);ShowObject('wb_PodskazkaBRUS', 0);ShowObject('wb_PodskazkaBUDM', 0);ShowObject('wb_PodskazkaPRUS', 0);ShowObject('wb_PodskazkaPUDM', 0);ShowObject('wb_PodskazkaMRUS', 0);ShowObject('wb_PodskazkaMUDM', 0);return false;"><img src="images/RisZH2.png" id="ImageZH" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
+<div id="LayerM2P" style="position:absolute;text-align:left;visibility:hidden;left:516px;top:386px;width:164px;height:155px;z-index:29;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="ShowObject('wb_ImageTextPlohoRUS', 1);ShowObject('wb_ImageTextPlohoUDM', 1);ShowObject('wb_ImageKotIgra', 0);ShowObject('wb_ImageKotIgraPloho', 1);TimerStartTimerOtvetPloho();ShowObject('wb_ImageKotIgraTextRus', 0);ShowObject('wb_ImageKotIgraTextUdm', 0);ShowObject('Layer100P', 1);SetImage('LayerP','images/Puny.svg');SetImage('LayerZH','images/Zhok.svg');SetImage('LayerB','images/Bochi.svg');ShowObject('LayerM2P', 0);ShowObject('LayerP2P', 0);ShowObject('LayerZH2P', 0);ShowObject('LayerB2P', 0);ShowObject('LayerB2H', 0);ShowObject('LayerZH2H', 0);ShowObject('LayerP2H', 0);ShowObject('LayerM2H', 0);TimerStartTimer1();return false;">
+</div>
+<div id="LayerB2P" style="position:absolute;text-align:left;visibility:hidden;left:60px;top:386px;width:164px;height:155px;z-index:30;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="ShowObject('wb_ImageTextPlohoRUS', 1);ShowObject('wb_ImageTextPlohoUDM', 1);ShowObject('wb_ImageKotIgra', 0);ShowObject('wb_ImageKotIgraPloho', 1);TimerStartTimerOtvetPloho();ShowObject('wb_ImageKotIgraTextRus', 0);ShowObject('wb_ImageKotIgraTextUdm', 0);ShowObject('Layer100P', 1);SetImage('LayerP','images/Puny.svg');SetImage('LayerZH','images/Zhok.svg');SetImage('LayerM','images/Mune.svg');ShowObject('LayerM2P', 0);ShowObject('LayerP2P', 0);ShowObject('LayerZH2P', 0);ShowObject('LayerB2P', 0);ShowObject('LayerB2H', 0);ShowObject('LayerZH2H', 0);ShowObject('LayerP2H', 0);ShowObject('LayerM2H', 0);TimerStartTimer1();return false;">
+</div>
+<div id="LayerZH2P" style="position:absolute;text-align:left;visibility:hidden;left:288px;top:386px;width:164px;height:155px;z-index:31;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="ShowObject('wb_ImageTextPlohoRUS', 1);ShowObject('wb_ImageTextPlohoUDM', 1);ShowObject('wb_ImageKotIgra', 0);ShowObject('wb_ImageKotIgraPloho', 1);TimerStartTimerOtvetPloho();ShowObject('wb_ImageKotIgraTextRus', 0);ShowObject('wb_ImageKotIgraTextUdm', 0);ShowObject('Layer100P', 1);SetImage('LayerM','images/Mune.svg');SetImage('LayerP','images/Puny.svg');SetImage('LayerB','images/Bochi.svg');ShowObject('LayerM2P', 0);ShowObject('LayerP2P', 0);ShowObject('LayerZH2P', 0);ShowObject('LayerB2P', 0);ShowObject('LayerB2H', 0);ShowObject('LayerZH2H', 0);ShowObject('LayerP2H', 0);ShowObject('LayerM2H', 0);TimerStartTimer1();return false;">
+</div>
+<div id="LayerP2P" style="position:absolute;text-align:left;visibility:hidden;left:743px;top:386px;width:165px;height:155px;z-index:32;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="ShowObject('wb_ImageTextPlohoRUS', 1);ShowObject('wb_ImageTextPlohoUDM', 1);ShowObject('wb_ImageKotIgra', 0);ShowObject('wb_ImageKotIgraPloho', 1);TimerStartTimerOtvetPloho();ShowObject('wb_ImageKotIgraTextRus', 0);ShowObject('wb_ImageKotIgraTextUdm', 0);ShowObject('Layer100P', 1);SetImage('LayerM','images/Mune.svg');SetImage('LayerZH','images/Zhok.svg');SetImage('LayerB','images/Bochi.svg');ShowObject('LayerM2P', 0);ShowObject('LayerP2P', 0);ShowObject('LayerZH2P', 0);ShowObject('LayerB2P', 0);ShowObject('LayerB2H', 0);ShowObject('LayerZH2H', 0);ShowObject('LayerP2H', 0);ShowObject('LayerM2H', 0);TimerStartTimer1();return false;">
+</div>
+<div id="LayerB2H" style="position:absolute;text-align:left;visibility:hidden;left:65px;top:387px;width:155px;height:155px;z-index:33;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="ShowObject('wb_ImageTextHoroshoRUS', 1);ShowObject('wb_ImageTextHoroshoUDM', 1);ShowObject('wb_ImageKotIgra', 0);ShowObject('wb_ImageKotIgraHorosho', 1);TimerStartTimerOtvetHorosho();ShowObject('wb_ImageKotIgraTextRus', 0);ShowObject('wb_ImageKotIgraTextUdm', 0);Animate('wb_ImagePazl4', '628', '144', '106', '106', '', 1000, '');ShowObject('LayerM2P', 0);ShowObject('LayerZH2P', 0);ShowObject('LayerP2P', 0);ShowObject('wb_LayerB4', 1);ShowObject('LayerB2H', 0);ShowObject('wb_LayerB', 0);ShowObject('Layer100H', 1);ShowObject('wb_LayerB', 0);TimerStartTimer1();SetImage('ImageB','images/RisB2.png');return false;">
+</div>
+<div id="LayerZH2H" style="position:absolute;text-align:left;visibility:hidden;left:293px;top:386px;width:155px;height:155px;z-index:34;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="ShowObject('wb_ImageTextHoroshoRUS', 1);ShowObject('wb_ImageTextHoroshoUDM', 1);ShowObject('wb_ImageKotIgra', 0);ShowObject('wb_ImageKotIgraHorosho', 1);TimerStartTimerOtvetHorosho();ShowObject('wb_ImageKotIgraTextRus', 0);ShowObject('wb_ImageKotIgraTextUdm', 0);Animate('wb_ImagePazl1', '312', '144', '106', '106', '', 1000, '');ShowObject('LayerB2P', 0);ShowObject('LayerM2P', 0);ShowObject('LayerP2P', 0);ShowObject('wb_LayerZH4', 1);ShowObject('LayerZH2H', 0);ShowObject('wb_LayerZH', 0);ShowObject('Layer100H', 1);ShowObject('wb_LayerZH', 0);TimerStartTimer1();SetImage('ImageZH','images/RisZH22.png');return false;">
+</div>
+<div id="LayerM2H" style="position:absolute;text-align:left;visibility:hidden;left:521px;top:386px;width:155px;height:155px;z-index:35;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="ShowObject('wb_ImageTextHoroshoRUS', 1);ShowObject('wb_ImageTextHoroshoUDM', 1);ShowObject('wb_ImageKotIgra', 0);ShowObject('wb_ImageKotIgraHorosho', 1);TimerStartTimerOtvetHorosho();ShowObject('wb_ImageKotIgraTextRus', 0);ShowObject('wb_ImageKotIgraTextUdm', 0);Animate('wb_ImagePazl3', '489', '144', '173', '108', '', 1000, '');ShowObject('LayerB2P', 0);ShowObject('LayerZH2P', 0);ShowObject('LayerP2P', 0);ShowObject('wb_LayerM4', 1);ShowObject('LayerM2H', 0);ShowObject('wb_LayerM', 0);ShowObject('Layer100H', 1);ShowObject('wb_LayerM', 0);TimerStartTimer1();SetImage('ImageM','images/RisM2.png');return false;">
+</div>
+<div id="LayerP2H" style="position:absolute;text-align:left;visibility:hidden;left:748px;top:386px;width:155px;height:155px;z-index:36;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="ShowObject('wb_ImageTextHoroshoRUS', 1);ShowObject('wb_ImageTextHoroshoUDM', 1);ShowObject('wb_ImageKotIgra', 0);ShowObject('wb_ImageKotIgraHorosho', 1);TimerStartTimerOtvetHorosho();ShowObject('wb_ImageKotIgraTextRus', 0);ShowObject('wb_ImageKotIgraTextUdm', 0);Animate('wb_ImagePazl2', '384', '144', '140', '106', '', 1000, '');ShowObject('LayerB2P', 0);ShowObject('LayerM2P', 0);ShowObject('LayerZH2P', 0);ShowObject('wb_LayerP4', 1);ShowObject('LayerP2H', 0);ShowObject('wb_LayerP', 0);ShowObject('Layer100H', 1);ShowObject('wb_LayerP', 0);TimerStartTimer1();SetImage('ImageP','images/RisP2.png');return false;">
+</div>
+<script>
+var wb_Timer1;
+function TimerStartTimer1()
+{
+   wb_Timer1 = setTimeout(function()
+   {
+      var event = null;
+      ShowObject('Layer100P', 0);
+      ShowObject('Layer100H', 0);
+   }, 3000);
+}
+function TimerStopTimer1()
+{
+   clearTimeout(wb_Timer1);
+}
+</script>
+
+<div id="wb_LayerB4" style="position:absolute;left:98px;top:557px;width:90px;height:26px;visibility:hidden;z-index:38;">
+<a href="#" onclick="SetImage('LayerM','images/Mune.svg');SetImage('LayerP','images/Puny.svg');SetImage('LayerZH','images/Zhok.svg');ShowObject('LayerB2P', 0);ShowObject('LayerM2H', 0);ShowObject('LayerZH2H', 0);ShowObject('LayerP2H', 0);ShowObject('LayerB2H', 1);ShowObject('LayerZH2P', 1);ShowObject('LayerM2P', 1);ShowObject('LayerP2P', 1);SetImage('LayerB','images/BochiIgra.svg');return false;"><img src="images/Bochi.svg" id="LayerB4" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></a></div>
+<div id="wb_LayerP4" style="position:absolute;left:780px;top:557px;width:90px;height:32px;visibility:hidden;z-index:39;">
+<img src="images/Puny.svg" id="LayerP4" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_LayerZH4" style="position:absolute;left:335px;top:550px;width:70px;height:33px;visibility:hidden;z-index:40;">
+<img src="images/Zhok.svg" id="LayerZH4" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_LayerM4" style="position:absolute;left:553px;top:557px;width:90px;height:34px;visibility:hidden;z-index:41;">
+<img src="images/Mune.svg" id="LayerM4" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_ImageKotIgra" style="position:absolute;left:101px;top:56px;width:711px;height:188px;z-index:42;">
+<img src="images/KotIgra.svg" id="ImageKotIgra" alt=""></div>
+<div id="wb_ImageKotIgraTextRus" style="position:absolute;left:302px;top:100px;width:455px;height:29px;opacity:0.00;visibility:hidden;z-index:43;">
+<img src="images/KotIgraTextRus.svg" id="ImageKotIgraTextRus" alt=""></div>
+<div id="wb_ImageKotIgraTextUdm" style="position:absolute;left:306px;top:97px;width:446px;height:31px;visibility:hidden;z-index:44;">
+<img src="images/KotIgraTextUdm.svg" id="ImageKotIgraTextUdm" alt=""></div>
+<div id="wb_ImageTextOpisanieRUS" style="position:absolute;left:302px;top:100px;width:456px;height:27px;opacity:0.00;z-index:45;">
+<img src="images/TextOpisanieRUS.svg" id="ImageTextOpisanieRUS" alt=""></div>
+<div id="wb_ImageTextOpisanieUDM" style="position:absolute;left:294px;top:95px;width:472px;height:31px;z-index:46;">
+<img src="images/TextOpisanieUDM.svg" id="ImageTextOpisanieUDM" alt=""></div>
+<div id="wb_ImagePazl4" style="position:absolute;left:894px;top:616px;width:35px;height:35px;z-index:47;">
+<img src="images/Pazl4UDM.svg" id="ImagePazl4" alt=""></div>
+<div id="wb_ImagePazl3" style="position:absolute;left:42px;top:47px;width:56px;height:35px;z-index:48;">
+<img src="images/Pazl3UDM.svg" id="ImagePazl3" alt=""></div>
+<div id="wb_ImagePazl2" style="position:absolute;left:875px;top:52px;width:46px;height:35px;z-index:49;">
+<img src="images/Pazl2UDM.svg" id="ImagePazl2" alt=""></div>
+<div id="wb_ImagePazl1" style="position:absolute;left:39px;top:618px;width:35px;height:35px;z-index:50;">
+<img src="images/Pazl1UDM.svg" id="ImagePazl1" alt=""></div>
+<div id="wb_ImageKotIgraPloho" style="position:absolute;left:101px;top:56px;width:711px;height:188px;visibility:hidden;z-index:51;">
+<img src="images/KotIgraPloho.svg" id="ImageKotIgraPloho" alt=""></div>
+<script>
+var wb_TimerOtvetPloho;
+function TimerStartTimerOtvetPloho()
+{
+   wb_TimerOtvetPloho = setTimeout(function()
+   {
+      var event = null;
+      ShowObject('wb_ImageKotIgraPloho', 0);
+      ShowObject('wb_ImageKotIgra', 1);
+      ShowObject('wb_ImageKotIgraTextRus', 1);
+      ShowObject('wb_ImageKotIgraTextUdm', 1);
+      ShowObject('wb_ImageTextPlohoRUS', 0);
+      ShowObject('wb_ImageTextPlohoUDM', 0);
+   }, 2500);
+}
+function TimerStopTimerOtvetPloho()
+{
+   clearTimeout(wb_TimerOtvetPloho);
+}
+</script>
+
+<div id="wb_ImageKotIgraHorosho" style="position:absolute;left:101px;top:56px;width:711px;height:188px;visibility:hidden;z-index:53;">
+<img src="images/KotIgraHorosho.svg" id="ImageKotIgraHorosho" alt=""></div>
+<script>
+var wb_TimerOtvetHorosho;
+function TimerStartTimerOtvetHorosho()
+{
+   wb_TimerOtvetHorosho = setTimeout(function()
+   {
+      var event = null;
+      ShowObject('wb_ImageKotIgraHorosho', 0);
+      ShowObject('wb_ImageKotIgra', 1);
+      ShowObject('wb_ImageKotIgraTextRus', 1);
+      ShowObject('wb_ImageKotIgraTextUdm', 1);
+      ShowObject('wb_ImageTextHoroshoRUS', 0);
+      ShowObject('wb_ImageTextHoroshoUDM', 0);
+   }, 2500);
+}
+function TimerStopTimerOtvetHorosho()
+{
+   clearTimeout(wb_TimerOtvetHorosho);
+}
+</script>
+
+<div id="wb_ImageTextPlohoRUS" style="position:absolute;left:297px;top:98px;width:150px;height:18px;opacity:0.00;visibility:hidden;z-index:55;">
+<img src="images/TextPlohoRUS.svg" id="ImageTextPlohoRUS" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_ImageTextPlohoUDM" style="position:absolute;left:319px;top:98px;width:108px;height:21px;visibility:hidden;z-index:56;">
+<img src="images/TextPlohoUDM.svg" id="ImageTextPlohoUDM" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_ImageTextHoroshoUDM" style="position:absolute;left:339px;top:101px;width:71px;height:18px;visibility:hidden;z-index:57;">
+<img src="images/TextHoroshoUDM.svg" id="ImageTextHoroshoUDM" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<div id="wb_ImageTextHoroshoRUS" style="position:absolute;left:312px;top:100px;width:123px;height:18px;opacity:0.00;visibility:hidden;z-index:58;">
+<img src="images/TextHoroshoRUS.svg" id="ImageTextHoroshoRUS" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+</div>
+</div>
+</body>
+</html>
