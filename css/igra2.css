@@ -1,0 +1,439 @@
+div#container
+{
+   width: 997px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+#Layer1
+{
+   background-color: #000000;
+   background-image: none;
+   border: 5px outset #CCCCCC;
+   border-radius: 15px;
+}
+#ImageRamkaFonIgra
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#FonovyiSloy2_2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#KnopkaCvetok3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TenSledRUSstrigra
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledRUS.svg);
+   background-repeat: repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.00;
+}
+#TenSledUDMstrigra
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledUDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerLapaUdmigra
+{
+   background-color: transparent;
+   background-image: url(../images/UDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerLapaRusigra
+{
+   background-color: transparent;
+   background-image: url(../images/RUS.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerKrest4
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerKnopka4Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/4Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka3Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/3Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka2Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/2Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka1Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/1Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#Layer2KnopkaAlfavit
+{
+   background-color: transparent;
+   background-image: url(../images/KnopkaAlfavit.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerB2P
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerZH2P
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerM2P
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerP2P
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerB2H
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerZH2H
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerM2H
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerP2H
+{
+   background-color: transparent;
+   background-image: none;
+}
+#KnopkaCvetok1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaBukvyPVKL
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Image3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaCvetok2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaBukvyOVKL
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Layer2
+{
+   background-color: #FBFBFB;
+   background-image: none;
+}
+#Layer3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+}
+#Layer4
+{
+   background-color: #FBFBFB;
+   background-image: none;
+}
+#LayerDomIgra2
+{
+   background-color: #000000;
+   background-image: none;
+}
+#SvetlyakRis2
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#SvetlyakRis3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#SvetlyakRis4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#SvetlyakRis5
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#SvetlyakRis5RUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaSvetlyak3
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaCvetok4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaSvetlyak4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaCvetok5
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#KnopkaSvetlyak5
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#SvetlyakRisKot
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#SvetlyakRisFon
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#SvetlyakRis1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Luna
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TextLunaRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TextlunaKonecRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TextlunaKonecUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TextlunaUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
