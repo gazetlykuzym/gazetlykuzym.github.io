@@ -1,0 +1,192 @@
+div#container
+{
+   width: 997px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+#ImageRamkaFonIgra
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#FonovyiSloy2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#TenSledRUSstrigra
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledRUS.svg);
+   background-repeat: repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.00;
+}
+#TenSledUDMstrigra
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledUDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerLapaUdmigra
+{
+   background-color: transparent;
+   background-image: url(../images/UDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerLapaRusigra
+{
+   background-color: transparent;
+   background-image: url(../images/RUS.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerKrest4
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerKnopka4Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/4Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka3Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/3Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka2Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/2NKnopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka1Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/1Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#Layer2KnopkaAlfavit
+{
+   background-color: transparent;
+   background-image: url(../images/KnopkaAlfavit.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#kotIgraVybor
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#kotIgraVyborTextRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#kotIgraVyborTextUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#kotIgra2IgraUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#kotIgra2IgraRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Svetlyak0Igra
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#kotIgra1IgraUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#kotIgra1IgraRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
