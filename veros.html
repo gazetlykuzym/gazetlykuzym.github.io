@@ -6,238 +6,88 @@
 <title>Верос</title>
 <link href="ico120.svg" rel="shortcut icon" type="image/x-icon">
 <link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
-<link href="css/SaytKot2.css" rel="stylesheet">
+<link href="css/SaytKot3.css" rel="stylesheet">
 <link href="css/veros.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
 </head>
 <body>
 <div id="container">
-<div id="FonovyiSloy4" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:55;">
+<div id="FonovyiSloy4" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:19;">
 <div id="wb_ImageRamkaFonmadiskonyos" style="position:absolute;left:0px;top:10px;width:970px;height:684px;z-index:0;">
 <img src="images/konturRasskaz.png" id="ImageRamkaFonmadiskonyos" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<!-- Sneg -->
-<div id="HtmlSneg4" style="position:absolute;left:7px;top:785px;width:86px;height:33px;overflow:hidden;z-index:1">
-<div onclick="stopsnow()" id="snow-start"></div>
-<script> 
-  var snowsrc="https://gazetlykuzym.github.io/sneg.png";
-  var no = 20; 
-  var log = 0;
-  var hidesnowtime = 0;
-  var snowdistance = "windowheight";
-
-  var ie4up = (document.all) ? 1 : 0;
-  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
-
-    function iecompattest(){
-    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
-    }
-
-  var dx, xp, yp;    
-  var am, stx, sty;  
-  var i, doc_width = 800, doc_height = 600; 
-
-  if (ns6up) {
-    doc_width = self.innerWidth;
-    doc_height = self.innerHeight;
-  } else if (ie4up) {
-    doc_width = iecompattest().clientWidth;
-    doc_height = iecompattest().clientHeight;
-  }
-
-  dx = new Array();
-  xp = new Array();
-  yp = new Array();
-  am = new Array();
-  stx = new Array();
-  sty = new Array();
-  snowsrc=(snowsrc.indexOf("")!= 1)? "https://gazetlykuzym.github.io/sneg.png" : snowsrc
-  for (i = 0; i < no; ++ i) {  
-    dx[i] = 0;                        
-    xp[i] = Math.random()*(doc_width-50); 
-    yp[i] = Math.random()*doc_height;
-    am[i] = Math.random()*20;      
-    stx[i] = 0.02 + Math.random()/10;
-    sty[i] = 0.7 + Math.random();   
-        if (ie4up||ns6up) {
-      if (i == 0) {
-        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
-      } else {
-        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
-      }
-    }
-  }
-
-  function snowIE_NS6() {  
-    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
-        doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
-    for (i = 0; i < no; ++ i) { 
-      yp[i] += sty[i];
-      if (yp[i] > doc_height-50) {
-        xp[i] = Math.random()*(doc_width-am[i]-30);
-        yp[i] = 0;
-        stx[i] = 0.02 + Math.random()/10;
-        sty[i] = 0.7 + Math.random();
-      }
-      dx[i] += stx[i];
-      document.getElementById("dot"+i).style.top=yp[i]+"px";
-      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
-    }
-    snowtimer=setTimeout("snowIE_NS6()", 10);
-  }
-
-    function hidesnow(){
-        if (window.snowtimer) clearTimeout(snowtimer)
-        for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
-    }
-
-if (ie4up||ns6up){
-    snowIE_NS6();
-        if (hidesnowtime>0)
-        setTimeout("hidesnow()", hidesnowtime*1000);
-        }
- function stopsnow(){
- if (log==0){
-  for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
-  no = 0;
-  log = 1;
-  document.getElementById('snow-start').innerHTML ='Вкл. снег';
-  }
-  else { log = 0; no = 20; for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="visible";
- document.getElementById('snow-start').innerHTML ='';
-
-  }
-
- }
-</script>
-<a id="copy" href=""></a>
-</div>
-<div id="TenSledRUSstrmadiskonyos" style="position:absolute;text-align:left;left:214px;top:719px;width:115px;height:87px;z-index:2;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="TenSledRUSstrmadiskonyos" style="position:absolute;text-align:left;left:214px;top:719px;width:115px;height:87px;z-index:1;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer">
 </div>
-<div id="TenSledUDMstrmadiskonyos" style="position:absolute;text-align:left;left:80px;top:699px;width:115px;height:87px;z-index:3;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="TenSledUDMstrmadiskonyos" style="position:absolute;text-align:left;left:80px;top:699px;width:115px;height:87px;z-index:2;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer">
 </div>
-<div id="LayerLapaUdmmadiskonyos" style="position:absolute;text-align:left;left:77px;top:696px;width:115px;height:87px;z-index:4;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerLapaUdmmadiskonyos" style="position:absolute;text-align:left;left:77px;top:696px;width:115px;height:87px;z-index:3;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
-outline: none !important; cursor: pointer" onclick="ShowObject('wb_TexstRasskazRusZima', 0);ShowObject('wb_TexstRasskazRusVesna', 0);ShowObject('wb_TexstRasskazRusLeto', 0);ShowObject('wb_TexstRasskazRusOsen', 0);ShowObject('wb_TexstRasskazUdmLeto', 1);ShowObject('wb_TexstRasskazUdmOsen', 1);ShowObject('wb_TexstRasskazUdmVesna', 1);ShowObject('wb_TexstRasskazUdmZima', 1);Animate('wb_KnopkaZimaRUS', '', '', '', '', '0', 0, '');Animate('wb_KnopkaLetoRUS', '', '', '', '', '0', 0, '');Animate('wb_KnopkaOsenRUS', '', '', '', '', '0', 0, '');Animate('wb_KnopkaVesnaRUS', '', '', '', '', '0', 0, '');Animate('wb_KnopkaLetoUDM', '', '', '', '', '100', 0, '');Animate('wb_KnopkaOsenUDM', '', '', '', '', '100', 0, '');Animate('wb_KnopkaVesnaUDM', '', '', '', '', '100', 0, '');Animate('wb_KnopkaZimaUDM', '', '', '', '', '100', 0, '');Animate('ImageOtvetTextLisaRUS', '', '', '', '', '0', 500, '');Animate('ImageOtvetTextEzhRUS', '', '', '', '', '0', 500, '');Animate('ImageOtvetTextZayacRUS', '', '', '', '', '0', 500, '');Animate('ImageOtvetTextSovaRUS', '', '', '', '', '0', 500, '');Animate('ImageOtvetTextLisaUDM', '', '', '', '', '100', 500, '');Animate('ImageOtvetTextEzhUDM', '', '', '', '', '100', 500, '');Animate('ImageOtvetTextZayacUDM', '', '', '', '', '100', 500, '');Animate('ImageOtvetTextSovaUDM', '', '', '', '', '100', 500, '');Animate('ImagezagadkaUDMStr3_1', '', '', '', '', '100', 500, '');Animate('ImagezagadkaUDMStr3_2', '', '', '', '', '100', 500, '');Animate('ImagezagadkaUDMStr3_3', '', '', '', '', '100', 500, '');Animate('ImagezagadkaUDMStr3_4', '', '', '', '', '100', 500, '');Animate('ImageZagadkaRUSStr3_1', '', '', '', '', '0', 500, '');Animate('ImageZagadkaRUSStr3_2', '', '', '', '', '0', 500, '');Animate('ImageZagadkaRUSStr3_3', '', '', '', '', '0', 500, '');Animate('ImageZagadkaRUSStr3_4', '', '', '', '', '0', 500, '');Animate('Layer3Shtrih', '', '', '', '', '100', 500, '');Animate('wb_ImageRUSrasskaz', '', '', '', '', '0', 0, '');Animate('wb_ImageUDMrasskaz', '', '', '', '', '100', 0, '');Animate('ImagekotStr3', '', '', '', '', '100', 500, '');Animate('ImagekotStr3RUS', '', '', '', '', '0', 500, '');Animate('TenSledRUSstrmadiskonyos', '', '', '', '', '0', 500, '');Animate('TenSledUDMstrmadiskonyos', '', '', '', '', '100', 500, '');ShowObjectWithEffect('ImageOtvetRUS_1', 0, 'fade', 500);ShowObjectWithEffect('ImageOtvetRUS_2', 0, 'fade', 500);ShowObjectWithEffect('ImageOtvetRUS_3', 0, 'fade', 500);ShowObjectWithEffect('ImageOtvetRUS_4', 0, 'fade', 500);Animate('ImageOtvetUDM_1', '', '', '', '', '100', 500, '');Animate('ImageOtvetUDM_2', '', '', '', '', '100', 500, '');Animate('ImageOtvetUDM_3', '', '', '', '', '100', 500, '');Animate('ImageOtvetUDM_4', '', '', '', '', '100', 500, '');Animate('LayerSkryt', '', '', '', '', '0', 0, '');Animate('wb_NazvanieStihaURus', '', '', '', '', '0', 0, '');Animate('wb_NazvanieStihaUUdm', '', '', '', '', '100', 0, '');return false;">
+outline: none !important; cursor: pointer" onclick="ShowObject('TextArea1UDM', 1);ShowObject('wb_TextVerosZagolovokUDM', 1);ShowObject('TextArea1RUS', 0);ShowObject('wb_TextVerosZagolovokRUS', 0);Animate('TenSledUDMstrmadiskonyos', '', '', '', '', '100', 300, '');Animate('TenSledRUSstrmadiskonyos', '', '', '', '', '0', 300, '');Animate('wb_ImageUDMrasskaz', '', '', '', '', '100', 300, '');Animate('wb_ImageRUSrasskaz', '', '', '', '', '0', 300, '');Animate('LayerSkryt', '', '', '', '', '0', 300, '');return false;">
 </div>
-<div id="LayerLapaRusmadiskonyos" style="position:absolute;text-align:left;left:211px;top:722px;width:115px;height:87px;z-index:5;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerLapaRusmadiskonyos" style="position:absolute;text-align:left;left:211px;top:722px;width:115px;height:87px;z-index:4;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
-outline: none !important; cursor: pointer" onclick="ShowObject('wb_TexstRasskazRusZima', 1);ShowObject('wb_TexstRasskazRusVesna', 1);ShowObject('wb_TexstRasskazRusLeto', 1);ShowObject('wb_TexstRasskazRusOsen', 1);ShowObject('wb_TexstRasskazUdmLeto', 0);ShowObject('wb_TexstRasskazUdmOsen', 0);ShowObject('wb_TexstRasskazUdmVesna', 0);ShowObject('wb_TexstRasskazUdmZima', 0);Animate('wb_KnopkaZimaRUS', '', '', '', '', '100', 0, '');Animate('wb_KnopkaLetoRUS', '', '', '', '', '100', 0, '');Animate('wb_KnopkaOsenRUS', '', '', '', '', '100', 0, '');Animate('wb_KnopkaVesnaRUS', '', '', '', '', '100', 0, '');Animate('wb_KnopkaLetoUDM', '', '', '', '', '0', 0, '');Animate('wb_KnopkaOsenUDM', '', '', '', '', '0', 0, '');Animate('wb_KnopkaVesnaUDM', '', '', '', '', '0', 0, '');Animate('wb_KnopkaZimaUDM', '', '', '', '', '0', 0, '');Animate('ImageOtvetTextLisaRUS', '', '', '', '', '100', 500, '');Animate('ImageOtvetTextEzhRUS', '', '', '', '', '100', 500, '');Animate('ImageOtvetTextZayacRUS', '', '', '', '', '100', 500, '');Animate('ImageOtvetTextSovaRUS', '', '', '', '', '100', 500, '');Animate('ImageOtvetTextLisaUDM', '', '', '', '', '0', 500, '');Animate('ImageOtvetTextEzhUDM', '', '', '', '', '0', 500, '');Animate('ImageOtvetTextZayacUDM', '', '', '', '', '0', 500, '');Animate('ImageOtvetTextSovaUDM', '', '', '', '', '0', 500, '');Animate('ImagezagadkaUDMStr3_1', '', '', '', '', '0', 500, '');Animate('ImagezagadkaUDMStr3_2', '', '', '', '', '0', 500, '');Animate('ImagezagadkaUDMStr3_3', '', '', '', '', '0', 500, '');Animate('ImagezagadkaUDMStr3_4', '', '', '', '', '0', 500, '');Animate('ImageZagadkaRUSStr3_1', '', '', '', '', '100', 500, '');Animate('ImageZagadkaRUSStr3_2', '', '', '', '', '100', 500, '');Animate('ImageZagadkaRUSStr3_3', '', '', '', '', '100', 500, '');Animate('ImageZagadkaRUSStr3_4', '', '', '', '', '100', 500, '');Animate('Layer3Shtrih', '', '', '', '', '0', 500, '');Animate('wb_ImageUDMrasskaz', '', '', '', '', '0', 0, '');Animate('wb_ImageRUSrasskaz', '', '', '', '', '100', 0, '');Animate('ImagekotStr3', '', '', '', '', '0', 500, '');Animate('ImagekotStr3RUS', '', '', '', '', '100', 500, '');Animate('TenSledUDMstrmadiskonyos', '', '', '', '', '0', 500, '');Animate('TenSledRUSstrmadiskonyos', '', '', '', '', '100', 500, '');ShowObjectWithEffect('ImageOtvetRUS_1', 1, 'fade', 500);ShowObjectWithEffect('ImageOtvetRUS_2', 1, 'fade', 500);ShowObjectWithEffect('ImageOtvetRUS_3', 1, 'fade', 500);ShowObjectWithEffect('ImageOtvetRUS_4', 1, 'fade', 500);Animate('ImageOtvetUDM_1', '', '', '', '', '0', 500, '');Animate('ImageOtvetUDM_2', '', '', '', '', '0', 500, '');Animate('ImageOtvetUDM_3', '', '', '', '', '0', 500, '');Animate('ImageOtvetUDM_4', '', '', '', '', '0', 500, '');Animate('LayerSkryt', '', '', '', '', '100', 0, '');Animate('wb_NazvanieStihaURus', '', '', '', '', '100', 0, '');Animate('wb_NazvanieStihaUUdm', '', '', '', '', '0', 0, '');return false;">
+outline: none !important; cursor: pointer" onclick="ShowObject('TextArea1UDM', 0);ShowObject('wb_TextVerosZagolovokUDM', 0);ShowObject('TextArea1RUS', 1);ShowObject('wb_TextVerosZagolovokRUS', 1);Animate('TenSledRUSstrmadiskonyos', '', '', '', '', '100', 300, '');Animate('TenSledUDMstrmadiskonyos', '', '', '', '', '0', 300, '');Animate('LayerSkryt', '', '', '', '', '100', 300, '');Animate('wb_ImageRUSrasskaz', '', '', '', '', '100', 300, '');Animate('wb_ImageUDMrasskaz', '', '', '', '', '0', 300, '');return false;">
 </div>
-<div id="LayerKrest3" style="position:absolute;text-align:left;left:929px;top:24px;width:33px;height:32px;z-index:6;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKrest3" style="position:absolute;text-align:left;left:929px;top:24px;width:33px;height:32px;z-index:5;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="LayerSkryt" style="position:absolute;text-align:left;left:117px;top:22px;width:38px;height:21px;z-index:7;">
+<div id="LayerSkryt" style="position:absolute;text-align:left;left:117px;top:22px;width:38px;height:21px;z-index:6;">
 </div>
-<div id="wb_ImageRUSrasskaz" style="position:absolute;left:25px;top:23px;width:117px;height:22px;opacity:0.00;z-index:8;">
+<div id="wb_ImageRUSrasskaz" style="position:absolute;left:25px;top:23px;width:117px;height:22px;opacity:0.00;z-index:7;">
 <img src="images/RUSrasskaz.png" id="ImageRUSrasskaz" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_ImageUDMrasskaz" style="position:absolute;left:23px;top:22px;width:85px;height:24px;z-index:9;">
+<div id="wb_ImageUDMrasskaz" style="position:absolute;left:23px;top:22px;width:85px;height:24px;z-index:8;">
 <img src="images/UDMrasskaz.png" id="ImageUDMrasskaz" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="LayerKnopka4Strmadiskonyos" style="position:absolute;text-align:left;left:870px;top:722px;width:95px;height:82px;z-index:10;">
+<div id="LayerKnopka4Strmadiskonyos" style="position:absolute;text-align:left;left:870px;top:722px;width:95px;height:82px;z-index:9;">
 </div>
-<div id="LayerKnopka3Strmadiskonyos" style="position:absolute;text-align:left;left:762px;top:722px;width:90px;height:78px;z-index:11;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka3Strmadiskonyos" style="position:absolute;text-align:left;left:762px;top:722px;width:90px;height:78px;z-index:10;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./bukva.html';return false;">
 </div>
-<div id="LayerKnopka2Strmadiskonyos" style="position:absolute;text-align:left;left:654px;top:722px;width:90px;height:78px;z-index:12;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka2Strmadiskonyos" style="position:absolute;text-align:left;left:654px;top:722px;width:90px;height:78px;z-index:11;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
-outline: none !important; cursor: pointer" onclick="window.location.href='./igra.html';return false;">
+outline: none !important; cursor: pointer" onclick="window.location.href='./menuigr.html';return false;">
 </div>
-<div id="LayerKnopka1Strmadiskonyos" style="position:absolute;text-align:left;left:544px;top:722px;width:90px;height:78px;z-index:13;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka1Strmadiskonyos" style="position:absolute;text-align:left;left:544px;top:722px;width:90px;height:78px;z-index:12;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="Layer3KnopkaAlfavit" style="position:absolute;text-align:left;left:355px;top:731px;width:167px;height:58px;z-index:14;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="Layer3KnopkaAlfavit" style="position:absolute;text-align:left;left:355px;top:731px;width:167px;height:58px;z-index:13;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./alfavit.html';return false;">
 </div>
-<div id="wb_ImageIkonkaZima" style="position:absolute;left:71px;top:108px;width:191px;height:191px;z-index:15;">
-<img src="images/IkonkaZima.png" id="ImageIkonkaZima" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_ImageIkonkaVesna" style="position:absolute;left:308px;top:124px;width:158px;height:159px;z-index:16;">
-<img src="images/IkonkaVesna.png" id="ImageIkonkaVesna" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_ImageIkonkaLeto" style="position:absolute;left:512px;top:108px;width:182px;height:190px;z-index:17;">
-<img src="images/IkonkaLeto.png" id="ImageIkonkaLeto" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_ImageIkonkaOsen" style="position:absolute;left:741px;top:111px;width:145px;height:185px;z-index:18;">
-<img src="images/IkonkaOsen.png" id="ImageIkonkaOsen" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_NazvanieStihaUUdm" style="position:absolute;left:322px;top:58px;width:326px;height:39px;z-index:19;">
-<img src="images/NazvanieStihaUUdm.png" id="NazvanieStihaUUdm" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_NazvanieStihaURus" style="position:absolute;left:353px;top:58px;width:264px;height:39px;opacity:0.00;z-index:20;">
-<img src="images/NazvanieStihaURus.png" id="NazvanieStihaURus" alt=""></div>
-<div id="wb_TexstRasskazUdmZima" style="position:absolute;left:153px;top:410px;width:664px;height:193px;z-index:21;">
-<img src="images/TexstRasskazUdmZima.svg" id="TexstRasskazUdmZima" alt=""></div>
-<div id="wb_TexstRasskazRusZima" style="position:absolute;left:167px;top:409px;width:637px;height:191px;visibility:hidden;z-index:22;">
-<img src="images/TexstRasskazRusZima.svg" id="TexstRasskazRusZima" alt=""></div>
-<div id="wb_TexstRasskazUdmOsen" style="position:absolute;left:66px;top:392px;width:839px;height:221px;opacity:0.00;z-index:23;">
-<img src="images/TexstRasskazUdmOsen.svg" id="TexstRasskazUdmOsen" alt=""></div>
-<div id="wb_TexstRasskazRusOsen" style="position:absolute;left:95px;top:392px;width:779px;height:246px;opacity:0.00;visibility:hidden;z-index:24;">
-<img src="images/TexstRasskazRusOsen.svg" id="TexstRasskazRusOsen" alt=""></div>
-<div id="wb_TexstRasskazUdmLeto" style="position:absolute;left:150px;top:411px;width:670px;height:190px;opacity:0.00;z-index:25;">
-<img src="images/TexstRasskazUdmLeto.svg" id="TexstRasskazUdmLeto" alt=""></div>
-<div id="wb_TexstRasskazRusLeto" style="position:absolute;left:159px;top:416px;width:632px;height:162px;opacity:0.00;visibility:hidden;z-index:26;">
-<img src="images/TexstRasskazRusLeto.svg" id="TexstRasskazRusLeto" alt=""></div>
-<div id="wb_TexstRasskazUdmVesna" style="position:absolute;left:171px;top:413px;width:628px;height:189px;opacity:0.00;z-index:27;">
-<img src="images/TexstRasskazUdmVesna.svg" id="TexstRasskazUdmVesna" alt=""></div>
-<div id="wb_TexstRasskazRusVesna" style="position:absolute;left:199px;top:428px;width:607px;height:165px;opacity:0.00;visibility:hidden;z-index:28;">
-<img src="images/TexstRasskazRusVesna.svg" id="TexstRasskazRusVesna" alt=""></div>
-<div id="wb_KnopkaLetoUDM" style="position:absolute;left:408px;top:331px;width:154px;height:40px;z-index:29;">
-<img src="images/KnopkaLetoUDM.svg" id="KnopkaLetoUDM" alt=""></div>
-<div id="wb_KnopkaOsenUDM" style="position:absolute;left:408px;top:331px;width:154px;height:40px;z-index:30;">
-<img src="images/KnopkaOsenUDM.svg" id="KnopkaOsenUDM" alt=""></div>
-<div id="wb_KnopkaVesnaUDM" style="position:absolute;left:408px;top:331px;width:154px;height:40px;z-index:31;">
-<img src="images/KnopkaVesnaUDM.svg" id="KnopkaVesnaUDM" alt=""></div>
-<div id="wb_KnopkaZimaUDM" style="position:absolute;left:408px;top:331px;width:154px;height:40px;z-index:32;">
-<img src="images/KnopkaZimaUDM.svg" id="KnopkaZimaUDM" alt=""></div>
-<div id="wb_KnopkaLetoRUS" style="position:absolute;left:408px;top:331px;width:154px;height:40px;opacity:0.00;z-index:33;">
-<img src="images/KnopkaLetoRUS.svg" id="KnopkaLetoRUS" alt=""></div>
-<div id="wb_KnopkaOsenRUS" style="position:absolute;left:408px;top:331px;width:154px;height:40px;opacity:0.00;z-index:34;">
-<img src="images/KnopkaOsenRUS.svg" id="KnopkaOsenRUS" alt=""></div>
-<div id="wb_KnopkaVesnaRUS" style="position:absolute;left:408px;top:331px;width:154px;height:40px;opacity:0.00;z-index:35;">
-<img src="images/KnopkaVesnaRUS.svg" id="KnopkaVesnaRUS" alt=""></div>
-<div id="wb_KnopkaZimaRUS" style="position:absolute;left:408px;top:331px;width:154px;height:40px;opacity:0.00;z-index:36;">
-<img src="images/KnopkaZimaRUS.svg" id="KnopkaZimaRUS" alt=""></div>
-<div id="NIkonkaZima" style="position:absolute;text-align:left;left:97px;top:133px;width:139px;height:141px;z-index:37;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 1);ShowObject('wb_KnopkaZimaRUS', 1);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaZima2" style="position:absolute;text-align:left;left:151px;top:274px;width:32px;height:25px;z-index:38;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 1);ShowObject('wb_KnopkaZimaRUS', 1);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaZima3" style="position:absolute;text-align:left;left:151px;top:108px;width:32px;height:25px;z-index:39;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 1);ShowObject('wb_KnopkaZimaRUS', 1);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaZima4" style="position:absolute;text-align:left;left:236px;top:190px;width:26px;height:28px;z-index:40;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 1);ShowObject('wb_KnopkaZimaRUS', 1);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaZima5" style="position:absolute;text-align:left;left:71px;top:190px;width:26px;height:28px;z-index:41;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 1);ShowObject('wb_KnopkaZimaRUS', 1);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaVesna" style="position:absolute;text-align:left;left:369px;top:127px;width:85px;height:106px;z-index:42;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 1);ShowObject('wb_KnopkaVesnaRUS', 1);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaVesna2" style="position:absolute;text-align:left;left:309px;top:202px;width:60px;height:42px;z-index:43;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 1);ShowObject('wb_KnopkaVesnaRUS', 1);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaVesna3" style="position:absolute;text-align:left;left:358px;top:233px;width:20px;height:50px;z-index:44;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 1);ShowObject('wb_KnopkaVesnaRUS', 1);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaLeto" style="position:absolute;text-align:left;left:544px;top:127px;width:119px;height:153px;z-index:45;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 1);ShowObject('wb_KnopkaLetoRUS', 1);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaLeto2" style="position:absolute;text-align:left;left:663px;top:162px;width:31px;height:82px;z-index:46;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 1);ShowObject('wb_KnopkaLetoRUS', 1);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaLeto3" style="position:absolute;text-align:left;left:513px;top:162px;width:31px;height:82px;z-index:47;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 1);ShowObject('wb_KnopkaLetoRUS', 1);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaLeto4" style="position:absolute;text-align:left;left:588px;top:108px;width:31px;height:19px;z-index:48;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 1);ShowObject('wb_KnopkaLetoRUS', 1);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaLeto5" style="position:absolute;text-align:left;left:588px;top:280px;width:31px;height:19px;z-index:49;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 0);ShowObject('wb_KnopkaOsenRUS', 0);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaLetoUDM', 1);ShowObject('wb_KnopkaLetoRUS', 1);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaOsen" style="position:absolute;text-align:left;left:789px;top:111px;width:50px;height:142px;z-index:50;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 1);ShowObject('wb_KnopkaOsenRUS', 1);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaOsen2" style="position:absolute;text-align:left;left:839px;top:170px;width:47px;height:83px;z-index:51;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 1);ShowObject('wb_KnopkaOsenRUS', 1);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaOsen3" style="position:absolute;text-align:left;left:742px;top:170px;width:47px;height:83px;z-index:52;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 1);ShowObject('wb_KnopkaOsenRUS', 1);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="NIkonkaOsen4" style="position:absolute;text-align:left;left:809px;top:253px;width:10px;height:43px;z-index:53;cursor: pointer" onclick="ShowObject('wb_KnopkaOsenUDM', 1);ShowObject('wb_KnopkaOsenRUS', 1);Animate('wb_TexstRasskazUdmOsen', '', '', '', '', '100', 0, '');ShowObject('wb_KnopkaLetoUDM', 0);ShowObject('wb_KnopkaLetoRUS', 0);Animate('wb_TexstRasskazUdmLeto', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaVesnaUDM', 0);ShowObject('wb_KnopkaVesnaRUS', 0);Animate('wb_TexstRasskazUdmVesna', '', '', '', '', '0', 0, '');ShowObject('wb_KnopkaZimaUDM', 0);ShowObject('wb_KnopkaZimaRUS', 0);Animate('wb_TexstRasskazUdmZima', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusOsen', '', '', '', '', '100', 0, '');Animate('wb_TexstRasskazRusLeto', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusVesna', '', '', '', '', '0', 0, '');Animate('wb_TexstRasskazRusZima', '', '', '', '', '0', 0, '');return false;">
-</div>
-<div id="wb_KuzebaiGerd" style="position:absolute;left:782px;top:636px;width:151px;height:24px;z-index:54;">
-<img src="images/KuzebaiGerd.svg" id="KuzebaiGerd" alt=""></div>
+<textarea name="TextArea1UDM" id="TextArea1UDM" style="position:absolute;left:55px;top:129px;width:855px;height:477px;z-index:14;" rows="20" cols="104" spellcheck="false">Вашкала дыръя асьме нюлэсъёсын лыдъяны сузёнтэм пӧйшурез но, тылобурдоез но вылэм. Сомында кыйкайёс* пӧлын тужгес но лябъёсыз вал ӵушъялъёс. Соос угось кемалась дыръёсы венё шуба нуллӥллямтэ  на. Нюлэскын улӥсьёс та мискиньёсты капчиен ӝоже уськытъязы. Пумитъяськыны ӵушъялъёслэн пыдъёссы но вакчиесь, ымъёссы но пичиесь… пегӟемзы но ӝогак ӧз луылы. Погыли кадь питраны ӧдъяло гинэ — сьӧсь тылобурдо яке пӧйшур шоп! гинэ кырме вылэм ни. Озьы та мусо пӧйшуръёс пумен ӧжытгес но ӧжытгес кылиллям. Асьме нюлэсъёсын, пе, кык-куинь ӵушъял гинэ вал на.
+Тазьы оген кылемезлы кӧтыз ӝож луэмен пуке ни, пе, мумы ӵушъял бадӟым кыз улын. ӝоген пиосыз вордскозы. Собере пиоссэ кин ке нош ик быдтоз. Мур куректыса, зар-зар бӧрдэ ини таид. ӧжытак буйгамез бере, сиён утчаны мыноно кариськиз. Нош султэмез уг луы. Сиресь писпу борды лякиськем. Озьы но, тазьы но курадӟиз — мырдэм но кызьы мозмытскиз ик. Табере небыт шубазэ сузяны малпаз ни. Кыз улын погылляськиз — погылляськиз но — сирез уг усьы. Бордаз уката ӵогыр-ӵогыр кыз лыс лякиське. ӵапак озьы вырон вакытаз вӧзтӥз ӟичы кума ортче вылэм.
+— Ӵушъял, ӵушъял, оло, монэ возьмаса-а тон тазьы кыллиськод? Туж умой. Тонэ сии ке, луд кечъёс сьӧры нунал лумбыт жуммыса бызьылоно уз луы ни.
+Мискинь пӧйшур солэн пумитаз вазьыны ик уг дӥсьты ни, пе.  сокем зол кышкам-куалектэм. ӵушъялэз ӟичы сиыны малпам гинэ но, кузь ныр йылаз веньёс бышкалскиллям. “ӧб-ӧб-ӧб! Ой-ой-ой! Быриськиз!” — тазьы кесяськыса, кызьы пегӟемзэ но ӧвӧл валам ни кузь быж. Пегӟе-бызе но шуак Кион шоры мырӟиське.
+— Кытчы озьы ӟичы кума дыртӥськод? Оло Гондырлэсь сиёнзэ лушканы малпад вал-а?
+— Дыртӥсько, дыртӥсько, Кион кудо. Кытчы дыртӥсько?! Бадӟым кыз улын ӵушъял кылле, сое сиыны тусьты-пуньылы бызисько.
+— Дырты-бызьы соку, тон ветлытозь мон содэ возьмало, — озьы шуэм но Кион дыртэм ӵушъялэз утчаны. Кышкам пӧйшур азьло сямен ик интыысьтыз вырӟылыны дӥсьтытэк кылле на, пе. ӟичылэсь вуэмзэ Кион возьмамтэ ни: ӵушъялэз лэчыт пиньёсыныз куртчыны малпам, но кыл йылаз ӵогы кадь веньёс мертчиськиллям. Таиз но ури-бери пегӟем ӵушъял дорысь.
+Ваньзэ та учырез Коӵо синйылтэм. Трос-а, ӧжыт-а дыр ортчем — быдэс нюлэс тодэм ни, кызьы ӵушъял дышетэм ӟичы кумаен Кион кудоез. ӵушъяллы аслыз но кельшем выль выль дӥськутэз. Со дырысен, пе, венё шубазэ тол но, гужем но уг куя ни. пиосыз но венё вордско. Нокин уг дӥсьты соосты ӝоже уськытыны.
+
+*Кыйкай — кыр тылобурдоос но пӧйшуръёс.</textarea>
+<div id="wb_TextVerosZagolovokUDM" style="position:absolute;left:59px;top:79px;width:859px;height:27px;z-index:15;">
+<span style="color:#000000;font-family:Arial;font-size:24px;">Кызьы ӵушъялъёс венё луизы</span></div>
+<textarea name="TextArea1RUS" id="TextArea1RUS" style="position:absolute;left:55px;top:129px;width:855px;height:477px;visibility:hidden;z-index:16;" rows="20" cols="104" spellcheck="false">В стародавние времена в наших лесах и птиц, и зверья разного было видимо-невидимо. И всем было хорошо – кроме ежей. В ту пору колючую шубку они еще не носили, не было ее, и каждый кто хотел, мог их обидеть. Да и как убережешься: лапки у ежика коротенькие, зубы нестрашные. Ни тебе убежать, ни оборониться, ни спрятаться. Свернется бедняга от страха в клубочек, дрожит, а хищному зверю или птице только того и надо – хоп! – и нет ежика. С каждым днем несчастных зверюшек все меньше и меньше становилось. Так бы, глядишь, и совсем пропали, – если бы не случай.
+Плакала как-то под темной елью одинокая Ежиха. Да и как не плакать: придет время, родятся у нее ежата, а кто-то зубастый истребит их без всякой жалости. Горько плакала она. Только ведь слезами сыт не будешь, – отплакавшись, решила Ежиха поискать себе какой-нибудь еды. Но вот беда: решить-то решила, а подняться – никак. Оказывается, плакала она не одна, плакала с ней и большая ель. Катились по стволу смоляные слезы, вот к этой смоле Ежиха и прилипла. И так, и эдак старалась – насилу оторвалась. А вся спинка в смоле. Попробовала Ежиха отчистить нежную свою шубку, покаталась-потерлась по травке, – нет, не отстает смола. Только поналипли на неё ещё гуще еловые колючки-хвоинки.
+    А тут, откуда не возьмись – кума Лиса.
+ – Ишь ты, Ежиха! Гляди-ка, разлеглась, будто меня и ждала. Вот и славно! Сейчас я тебя съем, не придется целый день, высунув язык, за зайцами гоняться.
+    Бедная Ежиха и голоса лишилась. До того испугалась, что слова не вымолвит. Только в комочек сжалась и вся затряслась. А Лисица распахнула пасть, да со всего маху и наткнулась длинным носом на иголки. «Ой-ой-ой! Пропадаю!» – заверещала кума и бросилась наутек. Неслась рыжая, не разбирая пути, чуть Волка с ног не сшибла.
+– Куда это ты, кума, разогналась? Будто собаки за тобой гонятся.
+– Ой, некогда, некогда мне, сват, тороплюсь. Под большой елью Ежиха лежит. За чашками-ложками бегу!
+– А-а, тогда поспешай. А я, кума, твою добычу пока покараулю! – Обрадовался Волк и во всю прыть помчался под большую ель. «Беги, беги, рыжая, а я без чашки-ложки обойдусь! Разинув с разбегу пасть, хвать Ежиху, да так и напоролся на иголки. Завизжал по-щенячьи и бросился прочь.
+Так бы дело и кончилось, да всю историю видела Сорока. И раззвонила-разнесла по всей округе, как проучила Ежиха куму Лису и свата Волка. Попробуй, тронь теперь её, колючую!
+А Ежихе новая одежка и самой по вкусу пришлась. С той поры ни зимой, ни летом шубку свою игольчатую не снимает. И детишки-ежата сразу «колючими»  рождаются. И никто их больше не обижает.
+</textarea>
+<div id="wb_TextVerosZagolovokRUS" style="position:absolute;left:59px;top:79px;width:859px;height:27px;visibility:hidden;z-index:17;">
+<span style="color:#000000;font-family:Arial;font-size:24px;">Как ёжики стали колючими</span></div>
+<div id="wb_TextVerosAvtor" style="position:absolute;left:762px;top:632px;width:185px;height:24px;z-index:18;">
+<span style="color:#000000;font-family:Arial;font-size:21px;">Ельцов Алексей</span></div>
 </div>
 </div>
 </body>
