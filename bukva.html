@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <meta charset="utf-8">
-<title>Буква А</title>
+<title>Буква Б</title>
 <link href="ico120.svg" rel="shortcut icon" type="image/x-icon">
 <link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
-<link href="css/SaytKot2.css" rel="stylesheet">
+<link href="css/SaytKot3.css" rel="stylesheet">
 <link href="css/bukva.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
@@ -14,156 +14,60 @@
 </head>
 <body>
 <div id="container">
-<div id="FonovyiSloy3" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:19;">
+<div id="FonovyiSloy3" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:18;">
 <div id="wb_ImageRamkaFonzhogen" style="position:absolute;left:0px;top:10px;width:970px;height:684px;z-index:0;">
 <img src="images/kontur4.png" id="ImageRamkaFonzhogen" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_ImageBukvaAmalenkaia" style="position:absolute;left:483px;top:267px;width:198px;height:198px;z-index:1;">
-<img src="images/BukvaA.gif" id="ImageBukvaAmalenkaia" alt=""></div>
-<div id="wb_ImageBukvaAbolshaia" style="position:absolute;left:240px;top:212px;width:241px;height:244px;z-index:2;">
-<img src="images/ImageBukvaAbolshaia.svg" id="ImageBukvaAbolshaia" alt=""></div>
-<div id="wb_ImageFonSloiBukva" style="position:absolute;left:601px;top:339px;width:290px;height:81px;z-index:3;">
+<div id="wb_ImageBukvaBmalenkaia" style="position:absolute;left:503px;top:253px;width:150px;height:204px;z-index:1;">
+<img src="images/BukvaB.gif" id="ImageBukvaBmalenkaia" alt=""></div>
+<div id="wb_ImageBukvaAbolshaia" style="position:absolute;left:277px;top:211px;width:213px;height:240px;z-index:2;">
+<img src="images/ImageBukvaBbolshaia.svg" id="ImageBukvaAbolshaia" alt=""></div>
+<div id="wb_ImageFonSloiBukva" style="position:absolute;left:609px;top:339px;width:290px;height:81px;z-index:3;">
 <img src="images/FonSloiBukva.svg" id="ImageFonSloiBukva" alt=""></div>
-<div id="wb_ImageTextSloiBukvaRUS" style="position:absolute;left:648px;top:365px;width:231px;height:37px;opacity:0.00;z-index:4;">
+<div id="wb_ImageTextSloiBukvaRUS" style="position:absolute;left:658px;top:365px;width:231px;height:37px;opacity:0.00;z-index:4;">
 <img src="images/TextSloiBukvaRUS.svg" id="ImageTextSloiBukvaRUS" alt=""></div>
-<div id="wb_ImageTextSloiBukvaUDM" style="position:absolute;left:651px;top:356px;width:220px;height:52px;z-index:5;">
+<div id="wb_ImageTextSloiBukvaUDM" style="position:absolute;left:663px;top:357px;width:220px;height:52px;z-index:5;">
 <img src="images/TextSloiBukvaUDM.svg" id="ImageTextSloiBukvaUDM" alt=""></div>
-<!-- Sneg -->
-<div id="HtmlSneg3" style="position:absolute;left:44px;top:620px;width:86px;height:33px;overflow:hidden;z-index:6">
-<div onclick="stopsnow()" id="snow-start"></div>
-<script> 
-  var snowsrc="https://gazetlykuzym.github.io/sneg.png";
-  var no = 20; 
-  var log = 0;
-  var hidesnowtime = 0;
-  var snowdistance = "windowheight";
-
-  var ie4up = (document.all) ? 1 : 0;
-  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
-
-    function iecompattest(){
-    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
-    }
-
-  var dx, xp, yp;    
-  var am, stx, sty;  
-  var i, doc_width = 800, doc_height = 600; 
-
-  if (ns6up) {
-    doc_width = self.innerWidth;
-    doc_height = self.innerHeight;
-  } else if (ie4up) {
-    doc_width = iecompattest().clientWidth;
-    doc_height = iecompattest().clientHeight;
-  }
-
-  dx = new Array();
-  xp = new Array();
-  yp = new Array();
-  am = new Array();
-  stx = new Array();
-  sty = new Array();
-  snowsrc=(snowsrc.indexOf("")!= 1)? "https://gazetlykuzym.github.io/sneg.png" : snowsrc
-  for (i = 0; i < no; ++ i) {  
-    dx[i] = 0;                        
-    xp[i] = Math.random()*(doc_width-50); 
-    yp[i] = Math.random()*doc_height;
-    am[i] = Math.random()*20;      
-    stx[i] = 0.02 + Math.random()/10;
-    sty[i] = 0.7 + Math.random();   
-        if (ie4up||ns6up) {
-      if (i == 0) {
-        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
-      } else {
-        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
-      }
-    }
-  }
-
-  function snowIE_NS6() {  
-    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
-        doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
-    for (i = 0; i < no; ++ i) { 
-      yp[i] += sty[i];
-      if (yp[i] > doc_height-50) {
-        xp[i] = Math.random()*(doc_width-am[i]-30);
-        yp[i] = 0;
-        stx[i] = 0.02 + Math.random()/10;
-        sty[i] = 0.7 + Math.random();
-      }
-      dx[i] += stx[i];
-      document.getElementById("dot"+i).style.top=yp[i]+"px";
-      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
-    }
-    snowtimer=setTimeout("snowIE_NS6()", 10);
-  }
-
-    function hidesnow(){
-        if (window.snowtimer) clearTimeout(snowtimer)
-        for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
-    }
-
-if (ie4up||ns6up){
-    snowIE_NS6();
-        if (hidesnowtime>0)
-        setTimeout("hidesnow()", hidesnowtime*1000);
-        }
- function stopsnow(){
- if (log==0){
-  for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
-  no = 0;
-  log = 1;
-  document.getElementById('snow-start').innerHTML ='Вкл. снег';
-  }
-  else { log = 0; no = 20; for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="visible";
- document.getElementById('snow-start').innerHTML ='';
-
-  }
-
- }
-</script>
-<a id="copy" href=""></a>
-</div>
-<div id="TenSledRUSstrzhogen" style="position:absolute;text-align:left;left:178px;top:699px;width:115px;height:87px;z-index:7;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="TenSledRUSstrzhogen" style="position:absolute;text-align:left;left:178px;top:699px;width:115px;height:87px;z-index:6;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer">
 </div>
-<div id="TenSledUDMstrzhogen" style="position:absolute;text-align:left;left:47px;top:720px;width:115px;height:87px;z-index:8;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="TenSledUDMstrzhogen" style="position:absolute;text-align:left;left:47px;top:720px;width:115px;height:87px;z-index:7;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer">
 </div>
-<div id="LayerLapaUdmzhogen" style="position:absolute;text-align:left;left:44px;top:717px;width:115px;height:87px;z-index:9;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerLapaUdmzhogen" style="position:absolute;text-align:left;left:44px;top:717px;width:115px;height:87px;z-index:8;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="Animate('Image4Str_3', '', '', '', '', '100', 500, '');Animate('Image4Str_3_2', '', '', '', '', '0', 500, '');Animate('TenSledRUSstrzhogen', '', '', '', '', '0', 500, '');Animate('TenSledUDMstrzhogen', '', '', '', '', '100', 500, '');Animate('LayertextRUSStr4', '', '', '', '', '0', 500, '');Animate('LayertextStr4', '', '', '', '', '100', 500, '');Animate('ImageRUSOkno', '', '', '', '', '0', 500, '');Animate('ImageUDMOkno', '', '', '', '', '100', 500, '');Animate('wb_ImageSlovaStranicy', '', '', '', '', '100', 300, '');Animate('wb_ImageSlovaStranicyRUS', '', '', '', '', '0', 300, '');Animate('wb_ImageTextSloiBukvaUDM', '', '', '', '', '100', 300, '');Animate('wb_ImageTextSloiBukvaRUS', '', '', '', '', '0', 300, '');return false;">
 </div>
-<div id="LayerLapaRuszhogen" style="position:absolute;text-align:left;left:181px;top:702px;width:115px;height:87px;z-index:10;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerLapaRuszhogen" style="position:absolute;text-align:left;left:181px;top:702px;width:115px;height:87px;z-index:9;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="Animate('TenSledUDMstrzhogen', '', '', '', '', '0', 500, '');Animate('TenSledRUSstrzhogen', '', '', '', '', '100', 500, '');Animate('LayertextStr4', '', '', '', '', '0', 500, '');Animate('LayertextRUSStr4', '', '', '', '', '100', 500, '');Animate('ImageUDMOkno', '', '', '', '', '0', 500, '');Animate('ImageRUSOkno', '', '', '', '', '100', 500, '');Animate('wb_ImageSlovaStranicyRUS', '', '', '', '', '100', 300, '');Animate('wb_ImageSlovaStranicy', '', '', '', '', '0', 300, '');Animate('wb_ImageTextSloiBukvaRUS', '', '', '', '', '100', 300, '');Animate('wb_ImageTextSloiBukvaUDM', '', '', '', '', '0', 300, '');return false;">
 </div>
-<div id="LayerKrest4" style="position:absolute;text-align:left;left:929px;top:24px;width:33px;height:32px;z-index:11;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKrest4" style="position:absolute;text-align:left;left:929px;top:24px;width:33px;height:32px;z-index:10;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="LayerKnopka4Strzhogen" style="position:absolute;text-align:left;left:870px;top:722px;width:90px;height:78px;z-index:12;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka4Strzhogen" style="position:absolute;text-align:left;left:870px;top:722px;width:90px;height:78px;z-index:11;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./veros.html';return false;">
 </div>
-<div id="LayerKnopka3Strzhogen" style="position:absolute;text-align:left;left:762px;top:722px;width:95px;height:82px;z-index:13;">
+<div id="LayerKnopka3Strzhogen" style="position:absolute;text-align:left;left:762px;top:722px;width:95px;height:82px;z-index:12;">
 </div>
-<div id="LayerKnopka2Strzhogen" style="position:absolute;text-align:left;left:654px;top:722px;width:90px;height:78px;z-index:14;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka2Strzhogen" style="position:absolute;text-align:left;left:654px;top:722px;width:90px;height:78px;z-index:13;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
-outline: none !important; cursor: pointer" onclick="window.location.href='./igra.html';return false;">
+outline: none !important; cursor: pointer" onclick="window.location.href='./menuigr.html';return false;">
 </div>
-<div id="LayerKnopka1Strzhogen" style="position:absolute;text-align:left;left:544px;top:722px;width:90px;height:78px;z-index:15;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka1Strzhogen" style="position:absolute;text-align:left;left:544px;top:722px;width:90px;height:78px;z-index:14;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="Layer4KnopkaAlfavit" style="position:absolute;text-align:left;left:340px;top:731px;width:167px;height:58px;z-index:16;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="Layer4KnopkaAlfavit" style="position:absolute;text-align:left;left:340px;top:731px;width:167px;height:58px;z-index:15;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./alfavit.html';return false;">
 </div>
-<div id="wb_ImageSlovaStranicy" style="position:absolute;left:45px;top:98px;width:866px;height:517px;z-index:17;">
+<div id="wb_ImageSlovaStranicy" style="position:absolute;left:45px;top:98px;width:866px;height:517px;z-index:16;">
 <img src="images/SlovaStranicy.svg" id="ImageSlovaStranicy" alt=""></div>
-<div id="wb_ImageSlovaStranicyRUS" style="position:absolute;left:44px;top:98px;width:877px;height:527px;opacity:0.00;z-index:18;">
+<div id="wb_ImageSlovaStranicyRUS" style="position:absolute;left:44px;top:98px;width:877px;height:527px;opacity:0.00;z-index:17;">
 <img src="images/SlovaStranicyRUS.svg" id="ImageSlovaStranicyRUS" alt=""></div>
 </div>
 </div>
