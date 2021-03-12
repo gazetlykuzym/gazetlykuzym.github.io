@@ -136,339 +136,84 @@ body
    background-position: center center;
    background-size: contain;
 }
-#ImageIkonkaZima
+#TextArea1UDM
 {
-   border: 0px solid #000000;
-   padding: 0;
+   border: 0px solid #CCCCCC;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#4F4F4F;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 19px;
+   padding: 4px 4px 4px 4px;
    margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   text-align: left;
+   overflow: auto;
+   resize: none;
 }
-#ImageIkonkaVesna
+#TextArea1UDM:focus
 {
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
 }
-#ImageIkonkaLeto
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#ImageIkonkaOsen
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#NazvanieStihaUUdm
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#TexstRasskazUdmZima
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#TexstRasskazUdmOsen
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#TexstRasskazRusVesna
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#TexstRasskazUdmLeto
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#TexstRasskazUdmVesna
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#KnopkaLetoUDM
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#KnopkaOsenUDM
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#KnopkaVesnaUDM
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#KnopkaZimaUDM
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#KnopkaLetoRUS
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#KnopkaOsenRUS
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#KnopkaVesnaRUS
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#KnopkaZimaRUS
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#NIkonkaZima
+#wb_TextVerosZagolovokUDM 
 {
    background-color: transparent;
    background-image: none;
-}
-#NIkonkaVesna
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaVesna2
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaLeto
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaLeto2
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaLeto3
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaLeto4
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaLeto5
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaZima2
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaZima3
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaZima4
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaZima5
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaVesna3
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaOsen
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaOsen2
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaOsen3
-{
-   background-color: transparent;
-   background-image: none;
-}
-#NIkonkaOsen4
-{
-   background-color: transparent;
-   background-image: none;
-}
-#KuzebaiGerd
-{
    border: 0px solid #000000;
    padding: 0;
    margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   text-align: left;
 }
-#NazvanieStihaURus
+#wb_TextVerosZagolovokUDM div
 {
+   text-align: left;
+}
+#TextArea1RUS
+{
+   border: 0px solid #CCCCCC;
+   background-color: #FFFFFF;
+   background-image: none;
+   color :#4F4F4F;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 19px;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   overflow: auto;
+   resize: none;
+}
+#TextArea1RUS:focus
+{
+   border-color: #66AFE9;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0,0.075), 0px 0px 8px rgba(102,175,233,0.60);
+   outline: 0;
+}
+#wb_TextVerosZagolovokRUS 
+{
+   background-color: transparent;
+   background-image: none;
    border: 0px solid #000000;
    padding: 0;
    margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   text-align: left;
 }
-#TexstRasskazRusZima
+#wb_TextVerosZagolovokRUS div
 {
+   text-align: left;
+}
+#wb_TextVerosAvtor 
+{
+   background-color: transparent;
+   background-image: none;
    border: 0px solid #000000;
    padding: 0;
    margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   text-align: left;
 }
-#TexstRasskazRusLeto
+#wb_TextVerosAvtor div
 {
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#TexstRasskazRusOsen
-{
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
-#snow-start{
-background: rgba(27, 25, 25, 0.4);
-color: #fff;
-display: inline-block;
-width: 100px;
-text-align: center;
-cursor: pointer;
-line-height: 25px;
-position: fixed;
-right: 0px;
-top: 0px;
-border-radius: 0px 0px 0px 9px;
-}
-#copy{
-color: rgba(20, 16, 16, 0);
-font-size: 7px;
-position: fixed;
-text-decoration: none;
-top: 24px;
-right: 2px;
+   text-align: left;
 }
