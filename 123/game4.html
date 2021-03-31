@@ -13,7 +13,7 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background-color: #000000;
+			background-color: #fff;
             overflow: hidden;
 		}
         #canvasArea {
@@ -83,13 +83,18 @@
 
     
 	<script>
-    
+
     (function() {
         //Initialization
+        gdjs.registerObjects();
+        gdjs.registerBehaviors();
+        gdjs.registerGlobalCallbacks();
+
         var game = new gdjs.RuntimeGame(gdjs.projectData, {});
 
         //Create a renderer
-        game.getRenderer().createStandardCanvas(document.body);
+        var canvasArea = document.getElementById("canvasArea");
+        game.getRenderer().createStandardCanvas(canvasArea);
 
         //Bind keyboards/mouse/touch events
         game.getRenderer().bindStandardEvents(game.getInputManager(), window, document);
