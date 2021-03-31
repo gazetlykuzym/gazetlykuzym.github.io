@@ -832,7 +832,7 @@ gdjs.NewSceneCode.GDstar_95particleObjects6.length = 0;
 gdjs.NewSceneCode.condition0IsTrue_0.val = false;
 {
 {gdjs.NewSceneCode.conditionTrue_1 = gdjs.NewSceneCode.condition0IsTrue_0;
-gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8317900);
+gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8323852);
 }
 }if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
 gdjs.copyArray(gdjs.NewSceneCode.GDcard_95anemoneObjects5, gdjs.NewSceneCode.GDcard_95anemoneObjects6);
@@ -852,28 +852,28 @@ gdjs.copyArray(gdjs.NewSceneCode.GDcard_95seahorseObjects5, gdjs.NewSceneCode.GD
 gdjs.copyArray(gdjs.NewSceneCode.GDcard_95snailObjects5, gdjs.NewSceneCode.GDcard_95snailObjects6);
 
 {for(var i = 0, len = gdjs.NewSceneCode.GDcard_95blowfishObjects6.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDcard_95blowfishObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "elastic", 1000, true);
+    gdjs.NewSceneCode.GDcard_95blowfishObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "easeOutQuad", 1000, true);
 }
 for(var i = 0, len = gdjs.NewSceneCode.GDcard_95crabObjects6.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDcard_95crabObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "elastic", 1000, true);
+    gdjs.NewSceneCode.GDcard_95crabObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "easeOutQuad", 1000, true);
 }
 for(var i = 0, len = gdjs.NewSceneCode.GDcard_95seahorseObjects6.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDcard_95seahorseObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "elastic", 1000, true);
+    gdjs.NewSceneCode.GDcard_95seahorseObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "easeOutQuad", 1000, true);
 }
 for(var i = 0, len = gdjs.NewSceneCode.GDcard_95snailObjects6.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDcard_95snailObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "elastic", 1000, true);
+    gdjs.NewSceneCode.GDcard_95snailObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "easeOutQuad", 1000, true);
 }
 for(var i = 0, len = gdjs.NewSceneCode.GDcard_95seagrassObjects6.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDcard_95seagrassObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "elastic", 1000, true);
+    gdjs.NewSceneCode.GDcard_95seagrassObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "easeOutQuad", 1000, true);
 }
 for(var i = 0, len = gdjs.NewSceneCode.GDcard_95coralObjects6.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDcard_95coralObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "elastic", 1000, true);
+    gdjs.NewSceneCode.GDcard_95coralObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "easeOutQuad", 1000, true);
 }
 for(var i = 0, len = gdjs.NewSceneCode.GDcard_95anemoneObjects6.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDcard_95anemoneObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "elastic", 1000, true);
+    gdjs.NewSceneCode.GDcard_95anemoneObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "easeOutQuad", 1000, true);
 }
 for(var i = 0, len = gdjs.NewSceneCode.GDcard_95plasticbagObjects6.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDcard_95plasticbagObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "elastic", 1000, true);
+    gdjs.NewSceneCode.GDcard_95plasticbagObjects6[i].getBehavior("Tween").addObjectScaleTween("vanish", 0, 0, "easeOutQuad", 1000, true);
 }
 }}
 
@@ -1193,7 +1193,7 @@ gdjs.NewSceneCode.GDcard_95anemoneObjects4.length = k;for(var i = 0, k = 0, l = 
 gdjs.NewSceneCode.GDcard_95plasticbagObjects4.length = k;}if ( gdjs.NewSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.NewSceneCode.conditionTrue_1 = gdjs.NewSceneCode.condition1IsTrue_0;
-gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8319100);
+gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8323660);
 }
 }}
 if (gdjs.NewSceneCode.condition1IsTrue_0.val) {
@@ -1498,7 +1498,7 @@ gdjs.NewSceneCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElaps
 }if ( gdjs.NewSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.NewSceneCode.conditionTrue_1 = gdjs.NewSceneCode.condition1IsTrue_0;
-gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8312444);
+gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8318396);
 }
 }}
 if (gdjs.NewSceneCode.condition1IsTrue_0.val) {
@@ -1583,7 +1583,7 @@ gdjs.NewSceneCode.GDcard_95anemoneObjects1.length = k;for(var i = 0, k = 0, l = 
 gdjs.NewSceneCode.GDcard_95plasticbagObjects1.length = k;}if ( gdjs.NewSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.NewSceneCode.conditionTrue_1 = gdjs.NewSceneCode.condition1IsTrue_0;
-gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8322028);
+gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8327980);
 }
 }}
 if (gdjs.NewSceneCode.condition1IsTrue_0.val) {
@@ -1610,7 +1610,7 @@ gdjs.NewSceneCode.eventsList14(runtimeScene);} //End of subevents
 gdjs.NewSceneCode.condition0IsTrue_0.val = false;
 {
 {gdjs.NewSceneCode.conditionTrue_1 = gdjs.NewSceneCode.condition0IsTrue_0;
-gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8328204);
+gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8334156);
 }
 }if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
 gdjs.copyArray(gdjs.NewSceneCode.GDnewgame_95buttonObjects2, gdjs.NewSceneCode.GDnewgame_95buttonObjects3);
@@ -1652,7 +1652,7 @@ gdjs.NewSceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonRele
 gdjs.NewSceneCode.condition0IsTrue_0.val = false;
 {
 {gdjs.NewSceneCode.conditionTrue_1 = gdjs.NewSceneCode.condition0IsTrue_0;
-gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8330724);
+gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8336676);
 }
 }if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
 /* Reuse gdjs.NewSceneCode.GDnewgame_95buttonObjects1 */
@@ -1672,7 +1672,7 @@ gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOn
 gdjs.NewSceneCode.condition0IsTrue_0.val = false;
 {
 {gdjs.NewSceneCode.conditionTrue_1 = gdjs.NewSceneCode.condition0IsTrue_0;
-gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8325220);
+gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8331172);
 }
 }if (gdjs.NewSceneCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("newgame"), gdjs.NewSceneCode.GDnewgameObjects2);
@@ -1751,7 +1751,7 @@ gdjs.NewSceneCode.eventsList17(runtimeScene);} //End of subevents
 {
 gdjs.copyArray(runtimeScene.getObjects("pairs"), gdjs.NewSceneCode.GDpairsObjects2);
 {for(var i = 0, len = gdjs.NewSceneCode.GDpairsObjects2.length ;i < len;++i) {
-    gdjs.NewSceneCode.GDpairsObjects2[i].setString("Pairs: " + gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().getFromIndex(3)));
+    gdjs.NewSceneCode.GDpairsObjects2[i].setString(gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().getFromIndex(3)) + " из 8");
 }
 }}
 
@@ -1815,7 +1815,7 @@ gdjs.NewSceneCode.condition0IsTrue_0.val = gdjs.evtTools.object.pickedObjectsCou
 }if ( gdjs.NewSceneCode.condition0IsTrue_0.val ) {
 {
 {gdjs.NewSceneCode.conditionTrue_1 = gdjs.NewSceneCode.condition1IsTrue_0;
-gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8331644);
+gdjs.NewSceneCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8337596);
 }
 }}
 if (gdjs.NewSceneCode.condition1IsTrue_0.val) {
