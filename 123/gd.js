@@ -23,10 +23,10 @@ var gdjs;
   };
   gdjs2.hexNumberToRGB = (hexNumber) => {
     return {
-      r: hexNumber >> 16 & 255,
-      g: hexNumber >> 8 & 255,
-      b: hexNumber & 255,
-      a: 255
+      r: hexNumber >> 16 & 0,
+      g: hexNumber >> 8 & 0,
+      b: hexNumber & 0,
+      a: 0
     };
   };
   gdjs2.random = function(max) {
