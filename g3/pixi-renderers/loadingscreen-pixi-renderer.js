@@ -11,7 +11,7 @@ var gdjs;
         fontSize: "30px",
         fontFamily: "Arial",
         fill: "#B3D330",
-        align: "left"
+        align: "center"
       });
       this._loadingScreen.addChild(this._progressText);
       if (loadingScreenSetup && loadingScreenSetup.showGDevelopSplash) {
@@ -19,14 +19,14 @@ var gdjs;
           fontSize: "30px",
           fontFamily: "Arial",
           fill: "#B3D330",
-          align: "left"
+          align: "center"
         });
         this._madeWithText.position.y = this._pixiRenderer.height / 2 - 130;
         this._websiteText = new PIXI.Text("gdevelop-app.com", {
           fontSize: "30px",
           fontFamily: "Arial",
           fill: "#B3D330",
-          align: "left"
+          align: "center"
         });
         this._websiteText.position.y = this._pixiRenderer.height / 2 + 100;
         this._splashImage = PIXI.Sprite.from(gdjs2.splashImage);
