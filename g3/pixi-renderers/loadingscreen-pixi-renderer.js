@@ -10,7 +10,7 @@ var gdjs;
       this._progressText = new PIXI.Text(" ", {
         fontSize: "30px",
         fontFamily: "Arial",
-        fill: "#B3D330",
+        fill: "ffffff",
         align: "center"
       });
       this._loadingScreen.addChild(this._progressText);
