@@ -21,7 +21,7 @@ var gdjs;
           fill: "#B3D330",
           align: "center"
         });
-        this._madeWithText.position.y = this._pixiRenderer.height / 2 - 130;
+        this._madeWithText.position.y = this._pixiRenderer.height / 2 - 50;
         this._websiteText = new PIXI.Text("gdevelop-app.com", {
           fontSize: "30px",
           fontFamily: "Arial",
@@ -48,7 +48,7 @@ var gdjs;
       const screenBorder = 10;
       if (this._madeWithText) {
         this._madeWithText.position.x = this._pixiRenderer.width / 2 - this._madeWithText.width / 2;
-        this._madeWithText.position.y = this._pixiRenderer.height / 2 - this._splashImage.height / 2 - this._madeWithText.height - 50;
+        this._madeWithText.position.y = this._pixiRenderer.height / 2 - this._splashImage.height / 2 - this._madeWithText.height - 20;
       }
       if (this._websiteText) {
         this._websiteText.position.x = this._pixiRenderer.width - this._websiteText.width - screenBorder;
