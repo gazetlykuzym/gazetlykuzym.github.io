@@ -28,14 +28,14 @@ var gdjs;
           fill: "#B3D330",
           align: "center"
         });
-        this._websiteText.position.y = this._pixiRenderer.height / 2 - 50;
+        this._websiteText.position.y = this._pixiRenderer.height / 2 + 100;
         this._splashImage = PIXI.Sprite.from(gdjs2.splashImage);
         this._splashImage.position.x = this._pixiRenderer.width / 2;
         this._splashImage.position.y = this._pixiRenderer.height / 2;
         this._splashImage.anchor.x = 0.5;
         this._splashImage.anchor.y = 0.5;
-        this._splashImage.scale.x = this._pixiRenderer.width / 800;
-        this._splashImage.scale.y = this._pixiRenderer.width / 800;
+        this._splashImage.scale.x = this._pixiRenderer.width / 300;
+        this._splashImage.scale.y = this._pixiRenderer.width / 300;
         this._loadingScreen.addChild(this._splashImage);
         this._loadingScreen.addChild(this._madeWithText);
         this._loadingScreen.addChild(this._websiteText);
