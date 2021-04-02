@@ -21,7 +21,7 @@ var gdjs;
           fill: "#B3D330",
           align: "center"
         });
-        this._madeWithText.position.y = this._pixiRenderer.height / 2 - 50;
+        this._madeWithText.position.y = this._pixiRenderer.height / 2 - 130;
         this._websiteText = new PIXI.Text("gdevelop-app.com", {
           fontSize: "30px",
           fontFamily: "Arial",
