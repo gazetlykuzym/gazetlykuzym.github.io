@@ -55,8 +55,8 @@ var gdjs;
         this._websiteText.position.y = this._pixiRenderer.height - this._websiteText.height - screenBorder;
       }
       this._progressText.text = "Загрузка" + " " + percent + "%";
-      this._progressText.position.x = align: "center"
-      this._progressText.position.y = align: "center"
+      this._progressText.position.x = this._renderer.width/2-50;
+      this._progressText.position.y = this._renderer.height/2;
       this._pixiRenderer.render(this._loadingScreen);
     }
     unload() {
