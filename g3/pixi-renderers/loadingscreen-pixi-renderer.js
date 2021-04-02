@@ -10,7 +10,7 @@ var gdjs;
       this._progressText = new PIXI.Text(" ", {
         fontSize: "30px",
         fontFamily: "Arial",
-        fill: "000000",
+        fill: "#000000",
         align: "center"
       });
       this._loadingScreen.addChild(this._progressText);
@@ -25,7 +25,7 @@ var gdjs;
         this._websiteText = new PIXI.Text("gdevelop-app.com", {
           fontSize: "30px",
           fontFamily: "Arial",
-          fill: "ffffff",
+          fill: "#ffffff",
           align: "center"
         });
         this._websiteText.position.y = this._pixiRenderer.height / 2 + 100;
