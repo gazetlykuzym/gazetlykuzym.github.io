@@ -32,7 +32,7 @@ var gdjs;
         this._splashImage = PIXI.Sprite.from(gdjs2.splashImage);
         this._splashImage.position.x = this._pixiRenderer.width / 2;
         this._splashImage.position.y = this._pixiRenderer.height / 2;
-        this._splashImage.anchor.x = 0.5;
+        this._splashImage.anchor.x = 10.5;
         this._splashImage.anchor.y = 0.5;
         this._splashImage.scale.x = this._pixiRenderer.width / 800;
         this._splashImage.scale.y = this._pixiRenderer.width / 800;
