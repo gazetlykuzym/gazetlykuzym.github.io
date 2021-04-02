@@ -47,16 +47,16 @@ var gdjs;
       }
       const screenBorder = 10;
       if (this._madeWithText) {
-        this._madeWithText.position.x = this._pixiRenderer.width / 2 - this._madeWithText.width / 2 + 100;
+        this._madeWithText.position.x = this._pixiRenderer.width / 2 - this._madeWithText.width / 2;
         this._madeWithText.position.y = this._pixiRenderer.height / 2 - this._splashImage.height / 2 - this._madeWithText.height - 20;
       }
       if (this._websiteText) {
         this._websiteText.position.x = this._pixiRenderer.width - this._websiteText.width - screenBorder;
         this._websiteText.position.y = this._pixiRenderer.height - this._websiteText.height - screenBorder;
       }
-      this._progressText.text = percent + "%+";
+      this._progressText.text = "Загрузка" + percent + "%";
       this._progressText.position.x = screenBorder;
-      this._progressText.position.y = this._pixiRenderer.height - this._progressText.height - screenBorder;
+      this._progressText.position.y = this._pixiRenderer.height - this._progressText.height - 10;
       this._pixiRenderer.render(this._loadingScreen);
     }
     unload() {
