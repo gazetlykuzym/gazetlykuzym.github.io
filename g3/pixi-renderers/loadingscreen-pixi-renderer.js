@@ -30,7 +30,7 @@ var gdjs;
         });
         this._websiteText.position.y = this._pixiRenderer.height / 2 + 100;
         this._splashImage = PIXI.Sprite.from(gdjs2.splashImage);
-        this._splashImage.position.x = this._pixiRenderer.width / 2 - 50;
+        this._splashImage.position.x = this._pixiRenderer.width / 2;
         this._splashImage.position.y = this._pixiRenderer.height / 2;
         this._splashImage.anchor.x = 0.5;
         this._splashImage.anchor.y = 0.5;
@@ -48,7 +48,7 @@ var gdjs;
       const screenBorder = 10;
       if (this._madeWithText) {
         this._madeWithText.position.x = this._pixiRenderer.width / 2 - this._madeWithText.width / 2;
-        this._madeWithText.position.y = this._pixiRenderer.height / 2 - this._splashImage.height / 2 - this._madeWithText.height - 20;
+        this._madeWithText.position.y = this._pixiRenderer.height / 2 - this._splashImage.height / 2 - this._madeWithText.height - 50;
       }
       if (this._websiteText) {
         this._websiteText.position.x = this._pixiRenderer.width - this._websiteText.width - screenBorder;
