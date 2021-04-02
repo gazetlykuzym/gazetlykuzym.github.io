@@ -25,7 +25,7 @@ var gdjs;
         this._websiteText = new PIXI.Text("gdevelop-app.com", {
           fontSize: "30px",
           fontFamily: "Arial",
-          fill: "#B3D330",
+          fill: "ffffff",
           align: "center"
         });
         this._websiteText.position.y = this._pixiRenderer.height / 2 + 100;
