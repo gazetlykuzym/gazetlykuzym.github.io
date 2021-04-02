@@ -10,22 +10,22 @@ var gdjs;
       this._progressText = new PIXI.Text(" ", {
         fontSize: "30px",
         fontFamily: "Arial",
-        fill: "#f1ff0f",
-        align: "center"
+        fill: "#B3D330",
+        align: "left"
       });
       this._loadingScreen.addChild(this._progressText);
       if (loadingScreenSetup && loadingScreenSetup.showGDevelopSplash) {
         this._madeWithText = new PIXI.Text("Made with", {
           fontSize: "30px",
           fontFamily: "Arial",
-          fill: "#f1ff0f",
+          fill: "#B3D330",
           align: "center"
         });
         this._madeWithText.position.y = this._pixiRenderer.height / 2 - 130;
         this._websiteText = new PIXI.Text("gdevelop-app.com", {
           fontSize: "30px",
           fontFamily: "Arial",
-          fill: "#f1ff0f",
+          fill: "#B3D330",
           align: "center"
         });
         this._websiteText.position.y = this._pixiRenderer.height / 2 + 100;
