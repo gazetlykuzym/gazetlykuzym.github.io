@@ -1,0 +1,386 @@
+div#container
+{
+   width: 997px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+#ImageRamkaFonIgra
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_PodskazkaPUDM 
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_PodskazkaPUDM div
+{
+   text-align: center;
+}
+#wb_PodskazkaMUDM 
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_PodskazkaMUDM div
+{
+   text-align: center;
+}
+#wb_PodskazkaZHUDM 
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_PodskazkaZHUDM div
+{
+   text-align: center;
+}
+#wb_PodskazkaBUDM 
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_PodskazkaBUDM div
+{
+   text-align: center;
+}
+#wb_PodskazkaPRUS 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_PodskazkaPRUS div
+{
+   text-align: center;
+}
+#wb_PodskazkaMRUS 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_PodskazkaMRUS div
+{
+   text-align: center;
+}
+#wb_PodskazkaZHRUS 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_PodskazkaZHRUS div
+{
+   text-align: center;
+}
+#wb_PodskazkaBRUS 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_PodskazkaBRUS div
+{
+   text-align: center;
+}
+#FonovyiSloy2
+{
+   background-color: transparent;
+   background-image: none;
+}
+#TenSledRUSstrigra
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledRUS.svg);
+   background-repeat: repeat;
+   background-position: center center;
+   background-size: cover;
+   opacity: 0.00;
+}
+#TenSledUDMstrigra
+{
+   background-color: transparent;
+   background-image: url(../images/TenSledUDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerLapaUdmigra
+{
+   background-color: transparent;
+   background-image: url(../images/UDM.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerLapaRusigra
+{
+   background-color: transparent;
+   background-image: url(../images/RUS.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+}
+#LayerKrest4
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   opacity: 0.00;
+}
+#LayerKnopka4Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/4Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka3Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/3Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka2Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/2Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerKnopka1Strigra
+{
+   background-color: transparent;
+   background-image: url(../images/1Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#Layer2KnopkaAlfavit
+{
+   background-color: transparent;
+   background-image: url(../images/KnopkaAlfavit.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
+#LayerB2P
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerZH2P
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerM2P
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerP2P
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerB2H
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerZH2H
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerM2H
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerP2H
+{
+   background-color: transparent;
+   background-image: none;
+}
+#LayerB4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerP4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerZH4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerM4
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageKotIgraTextRus
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageKotIgraTextUdm
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageKotIgraPloho
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageKotIgraHorosho
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageTextPlohoRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageTextPlohoUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageTextHoroshoUDM
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#ImageTextHoroshoRUS
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Saitg3
+{
+   border: 0px solid #C0C0C0;
+   margin: 0;
+}
+#Saitg3udm
+{
+   border: 0px solid #C0C0C0;
+   margin: 0;
+}
