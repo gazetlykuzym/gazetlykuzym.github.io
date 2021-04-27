@@ -33,7 +33,7 @@ var gdjs;
       }
       if (!this._profilerText) {
         this._profilerText = new PIXI.Text(" ", {
-          align: "left",
+          align: "center",
           stroke: "#FFF",
           strokeThickness: 1
         });

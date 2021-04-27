@@ -10,7 +10,7 @@ var gdjs;
       this._progressText = new PIXI.Text(" ", {
         fontSize: "30px",
         fontFamily: "Arial",
-        fill: "#FFFFFF",
+        fill: "#B3D330",
         align: "center"
       });
       this._loadingScreen.addChild(this._progressText);
@@ -18,14 +18,14 @@ var gdjs;
         this._madeWithText = new PIXI.Text("Made with", {
           fontSize: "30px",
           fontFamily: "Arial",
-          fill: "#FFFFFF",
+          fill: "#B3D330",
           align: "center"
         });
         this._madeWithText.position.y = this._pixiRenderer.height / 2 - 130;
         this._websiteText = new PIXI.Text("gdevelop-app.com", {
           fontSize: "30px",
           fontFamily: "Arial",
-          fill: "#FFFFFF",
+          fill: "#B3D330",
           align: "center"
         });
         this._websiteText.position.y = this._pixiRenderer.height / 2 + 100;
@@ -54,7 +54,7 @@ var gdjs;
         this._websiteText.position.x = this._pixiRenderer.width - this._websiteText.width - screenBorder;
         this._websiteText.position.y = this._pixiRenderer.height - this._websiteText.height - screenBorder;
       }
-      this._progressText.text = percent + "%";
+      this._progressText.text = "Загрузка" + " " + percent + "%";
       this._progressText.position.x = screenBorder;
       this._progressText.position.y = this._pixiRenderer.height - this._progressText.height - screenBorder;
       this._pixiRenderer.render(this._loadingScreen);
