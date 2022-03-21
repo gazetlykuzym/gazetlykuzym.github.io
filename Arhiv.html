@@ -6,6 +6,23 @@
 <title>Архив</title>
 <link href="ico120.svg" rel="shortcut icon" type="image/x-icon">
 <link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
+<style>
+   .preloader{
+          position: fixed;
+		  background-color: #ffffff;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  z-index: 99999;
+   }
+   .preloader > div{
+          position: absolute;
+		  left: 46%;
+		  top: 50vh;
+          margin: -90px 0 0 -90px;		  
+	}
+</style>
 <link href="css/base/jquery-ui.min.css" rel="stylesheet">
 <link href="css/SaytKot7.css" rel="stylesheet">
 <link href="css/Arhiv.css" rel="stylesheet">
@@ -25,71 +42,88 @@ $(document).ready(function()
 </script>
 </head>
 <body>
+<div class="preloader">
+<div>
+<img src="preloader.gif" width="247" height="66" alt="">
+</div>
+</div>
 <div id="container">
-<div id="FonovyiSloy6" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:36;">
-<div id="wb_ImageRamkaFonArhiv" style="position:absolute;left:0px;top:18px;width:970px;height:684px;z-index:28;">
+<div id="FonovyiSloy6" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:40;">
+<div id="wb_ImageRamkaFonArhiv" style="position:absolute;left:0px;top:18px;width:970px;height:684px;z-index:32;">
 <img src="images/kontur4.png" id="ImageRamkaFonArhiv" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="LayerKrest4" style="position:absolute;text-align:left;left:929px;top:33px;width:33px;height:32px;z-index:29;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKrest4" style="position:absolute;text-align:left;left:929px;top:33px;width:33px;height:32px;z-index:33;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="LayerKnopka4StrArhiv" style="position:absolute;text-align:left;left:870px;top:720px;width:95px;height:82px;z-index:30;" onclick="window.location.href='./mesyac.html';return false;">
+<div id="LayerKnopka4StrArhiv" style="position:absolute;text-align:left;left:870px;top:720px;width:95px;height:82px;z-index:34;" onclick="window.location.href='./mesyac.html';return false;">
 </div>
-<div id="LayerKnopka3StrArhiv" style="position:absolute;text-align:left;left:762px;top:722px;width:90px;height:78px;z-index:31;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka3StrArhiv" style="position:absolute;text-align:left;left:762px;top:722px;width:90px;height:78px;z-index:35;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./bukva.html';return false;">
 </div>
-<div id="LayerKnopka2StrArhiv" style="position:absolute;text-align:left;left:654px;top:722px;width:90px;height:78px;z-index:32;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka2StrArhiv" style="position:absolute;text-align:left;left:654px;top:722px;width:90px;height:78px;z-index:36;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./menuigr.html';return false;">
 </div>
-<div id="LayerKnopka1StrArhiv" style="position:absolute;text-align:left;left:544px;top:722px;width:90px;height:78px;z-index:33;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka1StrArhiv" style="position:absolute;text-align:left;left:544px;top:722px;width:90px;height:78px;z-index:37;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="Layer6KnopkaAlfavit" style="position:absolute;text-align:left;left:340px;top:731px;width:167px;height:58px;z-index:34;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="Layer6KnopkaAlfavit" style="position:absolute;text-align:left;left:340px;top:731px;width:167px;height:58px;z-index:38;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./alfavit.html';return false;">
 </div>
-<div id="Tabs1" style="position:absolute;left:61px;top:67px;width:743px;height:576px;z-index:35;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
+<div id="Tabs1" style="position:absolute;left:66px;top:67px;width:743px;height:576px;z-index:39;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
 <ul>
 <li><a href="#tabs1-page-0"><span>2021 год</span></a></li>
 <li><a href="#tabs1-page-1"><span>2020 год</span></a></li>
+<li><a href="#tabs1-page-2"><span>2022 год</span></a></li>
 </ul>
 <div style="height:576px;" id="tabs1-page-0">
-<div id="wb_Text3_2021" style="position:absolute;left:342px;top:28px;width:38px;height:19px;z-index:14;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
+<div id="wb_Text3_2021" style="position:absolute;left:342px;top:28px;width:38px;height:19px;z-index:16;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
 <span style="color:#FF0000;font-family:'Century Gothic';font-size:16px;"><strong>№3</strong></span></div>
-<div id="wb_Image3_2021" style="position:absolute;left:303px;top:55px;width:116px;height:91px;z-index:15;">
+<div id="wb_Image3_2021" style="position:absolute;left:303px;top:55px;width:116px;height:91px;z-index:17;">
 <a href="./pdf/3_2021.pdf" target="_blank"><img src="images/3_2021.jpg" id="Image3_2021" alt=""></a></div>
-<div id="wb_Text2_2021" style="position:absolute;left:209px;top:28px;width:38px;height:19px;z-index:16;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
+<div id="wb_Text2_2021" style="position:absolute;left:209px;top:28px;width:38px;height:19px;z-index:18;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
 <span style="color:#FF0000;font-family:'Century Gothic';font-size:16px;"><strong>№2</strong></span></div>
-<div id="wb_Image2_2021" style="position:absolute;left:170px;top:55px;width:117px;height:91px;z-index:17;">
+<div id="wb_Image2_2021" style="position:absolute;left:170px;top:55px;width:117px;height:91px;z-index:19;">
 <a href="./pdf/2_2021.pdf" target="_blank"><img src="images/2_2021.jpg" id="Image2_2021" alt=""></a></div>
-<div id="wb_Text1_2021" style="position:absolute;left:76px;top:28px;width:38px;height:19px;z-index:18;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
+<div id="wb_Text1_2021" style="position:absolute;left:76px;top:28px;width:38px;height:19px;z-index:20;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
 <span style="color:#FF0000;font-family:'Century Gothic';font-size:16px;"><strong>№1</strong></span></div>
-<div id="wb_Image1_2021" style="position:absolute;left:37px;top:55px;width:117px;height:91px;z-index:19;">
+<div id="wb_Image1_2021" style="position:absolute;left:37px;top:55px;width:117px;height:91px;z-index:21;">
 <a href="./pdf/1_2021.pdf" target="_blank"><img src="images/1_2021.jpg" id="Image1_2021" alt=""></a></div>
-<div id="wb_Image4_2021" style="position:absolute;left:436px;top:55px;width:116px;height:91px;z-index:20;">
+<div id="wb_Image4_2021" style="position:absolute;left:436px;top:55px;width:116px;height:91px;z-index:22;">
 <a href="./pdf/4_2021.pdf" target="_blank"><img src="images/4_2021.jpg" id="Image4_2021" alt=""></a></div>
-<div id="wb_Text4_2021" style="position:absolute;left:475px;top:28px;width:38px;height:19px;z-index:21;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
+<div id="wb_Text4_2021" style="position:absolute;left:475px;top:28px;width:38px;height:19px;z-index:23;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
 <span style="color:#FF0000;font-family:'Century Gothic';font-size:16px;"><strong>№4</strong></span></div>
-<div id="wb_Image5_2021" style="position:absolute;left:569px;top:55px;width:116px;height:91px;z-index:22;">
+<div id="wb_Image5_2021" style="position:absolute;left:569px;top:55px;width:116px;height:91px;z-index:24;">
 <a href="./pdf/5_2021.pdf" target="_blank"><img src="images/5_2021.jpg" id="Image5_2021" alt=""></a></div>
-<div id="wb_Text5_2021" style="position:absolute;left:608px;top:28px;width:38px;height:19px;z-index:23;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
+<div id="wb_Text5_2021" style="position:absolute;left:608px;top:28px;width:38px;height:19px;z-index:25;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
 <span style="color:#FF0000;font-family:'Century Gothic';font-size:16px;"><strong>№5</strong></span></div>
-<div id="wb_Text6_2021" style="position:absolute;left:76px;top:166px;width:38px;height:19px;z-index:24;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
+<div id="wb_Text6_2021" style="position:absolute;left:76px;top:166px;width:38px;height:19px;z-index:26;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
 <span style="color:#FF0000;font-family:'Century Gothic';font-size:16px;"><strong>№6</strong></span></div>
-<div id="wb_Image6_2021" style="position:absolute;left:37px;top:193px;width:116px;height:91px;z-index:25;">
+<div id="wb_Image6_2021" style="position:absolute;left:37px;top:193px;width:116px;height:91px;z-index:27;">
 <a href="./pdf/6_2021.pdf" target="_blank"><img src="images/6_2021.jpg" id="Image6_2021" alt=""></a></div>
 </div>
 <div style="height:576px;" id="tabs1-page-1">
-<div id="wb_Text1_2020" style="position:absolute;left:76px;top:28px;width:38px;height:19px;z-index:26;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
+<div id="wb_Text1_2020" style="position:absolute;left:76px;top:28px;width:38px;height:19px;z-index:28;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
 <span style="color:#FF0000;font-family:'Century Gothic';font-size:16px;"><strong>№1</strong></span></div>
-<div id="wb_Image1_2020" style="position:absolute;left:37px;top:55px;width:117px;height:97px;z-index:27;">
+<div id="wb_Image1_2020" style="position:absolute;left:37px;top:55px;width:117px;height:97px;z-index:29;">
 <a href="./pdf/1_2020.pdf" target="_blank"><img src="images/1_2020.jpg" id="Image1_2020" alt=""></a></div>
 </div>
+<div style="height:576px;" id="tabs1-page-2">
+<div id="wb_Text1_2022" style="position:absolute;left:76px;top:28px;width:38px;height:19px;z-index:30;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;">
+<span style="color:#FF0000;font-family:'Century Gothic';font-size:16px;"><strong>№1</strong></span></div>
+<div id="wb_Image1_2022" style="position:absolute;left:37px;top:55px;width:117px;height:91px;z-index:31;">
+<a href="./pdf/1_2022.pdf" target="_blank"><img src="images/1_2022.jpg" id="Image1_2022" alt=""></a></div>
 </div>
 </div>
 </div>
+</div>
+<script>
+    $(window).on('load', function(){
+	$('.preloader').delay(700).fadeOut('slow');
+	});
+</script>
 </body>
 </html>
