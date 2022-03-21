@@ -3,9 +3,26 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <meta charset="utf-8">
-<title>Ӝог веранъёс</title>
+<title>Верос</title>
 <link href="ico120.svg" rel="shortcut icon" type="image/x-icon">
 <link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
+<style>
+   .preloader{
+          position: fixed;
+		  background-color: #ffffff;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  z-index: 99999;
+   }
+   .preloader > div{
+          position: absolute;
+		  left: 46%;
+		  top: 50vh;
+          margin: -90px 0 0 -90px;		  
+	}
+</style>
 <link href="css/SaytKot7.css" rel="stylesheet">
 <link href="css/mesyac.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
@@ -13,8 +30,13 @@
 <script src="js/GBS.min.js"></script>
 </head>
 <body>
+<div class="preloader">
+<div>
+<img src="preloader.gif" width="247" height="66" alt="">
+</div>
+</div>
 <div id="container">
-<div id="FonovyiSloy4" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:17;">
+<div id="FonovyiSloy4" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:19;">
 <div id="wb_ImageRamkaFonmadiskonyos" style="position:absolute;left:0px;top:10px;width:970px;height:684px;z-index:0;">
 <img src="images/konturkalendar.png" id="ImageRamkaFonmadiskonyos" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
 <div id="TenSledRUSstrmadiskonyos" style="position:absolute;text-align:left;left:214px;top:719px;width:115px;height:87px;z-index:1;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
@@ -27,11 +49,11 @@ outline: none !important; cursor: pointer">
 </div>
 <div id="LayerLapaUdmmadiskonyos" style="position:absolute;text-align:left;left:77px;top:696px;width:115px;height:87px;z-index:3;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
-outline: none !important; cursor: pointer" onclick="Animate('TenSledRUSstrmadiskonyos', '', '', '', '', '0', 500, '');Animate('TenSledUDMstrmadiskonyos', '', '', '', '', '100', 500, '');ShowObject('wb_NazvanieUDM', 1);ShowObject('wb_NazvanieRUS', 0);return false;">
+outline: none !important; cursor: pointer" onclick="Animate('TenSledRUSstrmadiskonyos', '', '', '', '', '0', 500, '');Animate('TenSledUDMstrmadiskonyos', '', '', '', '', '100', 500, '');ShowObject('wb_NazvanieUDM', 1);ShowObject('wb_NazvanieRUS', 0);ShowObject('TextAreaUDM', 1);ShowObject('TextAreaRUS', 0);return false;">
 </div>
 <div id="LayerLapaRusmadiskonyos" style="position:absolute;text-align:left;left:211px;top:722px;width:115px;height:87px;z-index:4;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
-outline: none !important; cursor: pointer" onclick="Animate('TenSledRUSstrmadiskonyos', '', '', '', '', '100', 500, '');Animate('TenSledUDMstrmadiskonyos', '', '', '', '', '0', 500, '');ShowObject('wb_NazvanieRUS', 1);ShowObject('wb_NazvanieUDM', 0);return false;">
+outline: none !important; cursor: pointer" onclick="Animate('TenSledRUSstrmadiskonyos', '', '', '', '', '100', 500, '');Animate('TenSledUDMstrmadiskonyos', '', '', '', '', '0', 500, '');ShowObject('wb_NazvanieRUS', 1);ShowObject('wb_NazvanieUDM', 0);ShowObject('TextAreaRUS', 1);ShowObject('TextAreaUDM', 0);return false;">
 </div>
 <div id="LayerKrest3" style="position:absolute;text-align:left;left:929px;top:24px;width:33px;height:32px;z-index:5;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
@@ -61,13 +83,42 @@ outline: none !important; cursor: pointer" onclick="window.location.href='./inde
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./alfavit.html';return false;">
 </div>
-<div id="wb_NazvanieUDM" style="position:absolute;left:348px;top:85px;width:300px;height:29px;z-index:14;">
+<div id="wb_NazvanieUDM" style="position:absolute;left:396px;top:62px;width:200px;height:61px;z-index:14;">
 <img src="images/NazvanieUDM.svg" id="NazvanieUDM" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_NazvanieRUS" style="position:absolute;left:323px;top:86px;width:350px;height:28px;visibility:hidden;z-index:15;">
+<div id="wb_NazvanieRUS" style="position:absolute;left:323px;top:63px;width:351px;height:58px;visibility:hidden;z-index:15;">
 <img src="images/NazvanieRUS.svg" id="NazvanieRUS" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_BukvySkor" style="position:absolute;left:127px;top:164px;width:700px;height:441px;z-index:16;">
+<div id="wb_BukvySkor" style="position:absolute;left:127px;top:164px;width:700px;height:441px;visibility:hidden;z-index:16;">
 <img src="images/bukvySkor.svg" id="BukvySkor" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
+<textarea name="ӞИЧЫ НО ТУРИ" id="TextAreaUDM" style="position:absolute;left:46px;top:139px;width:875px;height:498px;z-index:17;" rows="19" cols="95" readonly disabled spellcheck="false">  Ӟичы туриен эшласькиз но сое ас дораз куное ӧте. «Лыкты, кума, лыкты, дуное! Туж ӟеч утялто мон тонэ!»
+  Лыктӥз тури куное. Ӟичы ӝук пӧзьтӥз, тэркы вылэ зыраз но туриез утялтэ ини: «Си, кумае, си, гыдыке! Ачим пӧрай!»
+  Тури нырыныз тэркыысь кукча: кок-кок! кок-кок! Кукча, кукча но - ымаз номыр но уг шедьы. Нош ӟичы ӝуксэ нюлэ но нюлэ. Озьы вань ӝуксэ ачиз сииз но шуэ: «Эн лекаты, кума, утялтонэ та сяна ӧвӧл ни».
+  «Таизлы тау, кума, - вазе тури, - ӵуказе мон доры лыкты».
+  Ӵуказеяз ӟичы тури доры куное лыктӥз. Тури сюкасьнянь дасяз, сое сюбег чыртыё кунганэ кисьтӥз но утялтэ ини кунозэ: «Си, кумае, си, мусое! Та сяна номыри но утялтонэ ӧвӧл».
+  Ӟичы берга кунган котыртӥ: озьы но, тазьы но сузькыны выре, кунганэз нюлыштэ но, зынъялтэ но - номыре но сиыны уг сузьы. Нош кузь кук тури сюкасьнянез кузь нырыныз кыска гинэ: кукчаз, кукчаз но ваньзэ быдтӥз.
+  «Я, эн лекаты, кумае, утялтонэ та сяна ӧвӧл ни».
+  Бертӥз ӟичы, ымдурзэ но коттытэк. Со дырысен ӟичы но тури уг эшласько ни.</textarea>
+<textarea name="ЛИСА И ЖУРАВЛЬ" id="TextAreaRUS" style="position:absolute;left:46px;top:139px;width:875px;height:498px;visibility:hidden;z-index:18;" rows="19" cols="95" readonly disabled spellcheck="false">Подружились лиса с журавлем. Вот вздумала лиса угостить журавля и пошла звать его к себе в гости:
+— Приходи, журавль! Приходи, дорогой. Уж вот как я тебя угощу!
+Идет журавль на званый обед. А лиса наварила каши и размазала ее по тарелке. Подала и потчует:
+— Покушай, мой голубчик, сама стряпала!
+Журавль тук-тук носом по тарелке. Стучал, стучал, ничего не попадает. А лиса лижет да лижет кашу. Так всю кашу сама и скушала.
+А как съела лиса кашу, и говорит:
+— Не обессудь, гость дорогой. Больше потчевать нечем.
+— Спасибо, лисонька, и на этом. Приходи же теперь ты ко мне.
+На другой день приходит лиса к журавлю. А журавль наготовил окрошки, положил ее в высокий кувшин с узким горлышком.
+Поставил кувшин на стол и говорит:
+— Кушай, лисонька! Право больше потчевать нечем.
+Лиса вертится около кувшина. И так зайдет, и этак, и лизнет-то его, и понюхает, все ничего не достанет. Не
+лезет голова в кувшин. А журавль стоит на высоких ногах да длинным носом из кувшина окрошку таскает. Клевал да клевал, пока все не поел.
+— Ну, не обессудь, лисонька, больше угощать нечем, — говорит.
+Пошла лиса домой не солоно хлебавши.
+С тех пор и дружба у лисы с журавлем врозь.</textarea>
 </div>
 </div>
+<script>
+    $(window).on('load', function(){
+	$('.preloader').delay(700).fadeOut('slow');
+	});
+</script>
 </body>
 </html>
