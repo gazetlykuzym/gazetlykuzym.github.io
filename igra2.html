@@ -6,13 +6,35 @@
 <title>2-тӥ шудон</title>
 <link href="ico120.svg" rel="shortcut icon" type="image/x-icon">
 <link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
+<style>
+   .preloader{
+          position: fixed;
+		  background-color: #ffffff;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  z-index: 99999;
+   }
+   .preloader > div{
+          position: absolute;
+		  left: 46%;
+		  top: 50vh;
+          margin: -90px 0 0 -90px;		  
+	}
+</style>
 <link href="css/SaytKot7.css" rel="stylesheet">
 <link href="css/igra2.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
-<script src="js/GBS.rotate.min.js"></script>
-<script src="js/GBS.min.js"></script>
+<script src="js/wb.rotate.min.js"></script>
+<script src="js/wwb14.min.js"></script>
 </head>
 <body>
+<div class="preloader">
+<div>
+<img src="preloader.gif" width="247" height="66" alt="">
+</div>
+</div>
 <div id="container">
 <div id="Layer1" style="position:absolute;text-align:center;left:0%;top:0%;width:970px;height:859px;z-index:77;">
 <div id="Layer1_Container" style="width:960px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
@@ -41,7 +63,7 @@ outline: none !important; cursor: pointer" onclick="Animate('TenSledUDMstrigra',
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="LayerKnopka4Strigra" style="position:absolute;text-align:left;left:870px;top:720px;width:95px;height:82px;z-index:14;" onclick="window.location.href='./veros.html';return false;">
+<div id="LayerKnopka4Strigra" style="position:absolute;text-align:left;left:870px;top:720px;width:95px;height:82px;z-index:14;" onclick="window.location.href='./mesyac.html';return false;">
 </div>
 <div id="LayerKnopka3Strigra" style="position:absolute;text-align:left;left:762px;top:722px;width:90px;height:78px;z-index:15;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
@@ -525,5 +547,10 @@ function TimerStopTimer20()
 <img src="images/TextlunaUDM.svg" id="TextlunaUDM" alt=""></div>
 </div>
 </div>
+<script>
+    $(window).on('load', function(){
+	$('.preloader').delay(700).fadeOut('slow');
+	});
+</script>
 </body>
 </html>
