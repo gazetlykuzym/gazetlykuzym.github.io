@@ -6,6 +6,23 @@
 <title>Шудонъёс</title>
 <link href="ico120.svg" rel="shortcut icon" type="image/x-icon">
 <link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
+<style>
+   .preloader{
+          position: fixed;
+		  background-color: #ffffff;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  z-index: 99999;
+   }
+   .preloader > div{
+          position: absolute;
+		  left: 46%;
+		  top: 50vh;
+          margin: -90px 0 0 -90px;		  
+	}
+</style>
 <link href="css/SaytKot7.css" rel="stylesheet">
 <link href="css/menuigr.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
@@ -13,8 +30,13 @@
 <script src="js/GBS.min.js"></script>
 </head>
 <body>
+<div class="preloader">
+<div>
+<img src="preloader.gif" width="247" height="66" alt="">
+</div>
+</div>
 <div id="container">
-<div id="FonovyiSloy2" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:21;">
+<div id="FonovyiSloy2" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:22;">
 <div id="wb_ImageRamkaFonIgra" style="position:absolute;left:0px;top:10px;width:970px;height:684px;z-index:0;">
 <img src="images/kontur4.png" id="ImageRamkaFonIgra" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
 <div id="TenSledRUSstrigra" style="position:absolute;text-align:left;left:178px;top:699px;width:115px;height:87px;z-index:1;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
@@ -37,7 +59,7 @@ outline: none !important; cursor: pointer" onclick="Animate('wb_kotIgraVyborText
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="LayerKnopka4Strigra" style="position:absolute;text-align:left;left:870px;top:720px;width:95px;height:82px;z-index:6;" onclick="window.location.href='./veros.html';return false;">
+<div id="LayerKnopka4Strigra" style="position:absolute;text-align:left;left:870px;top:720px;width:95px;height:82px;z-index:6;" onclick="window.location.href='./mesyac.html';return false;">
 </div>
 <div id="LayerKnopka3Strigra" style="position:absolute;text-align:left;left:762px;top:722px;width:90px;height:78px;z-index:7;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
@@ -61,21 +83,28 @@ outline: none !important; cursor: pointer" onclick="window.location.href='./alfa
 <img src="images/kotIgraVyborTextRUS.svg" id="kotIgraVyborTextRUS" alt=""></div>
 <div id="wb_kotIgraVyborTextUDM" style="position:absolute;left:478px;top:364px;width:180px;height:100px;z-index:13;">
 <img src="images/kotIgraVyborTextUDM.svg" id="kotIgraVyborTextUDM" alt=""></div>
-<div id="wb_kotIgra2IgraRUS" style="position:absolute;left:400px;top:139px;width:173px;height:150px;visibility:hidden;z-index:14;">
+<div id="wb_kotIgra2IgraRUS" style="position:absolute;left:288px;top:139px;width:173px;height:150px;visibility:hidden;z-index:14;">
 <a href="#" onclick="window.location.href='./igra2.html';return false;" onmousemove="SetImage('kotIgra2IgraRUS','images/kotIgra02IgraRUS.svg');SetImage('kotIgra2IgraUDM','images/kotIgra02IgraUDM.svg');Animate('wb_Svetlyak0Igra', '', '', '', '', '100', 0, '');return false;" onmouseout="SetImage('kotIgra2IgraRUS','images/kotIgra2IgraRUS.svg');SetImage('kotIgra2IgraUDM','images/kotIgra2IgraUDM.svg');Animate('wb_Svetlyak0Igra', '', '', '', '', '0', 0, '');return false;"><img src="images/kotIgra2IgraRUS.svg" id="kotIgra2IgraRUS" alt=""></a></div>
-<div id="wb_kotIgra2IgraUDM" style="position:absolute;left:400px;top:139px;width:173px;height:150px;z-index:15;">
+<div id="wb_kotIgra2IgraUDM" style="position:absolute;left:288px;top:139px;width:173px;height:150px;z-index:15;">
 <a href="#" onclick="window.location.href='./igra2.html';return false;" onmousemove="SetImage('kotIgra2IgraRUS','images/kotIgra02IgraRUS.svg');SetImage('kotIgra2IgraUDM','images/kotIgra02IgraUDM.svg');Animate('wb_Svetlyak0Igra', '', '', '', '', '100', 0, '');return false;" onmouseout="SetImage('kotIgra2IgraRUS','images/kotIgra2IgraRUS.svg');SetImage('kotIgra2IgraUDM','images/kotIgra2IgraUDM.svg');Animate('wb_Svetlyak0Igra', '', '', '', '', '0', 0, '');return false;"><img src="images/kotIgra2IgraUDM.svg" id="kotIgra2IgraUDM" alt=""></a></div>
-<div id="wb_Svetlyak0Igra" style="position:absolute;left:436px;top:154px;width:90px;height:90px;opacity:0.00;z-index:16;">
+<div id="wb_Svetlyak0Igra" style="position:absolute;left:324px;top:154px;width:90px;height:90px;opacity:0.00;z-index:16;">
 <a href="#" onclick="window.location.href='./igra2.html';return false;" onmousemove="SetImage('kotIgra2IgraRUS','images/kotIgra02IgraRUS.svg');SetImage('kotIgra2IgraUDM','images/kotIgra02IgraUDM.svg');Animate('wb_Svetlyak0Igra', '', '', '', '', '100', 0, '');return false;" onmouseout="SetImage('kotIgra2IgraRUS','images/kotIgra2IgraRUS.svg');SetImage('kotIgra2IgraUDM','images/kotIgra2IgraUDM.svg');Animate('wb_Svetlyak0Igra', '', '', '', '', '0', 0, '');return false;"><img src="images/Svetlyak0.gif" id="Svetlyak0Igra" alt=""></a></div>
-<div id="wb_kotIgra1IgraRUS" style="position:absolute;left:181px;top:139px;width:173px;height:150px;visibility:hidden;z-index:17;">
+<div id="wb_kotIgra1IgraRUS" style="position:absolute;left:64px;top:139px;width:173px;height:150px;visibility:hidden;z-index:17;">
 <a href="#" onclick="window.location.href='./igra.html';return false;" onmousemove="SetImage('kotIgra1IgraRUS','images/kotIgra01IgraRUS.svg');SetImage('kotIgra1IgraUDM','images/kotIgra01IgraUDM.svg');return false;" onmouseout="SetImage('kotIgra1IgraRUS','images/kotIgra1IgraRUS.svg');SetImage('kotIgra1IgraUDM','images/kotIgra1IgraUDM.svg');return false;"><img src="images/kotIgra1IgraRUS.svg" id="kotIgra1IgraRUS" alt=""></a></div>
-<div id="wb_kotIgra1IgraUDM" style="position:absolute;left:181px;top:139px;width:173px;height:150px;z-index:18;">
+<div id="wb_kotIgra1IgraUDM" style="position:absolute;left:64px;top:139px;width:173px;height:150px;z-index:18;">
 <a href="#" onclick="window.location.href='./igra.html';return false;" onmousemove="SetImage('kotIgra1IgraRUS','images/kotIgra01IgraRUS.svg');SetImage('kotIgra1IgraUDM','images/kotIgra01IgraUDM.svg');return false;" onmouseout="SetImage('kotIgra1IgraRUS','images/kotIgra1IgraRUS.svg');SetImage('kotIgra1IgraUDM','images/kotIgra1IgraUDM.svg');return false;"><img src="images/kotIgra1IgraUDM.svg" id="kotIgra1IgraUDM" alt=""></a></div>
-<div id="wb_kotIgra3IgraRUS" style="position:absolute;left:619px;top:139px;width:173px;height:150px;visibility:hidden;z-index:19;">
+<div id="wb_kotIgra3IgraRUS" style="position:absolute;left:512px;top:139px;width:173px;height:150px;visibility:hidden;z-index:19;">
 <a href="#" onclick="window.location.href='./igra3.html';return false;" onmousemove="SetImage('kotIgra3IgraRUS','images/kotIgra03IgraRUS.svg');return false;" onmouseout="SetImage('kotIgra3IgraRUS','images/kotIgra3IgraRUS.svg');return false;"><img src="images/kotIgra3IgraRUS.svg" id="kotIgra3IgraRUS" alt=""></a></div>
-<div id="wb_kotIgra3IgraUDM" style="position:absolute;left:619px;top:139px;width:173px;height:150px;z-index:20;">
+<div id="wb_kotIgra3IgraUDM" style="position:absolute;left:512px;top:139px;width:173px;height:150px;z-index:20;">
 <a href="#" onclick="window.location.href='./igra3.html';return false;" onmousemove="SetImage('kotIgra3IgraUDM','images/kotIgra03IgraUDM.svg');return false;" onmouseout="SetImage('kotIgra3IgraUDM','images/kotIgra3IgraUDM.svg');return false;"><img src="images/kotIgra3IgraUDM.svg" id="kotIgra3IgraUDM" alt=""></a></div>
+<div id="wb_kotIgra4Igra" style="position:absolute;left:733px;top:139px;width:173px;height:150px;z-index:21;">
+<a href="#" onclick="window.location.href='./igra4.html';return false;" onmousemove="SetImage('kotIgra4Igra','images/kotIgra04Igra.svg');return false;" onmouseout="SetImage('kotIgra4Igra','images/kotIgra4Igra.svg');return false;"><img src="images/kotIgra4Igra.svg" id="kotIgra4Igra" alt=""></a></div>
 </div>
 </div>
+<script>
+    $(window).on('load', function(){
+	$('.preloader').delay(700).fadeOut('slow');
+	});
+</script>
 </body>
 </html>
