@@ -14,6 +14,23 @@
 Удмуртские буквы">
 <link href="ico120.svg" rel="shortcut icon" type="image/x-icon">
 <link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
+<style>
+   .preloader{
+          position: fixed;
+		  background-color: #ffffff;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  z-index: 99999;
+   }
+   .preloader > div{
+          position: absolute;
+		  left: 46%;
+		  top: 50vh;
+          margin: -90px 0 0 -90px;		  
+	}
+</style>
 <link href="css/base/jquery-ui.min.css" rel="stylesheet">
 <link href="css/SaytKot7.css" rel="stylesheet">
 <link href="css/alfavit.css" rel="stylesheet">
@@ -21,8 +38,8 @@
 <script src="js/transition.min.js"></script>
 <script src="js/modal.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
-<script src="js/GBS.rotate.min.js"></script>
-<script src="js/GBS.min.js"></script>
+<script src="js/wb.rotate.min.js"></script>
+<script src="js/wwb14.min.js"></script>
 <script>
 $(document).ready(function()
 {
@@ -759,6 +776,11 @@ $(document).ready(function()
 </script>
 </head>
 <body>
+<div class="preloader">
+<div>
+<img src="preloader.gif" width="247" height="66" alt="">
+</div>
+</div>
 <div id="container">
 <div id="FonovyiSloy5" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:495;">
 <div id="wb_ImageRazgovor2" style="position:absolute;left:457px;top:556px;width:364px;height:114px;z-index:0;">
@@ -1009,7 +1031,7 @@ outline: none !important; cursor: pointer" onclick="window.location.href='./bukv
 </div>
 <div id="LayerKnopka4Stralfavit" style="position:absolute;text-align:left;left:870px;top:722px;width:90px;height:78px;z-index:67;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
-outline: none !important; cursor: pointer" onclick="window.location.href='./veros.html';return false;">
+outline: none !important; cursor: pointer" onclick="window.location.href='./mesyac.html';return false;">
 </div>
 <div id="Layer5KnopkaAlfavit" style="position:absolute;text-align:left;left:343px;top:729px;width:167px;height:64px;z-index:68;">
 </div>
@@ -3042,5 +3064,10 @@ function TimerStopTimerYA()
 </div>
 </div>
 </div>
+<script>
+    $(window).on('load', function(){
+	$('.preloader').delay(700).fadeOut('slow');
+	});
+</script>
 </body>
 </html>
