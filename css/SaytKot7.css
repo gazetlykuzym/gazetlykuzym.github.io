@@ -156,12 +156,12 @@
 a
 {
    color: #FFFFFF;
-   text-decoration: underline;
+   text-decoration: none;
 }
 a:hover
 {
    color: #FFFFFF;
-   text-decoration: underline;
+   text-decoration: none;
 }
 input:focus, textarea:focus, select:focus
 {
