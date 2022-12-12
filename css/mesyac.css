@@ -196,3 +196,24 @@ body
    overflow: auto;
    resize: none;
 }
+#snow-start{
+background: rgba(27, 25, 25, 0.4);
+color: #fff;
+display: inline-block;
+width: 100px;
+text-align: center;
+cursor: pointer;
+line-height: 25px;
+position: fixed;
+right: 0px;
+top: 0px;
+border-radius: 0px 0px 0px 9px;
+}
+#copy{
+color: rgba(20, 16, 16, 0);
+font-size: 7px;
+position: fixed;
+text-decoration: none;
+top: 24px;
+right: 2px;
+}
