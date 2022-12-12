@@ -36,78 +36,179 @@
 </div>
 </div>
 <div id="container">
-<div id="FonovyiSloy4" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:19;">
-<div id="wb_ImageRamkaFonmadiskonyos" style="position:absolute;left:0px;top:10px;width:970px;height:684px;z-index:0;">
+<div id="FonovyiSloy4" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:20;">
+<!-- Sneg -->
+<div id="HtmlSneg" style="position:absolute;left:695px;top:398px;width:275px;height:298px;z-index:0">
+<div onclick="stopsnow()" id="snow-start"></div>
+<script> 
+  var snowsrc="https://gazetlykuzym.github.io//images/Snezhynki.png";
+  var no = 20; 
+  var log = 0;
+  var hidesnowtime = 0;
+  var snowdistance = "windowheight";
+
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+    function iecompattest(){
+    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+    }
+
+  var dx, xp, yp;    
+  var am, stx, sty;  
+  var i, doc_width = 800, doc_height = 600; 
+
+  if (ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = iecompattest().clientWidth;
+    doc_height = iecompattest().clientHeight;
+  }
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  snowsrc=(snowsrc.indexOf("")!= 1)? "https://gazetlykuzym.github.io//images/Snezhynki.png" : snowsrc
+  for (i = 0; i < no; ++ i) {  
+    dx[i] = 0;                        
+    xp[i] = Math.random()*(doc_width-50); 
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;      
+    stx[i] = 0.02 + Math.random()/10;
+    sty[i] = 0.7 + Math.random();   
+        if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      } else {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      }
+    }
+  }
+
+  function snowIE_NS6() {  
+    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
+        doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+    for (i = 0; i < no; ++ i) { 
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+      }
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+    }
+    snowtimer=setTimeout("snowIE_NS6()", 10);
+  }
+
+    function hidesnow(){
+        if (window.snowtimer) clearTimeout(snowtimer)
+        for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
+    }
+
+if (ie4up||ns6up){
+    snowIE_NS6();
+        if (hidesnowtime>0)
+        setTimeout("hidesnow()", hidesnowtime*1000);
+        }
+ function stopsnow(){
+ if (log==0){
+  for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
+  no = 0;
+  log = 1;
+  document.getElementById('snow-start').innerHTML ='Вкл. снег';
+  }
+  else { log = 0; no = 20; for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="visible";
+ document.getElementById('snow-start').innerHTML ='';
+
+  }
+
+ }
+</script>
+<a id="copy" href=""></a>
+</div>
+<div id="wb_ImageRamkaFonmadiskonyos" style="position:absolute;left:0px;top:10px;width:970px;height:684px;z-index:1;">
 <img src="images/konturkalendar.png" id="ImageRamkaFonmadiskonyos" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="TenSledRUSstrmadiskonyos" style="position:absolute;text-align:left;left:214px;top:719px;width:115px;height:87px;z-index:1;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="TenSledRUSstrmadiskonyos" style="position:absolute;text-align:left;left:214px;top:719px;width:115px;height:87px;z-index:2;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer">
 </div>
-<div id="TenSledUDMstrmadiskonyos" style="position:absolute;text-align:left;left:80px;top:699px;width:115px;height:87px;z-index:2;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="TenSledUDMstrmadiskonyos" style="position:absolute;text-align:left;left:80px;top:699px;width:115px;height:87px;z-index:3;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer">
 </div>
-<div id="LayerLapaUdmmadiskonyos" style="position:absolute;text-align:left;left:77px;top:696px;width:115px;height:87px;z-index:3;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerLapaUdmmadiskonyos" style="position:absolute;text-align:left;left:77px;top:696px;width:115px;height:87px;z-index:4;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="Animate('TenSledRUSstrmadiskonyos', '', '', '', '', '0', 500, '');Animate('TenSledUDMstrmadiskonyos', '', '', '', '', '100', 500, '');ShowObject('wb_NazvanieUDM', 1);ShowObject('wb_NazvanieRUS', 0);ShowObject('TextAreaUDM', 1);ShowObject('TextAreaRUS', 0);return false;">
 </div>
-<div id="LayerLapaRusmadiskonyos" style="position:absolute;text-align:left;left:211px;top:722px;width:115px;height:87px;z-index:4;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerLapaRusmadiskonyos" style="position:absolute;text-align:left;left:211px;top:722px;width:115px;height:87px;z-index:5;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="Animate('TenSledRUSstrmadiskonyos', '', '', '', '', '100', 500, '');Animate('TenSledUDMstrmadiskonyos', '', '', '', '', '0', 500, '');ShowObject('wb_NazvanieRUS', 1);ShowObject('wb_NazvanieUDM', 0);ShowObject('TextAreaRUS', 1);ShowObject('TextAreaUDM', 0);return false;">
 </div>
-<div id="LayerKrest3" style="position:absolute;text-align:left;left:929px;top:24px;width:33px;height:32px;z-index:5;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKrest3" style="position:absolute;text-align:left;left:929px;top:24px;width:33px;height:32px;z-index:6;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="LayerSkryt" style="position:absolute;text-align:left;visibility:hidden;left:117px;top:22px;width:38px;height:21px;z-index:6;">
+<div id="LayerSkryt" style="position:absolute;text-align:left;visibility:hidden;left:117px;top:22px;width:38px;height:21px;z-index:7;">
 </div>
-<div id="wb_ImageRUSrasskaz" style="position:absolute;left:25px;top:23px;width:117px;height:22px;opacity:0.00;visibility:hidden;z-index:7;">
+<div id="wb_ImageRUSrasskaz" style="position:absolute;left:25px;top:23px;width:117px;height:22px;opacity:0.00;visibility:hidden;z-index:8;">
 <img src="images/RUSrasskaz.png" id="ImageRUSrasskaz" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_ImageUDMrasskaz" style="position:absolute;left:23px;top:22px;width:85px;height:24px;visibility:hidden;z-index:8;">
+<div id="wb_ImageUDMrasskaz" style="position:absolute;left:23px;top:22px;width:85px;height:24px;visibility:hidden;z-index:9;">
 <img src="images/UDMrasskaz.png" id="ImageUDMrasskaz" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="LayerKnopka4Strmadiskonyos" style="position:absolute;text-align:left;left:870px;top:722px;width:95px;height:82px;z-index:9;">
+<div id="LayerKnopka4Strmadiskonyos" style="position:absolute;text-align:left;left:870px;top:722px;width:95px;height:82px;z-index:10;">
 </div>
-<div id="LayerKnopka3Strmadiskonyos" style="position:absolute;text-align:left;left:762px;top:722px;width:90px;height:78px;z-index:10;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka3Strmadiskonyos" style="position:absolute;text-align:left;left:762px;top:722px;width:90px;height:78px;z-index:11;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./bukva.html';return false;">
 </div>
-<div id="LayerKnopka2Strmadiskonyos" style="position:absolute;text-align:left;left:654px;top:722px;width:90px;height:78px;z-index:11;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka2Strmadiskonyos" style="position:absolute;text-align:left;left:654px;top:722px;width:90px;height:78px;z-index:12;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./menuigr.html';return false;">
 </div>
-<div id="LayerKnopka1Strmadiskonyos" style="position:absolute;text-align:left;left:544px;top:722px;width:90px;height:78px;z-index:12;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka1Strmadiskonyos" style="position:absolute;text-align:left;left:544px;top:722px;width:90px;height:78px;z-index:13;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="Layer3KnopkaAlfavit" style="position:absolute;text-align:left;left:355px;top:731px;width:167px;height:58px;z-index:13;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="Layer3KnopkaAlfavit" style="position:absolute;text-align:left;left:355px;top:731px;width:167px;height:58px;z-index:14;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./alfavit.html';return false;">
 </div>
-<div id="wb_NazvanieRUS" style="position:absolute;left:242px;top:53px;width:456px;height:75px;visibility:hidden;z-index:14;">
+<div id="wb_NazvanieRUS" style="position:absolute;left:277px;top:74px;width:370px;height:37px;visibility:hidden;z-index:15;">
 <img src="images/NazvanieRUS.svg" id="NazvanieRUS" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_BukvySkor" style="position:absolute;left:127px;top:164px;width:700px;height:441px;visibility:hidden;z-index:15;">
+<div id="wb_BukvySkor" style="position:absolute;left:127px;top:164px;width:700px;height:441px;visibility:hidden;z-index:16;">
 <img src="images/bukvySkor.svg" id="BukvySkor" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<textarea name="ШЫР НО ӞОЛЬГЫРИ" id="TextAreaUDM" style="position:absolute;left:46px;top:139px;width:875px;height:470px;z-index:16;" rows="18" cols="95" readonly disabled spellcheck="false">Улӥллям-вылӥллям шырен ӟольгыриен. Тупаса улӥллям, куара-ланга поттытэк. Маке ужано ке — кенеш возиллям, ужано ужзэс уртче быдэсъяллям.
-Одӥг пол сюрес вылысь шедьтӥллям соос куинь ӟег тысь. Мар, пе, таин кароно ай таӵе? Малпаллям, малпаллям но — кизёно кариськиллям. Шыр музъемез гырем-мудэм, ӟольгыри — усыям.
-Удалтэм ук бен ӟегзы! Шыр лэчыт пиньёсыныз вань бусызэс, одӥг шеп но кельтытэк, арам, ӟольгыри бурдъёсыныз кутсам-тӧлэм.
-Тысь вӧзы тысь — люкаллям таос вань няньзэс. Собере шори люкыны кутскиллям: одӥгез, пе, тысь шырлы, мукетыз — ӟольгырилы, одӥгез — шырлы, мукетыз — ӟольгырилы... Люкиллям, люкиллям но — берло тысьсы пало, пе.
-Шыр нырысь ятвылтэм:
-—	Та тысь мынам, мон, ныры но пыдъёсы вир луытозь, гыри-мудӥ.
-Ӟольгыри пештырскем:
-—	Ӧвӧл, та тысь — мынам. Мон, бурдъёсме вир поттытозь, усыяй.
-Кема-а ченгешиллям таос, ӧвӧл-а, кин кылэм, со ик тодэм, асьмелы созэ тодыны кылдымтэ.
-Нош ӟольгыри со тысез шуак кокчалтэм но лобӟыса кошкем. «Мед ай монэ сутылоз но тысьме басьтоз»,— малпам. Шыр нош ӟольгыри сьӧры уйиськоно ик кожамтэ. «Малы меда та ченгешонэ нырысь ик пыриськи?» — ӝожомем со. Аслэсьтыз люкетсэ караз нуллэм но ӟольгыриез возьманы кутскем. Возьмам, возьмам, нош соиз вуымтэ... Ӟольгырилэсь люкетсэ но сусеказ тырем. Быдэс толалтэлы нянез тырмем. Ӟольгыри нош пень вылэ кылем. Мырдэм но кызьы тулысозь чидам.</textarea>
-<textarea name="МЫШЬ И ВОРОБЕЙ" id="TextAreaRUS" style="position:absolute;left:46px;top:139px;width:875px;height:470px;visibility:hidden;z-index:17;" rows="18" cols="95" readonly disabled spellcheck="false">Жили-были мышь да воробей. Дружно, согласно жили-по¬живали, ни ссор, ни обид не знали. Перед всяким делом совет друг с другом держали, любую работу сообща выполняли.
-Однажды мышь с воробьем нашли на дороге три ржаных зер-нышка. Думали-подумали, что с ними сделать, и надумали поле засеять. Мышка землю пахала, воробышек — боронил.
-Славная рожь уродилась! Мышь острыми зубами споро сжала ее, а воробей крылышками ловко обмолотил. Зернышко к зерныш¬ку, собрали они весь урожай и стали делить его пополам: одно зер¬но мышке, одно — воробью, одно — мышке, одно — воробью... Де¬лили, делили, и последнее зернышко лишнее осталось.
-Мышь первая сообразила:
-— Это зерно мое: когда я пахала, нос и лапки до крови натрудила.
-Воробей не согласился:
-— Нет, это зерно мое. Когда я боронил, крылышки до крови из-бил.
-Долго ли, коротко ли они спорили — кто слыхал, тот и знал, а нам неизвестно. Только воробей вдруг склюнул лишнее зернышко и улетел прочь. «Пусть-ка попробует меня догнать и мое зернышко отнять», — думал он.
-Не погналась мышка за воробьем. Огорчилась, что первая зате¬яла спор. Свою долю в норку перетаскала. Ждала, ждала воробья, чтобы помириться, не дождалась. И его часть в свою кладовку ссы¬пала. Всю зиму прожила сытехонька.
-Воробей же остался ни с чем, до весны голодный пропрыгал.</textarea>
-<div id="wb_NazvanieUDM" style="position:absolute;left:272px;top:53px;width:381px;height:75px;z-index:18;">
+<textarea name="ВИЗЬТЭМ КОӴЫШПИ" id="TextAreaUDM" style="position:absolute;left:46px;top:139px;width:875px;height:470px;z-index:17;" rows="18" cols="95" readonly disabled spellcheck="false">Улэм-вылэм коӵыш аслаз пичи, шузи пиеныз. Огпол со коӵышпи корка липет вылысь шунды пиштэмез адӟем но отчы тубем, сое маке ческыт сиён кожам.
+Карнизысен липет пуме кечырскем вылэм но, олокытысь ӟольгыри шуак! лобӟем.
+— Э, нырысь ик мон тае сиё али, — шуыса малпам но ӟольгыри сьӧры уйиськем. Кутэмез луымтэ, липет йылысь усем.
+Коӵыш пизэ буйгатыса шуэм:
+— Тынад ужед — шыран гинэ.
+Коӵышпи мумизлэсь визьмамзэ кылзэм, ноку но уг вунэты ни шуыса, аслыз ачиз кыл сётэм.
+Кӧня ке улыса, шыраны шуыса, коӵышпи сике мынэм. Одӥг шыр кутэм но мумизлы возьматыны бертэ, пе, ини.
+Солы пичи шур вамен пуӵ вылтӥ потоно луэм. Вуэ учкем но, отын кыӵе ке мукет коӵышпи озьы ик ымаз шырен кошке, пе.
+Нош ик ас понназ малпам:
+— Со коӵышпилэсь шырзэ талай ке, кык луоз.
+Ымысьтыз шырпизэ лэзем но вуэ тэтчем. Нокинэ кутыны быгатымтэ, ӧжыт гинэ йырыз бырымтэ: котмыса, наштаськыса нош ик мумиз доры вуэм.
+Коӵыш сое табере буйгатымтэ ни: ӧжытак йӧттэм но шуэм:
+— Эн вунэты ас уждэ — тон шыраны вордскемын. Оломар сьӧры но эн уйиськылы.
+Коӵышпилы тӥни со визь луэм ини.</textarea>
+<textarea name="ГЛУПЫЙ КОТЁНОК" id="TextAreaRUS" style="position:absolute;left:46px;top:139px;width:875px;height:470px;visibility:hidden;z-index:18;" rows="18" cols="95" readonly disabled spellcheck="false">Жила-была кошка с котёнком. Котёнок был маленький, глупенький. Однажды он увидел на крыше луч солнца.
+- Должно быть какое-нибудь вкусное кушанье, - подумал котенок и полез на крышу.
+Уж совсем было добрался он до крыши, как вдруг откуда-то выпорхнул воробей.
+- Нет, лучше сначала я его съем, а потом дальше полезу, - сказал про себя глупенький котенок и кинулся за воробьём.
+Воробей-то улетел, а котёнок упал на землю и сильно ушибся. Тогда кошка, утешая, сказала ему:
+- Твое дело - только мышей ловить.
+Котенок выслушал наставление матери и обещал никогда его не забывать.
+Прошло много времени. Однажды котенок поймал в лесу мышку и во рту несет домой показать свою добычу матери. Ему надо было переходить через ручей по жердочке. И когда он переправлялся, заметил в воде свою тень и опять подумал:
+- Лучше я отниму у того котёнка мышь!
+Выпустив изо рта мышку, он кинулся в воду. тени-то конечно он не поймал, да и сам едва спасся: мокрый, грязный он вернулся к матери. Но теперь кошка не стала утешать его, а побила и снова сказала, что он должен делать только свое дело - мышей ловить, а не гоняться за всем, что попадает на глаза.
+Котенок с этих пор не забывал наставлений матери.</textarea>
+<div id="wb_NazvanieUDM" style="position:absolute;left:272px;top:75px;width:380px;height:34px;z-index:19;">
 <img src="images/NazvanieUDM.svg" id="NazvanieUDM" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
 </div>
 </div>
