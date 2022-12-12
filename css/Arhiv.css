@@ -93,7 +93,7 @@ body
    background-image: none;
    opacity: 0.00;
 }
-#LayerKnopka4StrArhiv
+#LayerKnopka4Menu
 {
    background-color: transparent;
    background-image: url(../images/4Knopka.svg);
@@ -317,7 +317,7 @@ body
 {
    text-align: left;
 }
-#Image1
+#Image3_2022
 {
    border: 0px solid #000000;
    padding: 0;
@@ -327,7 +327,7 @@ body
    width: 100%;
    height: 100%;
 }
-#wb_Text1 
+#wb_Text3_2022 
 {
    background-color: transparent;
    background-image: none;
@@ -336,11 +336,11 @@ body
    margin: 0;
    text-align: left;
 }
-#wb_Text1 div
+#wb_Text3_2022 div
 {
    text-align: left;
 }
-#Image2
+#Image4_2022
 {
    border: 0px solid #000000;
    padding: 0;
@@ -350,7 +350,7 @@ body
    width: 100%;
    height: 100%;
 }
-#wb_Text2 
+#wb_Text4_2022 
 {
    background-color: transparent;
    background-image: none;
@@ -359,7 +359,7 @@ body
    margin: 0;
    text-align: left;
 }
-#wb_Text2 div
+#wb_Text4_2022 div
 {
    text-align: left;
 }
@@ -489,4 +489,48 @@ body
    font-weight: normal;
    font-style: normal;
    font-size: 16px;
+}
+#Image5_2022
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text5_2022 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text5_2022 div
+{
+   text-align: left;
+}
+#snow-start{
+background: rgba(27, 25, 25, 0.4);
+color: #fff;
+display: inline-block;
+width: 100px;
+text-align: center;
+cursor: pointer;
+line-height: 25px;
+position: fixed;
+right: 0px;
+top: 0px;
+border-radius: 0px 0px 0px 9px;
+}
+#copy{
+color: rgba(20, 16, 16, 0);
+font-size: 7px;
+position: fixed;
+text-decoration: none;
+top: 24px;
+right: 2px;
 }
