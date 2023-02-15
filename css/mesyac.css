@@ -196,6 +196,14 @@ body
    overflow: auto;
    resize: none;
 }
+#LayerKnopka5Str
+{
+   background-color: transparent;
+   background-image: url(../images/5Knopka.svg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+}
 #snow-start{
 background: rgba(27, 25, 25, 0.4);
 color: #fff;
