@@ -204,16 +204,16 @@ body
    background-position: center center;
    background-size: contain;
 }
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
   background-color: #f9f9fd;
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background-color: #C1C468;
   background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .25) 25%,
                     transparent 25%,
@@ -222,6 +222,13 @@ body
                     rgba(255, 255, 255, .25) 75%,
                     transparent 75%,
                     transparent);
+  border-radius: 10px;
+}
+:root {
+  /* For Firefox */
+  overflow-y: auto;
+  scrollbar-color: #C1C468 #fff;
+  scrollbar-width: thin;
   border-radius: 10px;
 }
 #snow-start{
