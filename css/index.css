@@ -646,26 +646,3 @@ text-decoration: none;
 top: 24px;
 right: 2px;
 }
-input {
-	width: 150px;
-	font-size: 12px;
-	padding: 0px 0 0px 0px;
-	border: 0px solid #fff;
-	background: #fff;
-    opacity: 0;
-}
-	.styletest {
-	color: #fff; 
-	font-size: 12px; 
-	font-family: Arial;
-	}
-	button.knopka {
-	color: #fff; 
-	background: #BAC245; 
-	padding: 5px; 
-	border-radius: 5px;
-    border: 0px solid #FF8247;
-	} 
-	button.knopka:hover { 
-	background: #FF9933; 
-	}
