@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=9">
 <meta charset="utf-8">
-<title>Буква Мм</title>
+<title>Буква Оо</title>
 <link href="ico120.svg" rel="shortcut icon" type="image/x-icon">
 <link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
 <style>
@@ -17,17 +17,14 @@
 		  z-index: 99999;
    }
 </style>
-<link href="css/SaytKot7.css" rel="stylesheet">
+<link href="css/SaytKot.css" rel="stylesheet">
 <link href="css/bukva.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
-
 <meta content="max-age=3600, must-revalidate" http-equiv="Cache-Control">
 <meta content="max-age=3600, proxy-revalidate" http-equiv="Cache-Control">
 
-<!-- Yandex.Metrika counter --> <script > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(67969639, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/67969639" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-<meta name="yandex-verification" content="12d238da96d1b64a" />
 </head>
 <body>
 <div class="preloader">
@@ -36,160 +33,64 @@
 </div>
 </div>
 <div id="container">
-<div id="FonovyiSloy3" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:20;">
-<!-- Sneg -->
-<div id="HtmlSneg" style="position:absolute;left:705px;top:424px;width:275px;height:298px;visibility:hidden;opacity:0.00;z-index:0">
-<div onclick="stopsnow()" id="snow-start"></div>
-<script> 
-  var snowsrc="https://gazetlykuzym.github.io//images/Snezhynki.png";
-  var no = 20; 
-  var log = 0;
-  var hidesnowtime = 0;
-  var snowdistance = "windowheight";
-
-  var ie4up = (document.all) ? 1 : 0;
-  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
-
-    function iecompattest(){
-    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
-    }
-
-  var dx, xp, yp;    
-  var am, stx, sty;  
-  var i, doc_width = 800, doc_height = 600; 
-
-  if (ns6up) {
-    doc_width = self.innerWidth;
-    doc_height = self.innerHeight;
-  } else if (ie4up) {
-    doc_width = iecompattest().clientWidth;
-    doc_height = iecompattest().clientHeight;
-  }
-
-  dx = new Array();
-  xp = new Array();
-  yp = new Array();
-  am = new Array();
-  stx = new Array();
-  sty = new Array();
-  snowsrc=(snowsrc.indexOf("")!= 1)? "https://gazetlykuzym.github.io//images/Snezhynki.png" : snowsrc
-  for (i = 0; i < no; ++ i) {  
-    dx[i] = 0;                        
-    xp[i] = Math.random()*(doc_width-50); 
-    yp[i] = Math.random()*doc_height;
-    am[i] = Math.random()*20;      
-    stx[i] = 0.02 + Math.random()/10;
-    sty[i] = 0.7 + Math.random();   
-        if (ie4up||ns6up) {
-      if (i == 0) {
-        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
-      } else {
-        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
-      }
-    }
-  }
-
-  function snowIE_NS6() {  
-    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
-        doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
-    for (i = 0; i < no; ++ i) { 
-      yp[i] += sty[i];
-      if (yp[i] > doc_height-50) {
-        xp[i] = Math.random()*(doc_width-am[i]-30);
-        yp[i] = 0;
-        stx[i] = 0.02 + Math.random()/10;
-        sty[i] = 0.7 + Math.random();
-      }
-      dx[i] += stx[i];
-      document.getElementById("dot"+i).style.top=yp[i]+"px";
-      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
-    }
-    snowtimer=setTimeout("snowIE_NS6()", 10);
-  }
-
-    function hidesnow(){
-        if (window.snowtimer) clearTimeout(snowtimer)
-        for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
-    }
-
-if (ie4up||ns6up){
-    snowIE_NS6();
-        if (hidesnowtime>0)
-        setTimeout("hidesnow()", hidesnowtime*1000);
-        }
- function stopsnow(){
- if (log==0){
-  for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
-  no = 0;
-  log = 1;
-  document.getElementById('snow-start').innerHTML ='Вкл. снег';
-  }
-  else { log = 0; no = 20; for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="visible";
- document.getElementById('snow-start').innerHTML ='';
-
-  }
-
- }
-</script>
-<a id="copy" href=""></a>
-</div>
-<div id="wb_ImageRamkaFonzhogen" style="position:absolute;left:0px;top:10px;width:970px;height:684px;z-index:1;">
+<div id="FonovyiSloy3" style="position:absolute;text-align:left;left:0px;top:20px;width:980px;height:821px;z-index:19;">
+<div id="wb_ImageRamkaFonzhogen" style="position:absolute;left:0px;top:10px;width:970px;height:684px;z-index:0;">
 <img src="images/kontur4.png" id="ImageRamkaFonzhogen" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
-<div id="wb_ImageBukvaDvig" style="position:absolute;left:421px;top:262px;width:190px;height:191px;z-index:2;">
+<div id="wb_ImageBukvaDvig" style="position:absolute;left:421px;top:262px;width:190px;height:191px;z-index:1;">
 <img src="images/ZH.gif" id="ImageBukvaDvig" alt=""></div>
-<div id="wb_ImageBukvaDbolshaia" style="position:absolute;left:193px;top:210px;width:559px;height:226px;z-index:3;">
+<div id="wb_ImageBukvaDbolshaia" style="position:absolute;left:212px;top:210px;width:526px;height:226px;z-index:2;">
 <img src="images/ImageBukvaBolshaia.svg" id="ImageBukvaDbolshaia" alt=""></div>
-<div id="wb_ImageFonSloiBukva" style="position:absolute;left:410px;top:442px;width:320px;height:120px;z-index:4;">
+<div id="wb_ImageFonSloiBukva" style="position:absolute;left:410px;top:442px;width:320px;height:120px;z-index:3;">
 <img src="images/FonSloiBukva.svg" id="ImageFonSloiBukva" alt=""></div>
-<div id="wb_ImageTextSloiBukvaRUS" style="position:absolute;left:428px;top:467px;width:275px;height:88px;opacity:0.00;z-index:5;">
+<div id="wb_ImageTextSloiBukvaRUS" style="position:absolute;left:427px;top:465px;width:275px;height:88px;opacity:0.00;z-index:4;">
 <img src="images/TextSloiBukvaRUS.svg" id="ImageTextSloiBukvaRUS" alt=""></div>
-<div id="wb_ImageTextSloiBukvaUDM" style="position:absolute;left:446px;top:469px;width:243px;height:85px;z-index:6;">
+<div id="wb_ImageTextSloiBukvaUDM" style="position:absolute;left:446px;top:469px;width:243px;height:83px;z-index:5;">
 <img src="images/TextSloiBukvaUDM.svg" id="ImageTextSloiBukvaUDM" alt=""></div>
-<div id="TenSledRUSstrzhogen" style="position:absolute;text-align:left;left:178px;top:699px;width:115px;height:87px;z-index:7;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="TenSledRUSstrzhogen" style="position:absolute;text-align:left;left:178px;top:699px;width:115px;height:87px;z-index:6;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer">
 </div>
-<div id="TenSledUDMstrzhogen" style="position:absolute;text-align:left;left:47px;top:720px;width:115px;height:87px;z-index:8;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="TenSledUDMstrzhogen" style="position:absolute;text-align:left;left:47px;top:720px;width:115px;height:87px;z-index:7;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer">
 </div>
-<div id="LayerLapaUdmzhogen" style="position:absolute;text-align:left;left:44px;top:717px;width:115px;height:87px;z-index:9;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerLapaUdmzhogen" style="position:absolute;text-align:left;left:44px;top:717px;width:115px;height:87px;z-index:8;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="Animate('TenSledRUSstrzhogen', '', '', '', '', '0', 500, '');Animate('TenSledUDMstrzhogen', '', '', '', '', '100', 500, '');Animate('wb_ImageSlovaStranicy', '', '', '', '', '100', 300, '');Animate('wb_ImageSlovaStranicyRUS', '', '', '', '', '0', 300, '');Animate('wb_ImageTextSloiBukvaUDM', '', '', '', '', '100', 300, '');Animate('wb_ImageTextSloiBukvaRUS', '', '', '', '', '0', 300, '');return false;">
 </div>
-<div id="LayerLapaRuszhogen" style="position:absolute;text-align:left;left:181px;top:702px;width:115px;height:87px;z-index:10;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerLapaRuszhogen" style="position:absolute;text-align:left;left:181px;top:702px;width:115px;height:87px;z-index:9;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="Animate('TenSledUDMstrzhogen', '', '', '', '', '0', 500, '');Animate('TenSledRUSstrzhogen', '', '', '', '', '100', 500, '');Animate('wb_ImageSlovaStranicyRUS', '', '', '', '', '100', 300, '');Animate('wb_ImageSlovaStranicy', '', '', '', '', '0', 300, '');Animate('wb_ImageTextSloiBukvaRUS', '', '', '', '', '100', 300, '');Animate('wb_ImageTextSloiBukvaUDM', '', '', '', '', '0', 300, '');return false;">
 </div>
-<div id="LayerKrest4" style="position:absolute;text-align:left;left:929px;top:24px;width:33px;height:32px;z-index:11;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKrest4" style="position:absolute;text-align:left;left:929px;top:24px;width:33px;height:32px;z-index:10;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="LayerKnopka4Menu" style="position:absolute;text-align:left;left:798px;top:730px;width:70px;height:60px;z-index:12;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka4Menu" style="position:absolute;text-align:left;left:798px;top:730px;width:70px;height:60px;z-index:11;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./mesyac.html';return false;">
 </div>
-<div id="LayerKnopka3Strzhogen" style="position:absolute;text-align:left;left:711px;top:730px;width:75px;height:62px;z-index:13;">
+<div id="LayerKnopka3Strzhogen" style="position:absolute;text-align:left;left:711px;top:730px;width:75px;height:62px;z-index:12;">
 </div>
-<div id="LayerKnopka2Strzhogen" style="position:absolute;text-align:left;left:629px;top:730px;width:70px;height:60px;z-index:14;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka2Strzhogen" style="position:absolute;text-align:left;left:629px;top:730px;width:70px;height:60px;z-index:13;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./menuigr.html';return false;">
 </div>
-<div id="LayerKnopka1Strzhogen" style="position:absolute;text-align:left;left:547px;top:730px;width:70px;height:60px;z-index:15;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka1Strzhogen" style="position:absolute;text-align:left;left:547px;top:730px;width:70px;height:60px;z-index:14;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
 </div>
-<div id="Layer4KnopkaAlfavit" style="position:absolute;text-align:left;left:340px;top:731px;width:167px;height:58px;z-index:16;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="Layer4KnopkaAlfavit" style="position:absolute;text-align:left;left:340px;top:731px;width:167px;height:58px;z-index:15;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./alfavit.html';return false;">
 </div>
-<div id="LayerKnopka5Str" style="position:absolute;text-align:left;left:880px;top:730px;width:70px;height:60px;z-index:17;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+<div id="LayerKnopka5Str" style="position:absolute;text-align:left;left:880px;top:730px;width:70px;height:60px;z-index:16;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
 -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
 outline: none !important; cursor: pointer" onclick="window.location.href='./mult.html';return false;">
 </div>
-<div id="wb_ImageSlovaStranicy" style="position:absolute;left:92px;top:71px;width:802px;height:555px;z-index:18;">
+<div id="wb_ImageSlovaStranicy" style="position:absolute;left:92px;top:71px;width:797px;height:555px;z-index:17;">
 <img src="images/SlovaStranicy.svg" id="ImageSlovaStranicy" alt=""></div>
-<div id="wb_ImageSlovaStranicyRUS" style="position:absolute;left:96px;top:71px;width:735px;height:555px;opacity:0.00;z-index:19;">
+<div id="wb_ImageSlovaStranicyRUS" style="position:absolute;left:96px;top:74px;width:813px;height:558px;opacity:0.00;z-index:18;">
 <img src="images/SlovaStranicyRUS.svg" id="ImageSlovaStranicyRUS" alt=""></div>
 </div>
 </div>
