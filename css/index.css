@@ -16,15 +16,31 @@ body
    margin: 0;
    text-align: center;
 }
+a
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+a:hover
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
 #LayerTexth1
 {
    background-color: #FFFFFF;
    background-image: none;
+   border-radius: 0px;
    opacity: 0.00;
+}
+#wb_ImageKrest
+{
+   vertical-align: top;
 }
 #ImageKrest
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -32,9 +48,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_ImageSled
+{
+   vertical-align: top;
+}
 #ImageSled
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -46,10 +67,16 @@ body
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
+}
+#wb_ImageRamkaFonIndex
+{
+   vertical-align: top;
 }
 #ImageRamkaFonIndex
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -57,9 +84,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_ImageTeloKota
+{
+   vertical-align: top;
+}
 #ImageTeloKota
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -71,10 +103,16 @@ body
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
+}
+#wb_Image5g
+{
+   vertical-align: top;
 }
 #Image5g
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -86,20 +124,31 @@ body
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
+}
+#wb_Image4g
+{
+   vertical-align: top;
 }
 #Image4g
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_UhoL
+{
+   vertical-align: top;
 }
 #UhoL
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -107,9 +156,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_UhoP
+{
+   vertical-align: top;
+}
 #UhoP
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -121,6 +175,7 @@ body
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
 }
 #wb_Line1
 {
@@ -138,9 +193,14 @@ body
 {
    position: absolute;
 }
+#wb_ImageUsyL
+{
+   vertical-align: top;
+}
 #ImageUsyL
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -148,9 +208,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_ImageUsyP
+{
+   vertical-align: top;
+}
 #ImageUsyP
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -162,30 +227,46 @@ body
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
+}
+#wb_ImageNazvanie
+{
+   vertical-align: top;
 }
 #ImageNazvanie
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_Imagenylpi
+{
+   vertical-align: top;
 }
 #Imagenylpi
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ImageText1Str
+{
+   vertical-align: top;
 }
 #ImageText1Str
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -193,9 +274,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_ImageRazgovor
+{
+   vertical-align: top;
+}
 #ImageRazgovor
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -207,40 +293,61 @@ body
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
+}
+#wb_ImageText2
+{
+   vertical-align: top;
 }
 #ImageText2
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ImageRusText2
+{
+   vertical-align: top;
 }
 #ImageRusText2
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ImageRusText1
+{
+   vertical-align: top;
 }
 #ImageRusText1
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ImageRusNazvanie
+{
+   vertical-align: top;
 }
 #ImageRusNazvanie
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -248,9 +355,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_ImageRusnylpi
+{
+   vertical-align: top;
+}
 #ImageRusnylpi
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -262,52 +374,60 @@ body
 {
    background-color: #FFFFFF;
    background-image: none;
+   border-radius: 0px;
    opacity: 0.00;
 }
 #LayerRUS_Skrytyi
 {
    background-color: transparent;
-   background-image: url(../images/RUS.svg);
+   background-image: url('../images/RUS.svg');
    background-repeat: repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
 }
 #LayerUDM_Skrytyi
 {
    background-color: transparent;
-   background-image: url(../images/UDM.svg);
+   background-image: url('../images/UDM.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
 }
 #LayerKnopka1Strindex
 {
    background-color: transparent;
-   background-image: url(../images/1NKnopka.svg);
+   background-image: url('../images/1NKnopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerRusNazvanie_Skrytyi
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
 }
 #LayerUsyP_Skrytyi
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
 }
 #LayerUsyL_Skrytyi
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
 }
 #wb_Кузьым_нылпи_газет 
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    text-align: left;
@@ -320,57 +440,64 @@ body
 {
    background-color: #FFFFFF;
    background-image: none;
+   border-radius: 0px;
 }
 #TenSledUDMstrindex
 {
    background-color: transparent;
-   background-image: url(../images/TenSledUDM.svg);
+   background-image: url('../images/TenSledUDM.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
 }
 #TenSledRUSstrindex
 {
    background-color: transparent;
-   background-image: url(../images/TenSledRUS.svg);
+   background-image: url('../images/TenSledRUS.svg');
    background-repeat: repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
    opacity: 0.00;
 }
 #LayerKnopka2Strindex
 {
    background-color: transparent;
-   background-image: url(../images/2Knopka.svg);
+   background-image: url('../images/2Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopka3Strindex
 {
    background-color: transparent;
-   background-image: url(../images/3Knopka.svg);
+   background-image: url('../images/3Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopka4Menu
 {
    background-color: transparent;
-   background-image: url(../images/4Knopka.svg);
+   background-image: url('../images/4Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerInformaciya
 {
    background-color: transparent;
-   background-image: url(../images/Infofon.png);
+   background-image: url('../images/Infofon.png');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
    border: 1px solid transparent;
    border-radius: 6px;
+   margin: 0;
    overflow: visible;
 }
 .ui-dialog
@@ -387,54 +514,62 @@ body
 #ShapeInfoPolitika
 {
    border-width: 0;
+   vertical-align: top;
 }
 #ShapeInfoSayt
 {
    border-width: 0;
+   vertical-align: top;
 }
 #ShapeInfoVK
 {
    border-width: 0;
+   vertical-align: top;
 }
 #LayerZakrytInfo
 {
    background-color: transparent;
-   background-image: url(../images/KnopkaInfoZakryt.svg);
+   background-image: url('../images/KnopkaInfoZakryt.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #Layer1KnopkaAlfavit
 {
    background-color: transparent;
-   background-image: url(../images/KnopkaAlfavit.svg);
+   background-image: url('../images/KnopkaAlfavit.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopkaInfoUDM
 {
    background-color: transparent;
-   background-image: url(../images/KnopkaInfoUDM.svg);
+   background-image: url('../images/KnopkaInfoUDM.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopkaInfoRUS
 {
    background-color: transparent;
-   background-image: url(../images/KnopkaInfoRUS.svg);
+   background-image: url('../images/KnopkaInfoRUS.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopkaArhiv
 {
    background-color: transparent;
-   background-image: url(../images/KnopkaArhiv.svg);
+   background-image: url('../images/KnopkaArhiv.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #ThemeableButtonKarta
 {
@@ -442,7 +577,17 @@ body
    font-weight: normal;
    font-size: 13px;
    font-style: normal;
+   display: inline-block;
+   position: relative;
+   vertical-align: middle;
+   user-select: none;
+   overflow: visible;
+   text-decoration: none;
+   cursor: pointer;
    margin: 0;
+   padding: 0;
+   text-align: center;
+   vertical-align: top;
 }
 #ThemeableButtonKarta .ui-button
 {
@@ -480,25 +625,6 @@ body
    background-image: none;
    color: #FFFFFF;
 }
-#ThemeableButtonKarta.ui-button .ui-icon
-{
-   background-image: url(images/index-ThemeableButtonKarta-default.png);
-   background-position: 0 0;
-}
-#ThemeableButtonKarta.ui-button:hover .ui-icon
-{
-   background-image: url(images/index-ThemeableButtonKarta-hover.png);
-   background-position: 0 0;
-}
-#ThemeableButtonKarta.ui-button:active .ui-icon
-{
-   background-image: url(images/index-ThemeableButtonKarta-active.png);
-   background-position: 0 0;
-}
-#ThemeableButtonKarta.ui-visual-focus
-{
-   box-shadow: none;
-}
 #LayerKarta1Str
 {
    background-color: #FFFFFF;
@@ -506,6 +632,7 @@ body
    border: 1px solid #CCCCCC;
    border-radius: 6px;
    box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
+   margin: 0;
    overflow: visible;
 }
 .ui-dialog
@@ -525,7 +652,17 @@ body
    font-weight: normal;
    font-size: 13px;
    font-style: normal;
+   display: inline-block;
+   position: relative;
+   vertical-align: middle;
+   user-select: none;
+   overflow: visible;
+   text-decoration: none;
+   cursor: pointer;
    margin: 0;
+   padding: 0;
+   text-align: center;
+   vertical-align: top;
 }
 #ThemeableButtonZakrytKarta .ui-button
 {
@@ -563,30 +700,12 @@ body
    background-image: none;
    color: #FFFFFF;
 }
-#ThemeableButtonZakrytKarta.ui-button .ui-icon
-{
-   background-image: url(images/index-ThemeableButtonZakrytKarta-default.png);
-   background-position: 0 0;
-}
-#ThemeableButtonZakrytKarta.ui-button:hover .ui-icon
-{
-   background-image: url(images/index-ThemeableButtonZakrytKarta-hover.png);
-   background-position: 0 0;
-}
-#ThemeableButtonZakrytKarta.ui-button:active .ui-icon
-{
-   background-image: url(images/index-ThemeableButtonZakrytKarta-active.png);
-   background-position: 0 0;
-}
-#ThemeableButtonZakrytKarta.ui-visual-focus
-{
-   box-shadow: none;
-}
 #LayerKnopka5Strmadiskonyos
 {
    background-color: transparent;
-   background-image: url(../images/5Knopka.svg);
+   background-image: url('../images/5Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
