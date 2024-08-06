@@ -16,29 +16,54 @@ body
    margin: 0;
    text-align: center;
 }
+a
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+a:hover
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+#wb_ImageTextSloiBukvaUDM
+{
+   vertical-align: top;
+}
 #ImageTextSloiBukvaUDM
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ImageTextSloiBukvaRUS
+{
+   vertical-align: top;
 }
 #ImageTextSloiBukvaRUS
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ImageFonSloiBukva
+{
+   vertical-align: top;
 }
 #ImageFonSloiBukva
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -46,9 +71,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_ImageRamkaFonzhogen
+{
+   vertical-align: top;
+}
 #ImageRamkaFonzhogen
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -59,110 +89,136 @@ body
 #TenSledRUSstrzhogen
 {
    background-color: transparent;
-   background-image: url(../images/TenSledRUS.svg);
+   background-image: url('../images/TenSledRUS.svg');
    background-repeat: repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
    opacity: 0.00;
 }
 #FonovyiSloy3
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
 }
 #LayerLapaUdmzhogen
 {
    background-color: transparent;
-   background-image: url(../images/UDM.svg);
+   background-image: url('../images/UDM.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
 }
 #LayerLapaRuszhogen
 {
    background-color: transparent;
-   background-image: url(../images/RUS.svg);
+   background-image: url('../images/RUS.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
 }
 #LayerKrest4
 {
    background-color: #FBFBFB;
    background-image: none;
+   border-radius: 0px;
    opacity: 0.00;
 }
 #TenSledUDMstrzhogen
 {
    background-color: transparent;
-   background-image: url(../images/TenSledUDM.svg);
+   background-image: url('../images/TenSledUDM.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
 }
 #LayerKnopka4Menu
 {
    background-color: transparent;
-   background-image: url(../images/4Knopka.svg);
+   background-image: url('../images/4Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopka3Strzhogen
 {
    background-color: transparent;
-   background-image: url(../images/3NKnopka.svg);
+   background-image: url('../images/3NKnopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopka2Strzhogen
 {
    background-color: transparent;
-   background-image: url(../images/2Knopka.svg);
+   background-image: url('../images/2Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopka1Strzhogen
 {
    background-color: transparent;
-   background-image: url(../images/1Knopka.svg);
+   background-image: url('../images/1Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #Layer4KnopkaAlfavit
 {
    background-color: transparent;
-   background-image: url(../images/KnopkaAlfavit.svg);
+   background-image: url('../images/KnopkaAlfavit.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
+}
+#wb_ImageBukvaDbolshaia
+{
+   vertical-align: top;
 }
 #ImageBukvaDbolshaia
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ImageSlovaStranicy
+{
+   vertical-align: top;
 }
 #ImageSlovaStranicy
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ImageSlovaStranicyRUS
+{
+   vertical-align: top;
 }
 #ImageSlovaStranicyRUS
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -170,9 +226,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_ImageBukvaDvig
+{
+   vertical-align: top;
+}
 #ImageBukvaDvig
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -183,8 +244,9 @@ body
 #LayerKnopka5Str
 {
    background-color: transparent;
-   background-image: url(../images/5Knopka.svg);
+   background-image: url('../images/5Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
