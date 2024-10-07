@@ -26,6 +26,14 @@ a:hover
    color: #FFFFFF;
    text-decoration: underline;
 }
+#fonOsen
+{
+   background-color: transparent;
+   background-image: url('../images/osen.webp');
+   background-repeat: no-repeat;
+   background-position: left top;
+   border-radius: 0px;
+}
 #LayerTexth1
 {
    background-color: #FFFFFF;
