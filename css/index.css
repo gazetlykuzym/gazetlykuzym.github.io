@@ -28,10 +28,12 @@ a:hover
 }
 #fonOsen
 {
+   background-clip: padding-box;
    background-color: transparent;
    background-image: url('../images/osen.webp');
    background-repeat: no-repeat;
-   background-position: left top;
+   background-position: center center;
+   background-size: cover;
    border-radius: 0px;
 }
 #LayerTexth1
