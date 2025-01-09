@@ -16,11 +16,22 @@ body
    margin: 0;
    text-align: center;
 }
+a
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+a:hover
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
 #wb_Text2 
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    text-align: left;
@@ -55,4 +66,80 @@ body::-webkit-scrollbar-thumb {
   scrollbar-color: #C1C468 #fff;
   scrollbar-width: thin;
   border-radius: 10px;
+}
+/* КУКИ */
+#cookie_notification{
+  display: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  width: 970px;
+  max-width: 90%;
+  transform: translateX(-50%);
+  padding: 25px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 999999;
+}
+
+#cookie_notification p{
+  margin: 0;
+  font-size: 0.72rem;
+  text-align: center;
+  color: $color_text;
+}
+
+
+@media (min-width: 576px){
+  #cookie_notification.show{
+    display: flex;
+    align-items: center;
+  }
+  .cookie_accept{
+    margin: 0 0 0 25px;
+  }
+}
+
+@media (max-width: 575px){
+  #cookie_notification.show{
+    display: block;
+    text-align: left;
+  }
+  .cookie_accept{
+    margin: 10px 0 0 0;
+  }
+}
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #605e5ec4;
+    border: none;
+    color: #ededed;
+    text-decoration: none;
+    padding: 15px 40px;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 4px;
+    max-width: 100%;
+    transition: all .1s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.button:active,.button:focus {
+    outline: none;
+    color: #fbff4b;
+    background-color: #605e5e
+}
+
+.button:hover {
+    text-decoration: none;
+    color: #fbff4b;
+    background-color: #605e5e
+}
+
+.button:disabled {
+    cursor: not-allowed
 }
