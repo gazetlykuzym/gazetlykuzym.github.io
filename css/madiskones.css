@@ -16,45 +16,65 @@ body
    margin: 0;
    text-align: center;
 }
+a
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+a:hover
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
 #LayerSkryt
 {
    background-color: #FFFFFF;
    background-image: none;
+   border-radius: 0px;
    opacity: 0.00;
 }
 #TenSledRUSstrmadiskonyos
 {
    background-color: transparent;
-   background-image: url(../images/TenSledRUS.svg);
+   background-image: url('../images/TenSledRUS.svg');
    background-repeat: repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
    opacity: 0.00;
 }
 #FonovyiSloy4
 {
    background-color: transparent;
    background-image: none;
+   border-radius: 0px;
 }
 #LayerLapaUdmmadiskonyos
 {
    background-color: transparent;
-   background-image: url(../images/UDM.svg);
+   background-image: url('../images/UDM.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
 }
 #LayerLapaRusmadiskonyos
 {
    background-color: transparent;
-   background-image: url(../images/RUS.svg);
+   background-image: url('../images/RUS.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
+}
+#wb_ImageRamkaFonmadiskonyos
+{
+   vertical-align: top;
 }
 #ImageRamkaFonmadiskonyos
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -66,11 +86,17 @@ body
 {
    background-color: #FBFBFB;
    background-image: none;
+   border-radius: 0px;
    opacity: 0.00;
+}
+#wb_ImageRUSrasskaz
+{
+   vertical-align: top;
 }
 #ImageRUSrasskaz
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -78,9 +104,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_ImageUDMrasskaz
+{
+   vertical-align: top;
+}
 #ImageUDMrasskaz
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -91,54 +122,65 @@ body
 #TenSledUDMstrmadiskonyos
 {
    background-color: transparent;
-   background-image: url(../images/TenSledUDM.svg);
+   background-image: url('../images/TenSledUDM.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: cover;
+   border-radius: 0px;
 }
 #LayerKnopka4Strmadiskonyos
 {
    background-color: transparent;
-   background-image: url(../images/4NKnopka.svg);
+   background-image: url('../images/4NKnopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopka3Strmadiskonyos
 {
    background-color: transparent;
-   background-image: url(../images/3Knopka.svg);
+   background-image: url('../images/3Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopka2Strmadiskonyos
 {
    background-color: transparent;
-   background-image: url(../images/2Knopka.svg);
+   background-image: url('../images/2Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #LayerKnopka1Strmadiskonyos
 {
    background-color: transparent;
-   background-image: url(../images/1Knopka.svg);
+   background-image: url('../images/1Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }
 #Layer3KnopkaAlfavit
 {
    background-color: transparent;
-   background-image: url(../images/KnopkaAlfavit.svg);
+   background-image: url('../images/KnopkaAlfavit.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
+}
+#wb_BukvySkor
+{
+   vertical-align: top;
 }
 #BukvySkor
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -146,9 +188,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_NazvanieRUS
+{
+   vertical-align: top;
+}
 #NazvanieRUS
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -159,181 +206,272 @@ body
 #TextAreaRUS
 {
    border: 0px solid transparent;
+   border-radius: 0px;
    background-color: #FFFFFF;
    background-image: none;
-   color :#645A00;
+   color: #645A00;
    font-family: Arial;
    font-weight: normal;
+   font-style: normal;
    font-size: 21px;
+   text-align: left;
    padding: 4px 4px 4px 4px;
    margin: 0;
-   text-align: left;
    overflow: auto;
    resize: none;
+}
+#TextAreaRUS:focus
+{
+   outline: 0;
+}
+#wb_kotStr4
+{
+   vertical-align: top;
 }
 #kotStr4
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_kotStr4RUS
+{
+   vertical-align: top;
 }
 #kotStr4RUS
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_petuhZUdm
+{
+   vertical-align: top;
 }
 #petuhZUdm
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_petuhZRus
+{
+   vertical-align: top;
 }
 #petuhZRus
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_GusZUdm
+{
+   vertical-align: top;
 }
 #GusZUdm
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_GusZRus
+{
+   vertical-align: top;
 }
 #GusZRus
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ZvezdZUdm
+{
+   vertical-align: top;
 }
 #ZvezdZUdm
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ZvezdRus
+{
+   vertical-align: top;
 }
 #ZvezdRus
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_myachZUdm
+{
+   vertical-align: top;
 }
 #myachZUdm
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_myachZRus
+{
+   vertical-align: top;
 }
 #myachZRus
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_GusText
+{
+   vertical-align: top;
 }
 #GusText
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_GusTextRus
+{
+   vertical-align: top;
 }
 #GusTextRus
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_myachText
+{
+   vertical-align: top;
 }
 #myachText
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_myachTextRus
+{
+   vertical-align: top;
 }
 #myachTextRus
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_petuhText
+{
+   vertical-align: top;
 }
 #petuhText
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_petuhTextRus
+{
+   vertical-align: top;
 }
 #petuhTextRus
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
    top: 0;
    width: 100%;
    height: 100%;
+}
+#wb_ZvezdText
+{
+   vertical-align: top;
 }
 #ZvezdText
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -341,9 +479,14 @@ body
    width: 100%;
    height: 100%;
 }
+#wb_ZvezdTextRus
+{
+   vertical-align: top;
+}
 #ZvezdTextRus
 {
    border: 0px solid #000000;
+   border-radius: 0px;
    padding: 0;
    margin: 0;
    left: 0;
@@ -354,8 +497,9 @@ body
 #LayerKnopka5Strmadiskonyos
 {
    background-color: transparent;
-   background-image: url(../images/5Knopka.svg);
+   background-image: url('../images/5Knopka.svg');
    background-repeat: no-repeat;
    background-position: center center;
    background-size: contain;
+   border-radius: 0px;
 }

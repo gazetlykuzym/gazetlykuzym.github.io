@@ -634,21 +634,6 @@ a:hover
    background-image: none;
    color: #FFFFFF;
 }
-#wb_snegball
-{
-   vertical-align: top;
-}
-#snegball
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
 #LayerKarta1Str
 {
    background-color: #FFFFFF;
