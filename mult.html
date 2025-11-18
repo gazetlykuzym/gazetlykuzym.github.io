@@ -168,6 +168,7 @@ var totalVideos = 8;
 var isTVOn = false;
 var currentLanguage = 'udm'; // По умолчанию удмуртский
 var currentSwitchState = 1;
+var rutubeCheckInterval = null;
 
 // Функция для отправки команд плееру
 function sendPlayerCommand(command) {
@@ -175,65 +176,66 @@ function sendPlayerCommand(command) {
         var iframe = $('#VideoContainer iframe')[0];
         if (iframe && iframe.contentWindow) {
             iframe.contentWindow.postMessage(JSON.stringify(command), "*");
-            console.log("Command sent:", command);
         }
     } catch(e) {
-        console.log("Error sending command:", e);
+        // Игнорируем ошибки
     }
 }
 
 // Функция для скрытия плашек "Смотреть на RUTUBE"
-function hideRutubeWatchElements() {
+function hideRutubeElements() {
     try {
         var iframe = $('#VideoContainer iframe')[0];
         if (iframe && iframe.contentDocument) {
             // Ищем все элементы с title="Смотреть на RUTUBE"
             var watchElements = iframe.contentDocument.querySelectorAll('[title="Смотреть на RUTUBE"]');
             
+            var hiddenCount = 0;
+            
             // Скрываем найденные элементы
             watchElements.forEach(function(element) {
-                element.style.display = 'none';
-                element.style.visibility = 'hidden';
-                element.style.opacity = '0';
-                element.style.pointerEvents = 'none';
-            });
-            
-            if (watchElements.length > 0) {
-                console.log("Hidden " + watchElements.length + " 'Смотреть на RUTUBE' elements");
-            }
-        }
-    } catch(e) {
-        // Игнорируем ошибки доступа к iframe (CORS)
-    }
-}
-
-// Улучшенная функция для скрытия всех нежелательных элементов RUTUBE
-function hideAllRutubeElements() {
-    setTimeout(function() {
-        try {
-            var iframe = $('#VideoContainer iframe')[0];
-            if (iframe && iframe.contentDocument) {
-                // Скрываем плашки "Смотреть на RUTUBE"
-                hideRutubeWatchElements();
-                
-                // Дополнительно скрываем другие возможные элементы RUTUBE
-                var rutubeElements = iframe.contentDocument.querySelectorAll('.raichu-tooltip-module__tooltip, [class*="rutube"], [class*="raichu"], [title*="RUTUBE"], [title*="rutube"]');
-                
-                rutubeElements.forEach(function(element) {
+                if (element.style.display !== 'none' || 
+                    element.style.visibility !== 'hidden' || 
+                    element.style.opacity !== '0') {
+                    
                     element.style.display = 'none';
                     element.style.visibility = 'hidden';
                     element.style.opacity = '0';
                     element.style.pointerEvents = 'none';
-                });
-                
-                if (rutubeElements.length > 0) {
-                    console.log("Hidden " + rutubeElements.length + " additional RUTUBE elements");
+                    hiddenCount++;
                 }
+            });
+            
+            // Выводим в консоль только если что-то было скрыто
+            if (hiddenCount > 0) {
+                console.log("Скрыто плашек RUTUBE: " + hiddenCount);
             }
-        } catch(e) {
-            console.log("Error hiding RUTUBE elements:", e);
+            
+            return hiddenCount;
         }
-    }, 1500);
+    } catch(e) {
+        // Игнорируем ошибки доступа к iframe (CORS)
+    }
+    return 0;
+}
+
+// Функция для запуска постоянной проверки iframe
+function startRutubeChecker() {
+    // Останавливаем предыдущий интервал, если он был
+    if (rutubeCheckInterval) {
+        clearInterval(rutubeCheckInterval);
+    }
+    
+    // Запускаем новую проверку каждые 500ms
+    rutubeCheckInterval = setInterval(function() {
+        if ($('#VideoContainer iframe').length > 0 && isTVOn) {
+            hideRutubeElements();
+        } else {
+            // Если iframe исчез или TV выключен, останавливаем проверку
+            clearInterval(rutubeCheckInterval);
+            rutubeCheckInterval = null;
+        }
+    }, 500);
 }
 
 // Функция загрузки видео
@@ -246,19 +248,10 @@ function loadVideo(videoId) {
     $('#VideoContainer').html(iframeHtml);
     currentVideoId = videoId;
     
-    console.log("Loaded video: " + videoId);
-    
-    // Скрываем все элементы RUTUBE после загрузки
-    hideAllRutubeElements();
-    
-    // Периодически проверяем и скрываем появляющиеся элементы
-    var checkInterval = setInterval(function() {
-        if ($('#VideoContainer iframe').length > 0) {
-            hideAllRutubeElements();
-        } else {
-            clearInterval(checkInterval);
-        }
-    }, 2000);
+    // Запускаем проверку для нового iframe
+    setTimeout(function() {
+        startRutubeChecker();
+    }, 1000);
     
     // Добавляем обработчик для автоматического воспроизведения после загрузки
     if (isTVOn) {
@@ -291,7 +284,7 @@ function stopCurrentVideo() {
             iframe.contentWindow.postMessage('{"event": "command", "func": "stopVideo", "args": ""}', "*");
         }
     } catch(e) {
-        console.log("Error stopping video:", e);
+        // Игнорируем ошибки
     }
 }
 
@@ -303,11 +296,11 @@ function playCurrentVideo() {
             iframe.contentWindow.postMessage('{"event": "command", "func": "playVideo", "args": ""}', "*");
         }
     } catch(e) {
-        console.log("Error playing video:", e);
+        // Игнорируем ошибки
     }
 }
 
-// Анимация переключателя (альтернативный вариант для плавности)
+// Анимация переключателя
 function animateSwitchSmooth(switchNumber) {
     if (!isTVOn) return;
     
@@ -382,7 +375,7 @@ function turnOnTV() {
             data: {}
         });
         
-    }, 1500); // Увеличиваем задержку для гарантированной загрузки видео
+    }, 1500);
     
     // Автоскрытие подсказки
     setTimeout(function() {
@@ -393,6 +386,12 @@ function turnOnTV() {
 // Выключение TV
 function turnOffTV() {
     isTVOn = false;
+    
+    // Останавливаем проверку iframe
+    if (rutubeCheckInterval) {
+        clearInterval(rutubeCheckInterval);
+        rutubeCheckInterval = null;
+    }
     
     // Останавливаем воспроизведение и отключаем звук
     sendPlayerCommand({
@@ -470,7 +469,6 @@ function hideTVInfo() {
 
 // Инициализация при загрузке страницы
 $(document).ready(function() {
-    console.log("Page loaded with video autoplay");
     // Инициализируем переключатели - показываем только первый
     $('[id^="wb_ImagePerekluchatelTV"]').css('visibility', 'hidden');
     $('#wb_ImagePerekluchatelTV').css('visibility', 'visible');
@@ -479,13 +477,7 @@ $(document).ready(function() {
     window.addEventListener('message', function(event) {
         try {
             var data = JSON.parse(event.data);
-            console.log("Message from player:", data);
-            
-            // Можно обрабатывать события от плеера, например:
-            if (data.type === 'player:ready') {
-                console.log("Player is ready");
-                // Плеер готов, можно отправлять команды
-            }
+            // Можно обрабатывать события от плеера
         } catch(e) {
             // Игнорируем не JSON сообщения
         }
