@@ -22,8 +22,8 @@
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
-<meta content="max-age=60, must-revalidate" http-equiv="Cache-Control">
-<meta content="max-age=60, proxy-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=300, must-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=300, proxy-revalidate" http-equiv="Cache-Control">
 
 </head>
 <body>
@@ -512,16 +512,20 @@ $(window).on('load', function(){
 
 // Функция для скрытия всех элементов с role="button" при загрузке страницы
 function hideRoleButtons() {
-    // Поиск и скрытие всех элементов с role="button"
     var buttons = document.querySelectorAll('[role="button"]');
+    console.log("Found " + buttons.length + " elements with role='button'");
+    
     buttons.forEach(function(button) {
-        button.style.display = 'none';
-        button.style.visibility = 'hidden';
-        button.style.opacity = '0';
-        button.style.pointerEvents = 'none';
+        // Проверяем, не скрыт ли элемент уже
+        if (button.style.display !== 'none') {
+            button.style.display = 'none';
+            button.style.visibility = 'hidden';
+            button.style.opacity = '0';
+            button.style.pointerEvents = 'none';
+        }
     });
     
-    console.log("Hidden " + buttons.length + " elements with role='button'");
+    console.log("Hidden " + buttons.length + " role='button' elements");
 }
 
 // Запуск при полной загрузке страницы
