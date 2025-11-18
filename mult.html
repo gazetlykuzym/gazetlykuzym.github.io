@@ -91,13 +91,13 @@ outline: none !important;">
 <!-- Скрытые элементы для хранения URL видео -->
 <div id="VideoUrls" style="display:none;">
     <div data-video-id="1" data-url="https://rutube.ru/play/embed/f3c7affd8d77a2c08a5d1ef89e423c53"></div>
-    <div data-video-id="2" data-url="https://rutube.ru/video/c80769eb2c4b12f150b73cffc6477e16"></div>
-    <div data-video-id="3" data-url="https://rutube.ru/video/b9a24268930f3d850fcc53c767b36ff6"></div>
-    <div data-video-id="4" data-url="https://rutube.ru/video/f845adab6cc0c17e33b88c608a856820"></div>
-    <div data-video-id="5" data-url="https://rutube.ru/video/0557ad52d7af7e68903d2b5ada552eb7"></div>
-    <div data-video-id="6" data-url="https://rutube.ru/video/02f1109c4035514ff8f9cf49df9b70ab"></div>
-    <div data-video-id="7" data-url="https://rutube.ru/video/dff888dcb5a93ae0c6948c07c2da3c3c"></div>
-    <div data-video-id="8" data-url="https://rutube.ru/video/826e92e565b3a831b1f85ce88cf95bfa"></div>
+    <div data-video-id="2" data-url="https://rutube.ru/play/embed/c80769eb2c4b12f150b73cffc6477e16"></div>
+    <div data-video-id="3" data-url="https://rutube.ru/play/embed/b9a24268930f3d850fcc53c767b36ff6"></div>
+    <div data-video-id="4" data-url="https://rutube.ru/play/embed/f845adab6cc0c17e33b88c608a856820"></div>
+    <div data-video-id="5" data-url="https://rutube.ru/play/embed/0557ad52d7af7e68903d2b5ada552eb7"></div>
+    <div data-video-id="6" data-url="https://rutube.ru/play/embed/02f1109c4035514ff8f9cf49df9b70ab"></div>
+    <div data-video-id="7" data-url="https://rutube.ru/play/embed/dff888dcb5a93ae0c6948c07c2da3c3c"></div>
+    <div data-video-id="8" data-url="https://rutube.ru/play/embed/826e92e565b3a831b1f85ce88cf95bfa"></div>
 </div>
 
 <!-- Переключатели TV с вращением -->
@@ -169,20 +169,35 @@ var isTVOn = false;
 var currentLanguage = 'udm'; // По умолчанию удмуртский
 var currentSwitchState = 1;
 
-// Функция загрузки видео с автозапуском
+// Функция загрузки видео
 function loadVideo(videoId) {
     var videoUrl = $('#VideoUrls div[data-video-id="' + videoId + '"]').data('url');
     
-    // Добавляем параметры автозапуска к URL
-    var autoplayUrl = videoUrl + '?autoplay=1&muted=0';
+    // Для Rutube нужно использовать специальный embed URL с параметрами
+    var embedUrl = videoUrl.replace('/video/', '/play/embed/').replace('/play/embed/', '/play/embed/');
+    
+    // Добавляем параметры
+    var autoplayUrl = embedUrl + '?autoplay=1';
     
     // Создаем новый iframe
-    var iframeHtml = '<iframe width="406" height="228" src="' + autoplayUrl + '" style="border: none;" frameborder="0" allow="clipboard-write; autoplay; encrypted-media" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+    var iframeHtml = '<iframe width="406" height="228" src="' + autoplayUrl + '" style="border: none;" frameborder="0" allow="autoplay; encrypted-media; fullscreen" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
     
     $('#VideoContainer').html(iframeHtml);
     currentVideoId = videoId;
     
-    console.log("Loaded video: " + videoId + " with autoplay");
+    console.log("Loaded video: " + videoId);
+    
+    // Пытаемся запустить видео через PostMessage после загрузки iframe
+    setTimeout(function() {
+        try {
+            var iframe = $('#VideoContainer iframe')[0];
+            if (iframe && iframe.contentWindow) {
+                iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+            }
+        } catch(e) {
+            console.log("Autoplay not supported:", e);
+        }
+    }, 2000);
 }
 
 // Функция остановки текущего видео
