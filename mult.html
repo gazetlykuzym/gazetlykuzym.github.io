@@ -22,7 +22,7 @@
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
-<meta content="max-age=300, must-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=60, must-revalidate" http-equiv="Cache-Control">
 <meta content="max-age=60, proxy-revalidate" http-equiv="Cache-Control">
 
 </head>
@@ -169,32 +169,69 @@ var isTVOn = false;
 var currentLanguage = 'udm'; // По умолчанию удмуртский
 var currentSwitchState = 1;
 
-// Упрощенная функция загрузки видео
+// Функция загрузки видео
 function loadVideo(videoId) {
     var videoUrl = $('#VideoUrls div[data-video-id="' + videoId + '"]').data('url');
     
-    // Просто добавляем параметры автозапуска
-    var autoplayUrl = videoUrl + '?autoplay=1';
-    
-    // Создаем новый iframe
-    var iframeHtml = '<iframe width="406" height="228" src="' + autoplayUrl + '" style="border: none;" frameborder="0" allow="autoplay; encrypted-media; fullscreen" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+    // Создаем iframe без автозапуска
+    var iframeHtml = '<iframe width="406" height="228" src="' + videoUrl + '" style="border: none;" frameborder="0" allow="encrypted-media; fullscreen" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
     
     $('#VideoContainer').html(iframeHtml);
     currentVideoId = videoId;
     
-    console.log("Loaded video: " + videoId + " with URL: " + autoplayUrl);
+    console.log("Loaded video: " + videoId);
     
-    // Пытаемся запустить видео через PostMessage после загрузки iframe
+    // Автоматически пытаемся нажать кнопку Rutube через 2 секунды
     setTimeout(function() {
-        try {
-            var iframe = $('#VideoContainer iframe')[0];
-            if (iframe && iframe.contentWindow) {
+        clickRutubeButton();
+    }, 2000);
+}
+
+// Функция воспроизведения с автоматическим кликом по кнопке Rutube
+function clickRutubeButton() {
+    try {
+        var iframe = $('#VideoContainer iframe')[0];
+        if (iframe && iframe.contentWindow) {
+            var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            
+            // Пробуем разные селекторы кнопки Rutube
+            var selectors = [
+                '.watch-on-rutube-link-module__button___rR_M3',
+                'a[title*="Смотреть на RUTUBE"]',
+                'a[aria-label*="Смотреть на RUTUBE"]',
+                'a[href*="rutube.ru/video/"]',
+                '.watch-on-rutube-link',
+                'button',
+                'a'
+            ];
+            
+            var buttonClicked = false;
+            
+            for (var i = 0; i < selectors.length; i++) {
+                var button = iframeDoc.querySelector(selectors[i]);
+                if (button) {
+                    console.log("Found button with selector:", selectors[i]);
+                    button.click();
+                    buttonClicked = true;
+                    break;
+                }
+            }
+            
+            if (!buttonClicked) {
+                console.log("No Rutube button found, trying postMessage");
+                // Пробуем через postMessage
                 iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
             }
-        } catch(e) {
-            console.log("Autoplay not supported:", e);
+            
         }
-    }, 2000);
+    } catch(e) {
+        console.log("Error clicking Rutube button:", e);
+    }
+}
+
+// Функция воспроизведения текущего видео (для ручного вызова)
+function playCurrentVideo() {
+    clickRutubeButton();
 }
 
 // Функция остановки текущего видео
@@ -209,49 +246,7 @@ function stopCurrentVideo() {
     }
 }
 
-// Функция воспроизведения текущего видео
-function playCurrentVideo() {
-    try {
-        var iframe = $('#VideoContainer iframe')[0];
-        if (iframe && iframe.contentWindow) {
-            iframe.contentWindow.postMessage('{"event": "command", "func": "playVideo", "args": ""}', "*");
-        }
-    } catch(e) {
-        console.log("Error playing video:", e);
-    }
-}
-
-// Обработчик клика на переключатель
-// Обработчик клика на переключатель
-function handleSwitchClick(switchNumber) {
-    if (!isTVOn) return;
-    
-    // Анимация вращения текущего переключателя
-    Animate('wb_ImagePerekluchatelTV' + (switchNumber === 1 ? '' : switchNumber), '279', '357', '', '', '', 200, '1');
-    
-    // Переходим к следующему видео
-    var nextVideoId = switchNumber % totalVideos + 1;
-    loadVideo(nextVideoId);
-    
-    // Через небольшое время скрываем текущий и показываем следующий
-    setTimeout(function() {
-        // Скрываем текущий переключатель
-        $('#wb_ImagePerekluchatelTV' + (switchNumber === 1 ? '' : switchNumber)).css('visibility', 'hidden');
-        
-        // Показываем следующий переключатель
-        var nextSwitchNumber = switchNumber % totalVideos + 1;
-        var nextSwitch = $('#wb_ImagePerekluchatelTV' + (nextSwitchNumber === 1 ? '' : nextSwitchNumber));
-        nextSwitch.css('visibility', 'visible');
-        
-        // Обновляем текущее состояние
-        currentSwitchState = nextSwitchNumber;
-    }, 200); // Задержка равна времени анимации
-    
-    // Показываем подсказку
-    showCatHint();
-}
-
-// Анимация переключателя (альтернативный вариант для плавности)
+// Анимация переключателя с автоматическим запуском видео
 function animateSwitchSmooth(switchNumber) {
     if (!isTVOn) return;
     
@@ -280,9 +275,8 @@ function animateSwitchSmooth(switchNumber) {
 // Включение TV
 function turnOnTV() {
     isTVOn = true;
-    loadVideo(1); // Это уже будет воспроизводить видео автоматически
+    loadVideo(1);
     
-    // Остальной код без изменений...
     // Сбрасываем переключатель в начальное состояние
     currentSwitchState = 1;
     $('[id^="wb_ImagePerekluchatelTV"]').css('visibility', 'hidden');
