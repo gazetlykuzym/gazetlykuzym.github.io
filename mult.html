@@ -22,8 +22,8 @@
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
-<meta content="max-age=300, must-revalidate" http-equiv="Cache-Control">
-<meta content="max-age=300, proxy-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=100, must-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=100, proxy-revalidate" http-equiv="Cache-Control">
 
 </head>
 <body>
@@ -169,6 +169,19 @@ var isTVOn = false;
 var currentLanguage = 'udm'; // По умолчанию удмуртский
 var currentSwitchState = 1;
 
+// Функция для отправки команд плееру
+function sendPlayerCommand(command) {
+    try {
+        var iframe = $('#VideoContainer iframe')[0];
+        if (iframe && iframe.contentWindow) {
+            iframe.contentWindow.postMessage(JSON.stringify(command), "*");
+            console.log("Command sent:", command);
+        }
+    } catch(e) {
+        console.log("Error sending command:", e);
+    }
+}
+
 // Функция загрузки видео
 function loadVideo(videoId) {
     var videoUrl = $('#VideoUrls div[data-video-id="' + videoId + '"]').data('url');
@@ -180,6 +193,28 @@ function loadVideo(videoId) {
     currentVideoId = videoId;
     
     console.log("Loaded video: " + videoId);
+    
+    // Добавляем обработчик для автоматического воспроизведения после загрузки
+    if (isTVOn) {
+        setTimeout(function() {
+            sendPlayerCommand({
+                type: 'player:play',
+                data: {}
+            });
+            
+            // Включаем звук для нового видео
+            sendPlayerCommand({
+                type: 'player:unMute'
+            });
+            
+            // Устанавливаем громкость
+            sendPlayerCommand({
+                type: 'player:setVolume',
+                data: { volume: 0.8 }
+            });
+            
+        }, 1000);
+    }
 }
 
 // Функция остановки текущего видео
@@ -207,7 +242,6 @@ function playCurrentVideo() {
 }
 
 // Обработчик клика на переключатель
-// Обработчик клика на переключатель
 function handleSwitchClick(switchNumber) {
     if (!isTVOn) return;
     
@@ -230,6 +264,15 @@ function handleSwitchClick(switchNumber) {
         
         // Обновляем текущее состояние
         currentSwitchState = nextSwitchNumber;
+        
+        // Начинаем воспроизведение нового видео после переключения
+        setTimeout(function() {
+            sendPlayerCommand({
+                type: 'player:play',
+                data: {}
+            });
+        }, 500);
+        
     }, 200); // Задержка равна времени анимации
     
     // Показываем подсказку
@@ -257,12 +300,20 @@ function animateSwitchSmooth(switchNumber) {
         // Переходим к следующему видео
         loadVideo(nextSwitchNumber);
         
+        // Начинаем воспроизведение нового видео
+        setTimeout(function() {
+            sendPlayerCommand({
+                type: 'player:play',
+                data: {}
+            });
+        }, 500);
+        
         // Показываем подсказку
         showCatHint();
     }, 200);
 }
 
-// Включение TV с установкой громкости
+// Включение TV
 function turnOnTV() {
     isTVOn = true;
     loadVideo(1);
@@ -284,26 +335,26 @@ function turnOnTV() {
     ShowObject('wb_ImageInfoTvUDM', 0);
     ShowObject('wb_ImagePerekluchTvInfoNacholo', 0);
     
-    // Включаем звук и устанавливаем громкость
+    // Включаем звук и начинаем воспроизведение после загрузки
     setTimeout(function() {
-        try {
-            var iframe = $('#VideoContainer iframe')[0];
-            if (iframe && iframe.contentWindow) {
-                // Включаем звук
-                iframe.contentWindow.postMessage(JSON.stringify({
-                    type: 'player:unMute'
-                }), "*");
-                
-                // Устанавливаем громкость на 80%
-                iframe.contentWindow.postMessage(JSON.stringify({
-                    type: 'player:setVolume',
-                    data: { volume: 0.8 }
-                }), "*");
-            }
-        } catch(e) {
-            console.log("Error setting audio:", e);
-        }
-    }, 1000);
+        // Включаем звук
+        sendPlayerCommand({
+            type: 'player:unMute'
+        });
+        
+        // Устанавливаем громкость на 80%
+        sendPlayerCommand({
+            type: 'player:setVolume',
+            data: { volume: 0.8 }
+        });
+        
+        // Начинаем воспроизведение
+        sendPlayerCommand({
+            type: 'player:play',
+            data: {}
+        });
+        
+    }, 1500); // Увеличиваем задержку для гарантированной загрузки видео
     
     // Автоскрытие подсказки
     setTimeout(function() {
@@ -314,7 +365,17 @@ function turnOnTV() {
 // Выключение TV
 function turnOffTV() {
     isTVOn = false;
-    stopCurrentVideo();
+    
+    // Останавливаем воспроизведение и отключаем звук
+    sendPlayerCommand({
+        type: 'player:stop',
+        data: {}
+    });
+    
+    sendPlayerCommand({
+        type: 'player:mute'
+    });
+    
     $('#VideoContainer').html(''); // Очищаем контейнер
     
     // Сбрасываем переключатель
@@ -381,10 +442,26 @@ function hideTVInfo() {
 
 // Инициализация при загрузке страницы
 $(document).ready(function() {
-    console.log("Page loaded with lazy video loading");
+    console.log("Page loaded with video autoplay");
     // Инициализируем переключатели - показываем только первый
     $('[id^="wb_ImagePerekluchatelTV"]').css('visibility', 'hidden');
     $('#wb_ImagePerekluchatelTV').css('visibility', 'visible');
+    
+    // Добавляем обработчик сообщений от плеера
+    window.addEventListener('message', function(event) {
+        try {
+            var data = JSON.parse(event.data);
+            console.log("Message from player:", data);
+            
+            // Можно обрабатывать события от плеера, например:
+            if (data.type === 'player:ready') {
+                console.log("Player is ready");
+                // Плеер готов, можно отправлять команды
+            }
+        } catch(e) {
+            // Игнорируем не JSON сообщения
+        }
+    });
 });
 
 // Preloader
