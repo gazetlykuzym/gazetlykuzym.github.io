@@ -22,8 +22,8 @@
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
-<meta content="max-age=100, must-revalidate" http-equiv="Cache-Control">
-<meta content="max-age=100, proxy-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=60, must-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=60, proxy-revalidate" http-equiv="Cache-Control">
 
 </head>
 <body>
@@ -510,9 +510,9 @@ $(window).on('load', function(){
     $('.preloader').delay(300).fadeOut('slow');
 });
 
-// Функция для скрытия всех элементов с role="button" при загрузке страницы
-function hideRoleButtons() {
-    // Поиск и скрытие всех элементов с role="button"
+// Функция для скрытия элементов с role="button" и указанным классом при загрузке страницы
+function hideElements() {
+    // Скрываем все элементы с role="button"
     var buttons = document.querySelectorAll('[role="button"]');
     buttons.forEach(function(button) {
         button.style.display = 'none';
@@ -521,31 +521,66 @@ function hideRoleButtons() {
         button.style.pointerEvents = 'none';
     });
     
+    // Скрываем все элементы с классом disclaimer-module__disclaimer___C_xho
+    var disclaimers = document.querySelectorAll('.disclaimer-module__disclaimer___C_xho');
+    disclaimers.forEach(function(disclaimer) {
+        disclaimer.style.display = 'none';
+        disclaimer.style.visibility = 'hidden';
+        disclaimer.style.opacity = '0';
+        disclaimer.style.pointerEvents = 'none';
+    });
+    
+    // Скрываем элементы с комбинацией классов
+    var combinedClass = document.querySelectorAll('.disclaimer-module__disclaimer___C_xho.raichu-fade-appear-done.raichu-fade-enter-done');
+    combinedClass.forEach(function(element) {
+        element.style.display = 'none';
+        element.style.visibility = 'hidden';
+        element.style.opacity = '0';
+        element.style.pointerEvents = 'none';
+    });
+    
     console.log("Hidden " + buttons.length + " elements with role='button'");
+    console.log("Hidden " + disclaimers.length + " elements with class 'disclaimer-module__disclaimer___C_xho'");
+    console.log("Hidden " + combinedClass.length + " elements with combined classes");
 }
 
 // Запуск при полной загрузке страницы
 window.addEventListener('load', function() {
-    hideRoleButtons();
+    hideElements();
     
-    // Дополнительная проверка через небольшой интервал на случай динамической загрузки
-    setTimeout(hideRoleButtons, 1000);
-    setTimeout(hideRoleButtons, 3000);
+    // Дополнительная проверка через небольшие интервалы на случай динамической загрузки
+    setTimeout(hideElements, 1000);
+    setTimeout(hideElements, 3000);
 });
 
 // Также запускаем при DOMContentLoaded для более раннего выполнения
 document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(hideRoleButtons, 500);
+    setTimeout(hideElements, 500);
 });
 
-// Альтернативный вариант с MutationObserver для отслеживания динамически добавляемых элементов
+// MutationObserver для отслеживания динамически добавляемых элементов
 if (typeof MutationObserver !== 'undefined') {
     var observer = new MutationObserver(function(mutations) {
+        var shouldHide = false;
         mutations.forEach(function(mutation) {
             if (mutation.addedNodes && mutation.addedNodes.length > 0) {
-                hideRoleButtons();
+                mutation.addedNodes.forEach(function(node) {
+                    if (node.nodeType === 1) { // Element node
+                        if (node.hasAttribute('role') && node.getAttribute('role') === 'button' ||
+                            node.classList && (
+                                node.classList.contains('disclaimer-module__disclaimer___C_xho') ||
+                                node.classList.contains('raichu-fade-appear-done') ||
+                                node.classList.contains('raichu-fade-enter-done')
+                            )) {
+                            shouldHide = true;
+                        }
+                    }
+                });
             }
         });
+        if (shouldHide) {
+            hideElements();
+        }
     });
     
     observer.observe(document.body, {
@@ -553,6 +588,9 @@ if (typeof MutationObserver !== 'undefined') {
         subtree: true
     });
 }
+
+// Дополнительно: периодическая проверка каждые 2 секунды
+setInterval(hideElements, 2000);
 </script>
 
 </body>
