@@ -22,8 +22,8 @@
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
-<meta content="max-age=3600, must-revalidate" http-equiv="Cache-Control">
-<meta content="max-age=3600, proxy-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=300, must-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=300, proxy-revalidate" http-equiv="Cache-Control">
 
 </head>
 <body>
@@ -262,7 +262,7 @@ function animateSwitchSmooth(switchNumber) {
     }, 200);
 }
 
-// Включение TV
+// Включение TV с установкой громкости
 function turnOnTV() {
     isTVOn = true;
     loadVideo(1);
@@ -283,6 +283,27 @@ function turnOnTV() {
     ShowObject('wb_ImageInfoTvRUS', 0);
     ShowObject('wb_ImageInfoTvUDM', 0);
     ShowObject('wb_ImagePerekluchTvInfoNacholo', 0);
+    
+    // Включаем звук и устанавливаем громкость
+    setTimeout(function() {
+        try {
+            var iframe = $('#VideoContainer iframe')[0];
+            if (iframe && iframe.contentWindow) {
+                // Включаем звук
+                iframe.contentWindow.postMessage(JSON.stringify({
+                    type: 'player:unMute'
+                }), "*");
+                
+                // Устанавливаем громкость на 80%
+                iframe.contentWindow.postMessage(JSON.stringify({
+                    type: 'player:setVolume',
+                    data: { volume: 0.8 }
+                }), "*");
+            }
+        } catch(e) {
+            console.log("Error setting audio:", e);
+        }
+    }, 1000);
     
     // Автоскрытие подсказки
     setTimeout(function() {
