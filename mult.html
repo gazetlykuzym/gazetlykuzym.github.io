@@ -169,15 +169,12 @@ var isTVOn = false;
 var currentLanguage = 'udm'; // По умолчанию удмуртский
 var currentSwitchState = 1;
 
-// Функция загрузки видео
+// Упрощенная функция загрузки видео
 function loadVideo(videoId) {
     var videoUrl = $('#VideoUrls div[data-video-id="' + videoId + '"]').data('url');
     
-    // Для Rutube нужно использовать специальный embed URL с параметрами
-    var embedUrl = videoUrl.replace('/video/', '/play/embed/').replace('/play/embed/', '/play/embed/');
-    
-    // Добавляем параметры
-    var autoplayUrl = embedUrl + '?autoplay=1';
+    // Просто добавляем параметры автозапуска
+    var autoplayUrl = videoUrl + '?autoplay=1';
     
     // Создаем новый iframe
     var iframeHtml = '<iframe width="406" height="228" src="' + autoplayUrl + '" style="border: none;" frameborder="0" allow="autoplay; encrypted-media; fullscreen" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
@@ -185,7 +182,7 @@ function loadVideo(videoId) {
     $('#VideoContainer').html(iframeHtml);
     currentVideoId = videoId;
     
-    console.log("Loaded video: " + videoId);
+    console.log("Loaded video: " + videoId + " with URL: " + autoplayUrl);
     
     // Пытаемся запустить видео через PostMessage после загрузки iframe
     setTimeout(function() {
