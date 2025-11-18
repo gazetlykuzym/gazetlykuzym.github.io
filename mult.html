@@ -16,6 +16,25 @@
           bottom: 0;
           z-index: 99999;
    }
+   
+   /* Стили для скрытия элементов RUTUBE */
+   #VideoContainer iframe {
+        position: relative;
+        overflow: hidden;
+   }
+   
+   /* Создаем псевдо-элемент для перекрытия нежелательных элементов */
+   #VideoContainer::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        pointer-events: none;
+        z-index: 100;
+   }
 </style>
 <link href="css/SaytKot.css" rel="stylesheet">
 <link href="css/mult.css" rel="stylesheet">
@@ -168,7 +187,6 @@ var totalVideos = 8;
 var isTVOn = false;
 var currentLanguage = 'udm'; // По умолчанию удмуртский
 var currentSwitchState = 1;
-var rutubeCheckInterval = null;
 
 // Функция для отправки команд плееру
 function sendPlayerCommand(command) {
@@ -182,62 +200,6 @@ function sendPlayerCommand(command) {
     }
 }
 
-// Функция для скрытия плашек "Смотреть на RUTUBE"
-function hideRutubeElements() {
-    try {
-        var iframe = $('#VideoContainer iframe')[0];
-        if (iframe && iframe.contentDocument) {
-            // Ищем все элементы с title="Смотреть на RUTUBE"
-            var watchElements = iframe.contentDocument.querySelectorAll('[title="Смотреть на RUTUBE"]');
-            
-            var hiddenCount = 0;
-            
-            // Скрываем найденные элементы
-            watchElements.forEach(function(element) {
-                if (element.style.display !== 'none' || 
-                    element.style.visibility !== 'hidden' || 
-                    element.style.opacity !== '0') {
-                    
-                    element.style.display = 'none';
-                    element.style.visibility = 'hidden';
-                    element.style.opacity = '0';
-                    element.style.pointerEvents = 'none';
-                    hiddenCount++;
-                }
-            });
-            
-            // Выводим в консоль только если что-то было скрыто
-            if (hiddenCount > 0) {
-                console.log("Скрыто плашек RUTUBE: " + hiddenCount);
-            }
-            
-            return hiddenCount;
-        }
-    } catch(e) {
-        // Игнорируем ошибки доступа к iframe (CORS)
-    }
-    return 0;
-}
-
-// Функция для запуска постоянной проверки iframe
-function startRutubeChecker() {
-    // Останавливаем предыдущий интервал, если он был
-    if (rutubeCheckInterval) {
-        clearInterval(rutubeCheckInterval);
-    }
-    
-    // Запускаем новую проверку каждые 500ms
-    rutubeCheckInterval = setInterval(function() {
-        if ($('#VideoContainer iframe').length > 0 && isTVOn) {
-            hideRutubeElements();
-        } else {
-            // Если iframe исчез или TV выключен, останавливаем проверку
-            clearInterval(rutubeCheckInterval);
-            rutubeCheckInterval = null;
-        }
-    }, 500);
-}
-
 // Функция загрузки видео
 function loadVideo(videoId) {
     var videoUrl = $('#VideoUrls div[data-video-id="' + videoId + '"]').data('url');
@@ -248,10 +210,7 @@ function loadVideo(videoId) {
     $('#VideoContainer').html(iframeHtml);
     currentVideoId = videoId;
     
-    // Запускаем проверку для нового iframe
-    setTimeout(function() {
-        startRutubeChecker();
-    }, 1000);
+    console.log("Загружено видео: " + videoId);
     
     // Добавляем обработчик для автоматического воспроизведения после загрузки
     if (isTVOn) {
@@ -386,12 +345,6 @@ function turnOnTV() {
 // Выключение TV
 function turnOffTV() {
     isTVOn = false;
-    
-    // Останавливаем проверку iframe
-    if (rutubeCheckInterval) {
-        clearInterval(rutubeCheckInterval);
-        rutubeCheckInterval = null;
-    }
     
     // Останавливаем воспроизведение и отключаем звук
     sendPlayerCommand({
