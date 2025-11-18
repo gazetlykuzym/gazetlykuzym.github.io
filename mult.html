@@ -16,33 +16,14 @@
           bottom: 0;
           z-index: 99999;
    }
-   
-   /* Стили для скрытия элементов RUTUBE */
-   #VideoContainer iframe {
-        position: relative;
-        overflow: hidden;
-   }
-   
-   /* Создаем псевдо-элемент для перекрытия нежелательных элементов */
-   #VideoContainer::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: transparent;
-        pointer-events: none;
-        z-index: 100;
-   }
 </style>
 <link href="css/SaytKot.css" rel="stylesheet">
 <link href="css/mult.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
-<meta content="max-age=60, must-revalidate" http-equiv="Cache-Control">
-<meta content="max-age=60, proxy-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=3600, must-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=3600, proxy-revalidate" http-equiv="Cache-Control">
 
 </head>
 <body>
@@ -188,18 +169,6 @@ var isTVOn = false;
 var currentLanguage = 'udm'; // По умолчанию удмуртский
 var currentSwitchState = 1;
 
-// Функция для отправки команд плееру
-function sendPlayerCommand(command) {
-    try {
-        var iframe = $('#VideoContainer iframe')[0];
-        if (iframe && iframe.contentWindow) {
-            iframe.contentWindow.postMessage(JSON.stringify(command), "*");
-        }
-    } catch(e) {
-        // Игнорируем ошибки
-    }
-}
-
 // Функция загрузки видео
 function loadVideo(videoId) {
     var videoUrl = $('#VideoUrls div[data-video-id="' + videoId + '"]').data('url');
@@ -210,29 +179,7 @@ function loadVideo(videoId) {
     $('#VideoContainer').html(iframeHtml);
     currentVideoId = videoId;
     
-    console.log("Загружено видео: " + videoId);
-    
-    // Добавляем обработчик для автоматического воспроизведения после загрузки
-    if (isTVOn) {
-        setTimeout(function() {
-            sendPlayerCommand({
-                type: 'player:play',
-                data: {}
-            });
-            
-            // Включаем звук для нового видео
-            sendPlayerCommand({
-                type: 'player:unMute'
-            });
-            
-            // Устанавливаем громкость
-            sendPlayerCommand({
-                type: 'player:setVolume',
-                data: { volume: 0.8 }
-            });
-            
-        }, 1000);
-    }
+    console.log("Loaded video: " + videoId);
 }
 
 // Функция остановки текущего видео
@@ -243,7 +190,7 @@ function stopCurrentVideo() {
             iframe.contentWindow.postMessage('{"event": "command", "func": "stopVideo", "args": ""}', "*");
         }
     } catch(e) {
-        // Игнорируем ошибки
+        console.log("Error stopping video:", e);
     }
 }
 
@@ -255,11 +202,40 @@ function playCurrentVideo() {
             iframe.contentWindow.postMessage('{"event": "command", "func": "playVideo", "args": ""}', "*");
         }
     } catch(e) {
-        // Игнорируем ошибки
+        console.log("Error playing video:", e);
     }
 }
 
-// Анимация переключателя
+// Обработчик клика на переключатель
+function handleSwitchClick(switchNumber) {
+    if (!isTVOn) return;
+    
+    // Анимация вращения текущего переключателя
+    Animate('wb_ImagePerekluchatelTV' + (switchNumber === 1 ? '' : switchNumber), '279', '357', '', '', '', 200, '1');
+    
+    // Переходим к следующему видео
+    var nextVideoId = switchNumber % totalVideos + 1;
+    loadVideo(nextVideoId);
+    
+    // Через небольшое время скрываем текущий и показываем следующий
+    setTimeout(function() {
+        // Скрываем текущий переключатель
+        $('#wb_ImagePerekluchatelTV' + (switchNumber === 1 ? '' : switchNumber)).css('visibility', 'hidden');
+        
+        // Показываем следующий переключатель
+        var nextSwitchNumber = switchNumber % totalVideos + 1;
+        var nextSwitch = $('#wb_ImagePerekluchatelTV' + (nextSwitchNumber === 1 ? '' : nextSwitchNumber));
+        nextSwitch.css('visibility', 'visible');
+        
+        // Обновляем текущее состояние
+        currentSwitchState = nextSwitchNumber;
+    }, 200); // Задержка равна времени анимации
+    
+    // Показываем подсказку
+    showCatHint();
+}
+
+// Анимация переключателя (альтернативный вариант для плавности)
 function animateSwitchSmooth(switchNumber) {
     if (!isTVOn) return;
     
@@ -279,14 +255,6 @@ function animateSwitchSmooth(switchNumber) {
         
         // Переходим к следующему видео
         loadVideo(nextSwitchNumber);
-        
-        // Начинаем воспроизведение нового видео
-        setTimeout(function() {
-            sendPlayerCommand({
-                type: 'player:play',
-                data: {}
-            });
-        }, 500);
         
         // Показываем подсказку
         showCatHint();
@@ -315,27 +283,6 @@ function turnOnTV() {
     ShowObject('wb_ImageInfoTvUDM', 0);
     ShowObject('wb_ImagePerekluchTvInfoNacholo', 0);
     
-    // Включаем звук и начинаем воспроизведение после загрузки
-    setTimeout(function() {
-        // Включаем звук
-        sendPlayerCommand({
-            type: 'player:unMute'
-        });
-        
-        // Устанавливаем громкость на 80%
-        sendPlayerCommand({
-            type: 'player:setVolume',
-            data: { volume: 0.8 }
-        });
-        
-        // Начинаем воспроизведение
-        sendPlayerCommand({
-            type: 'player:play',
-            data: {}
-        });
-        
-    }, 1500);
-    
     // Автоскрытие подсказки
     setTimeout(function() {
         ShowObject('wb_ImagekotTvPovorotText', 0);
@@ -345,17 +292,7 @@ function turnOnTV() {
 // Выключение TV
 function turnOffTV() {
     isTVOn = false;
-    
-    // Останавливаем воспроизведение и отключаем звук
-    sendPlayerCommand({
-        type: 'player:stop',
-        data: {}
-    });
-    
-    sendPlayerCommand({
-        type: 'player:mute'
-    });
-    
+    stopCurrentVideo();
     $('#VideoContainer').html(''); // Очищаем контейнер
     
     // Сбрасываем переключатель
@@ -422,25 +359,94 @@ function hideTVInfo() {
 
 // Инициализация при загрузке страницы
 $(document).ready(function() {
+    console.log("Page loaded with lazy video loading");
     // Инициализируем переключатели - показываем только первый
     $('[id^="wb_ImagePerekluchatelTV"]').css('visibility', 'hidden');
     $('#wb_ImagePerekluchatelTV').css('visibility', 'visible');
-    
-    // Добавляем обработчик сообщений от плеера
-    window.addEventListener('message', function(event) {
-        try {
-            var data = JSON.parse(event.data);
-            // Можно обрабатывать события от плеера
-        } catch(e) {
-            // Игнорируем не JSON сообщения
-        }
-    });
 });
 
 // Preloader
 $(window).on('load', function(){
     $('.preloader').delay(300).fadeOut('slow');
 });
+
+// Перехват кликов по кнопкам "Смотреть на RUTUBE"
+document.addEventListener('click', function(event) {
+    // Проверяем, является ли элемент кнопкой с title "Смотреть на RUTUBE"
+    if (event.target.title === 'Смотреть на RUTUBE' || 
+        event.target.closest('[title="Смотреть на RUTUBE"]')) {
+        
+        console.log('Перехвачен клик по кнопке "Смотреть на RUTUBE"');
+        console.log('Элемент:', event.target);
+        console.log('Родительский элемент:', event.target.parentElement);
+        console.log('Классы элемента:', event.target.className);
+        
+        // Предотвращаем стандартное действие
+        event.preventDefault();
+        event.stopPropagation();
+        
+        // Пытаемся найти iframe с видео
+        const iframe = document.querySelector('#VideoContainer iframe');
+        if (iframe) {
+            console.log('Найден iframe:', iframe);
+            console.log('SRC iframe:', iframe.src);
+        }
+        
+        return false;
+    }
+});
+
+// Перехват событий для динамически созданных элементов
+const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        mutation.addedNodes.forEach(function(node) {
+            if (node.nodeType === 1) { // ELEMENT_NODE
+                // Проверяем сам элемент
+                if (node.title === 'Смотреть на RUTUBE') {
+                    console.log('Обнаружена динамически созданная кнопка "Смотреть на RUTUBE"');
+                    console.log('Элемент:', node);
+                }
+                
+                // Проверяем дочерние элементы
+                const rutubeButtons = node.querySelectorAll ? node.querySelectorAll('[title="Смотреть на RUTUBE"]') : [];
+                rutubeButtons.forEach(function(button) {
+                    console.log('Обнаружена вложенная кнопка "Смотреть на RUTUBE"');
+                    console.log('Элемент:', button);
+                });
+            }
+        });
+    });
+});
+
+// Начинаем наблюдение
+observer.observe(document.body, {
+    childList: true,
+    subtree: true
+});
+
+// Перехват сообщений от iframe (если они есть)
+window.addEventListener('message', function(event) {
+    // Логируем все сообщения от iframe
+    console.log('Сообщение от iframe:', event.data);
+    console.log('Источник:', event.source);
+    console.log('Origin:', event.origin);
+});
+
+// Перехват всех кликов в документе для отладки
+document.addEventListener('click', function(event) {
+    const target = event.target;
+    // Логируем только если элемент имеет title или специфические классы
+    if (target.title || target.className.includes('rutube') || target.className.includes('raichu')) {
+        console.log('Клик по элементу:');
+        console.log('Тег:', target.tagName);
+        console.log('Title:', target.title);
+        console.log('Классы:', target.className);
+        console.log('ID:', target.id);
+        console.log('-------------------');
+    }
+});
+
+console.log('Скрипт перехвата кнопок RUTUBE активирован');
 </script>
 
 </body>
