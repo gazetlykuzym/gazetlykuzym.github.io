@@ -22,8 +22,8 @@
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
-<meta content="max-age=3600, must-revalidate" http-equiv="Cache-Control">
-<meta content="max-age=3600, proxy-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=60, must-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=60, proxy-revalidate" http-equiv="Cache-Control">
 
 </head>
 <body>
@@ -169,6 +169,18 @@ var isTVOn = false;
 var currentLanguage = 'udm'; // По умолчанию удмуртский
 var currentSwitchState = 1;
 
+// Функция для отправки команд плееру
+function sendPlayerCommand(command) {
+    try {
+        var iframe = $('#VideoContainer iframe')[0];
+        if (iframe && iframe.contentWindow) {
+            iframe.contentWindow.postMessage(JSON.stringify(command), "*");
+        }
+    } catch(e) {
+        // Игнорируем ошибки
+    }
+}
+
 // Функция загрузки видео
 function loadVideo(videoId) {
     var videoUrl = $('#VideoUrls div[data-video-id="' + videoId + '"]').data('url');
@@ -179,7 +191,29 @@ function loadVideo(videoId) {
     $('#VideoContainer').html(iframeHtml);
     currentVideoId = videoId;
     
-    console.log("Loaded video: " + videoId);
+    console.log("Загружено видео: " + videoId);
+    
+    // Добавляем обработчик для автоматического воспроизведения после загрузки
+    if (isTVOn) {
+        setTimeout(function() {
+            sendPlayerCommand({
+                type: 'player:play',
+                data: {}
+            });
+            
+            // Включаем звук для нового видео
+            sendPlayerCommand({
+                type: 'player:unMute'
+            });
+            
+            // Устанавливаем громкость
+            sendPlayerCommand({
+                type: 'player:setVolume',
+                data: { volume: 0.6 }
+            });
+            
+        }, 1000);
+    }
 }
 
 // Функция остановки текущего видео
@@ -190,7 +224,7 @@ function stopCurrentVideo() {
             iframe.contentWindow.postMessage('{"event": "command", "func": "stopVideo", "args": ""}', "*");
         }
     } catch(e) {
-        console.log("Error stopping video:", e);
+        // Игнорируем ошибки
     }
 }
 
@@ -202,40 +236,11 @@ function playCurrentVideo() {
             iframe.contentWindow.postMessage('{"event": "command", "func": "playVideo", "args": ""}', "*");
         }
     } catch(e) {
-        console.log("Error playing video:", e);
+        // Игнорируем ошибки
     }
 }
 
-// Обработчик клика на переключатель
-function handleSwitchClick(switchNumber) {
-    if (!isTVOn) return;
-    
-    // Анимация вращения текущего переключателя
-    Animate('wb_ImagePerekluchatelTV' + (switchNumber === 1 ? '' : switchNumber), '279', '357', '', '', '', 200, '1');
-    
-    // Переходим к следующему видео
-    var nextVideoId = switchNumber % totalVideos + 1;
-    loadVideo(nextVideoId);
-    
-    // Через небольшое время скрываем текущий и показываем следующий
-    setTimeout(function() {
-        // Скрываем текущий переключатель
-        $('#wb_ImagePerekluchatelTV' + (switchNumber === 1 ? '' : switchNumber)).css('visibility', 'hidden');
-        
-        // Показываем следующий переключатель
-        var nextSwitchNumber = switchNumber % totalVideos + 1;
-        var nextSwitch = $('#wb_ImagePerekluchatelTV' + (nextSwitchNumber === 1 ? '' : nextSwitchNumber));
-        nextSwitch.css('visibility', 'visible');
-        
-        // Обновляем текущее состояние
-        currentSwitchState = nextSwitchNumber;
-    }, 200); // Задержка равна времени анимации
-    
-    // Показываем подсказку
-    showCatHint();
-}
-
-// Анимация переключателя (альтернативный вариант для плавности)
+// Анимация переключателя
 function animateSwitchSmooth(switchNumber) {
     if (!isTVOn) return;
     
@@ -255,6 +260,14 @@ function animateSwitchSmooth(switchNumber) {
         
         // Переходим к следующему видео
         loadVideo(nextSwitchNumber);
+        
+        // Начинаем воспроизведение нового видео
+        setTimeout(function() {
+            sendPlayerCommand({
+                type: 'player:play',
+                data: {}
+            });
+        }, 500);
         
         // Показываем подсказку
         showCatHint();
@@ -283,16 +296,47 @@ function turnOnTV() {
     ShowObject('wb_ImageInfoTvUDM', 0);
     ShowObject('wb_ImagePerekluchTvInfoNacholo', 0);
     
+    // Включаем звук и начинаем воспроизведение после загрузки
+    setTimeout(function() {
+        // Включаем звук
+        sendPlayerCommand({
+            type: 'player:unMute'
+        });
+        
+        // Устанавливаем громкость на 80%
+        sendPlayerCommand({
+            type: 'player:setVolume',
+            data: { volume: 0.6 }
+        });
+        
+        // Начинаем воспроизведение
+        sendPlayerCommand({
+            type: 'player:play',
+            data: {}
+        });
+        
+    }, 1500);
+    
     // Автоскрытие подсказки
     setTimeout(function() {
         ShowObject('wb_ImagekotTvPovorotText', 0);
-    }, 5000);
+    }, 2000);
 }
 
 // Выключение TV
 function turnOffTV() {
     isTVOn = false;
-    stopCurrentVideo();
+    
+    // Останавливаем воспроизведение и отключаем звук
+    sendPlayerCommand({
+        type: 'player:stop',
+        data: {}
+    });
+    
+    sendPlayerCommand({
+        type: 'player:mute'
+    });
+    
     $('#VideoContainer').html(''); // Очищаем контейнер
     
     // Сбрасываем переключатель
@@ -359,10 +403,19 @@ function hideTVInfo() {
 
 // Инициализация при загрузке страницы
 $(document).ready(function() {
-    console.log("Page loaded with lazy video loading");
     // Инициализируем переключатели - показываем только первый
     $('[id^="wb_ImagePerekluchatelTV"]').css('visibility', 'hidden');
     $('#wb_ImagePerekluchatelTV').css('visibility', 'visible');
+    
+    // Добавляем обработчик сообщений от плеера
+    window.addEventListener('message', function(event) {
+        try {
+            var data = JSON.parse(event.data);
+            // Можно обрабатывать события от плеера
+        } catch(e) {
+            // Игнорируем не JSON сообщения
+        }
+    });
 });
 
 // Preloader
