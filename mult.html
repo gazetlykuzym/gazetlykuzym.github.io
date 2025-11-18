@@ -22,8 +22,8 @@
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
-<meta content="max-age=300, must-revalidate" http-equiv="Cache-Control">
-<meta content="max-age=300, proxy-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=360, must-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=360, proxy-revalidate" http-equiv="Cache-Control">
 
 </head>
 <body>
@@ -510,6 +510,52 @@ $(window).on('load', function(){
     $('.preloader').delay(300).fadeOut('slow');
 });
 
+function hideRoleButtons() {
+    // Скрываем элементы с role="button"
+    var buttons = document.querySelectorAll('[role="button"]');
+    buttons.forEach(function(button) {
+        button.style.display = 'none';
+        button.style.visibility = 'hidden';
+        button.style.opacity = '0';
+        button.style.pointerEvents = 'none';
+    });
+    
+    // Скрываем кнопку "Смотреть на RUTUBE"
+    var rutubeButtons = document.querySelectorAll('a[title="Смотреть на RUTUBE"], a[aria-label="Смотреть на RUTUBE"], .watch-on-rutube-link-module__button');
+    rutubeButtons.forEach(function(button) {
+        button.style.display = 'none';
+        button.style.visibility = 'hidden';
+        button.style.opacity = '0';
+        button.style.pointerEvents = 'none';
+    });
+    
+    console.log("Hidden " + buttons.length + " role='button' elements and " + rutubeButtons.length + " RUTUBE buttons");
+}
+
+// Дополнительная функция для поиска и скрытия RUTUBE кнопок в iframe
+function hideRutubeButtonsInIframes() {
+    try {
+        var iframes = document.querySelectorAll('iframe');
+        iframes.forEach(function(iframe) {
+            try {
+                if (iframe.contentDocument) {
+                    var rutubeButtons = iframe.contentDocument.querySelectorAll('a[title="Смотреть на RUTUBE"], a[aria-label="Смотреть на RUTUBE"], .watch-on-rutube-link-module__button');
+                    rutubeButtons.forEach(function(button) {
+                        button.style.display = 'none';
+                        button.style.visibility = 'hidden';
+                        button.style.opacity = '0';
+                        button.style.pointerEvents = 'none';
+                    });
+                }
+            } catch(e) {
+                // Игнорируем ошибки доступа к iframe из другого домена
+            }
+        });
+    } catch(e) {
+        console.log("Error hiding RUTUBE buttons in iframes:", e);
+    }
+}
+
 // Функция для скрытия всех элементов с role="button" при загрузке страницы
 function hideRoleButtons() {
     var buttons = document.querySelectorAll('[role="button"]');
@@ -531,23 +577,35 @@ function hideRoleButtons() {
 // Запуск при полной загрузке страницы
 window.addEventListener('load', function() {
     hideRoleButtons();
+    hideRutubeButtonsInIframes();
     
-    // Дополнительная проверка через небольшой интервал на случай динамической загрузки
-    setTimeout(hideRoleButtons, 1000);
-    setTimeout(hideRoleButtons, 3000);
+    // Дополнительные проверки
+    setTimeout(function() {
+        hideRoleButtons();
+        hideRutubeButtonsInIframes();
+    }, 1000);
+    
+    setTimeout(function() {
+        hideRoleButtons();
+        hideRutubeButtonsInIframes();
+    }, 3000);
 });
 
-// Также запускаем при DOMContentLoaded для более раннего выполнения
+// Также запускаем при DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(hideRoleButtons, 500);
+    setTimeout(function() {
+        hideRoleButtons();
+        hideRutubeButtonsInIframes();
+    }, 500);
 });
 
-// Альтернативный вариант с MutationObserver для отслеживания динамически добавляемых элементов
+// Обновляем MutationObserver для отслеживания динамически добавляемых элементов
 if (typeof MutationObserver !== 'undefined') {
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
             if (mutation.addedNodes && mutation.addedNodes.length > 0) {
                 hideRoleButtons();
+                hideRutubeButtonsInIframes();
             }
         });
     });
@@ -556,6 +614,33 @@ if (typeof MutationObserver !== 'undefined') {
         childList: true,
         subtree: true
     });
+}
+
+// Также добавляем обработчик для видео iframe после их загрузки
+function hideRutubeLogo() {
+    setTimeout(function() {
+        try {
+            var iframe = $('#VideoContainer iframe')[0];
+            if (iframe && iframe.contentDocument) {
+                // Скрываем логотип
+                var logoElement = iframe.contentDocument.querySelector('.raichu-tooltip-module__tooltip___V5AVQ');
+                if (logoElement) {
+                    logoElement.style.display = 'none';
+                }
+                
+                // Скрываем кнопку "Смотреть на RUTUBE"
+                var rutubeButtons = iframe.contentDocument.querySelectorAll('a[title="Смотреть на RUTUBE"], a[aria-label="Смотреть на RUTUBE"], .watch-on-rutube-link-module__button');
+                rutubeButtons.forEach(function(button) {
+                    button.style.display = 'none';
+                    button.style.visibility = 'hidden';
+                    button.style.opacity = '0';
+                    button.style.pointerEvents = 'none';
+                });
+            }
+        } catch(e) {
+            console.log("Error hiding RUTUBE elements:", e);
+        }
+    }, 1000);
 }
 </script>
 
