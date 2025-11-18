@@ -16,14 +16,18 @@
           bottom: 0;
           z-index: 99999;
    }
+   /* Стиль для скрытия логотипа RUTUBE */
+   .raichu-tooltip-module__tooltip___V5AVQ {
+       display: none !important;
+   }
 </style>
 <link href="css/SaytKot.css" rel="stylesheet">
 <link href="css/mult.css" rel="stylesheet">
 <script src="js/jquery-1.12.4.min.js"></script>
 <script src="js/GBS.rotate.min.js"></script>
 <script src="js/GBS.min.js"></script>
-<meta content="max-age=100, must-revalidate" http-equiv="Cache-Control">
-<meta content="max-age=100, proxy-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=200, must-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=200, proxy-revalidate" http-equiv="Cache-Control">
 
 </head>
 <body>
@@ -182,7 +186,59 @@ function sendPlayerCommand(command) {
     }
 }
 
-// Функция загрузки видео
+// Функция для скрытия логотипа RUTUBE
+function hideRutubeLogo() {
+    setTimeout(function() {
+        try {
+            // Ищем логотип внутри iframe
+            var iframe = $('#VideoContainer iframe')[0];
+            if (iframe && iframe.contentDocument) {
+                var logoElement = iframe.contentDocument.querySelector('.raichu-tooltip-module__tooltip___V5AVQ');
+                if (logoElement) {
+                    logoElement.style.display = 'none';
+                    console.log("RUTUBE logo hidden");
+                }
+                
+                // Альтернативные селекторы для логотипа
+                var alternativeSelectors = [
+                    '.logo-control-button-module__logo___MvUVG',
+                    '[aria-label="Смотреть на RUTUBE"]',
+                    'a[target="_blank"][href*="rutube.ru"]'
+                ];
+                
+                alternativeSelectors.forEach(function(selector) {
+                    var elements = iframe.contentDocument.querySelectorAll(selector);
+                    elements.forEach(function(element) {
+                        element.style.display = 'none';
+                    });
+                });
+            }
+        } catch(e) {
+            console.log("Error hiding RUTUBE logo:", e);
+        }
+    }, 1000);
+}
+
+// Альтернативный метод через прозрачность
+function makeRutubeLogoTransparent() {
+    setTimeout(function() {
+        try {
+            var iframe = $('#VideoContainer iframe')[0];
+            if (iframe && iframe.contentDocument) {
+                var logoElement = iframe.contentDocument.querySelector('.raichu-tooltip-module__tooltip___V5AVQ');
+                if (logoElement) {
+                    logoElement.style.opacity = '0';
+                    logoElement.style.pointerEvents = 'none';
+                    console.log("RUTUBE logo made transparent");
+                }
+            }
+        } catch(e) {
+            console.log("Error making RUTUBE logo transparent:", e);
+        }
+    }, 1000);
+}
+
+// Функция загрузки видео с скрытием логотипа
 function loadVideo(videoId) {
     var videoUrl = $('#VideoUrls div[data-video-id="' + videoId + '"]').data('url');
     
@@ -193,6 +249,9 @@ function loadVideo(videoId) {
     currentVideoId = videoId;
     
     console.log("Loaded video: " + videoId);
+    
+    // Скрываем логотип после загрузки видео
+    hideRutubeLogo();
     
     // Добавляем обработчик для автоматического воспроизведения после загрузки
     if (isTVOn) {
@@ -440,12 +499,24 @@ function hideTVInfo() {
     }
 }
 
+// Добавляем постоянный мониторинг для скрытия логотипа
+function startLogoMonitoring() {
+    setInterval(function() {
+        if (isTVOn) {
+            hideRutubeLogo();
+        }
+    }, 3000); // Проверяем каждые 3 секунды
+}
+
 // Инициализация при загрузке страницы
 $(document).ready(function() {
-    console.log("Page loaded with video autoplay");
+    console.log("Page loaded with video autoplay and logo hiding");
     // Инициализируем переключатели - показываем только первый
     $('[id^="wb_ImagePerekluchatelTV"]').css('visibility', 'hidden');
     $('#wb_ImagePerekluchatelTV').css('visibility', 'visible');
+    
+    // Запускаем мониторинг логотипа
+    startLogoMonitoring();
     
     // Добавляем обработчик сообщений от плеера
     window.addEventListener('message', function(event) {
@@ -453,10 +524,10 @@ $(document).ready(function() {
             var data = JSON.parse(event.data);
             console.log("Message from player:", data);
             
-            // Можно обрабатывать события от плеера, например:
+            // При готовности плеера скрываем логотип
             if (data.type === 'player:ready') {
                 console.log("Player is ready");
-                // Плеер готов, можно отправлять команды
+                hideRutubeLogo();
             }
         } catch(e) {
             // Игнорируем не JSON сообщения
