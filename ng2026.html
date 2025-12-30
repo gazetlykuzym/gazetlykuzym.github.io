@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Смена фотографий</title>
+    <title>Твоё новогоднее предсказание</title>
     <style>
         * {
             margin: 0;
@@ -73,7 +73,7 @@
         
         .btn {
             padding: 15px 30px;
-            font-size: 18px;
+            font-size: 38px;
             font-weight: bold;
             border: none;
             border-radius: 50px;
@@ -199,7 +199,7 @@
     </div>
     
     <div class="button-container button-hidden" id="buttonContainer">
-        <button class="btn" id="mainButton">Выбор</button>
+        <button class="btn" id="mainButton">Твоё новогоднее предсказание</button>
     </div>
 
     <script>
@@ -352,7 +352,7 @@
             // Создаем ссылку для скачивания с правильными атрибутами
             const link = document.createElement('a');
             link.href = jpgImages[currentJpgIndex];
-            link.download = "Твоё новогоднее исполнение.jpg";
+            link.download = "Твоё новогоднее предсказание.jpg";
             link.style.display = 'none';
             
             // Добавляем в документ, кликаем и удаляем
