@@ -84,7 +84,7 @@ outline: none !important;">
 <img src="images/SamTV.svg" id="ImageTV" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;"></div>
 
 <!-- Единый контейнер для видео -->
-<div id="VideoContainer" style="position:absolute;left:116px;top:109px;width:406px;height:228px;z-index:21;">
+<div id="VideoContainer" style="position:absolute;left:116px;top:109px;width:406px;height:228px;z-index:21;overflow:hidden;">
     <!-- Видео будет загружаться сюда динамически -->
 </div>
 
@@ -185,8 +185,8 @@ function sendPlayerCommand(command) {
 function loadVideo(videoId) {
     var videoUrl = $('#VideoUrls div[data-video-id="' + videoId + '"]').data('url');
     
-    // Создаем новый iframe
-    var iframeHtml = '<iframe width="406" height="228" src="' + videoUrl + '" style="border: none;" frameborder="0" allow="clipboard-write; autoplay; encrypted-media" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+    // Создаем новый iframe с sandbox для безопасности
+    var iframeHtml = '<iframe width="406" height="228" src="' + videoUrl + '" style="border: none;" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox" allow="clipboard-write; autoplay; encrypted-media" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
     
     $('#VideoContainer').html(iframeHtml);
     currentVideoId = videoId;
@@ -401,17 +401,45 @@ function hideTVInfo() {
     }
 }
 
+// Блокировка кликов по iframe
+function blockIframeClicks() {
+    // Создаем прозрачный overlay поверх iframe
+    var overlay = document.createElement('div');
+    overlay.id = 'iframeOverlay';
+    overlay.style.position = 'absolute';
+    overlay.style.left = '0';
+    overlay.style.top = '0';
+    overlay.style.width = '100%';
+    overlay.style.height = '100%';
+    overlay.style.zIndex = '1000';
+    overlay.style.backgroundColor = 'transparent';
+    
+    // Добавляем overlay в контейнер видео
+    var container = document.getElementById('VideoContainer');
+    container.style.position = 'relative';
+    container.appendChild(overlay);
+}
+
 // Инициализация при загрузке страницы
 $(document).ready(function() {
     // Инициализируем переключатели - показываем только первый
     $('[id^="wb_ImagePerekluchatelTV"]').css('visibility', 'hidden');
     $('#wb_ImagePerekluchatelTV').css('visibility', 'visible');
     
+    // Блокируем клики по iframe
+    blockIframeClicks();
+    
     // Добавляем обработчик сообщений от плеера
     window.addEventListener('message', function(event) {
         try {
             var data = JSON.parse(event.data);
-            // Можно обрабатывать события от плеера
+            console.log('Сообщение от плеера:', data);
+            
+            // Фильтруем сообщения от рекламы
+            if (data.type && data.type.includes('ad')) {
+                console.log('Рекламное сообщение заблокировано');
+                return;
+            }
         } catch(e) {
             // Игнорируем не JSON сообщения
         }
@@ -423,83 +451,60 @@ $(window).on('load', function(){
     $('.preloader').delay(300).fadeOut('slow');
 });
 
-// Перехват кликов по кнопкам "Смотреть на RUTUBE"
+// Улучшенный перехват кликов
 document.addEventListener('click', function(event) {
-    // Проверяем, является ли элемент кнопкой с title "Смотреть на RUTUBE"
-    if (event.target.title === 'Смотреть на RUTUBE' || 
-        event.target.closest('[title="Смотреть на RUTUBE"]')) {
+    var target = event.target;
+    
+    // Проверяем все возможные варианты кнопки "Смотреть на RUTUBE"
+    if (target.closest && target.closest('a[href*="rutube.ru"]') || 
+        target.closest && target.closest('[title*="RUTUBE"]') ||
+        target.closest && target.closest('[class*="rutube"]') ||
+        target.closest && target.closest('[class*="raichu"]')) {
         
-        console.log('Перехвачен клик по кнопке "Смотреть на RUTUBE"');
-        console.log('Элемент:', event.target);
-        console.log('Родительский элемент:', event.target.parentElement);
-        console.log('Классы элемента:', event.target.className);
-        
-        // Предотвращаем стандартное действие
+        console.log('Перехвачен клик по элементу RUTUBE:', target);
         event.preventDefault();
         event.stopPropagation();
-        
-        // Пытаемся найти iframe с видео
-        const iframe = document.querySelector('#VideoContainer iframe');
-        if (iframe) {
-            console.log('Найден iframe:', iframe);
-            console.log('SRC iframe:', iframe.src);
-        }
+        event.stopImmediatePropagation();
         
         return false;
     }
-});
-
-// Перехват событий для динамически созданных элементов
-const observer = new MutationObserver(function(mutations) {
-    mutations.forEach(function(mutation) {
-        mutation.addedNodes.forEach(function(node) {
-            if (node.nodeType === 1) { // ELEMENT_NODE
-                // Проверяем сам элемент
-                if (node.title === 'Смотреть на RUTUBE') {
-                    console.log('Обнаружена динамически созданная кнопка "Смотреть на RUTUBE"');
-                    console.log('Элемент:', node);
-                }
-                
-                // Проверяем дочерние элементы
-                const rutubeButtons = node.querySelectorAll ? node.querySelectorAll('[title="Смотреть на RUTUBE"]') : [];
-                rutubeButtons.forEach(function(button) {
-                    console.log('Обнаружена вложенная кнопка "Смотреть на RUTUBE"');
-                    console.log('Элемент:', button);
-                });
-            }
-        });
-    });
-});
-
-// Начинаем наблюдение
-observer.observe(document.body, {
-    childList: true,
-    subtree: true
-});
-
-// Перехват сообщений от iframe (если они есть)
-window.addEventListener('message', function(event) {
-    // Логируем все сообщения от iframe
-    console.log('Сообщение от iframe:', event.data);
-    console.log('Источник:', event.source);
-    console.log('Origin:', event.origin);
-});
-
-// Перехват всех кликов в документе для отладки
-document.addEventListener('click', function(event) {
-    const target = event.target;
-    // Логируем только если элемент имеет title или специфические классы
-    if (target.title || target.className.includes('rutube') || target.className.includes('raichu')) {
-        console.log('Клик по элементу:');
-        console.log('Тег:', target.tagName);
-        console.log('Title:', target.title);
-        console.log('Классы:', target.className);
-        console.log('ID:', target.id);
-        console.log('-------------------');
+    
+    // Блокируем клики внутри iframe через overlay
+    if (target.closest('#VideoContainer') && !target.closest('#iframeOverlay')) {
+        console.log('Клик внутри VideoContainer заблокирован');
+        event.preventDefault();
+        event.stopPropagation();
     }
 });
 
-console.log('Скрипт перехвата кнопок RUTUBE активирован');
+// Удаляем навязчивые элементы, которые могут появляться в iframe
+setInterval(function() {
+    // Удаляем возможные баннеры и рекламу
+    var iframe = document.querySelector('#VideoContainer iframe');
+    if (iframe && iframe.contentDocument) {
+        try {
+            // Блокируем появление всплывающих окон
+            iframe.contentWindow.open = function() { 
+                console.log('Открытие нового окна заблокировано');
+                return null;
+            };
+            
+            // Блокируем переход по ссылкам
+            var links = iframe.contentDocument.querySelectorAll('a[href*="rutube.ru/video"]');
+            links.forEach(function(link) {
+                link.onclick = function(e) {
+                    e.preventDefault();
+                    console.log('Переход по ссылке заблокирован');
+                    return false;
+                };
+            });
+        } catch(e) {
+            // Игнорируем ошибки CORS
+        }
+    }
+}, 1000);
+
+console.log('Система управления видео активирована с улучшенной защитой');
 </script>
 
 </body>
