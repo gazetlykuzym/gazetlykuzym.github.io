@@ -1,0 +1,695 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Архив</title>
+<link href="ico120.svg" rel="icon" type="image/svg+xml">
+<link href="ico_k.png" rel="apple-touch-icon" sizes="257x257">
+<style>
+   .preloader{
+          position: fixed;
+		  background-color: #ffffff;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  z-index: 99999;
+   }
+</style>
+<link href="css/base/jquery-ui.min.css" rel="stylesheet">
+<link href="css/SaytKot.css" rel="stylesheet">
+<link href="css/Arhiv.css" rel="stylesheet">
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("#Tabs1").tabs(
+   {
+      show: false,
+      hide: false,
+      event: 'click',
+      collapsible: false
+   });
+});
+</script>
+<meta content="max-age=3600, must-revalidate" http-equiv="Cache-Control">
+<meta content="max-age=3600, proxy-revalidate" http-equiv="Cache-Control">
+</head>
+<body>
+<div class="preloader">
+<div>
+<img src="preloader.gif" width="247" height="66" style="margin: 25% 0 20% 0;">
+</div>
+</div>
+<div id="container">
+<div id="FonovyiSloy6" style="position:absolute;text-align:left;left:0px;top:20px;width:970px;height:821px;z-index:114;">
+<!-- Sneg -->
+<div id="HtmlSneg" style="position:absolute;left:695px;top:404px;width:275px;height:298px;visibility:hidden;opacity:0.00;z-index:52">
+<div onclick="stopsnow()" id="snow-start"></div>
+<script> 
+  var snowsrc="https://gazetlykuzym.github.io//images/Snezhynki.png";
+  var no = 20; 
+  var log = 0;
+  var hidesnowtime = 0;
+  var snowdistance = "windowheight";
+
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+    function iecompattest(){
+    return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+    }
+
+  var dx, xp, yp;    
+  var am, stx, sty;  
+  var i, doc_width = 800, doc_height = 600; 
+
+  if (ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = iecompattest().clientWidth;
+    doc_height = iecompattest().clientHeight;
+  }
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  snowsrc=(snowsrc.indexOf("")!= 1)? "https://gazetlykuzym.github.io//images/Snezhynki.png" : snowsrc
+  for (i = 0; i < no; ++ i) {  
+    dx[i] = 0;                        
+    xp[i] = Math.random()*(doc_width-50); 
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;      
+    stx[i] = 0.02 + Math.random()/10;
+    sty[i] = 0.7 + Math.random();   
+        if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      } else {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: fixed; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"><\/div>");
+      }
+    }
+  }
+
+  function snowIE_NS6() {  
+    doc_width = ns6up?window.innerWidth-10 : iecompattest().clientWidth-10;
+        doc_height=(window.innerHeight && snowdistance=="windowheight")? window.innerHeight : (ie4up && snowdistance=="windowheight")?  iecompattest().clientHeight : (ie4up && !window.opera && snowdistance=="pageheight")? iecompattest().scrollHeight : iecompattest().offsetHeight;
+    for (i = 0; i < no; ++ i) { 
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+      }
+      dx[i] += stx[i];
+      document.getElementById("dot"+i).style.top=yp[i]+"px";
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i])+"px";  
+    }
+    snowtimer=setTimeout("snowIE_NS6()", 10);
+  }
+
+    function hidesnow(){
+        if (window.snowtimer) clearTimeout(snowtimer)
+        for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
+    }
+
+if (ie4up||ns6up){
+    snowIE_NS6();
+        if (hidesnowtime>0)
+        setTimeout("hidesnow()", hidesnowtime*1000);
+        }
+ function stopsnow(){
+ if (log==0){
+  for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden";
+  no = 0;
+  log = 1;
+  document.getElementById('snow-start').innerHTML ='Вкл. снег';
+  }
+  else { log = 0; no = 20; for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="visible";
+ document.getElementById('snow-start').innerHTML ='';
+
+  }
+
+ }
+</script>
+<a id="copy" href=""></a>
+</div>
+<div id="wb_ImageRamkaFonArhiv" style="position:absolute;left:0px;top:18px;width:970px;height:684px;z-index:53;">
+<img src="images/kontur4.png" id="ImageRamkaFonArhiv" alt="" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;" width="970" height="684"></div>
+<div id="LayerKrest4" style="position:absolute;text-align:left;left:929px;top:33px;width:33px;height:32px;z-index:54;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
+</div>
+<div id="LayerKnopka4Menu" style="position:absolute;text-align:left;left:796px;top:730px;width:70px;height:60px;z-index:55;" onclick="window.location.href='./mesyac.html';return false;">
+</div>
+<div id="LayerKnopka3StrArhiv" style="position:absolute;text-align:left;left:713px;top:730px;width:70px;height:60px;z-index:56;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./bukva.html';return false;">
+</div>
+<div id="LayerKnopka2StrArhiv" style="position:absolute;text-align:left;left:630px;top:730px;width:70px;height:60px;z-index:57;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./menuigr.html';return false;">
+</div>
+<div id="LayerKnopka1StrArhiv" style="position:absolute;text-align:left;left:547px;top:730px;width:70px;height:60px;z-index:58;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./index.html';return false;">
+</div>
+<div id="Layer6KnopkaAlfavit" style="position:absolute;text-align:left;left:340px;top:731px;width:167px;height:58px;z-index:59;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./alfavit.html';return false;">
+</div>
+<div id="LayerKnopka5Str" style="position:absolute;text-align:left;left:880px;top:730px;width:70px;height:60px;z-index:60;-webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+-webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+outline: none !important; cursor: pointer" onclick="window.location.href='./mult.html';return false;">
+</div>
+
+<div id="sustainable-catalog">&nbsp;</div>
+<script>
+(function() {
+    const sustainableData = [
+        // 2025
+        {
+            img: "images/4_2025.jpg",
+            alt: "Обложка",
+            title: "№4",
+            desc: "",
+            link: "./pdf/4_2025.pdf",
+            year: "2025"
+        },
+        {
+            img: "images/3_2025.jpg",
+            alt: "Обложка",
+            title: "№3",
+            desc: "",
+            link: "./pdf/3_2025.pdf",
+            year: "2025"
+        },
+        {
+            img: "images/2_2025.jpg",
+            alt: "Обложка",
+            title: "№2",
+            desc: "",
+            link: "./pdf/2_2025.pdf",
+            year: "2025"
+        },
+        {
+            img: "images/1_2025.jpg",
+            alt: "Обложка",
+            title: "№1",
+            desc: "",
+            link: "./pdf/1_2025.pdf",
+            year: "2025"
+        },
+		// 2024
+        {
+            img: "images/5_2024.jpg",
+            alt: "Обложка",
+            title: "№5",
+            desc: "",
+            link: "./pdf/5_2024.pdf",
+            year: "2024"
+        },
+        {
+            img: "images/4_2024.jpg",
+            alt: "Обложка",
+            title: "№4",
+            desc: "",
+            link: "./pdf/4_2024.pdf",
+            year: "2024"
+        },
+        {
+            img: "images/3_2024.jpg",
+            alt: "Обложка",
+            title: "№3",
+            desc: "",
+            link: "./pdf/3_2024.pdf",
+            year: "2024"
+        },
+        {
+            img: "images/2_2024.jpg",
+            alt: "Обложка",
+            title: "№2",
+            desc: "",
+            link: "./pdf/2_2024.pdf",
+            year: "2024"
+        },
+        {
+            img: "images/1_2024.jpg",
+            alt: "Обложка",
+            title: "№1",
+            desc: "",
+            link: "./pdf/1_2024.pdf",
+            year: "2024"
+        },
+		// 2023
+        {
+            img: "images/5_2023.jpg",
+            alt: "Обложка",
+            title: "№5",
+            desc: "",
+            link: "./pdf/5_2023.pdf",
+            year: "2023"
+        },
+        {
+            img: "images/4_2023.jpg",
+            alt: "Обложка",
+            title: "№4",
+            desc: "",
+            link: "./pdf/4_2023.pdf",
+            year: "2023"
+        },
+        {
+            img: "images/3_2023.jpg",
+            alt: "Обложка",
+            title: "№3",
+            desc: "",
+            link: "./pdf/3_2023.pdf",
+            year: "2023"
+        },
+		{
+            img: "images/2_2023.jpg",
+            alt: "Обложка",
+            title: "№2",
+            desc: "",
+            link: "./pdf/2_2023.pdf",
+            year: "2023"
+        },
+		{
+            img: "images/1_2023.jpg",
+            alt: "Обложка",
+            title: "№1",
+            desc: "",
+            link: "./pdf/1_2023.pdf",
+            year: "2023"
+        },
+        // 2022
+        {
+            img: "images/6_2022.jpg",
+            alt: "Обложка",
+            title: "№6",
+            desc: "",
+            link: "./pdf/6_2022.pdf",
+            year: "2022"
+        },
+        {
+            img: "images/5_2022.jpg",
+            alt: "Обложка",
+            title: "№5",
+            desc: "",
+            link: "./pdf/5_2022.pdf",
+            year: "2022"
+        },
+        {
+            img: "images/4_2022.jpg",
+            alt: "Обложка",
+            title: "№4",
+            desc: "",
+            link: "./pdf/4_2022.pdf",
+            year: "2022"
+        },
+        {
+            img: "images/3_2022.jpg",
+            alt: "Обложка",
+            title: "№3",
+            desc: "",
+            link: "./pdf/3_2022.pdf",
+            year: "2022"
+        },
+        {
+            img: "images/2_2022.jpg",
+            alt: "Обложка",
+            title: "№2",
+            desc: "",
+            link: "./pdf/2_2022.pdf",
+            year: "2022"
+        },	
+        {
+            img: "images/1_2022.jpg",
+            alt: "Обложка",
+            title: "№1",
+            desc: "",
+            link: "./pdf/1_2022.pdf",
+            year: "2022"
+        },		
+        // 2021
+        {
+            img: "images/6_2021.jpg",
+            alt: "Обложка",
+            title: "№6",
+            desc: "",
+            link: "./pdf/6_2021.pdf",
+            year: "2021"
+        },
+        {
+            img: "images/5_2021.jpg",
+            alt: "Обложка",
+            title: "№5",
+            desc: "",
+            link: "./pdf/5_2021.pdf",
+            year: "2021"
+        },
+        {
+            img: "images/4_2021.jpg",
+            alt: "Обложка",
+            title: "№4",
+            desc: "",
+            link: "./pdf/4_2021.pdf",
+            year: "2021"
+        },
+        {
+            img: "images/3_2021.jpg",
+            alt: "Обложка",
+            title: "№3",
+            desc: "",
+            link: "./pdf/3_2021.pdf",
+            year: "2021"
+        },
+        {
+            img: "images/2_2021.jpg",
+            alt: "Обложка",
+            title: "№2",
+            desc: "",
+            link: "./pdf/2_2021.pdf",
+            year: "2021"
+        },
+        {
+            img: "images/1_2021.jpg",
+            alt: "Обложка",
+            title: "№1",
+            desc: "",
+            link: "./pdf/1_2021.pdf",
+            year: "2021"
+        },		
+        // 2020
+        {
+            img: "images/1_2020.jpg",
+            alt: "Обложка",
+            title: "№1",
+            desc: "",
+            link: "./pdf/1_2020.pdf",
+            year: "2020"
+        }
+    ];
+
+    const container = document.getElementById('sustainable-catalog');
+    
+    if (container) {
+        const html = `
+            <style>
+                #sustainable-catalog {
+                    position: absolute;
+                    left: 60px;
+                    top: 65px;
+                    width: 860px;
+                    height: 600px;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                    z-index: 1115;
+                }
+                
+                #sustainable-catalog::-webkit-scrollbar {
+                    width: 10px;
+                }
+                
+                #sustainable-catalog::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                    border-radius: 5px;
+                }
+                
+                #sustainable-catalog::-webkit-scrollbar-thumb {
+                    background: linear-gradient(to bottom, #C1C468, #d1d48e);
+                    border-radius: 5px;
+                }
+                
+                #sustainable-catalog::-webkit-scrollbar-thumb:hover {
+                    background: linear-gradient(to bottom, #d1d48e, #C1C468);
+                }
+                
+                .accordion-item {
+                    background: white;
+                    border-radius: 16px;
+                    margin: 0 10px 10px 0;
+                    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+                    overflow: hidden;
+                    border: 1px solid rgba(0,0,0,0.05);
+                }
+                
+                .accordion-header {
+                    padding: 20px 30px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    background: linear-gradient(135deg, #C1C468, #d1d48e);
+                    color: white;
+                    transition: all 0.3s ease;
+                    user-select: none;
+                }
+                
+                .accordion-header:hover {
+                    background: linear-gradient(135deg, #d1d48e, #C1C468);
+                }
+                
+                .accordion-header.active {
+                    background: linear-gradient(135deg, #d1d48e, #C1C468);
+                }
+                
+                .accordion-year {
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                
+                .accordion-count {
+                    background: rgba(255,255,255,0.2);
+                    padding: 5px 15px;
+                    border-radius: 20px;
+                    font-size: 0.9em;
+                    font-weight: 500;
+                }
+                
+                .accordion-toggle {
+                    font-size: 1.8em;
+                    transition: transform 0.3s ease;
+                    line-height: 1;
+                }
+                
+                .accordion-header.active .accordion-toggle {
+                    transform: rotate(180deg);
+                }
+                
+                .accordion-content {
+                    padding: 0;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.5s ease, padding 0.5s ease;
+                }
+                
+                .accordion-content.open {
+                    padding: 30px;
+                    max-height: 5000px;
+                }
+                
+                .book-list-modern {
+                    display: flex;
+                    gap: 25px;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
+                
+                .book-card {
+                    background: white;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    border: 1px solid rgba(0,0,0,0.05);
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    cursor: pointer;
+                    width: calc(25% - 19px);
+                    min-width: 200px;
+                    flex-grow: 1;
+                }
+                
+                .book-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+                }
+                
+                .book-card-top {
+                    display: flex;
+                    padding: 20px;
+                    gap: 20px;
+                    border-bottom: 1px solid #f0f0f0;
+                    flex: 1;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                
+                .book-cover-modern img {
+                    width: 145px;
+                    height: 117px;
+                    display: block;
+                    border-radius: 6px;
+                    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+                    transition: all 0.3s ease;
+                    object-fit: cover;
+                }
+                
+                .book-card:hover .book-cover-modern img {
+                    transform: scale(1.05);
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+                }
+                
+                .book-info-modern {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .book-title-modern {
+                    font-weight: 700;
+                    color: #1a5fb4;
+                    margin-bottom: 8px;
+                    font-size: 0.9em;
+                    line-height: 1.4;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
+                
+                .book-card-bottom {
+                    padding: 15px 20px;
+                    background: #f8f9fa;
+                    border-top: 1px solid #f0f0f0;
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .book-link-modern {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 8px 18px;
+                    background: linear-gradient(135deg, #d1d48e, #C1C468);
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 50px;
+                    font-weight: 600;
+                    font-size: 0.85em;
+                    transition: all 0.3s ease;
+                    border: none;
+                    cursor: pointer;
+                }
+                
+                .book-link-modern:hover {
+                    background: linear-gradient(135deg, #C1C468, #d1d48e);
+                    transform: translateY(-2px);
+                    box-shadow: 0 5px 15px rgba(98, 160, 234, 0.3);
+                }
+            </style>
+            
+            <div class="accordion-container">
+                ${(() => {
+                    const years = [...new Set(sustainableData.map(book => book.year))].sort((a, b) => b - a);
+                    
+                    let html = '';
+                    
+                    years.forEach((year) => {
+                        const yearBooks = sustainableData.filter(book => book.year === year);
+                        
+                        html += `
+                            <div class="accordion-item" data-year="${year}">
+                                <div class="accordion-header">
+                                    <div class="accordion-year">
+                                        ${year} год
+                                        <span class="accordion-count">${yearBooks.length}</span>
+                                    </div>
+                                    <div class="accordion-toggle">▼</div>
+                                </div>
+                                <div class="accordion-content">
+                                    <div class="book-list-modern">
+                                        ${yearBooks.map(book => {
+                                            return `
+                                                <div class="book-card">
+                                                    <div class="book-card-top">
+                                                        <div class="book-cover-modern">
+                                                            <img src="${book.img}" alt="${book.alt}" width="85" height="125" loading="lazy">
+                                                        </div>
+                                                        <div class="book-info-modern">
+                                                            <div class="book-title-modern">${book.title}</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="book-card-bottom">
+                                                        <a class="book-link-modern" href="${book.link}" target="_blank" rel="noopener noreferrer">
+                                                            Смотреть выпуск
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            `;
+                                        }).join('')}
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    return html;
+                })()}
+            </div>
+        `;
+        
+        container.innerHTML = html;
+        
+        setTimeout(() => {
+            const accordionHeaders = container.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const item = this.closest('.accordion-item');
+                    const content = item.querySelector('.accordion-content');
+                    
+                    if (content.classList.contains('open')) {
+                        content.classList.remove('open');
+                        this.classList.remove('active');
+                    } else {
+                        content.classList.add('open');
+                        this.classList.add('active');
+                    }
+                });
+            });
+            
+            const cards = container.querySelectorAll('.book-card');
+            cards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    if (!e.target.closest('.book-link-modern')) {
+                        const link = this.querySelector('.book-link-modern');
+                        if (link && link.href !== '#') {
+                            window.open(link.href, '_blank');
+                        }
+                    }
+                });
+            });
+        }, 100);
+    }
+})();
+</script>
+
+<script>
+    $(window).on('load', function(){
+	$('.preloader').delay(700).fadeOut('slow');
+	});
+</script>
+</body>
+</html>
