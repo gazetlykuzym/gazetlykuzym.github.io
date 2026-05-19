@@ -709,6 +709,17 @@ a:hover
    background-size: contain;
    border-radius: 0px;
 }
+
+#LayerKnopkaArhiv
+{
+   background-color: transparent;
+   background-image: url('../images/KnopkaArhiv.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   border-radius: 0px;
+}
+
 /* КУКИ */
 #cookie_notification{
   display: none;
