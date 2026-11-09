@@ -1,0 +1,757 @@
+div#container
+{
+   width: 997px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+a
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+a:hover
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+#wb_lapa
+{
+   vertical-align: top;
+}
+#lapa
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_5f
+{
+   vertical-align: top;
+}
+#5f
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_4f
+{
+   vertical-align: top;
+}
+#4f
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_3f
+{
+   vertical-align: top;
+}
+#3f
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_2f
+{
+   vertical-align: top;
+}
+#2f
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_1f
+{
+   vertical-align: top;
+}
+#1f
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_taburet
+{
+   vertical-align: top;
+}
+#taburet
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_luch_niz
+{
+   overflow: hidden;
+   vertical-align: top;
+}
+#luch_niz
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   transform: rotate(22deg);
+   transform-origin: 50% 50%;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_luch
+{
+   overflow: hidden;
+   vertical-align: top;
+}
+#luch
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_ekran
+{
+   vertical-align: top;
+}
+#ekran
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_proektor
+{
+   vertical-align: top;
+}
+#proektor
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#TenSledRUSstrmadiskonyos
+{
+   background-color: transparent;
+   background-image: url('../images/TenSledRUS.svg');
+   background-repeat: repeat;
+   background-position: center center;
+   background-size: cover;
+   border-radius: 0px;
+   opacity: 0.00;
+}
+#FonovyiSloy4
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+}
+#LayerLapaUdmmadiskonyos
+{
+   background-color: transparent;
+   background-image: url('../images/UDM.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   border-radius: 0px;
+}
+#LayerLapaRusmadiskonyos
+{
+   background-color: transparent;
+   background-image: url('../images/RUS.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   border-radius: 0px;
+}
+#wb_ImageRamkaFonmadiskonyos
+{
+   vertical-align: top;
+}
+#ImageRamkaFonmadiskonyos
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerKrest3
+{
+   background-color: #FBFBFB;
+   background-image: none;
+   border-radius: 0px;
+   opacity: 0.00;
+}
+#TenSledUDMstrmadiskonyos
+{
+   background-color: transparent;
+   background-image: url('../images/TenSledUDM.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   border-radius: 0px;
+}
+#LayerKnopka4Strmadiskonyos
+{
+   background-color: transparent;
+   background-image: url('../images/4Knopka.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   border-radius: 0px;
+}
+#LayerKnopka3Strmadiskonyos
+{
+   background-color: transparent;
+   background-image: url('../images/3Knopka.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   border-radius: 0px;
+}
+#LayerKnopka2Strmadiskonyos
+{
+   background-color: transparent;
+   background-image: url('../images/2Knopka.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   border-radius: 0px;
+}
+#LayerKnopka1Strmadiskonyos
+{
+   background-color: transparent;
+   background-image: url('../images/1Knopka.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   border-radius: 0px;
+}
+#Layer3KnopkaAlfavit
+{
+   background-color: transparent;
+   background-image: url('../images/KnopkaAlfavit.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   border-radius: 0px;
+}
+#LayerKnopka5Strmadiskonyos
+{
+   background-color: transparent;
+   background-image: url('../images/5Knopka.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+   border-radius: 0px;
+}
+#wb_pult_korpus
+{
+   vertical-align: top;
+}
+#pult_korpus
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_1_n
+{
+   vertical-align: top;
+}
+#k_1_n
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_2
+{
+   vertical-align: top;
+}
+#k_2
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_3
+{
+   vertical-align: top;
+}
+#k_3
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_4
+{
+   vertical-align: top;
+}
+#k_4
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_5
+{
+   vertical-align: top;
+}
+#k_5
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_6
+{
+   vertical-align: top;
+}
+#k_6
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_pult_lampa
+{
+   vertical-align: top;
+}
+#pult_lampa
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerPult
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+}
+#wb_ImageKrest
+{
+   vertical-align: top;
+}
+#ImageKrest
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   transform: rotate(50deg);
+   transform-origin: 50% 50%;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_ImageNazvanie
+{
+   vertical-align: top;
+}
+#ImageNazvanie
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   transform: rotate(352deg);
+   transform-origin: 50% 50%;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_1
+{
+   vertical-align: top;
+}
+#k_1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_2_n
+{
+   vertical-align: top;
+}
+#k_2_n
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_3_n
+{
+   vertical-align: top;
+}
+#k_3_n
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_4_n
+{
+   vertical-align: top;
+}
+#k_4_n
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_5_n
+{
+   vertical-align: top;
+}
+#k_5_n
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_k_6_n
+{
+   vertical-align: top;
+}
+#k_6_n
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#skryt_tel
+{
+   background-color: #FFFFFF;
+   background-image: none;
+   border-radius: 0px;
+}
+#LayerSloyKota
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+}
+#wb_ImageTeloKota
+{
+   vertical-align: top;
+}
+#ImageTeloKota
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerGlazL
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+}
+#wb_Image4g
+{
+   vertical-align: top;
+}
+#Image4g
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerGlazP
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+}
+#wb_Image5g
+{
+   vertical-align: top;
+}
+#Image5g
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_ImageUsyL
+{
+   vertical-align: top;
+}
+#ImageUsyL
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_ImageUsyP
+{
+   vertical-align: top;
+}
+#ImageUsyP
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#LayerNos
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+}
+#LayerUsyP_Skrytyi
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+}
+#LayerUsyL_Skrytyi
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+}
+#wb_UhoP
+{
+   vertical-align: top;
+}
+#UhoP
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_UhoL
+{
+   vertical-align: top;
+}
+#UhoL
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Lapa-kota
+{
+   vertical-align: top;
+}
+#Lapa-kota
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_UDMslovakota
+{
+   vertical-align: top;
+}
+#UDMslovakota
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_RUslovakota
+{
+   vertical-align: top;
+}
+#RUslovakota
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
